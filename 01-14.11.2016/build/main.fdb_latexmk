@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber build/main"] 1477402882 "build/main.bcf" "build/main.bbl" "build/main" 1479043803
+["biber build/main"] 1477402882 "build/main.bcf" "build/main.bbl" "build/main" 1479045217
   "build/main.bcf" 1477402890 95650 4ba0168ee7657630c45ce3eed6a12fd7 ""
   (generated)
-  "build/main.blg"
   "build/main.bbl"
-["pdflatex"] 1477402886 "main.tex" "build/main.pdf" "main" 1479043803
+  "build/main.blg"
+["pdflatex"] 1477402886 "main.tex" "build/main.pdf" "main" 1479045217
   "/home/maximilian/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/maximilian/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
   "/home/maximilian/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm" 1246382020 908 2921f8a10601f252058503cc6570e581 ""
@@ -212,10 +212,10 @@
   "main.tex" 1466614802 361 a43207f7795b1a579fd71871331c005a ""
   (generated)
   "/home/maximilian/.local/texlive/2015/texmf-var/m_t_x_t_e_s_t.tmp"
-  "build/main.bcf"
-  "build/main.aux"
-  "build/main.log"
-  "build/main.run.xml"
-  "/home/maximilian/.local/texlive/2016/texmf-var/m_t_x_t_e_s_t.tmp"
-  "build/main.pdf"
   "build/main.toc"
+  "build/main.pdf"
+  "build/main.aux"
+  "build/main.bcf"
+  "build/main.log"
+  "/home/maximilian/.local/texlive/2016/texmf-var/m_t_x_t_e_s_t.tmp"
+  "build/main.run.xml"
