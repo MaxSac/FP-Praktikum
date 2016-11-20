@@ -6,9 +6,22 @@ Ziel des Versuches ist es die Funktionsweise eines He-Ne-Lasers zu verstehen und
 Licht wird als Laser bezeichnet wenn es drei wichtige Eigenschaften hat. Es muss monochromatisch sein und eine hohe Intensität und Kohärenz haben. Desweiteren spielt die Polarisation des Lasers eine Rolle. Auf diese Eigenschaft des Lasers wird im folgenden geneauer eingegangen. \\
 \textbf{Kohärenz} liegt vor wenn die Phasenverschiebung der Wellenzüge an einem festen Ort zeitlich konstant ist oder wenn sich die Phase gesetzmäßig mit der Zeit ändert.
 Das bedeutet, dass die Kohärenz ein Maß für die Interferenzfähigkeit zweier Wellen ist. \\
-Die \textbf{Intensität} $I$ 
-
-
+Die \textbf{Intensität} $I_\text{lpq}$ beschreibt die Leistung pro Fläche welche von dem Laser ausgestrahlt wird und ist proportional zu dem Betragsquadrat der Feldverteilung $E_\text{lpq}$.
+\begin{align*}
+	I_\text{lpq} \propto |E_\text{lpq}|^2 \ .
+\end{align*}
+Die Indizes $l$, $p$ und $q$ geben die Anzahl der Knotenpunkte an, welche sich in dem Resonator ausbilden. Um genaueres über die Intensität sagen zu können muss zunächst die Feldverteilung näher betrachtet werden. Für einen konfokalen Resonator mit runden Spiegeln ist die Feldverteilung durch
+\begin{align*}
+	E_\text{lpq} \propto &\frac{\cos(l\varphi)\,(2\rho)^2}{(1+Z^2)^\frac{1+l}{2}}\, L_p^q\left(\frac{(2\rho)^2}{1+Z^2}\right)\,\exp \left(-\frac{\rho^2}{1+Z^2} \right) \\
+	&\exp \left(-i\left(\frac{R\pi(1+Z)}{\lambda}+ \frac{\rho^2Z}{1+Z^2}- (l+2p+1)\left(\frac{\pi}{2}-\arctan \left(\frac{1-Z}{1+Z} \right) \right)\right)\right) \\
+	&\text{mit:}\ \ \rho = \left(\frac{2\pi}{R\lambda} \right)^\frac{1}{2} \ \ \text{und} \ \ Z = \frac{2z}{R}
+\end{align*}
+gegeben. Darin steht $L_p^q(u)$ für das Laguerre-Polynom.\\
+Allerdings lässt sich die Intensität der TEM$_{00}$ Grundmode über
+\begin{align}
+	I(r) = I_0\,\exp \left(\frac{-2\,r^2}{w^2} \right)
+\end{align}
+berechnen.
 
 
 \subsection{Aufbau eines He-Ne-Lasers}
