@@ -29,6 +29,19 @@ Diese Reichweite wird verifiziert indem die Intensität der gemessenen Laserstra
 \subsection{TEM-Moden}
 
 \subsubsection{TEM$_\text{00}$-Mode}
+
+Es wird ein Fit der Form 
+\begin{equation}
+  a \cdot e^{- \frac{(x-\bar{x})^2}{\omega^2} }
+  \label{eqn:gausian}
+\end{equation}
+wobei a die Amplitude, $\bar{x}$ der Mittelwert und $\omega$ die die Standardabweichung der Gaußfunktion ist. Es ergeben sich Fitparameter von 
+\begin{eqnarray}
+  a =& (\num{4.53 +- 0.08})	\\
+  \bar{x} =& (\num{7.0 +- 0.2})	\\
+  \omega =& (\num{-14.6 +-0.1})	
+  \label{eqn:coef}
+\end{eqnarray}
 \begin{figure}
   \centering
   \includegraphics[height=6cm]{TEM00.pdf}
