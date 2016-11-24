@@ -1,7 +1,20 @@
 \section{Ziel des Versuches}
 Ziel des Versuches ist es die Funktionsweise eines He-Ne-Lasers zu verstehen und den Umgang mit diesem zu üben. Dafür soll die Wellenlänge des Lasers und die maximale Resonatorlänge gefunden werden. Außerdem soll die Intensität von zwei TEM-Moden und der Polarisation ausgemessen werden.
 
+
 \section{Theoretische Grundlage}
+\subsection{Aufbau eines He-Ne-Lasers}
+Im folgenden wird kurz der Aufbau und die Funktionsweise eines Lasers (\textbf{L}ight \textbf{A}mplification by \textbf{S}timulated \textbf{E}mission of \textbf{R}adiation) erklärt, mit besonderem Augenmerk auf die Gaslaser (He-Ne-Laser). \\
+Das \textbf{aktive Lasermedium} des Lasers bestimmt das Strahlungsspektrum. Dafür muss das Lasermedium so manipuliert werden, dass das Strahlungsfeld der einfallenden Strahlung mit dem Gasgemisch wechselwirkt und die Strahlung verstärkt wird. Damit das passiert muss mehr induzierte Emission auftreten als spontane Emission. \\
+Nach der Boltzmann-Verteilung ist der Grundzustand, in einem Gas, im thermischen Gleichgewicht stärker besetzt als die angeregten Zustände. Also ist die Besetzungszahl $n_1$ für den Grundzustand größer als die Besetzungszahl $n_2$ für den ersten angeregten Zustand. Vereinfachend kann ein zwei Niveau-System angenommen werden, dann können die Ratengleichungen für die Besetzungszahlen wie folgt formuliert werden:
+\begin{align}
+	\frac{d\,n_1}{d\,t} = - &\underbrace{n_1\,B_{12}\,\rho}_{\dot{N}_\text{A}} + \underbrace{n_2\,B_{21}\,\rho}_{\dot{N}_\text{IE}} + \underbrace{n_2\,A_{21}}_{\dot{N}_\text{E}}\ \ \text{und}\\
+	\frac{d\,n_2}{d\,t} = \ \ \ &\overbrace{n_1\,B_{12}\,\rho}_{} - \overbrace{n_2\,B_{21}\,\rh}_{} - \overbrace{n_2\,A_{21}}_{}
+\end{align}
+$\dot{N}_\text{A}$ ist der Niveauübergang für die Absorbtion, $\dot{N}_\text{IE}$ für die induzierte Emission und $\dot{N}_\text{E}$ für die spntane Emission. Die Einsteinkoeffizienten $A_{21}$, $B_{12}$ und $B_{21}$ sind Konstanten und geben die Übergangswahrscheinlichkeit von dem Grundzustand in den ersten angeregten Zustand an und $\rho$ ist die Energiedichte des Strahlungsfeldes. Damit nun mehr induzierte Emission auftritt als die spontane Emission muss eine Besetzungsinversion erschaffen werden, also müssen mehr Atome im höher energetischen Zustand sein als im Grundzustand. Dies wird über eine permanente Zufuhr von elektrischer Energie in das Lasermedium erzeugt. \\
+Dieser Vorgang wird als \textbf{Pumpen} bezeichnet. Bei einem He-Ne-Laser werden zunächst die Helium-Atome mittels elektrischer Entladung angeregt. Dann Stoßen die angeregten Helium-Atome mit den Neon-Atomen, wodurch Energie auf die Neon-Atome übertragen wird und diese danach überwiegend das 3s-Orbital besetzen. Bei dem Übergang von dem 3s-Orbital in das 2p-Orbital (Grundzustand) wird ein Photon mit der charakteristischen Wellenlänge $\lambda = 632,8$nm emittiert
+
+
 \subsection{Eigenschaften eines Lasers}
 Licht wird als Laser bezeichnet wenn es drei wichtige Eigenschaften hat. Es muss monochromatisch sein und eine hohe Intensität und Kohärenz haben. Desweiteren spielt die Polarisation des Lasers eine Rolle. Auf diese Eigenschaft des Lasers wird im folgenden geneauer eingegangen. \\
 \textbf{Kohärenz} liegt vor wenn die Phasenverschiebung der Wellenzüge an einem festen Ort zeitlich konstant ist oder wenn sich die Phase gesetzmäßig mit der Zeit ändert.
@@ -16,18 +29,32 @@ Die Indizes $l$, $p$ und $q$ geben die Anzahl der Knotenpunkte an, welche sich i
 	&\exp \left(-i\left(\frac{R\pi(1+Z)}{\lambda}+ \frac{\rho^2Z}{1+Z^2}- (l+2p+1)\left(\frac{\pi}{2}-\arctan \left(\frac{1-Z}{1+Z} \right) \right)\right)\right) \\
 	&\text{mit:}\ \ \rho = \left(\frac{2\pi}{R\lambda} \right)^\frac{1}{2} \ \ \text{und} \ \ Z = \frac{2z}{R}
 \end{align*}
-gegeben. Darin steht $L_p^q(u)$ für das Laguerre-Polynom.\\
+gegeben. Darin steht $L_p^q(u)$ für das Laguerre-Polynom. \\
 Allerdings lässt sich die Intensität der TEM$_{00}$ Grundmode über
 \begin{align}
 	I(r) = I_0\,\exp \left(\frac{-2\,r^2}{w^2} \right)
 \end{align}
-berechnen.
+berechnen. \\
+Die \textbf{Polarisation} tritt nur bei Transversallwellen auf und beschreibt die Richtung der Schwingung. Dabei steht der Wellenvektor senkrecht auf der Ausbreitungsrichtung. Wenn sich der Wellenvektor nur in Ausbreitungsrichtung verschiebt, spricht man von einer linearen Polarisation. Von zirkularer Polarisation spricht man wenn sich der Wellenvektor mit gleich bleibender Geschwindigkeit und konstantem Betrag um eine Achse dreht. In einem Laser wird die Polarisation durch optische Bauteile erreicht, zum Beispiel Brewster-Fenster. \\
+Für die \textbf{Beugung von Laserstrahlen} gilt unter der Annahme, dass der Abstand $L$ zwischen dem Beugungsgitter und dem Schirm viel Größer ist als der Abstand $a$ zwischen den Beugungsmaxima ($L >> a$), die Fraunhofer Näherung. Mit Hilfe der Abbildung \eqref{fig:BeugungAmSpalt} kann die Wellenlänge $\lambda$ zu
+\begin{align}
+	\lambda = s\cdot\sin\varphi
+\end{align}
+bestimmt werden, wobei $s = \frac{1}{g}$ der Gitterkonstanten enspricht und $\varphi$ der Beugungswinkel ist. Wenn jetzt noch die Einschränkung getroffen wird, dass nur kleine Beugungswinkel betrachtet werden kann
+\begin{align}
+	\sin\varphi \approx \tan\varphi = \frac{a}{L}
+\end{align}
+genähert werden. Damit kann die Wellenlänge eines Lasers über
+\begin{align}
+	\lambda \approx \frac{a}{L\,g}
+\end{align}
+bestimmt werden.
 
-
-\subsection{Aufbau eines He-Ne-Lasers}
-Ein He-Ne-Laser ist im allgemeinen aus einem Lasermedium, einer Pumpenquelle und einem Resonator aufgebaut. \\
-\textbf{Lasermedium:}
-Das Lasermedium bestimmt das Strahlungsspektrum
+\begin{figure}[H]
+	\includegraphics{BeugungAmSpalt.PNG}
+	\caption{Schematische Darstellung der Fraunhofer Näherung am Mehrfachspalt. \cite{V406}}
+	\label{fig:BeugungAmSpalt}
+\end{figure}
 
 
 
