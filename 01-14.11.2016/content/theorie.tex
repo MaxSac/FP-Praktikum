@@ -3,7 +3,7 @@ Ziel des Versuches ist es die Funktionsweise eines He-Ne-Lasers zu verstehen und
 
 
 \section{Theoretische Grundlage}
-\subsection{Aufbau eines He-Ne-Lasers}
+\subsection{Aufbau eines Gaslasers}
 Im folgenden wird kurz der Aufbau und die Funktionsweise eines Lasers (\textbf{L}ight \textbf{A}mplification by \textbf{S}timulated \textbf{E}mission of \textbf{R}adiation) erklärt, mit besonderem Augenmerk auf die Gaslaser (He-Ne-Laser). \\
 Das \textbf{aktive Lasermedium} des Lasers bestimmt das Strahlungsspektrum. Dafür muss das Lasermedium so manipuliert werden, dass das Strahlungsfeld der einfallenden Strahlung mit dem Gasgemisch wechselwirkt und die Strahlung verstärkt wird. Damit das passiert muss mehr induzierte Emission auftreten als spontane Emission. \\
 Nach der Boltzmann-Verteilung ist der Grundzustand, in einem Gas, im thermischen Gleichgewicht stärker besetzt als die angeregten Zustände. Also ist die Besetzungszahl $n_1$ für den Grundzustand größer als die Besetzungszahl $n_2$ für den ersten angeregten Zustand. Vereinfachend kann ein zwei Niveau-System angenommen werden, dann können die Ratengleichungen für die Besetzungszahlen wie folgt formuliert werden:
@@ -22,13 +22,22 @@ Dieser Vorgang wird als \textbf{Pumpen} bezeichnet. Bei einem He-Ne-Laser werden
 	\label{fig:Emission}
 \end{figure}
 
-Das Licht welches in dem Lasermedium emittiert wird, wird nun durch zwei gegenüberstehende Spiegel (siehe Abbildung \eqref{fig:Laser}), dem Resonator, hin- und hergeworfen und dadurch verstärkt.
+Diese Photonen regen nun die induzierte Emission an, damit dieser Vorgang so oft wie möglich stattfindet wird der \textbf{Resonator} verwendet. Der Resonator besteht aus zwei gegenüberstehenden Spiegeln und in der Mitte ist das Lasermedium in einer Laserröhre (siehe Abbildung \eqref{fig:Laser}). Der Resonator sorgt dafür, dass das Licht so oft wie möglich durch das Lasermedium läuft und dadurch verstärkt wird (die Verstärkung wächst exponentiell mit der Lauflänge im Lasermedium). Die Stabilität des Resonators ist über die Spiegelparameter $g_\text{i}$ definiert und folgt der Bedingung:
+\begin{align}
+	0 \le g_1 \cdot g_2 \le 1 \ .
+\end{align}
+Die Spiegelparameter sind über
+\begin{align}
+	g_\text{i} = 1 - \frac{L}{r_\text{i}}
+\end{align}
+gegeben, wobei $L$ der Abstand zwischen den Spiegeln ist und $r_\text{i}$ der Spiegelradius ist.
 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{Resonator.png}
 	\caption{Schematische Darstellung eines offenen Lasers. \cite{V61}}
 	\label{fig:Laser}
 \end{figure}
+
 
 \subsection{Eigenschaften eines Lasers}
 Licht wird als Laser bezeichnet wenn es drei wichtige Eigenschaften hat. Es muss monochromatisch sein und eine hohe Intensität und Kohärenz haben. Desweiteren spielt die Polarisation des Lasers eine Rolle. Auf diese Eigenschaft des Lasers wird im folgenden genauer eingegangen. \\
