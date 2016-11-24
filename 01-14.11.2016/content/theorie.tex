@@ -7,16 +7,31 @@ Ziel des Versuches ist es die Funktionsweise eines He-Ne-Lasers zu verstehen und
 Im folgenden wird kurz der Aufbau und die Funktionsweise eines Lasers (\textbf{L}ight \textbf{A}mplification by \textbf{S}timulated \textbf{E}mission of \textbf{R}adiation) erklärt, mit besonderem Augenmerk auf die Gaslaser (He-Ne-Laser). \\
 Das \textbf{aktive Lasermedium} des Lasers bestimmt das Strahlungsspektrum. Dafür muss das Lasermedium so manipuliert werden, dass das Strahlungsfeld der einfallenden Strahlung mit dem Gasgemisch wechselwirkt und die Strahlung verstärkt wird. Damit das passiert muss mehr induzierte Emission auftreten als spontane Emission. \\
 Nach der Boltzmann-Verteilung ist der Grundzustand, in einem Gas, im thermischen Gleichgewicht stärker besetzt als die angeregten Zustände. Also ist die Besetzungszahl $n_1$ für den Grundzustand größer als die Besetzungszahl $n_2$ für den ersten angeregten Zustand. Vereinfachend kann ein zwei Niveau-System angenommen werden, dann können die Ratengleichungen für die Besetzungszahlen wie folgt formuliert werden:
+
 \begin{align}
 	\frac{d\,n_1}{d\,t} = - &\underbrace{n_1\,B_{12}\,\rho}_{\dot{N}_\text{A}} + \underbrace{n_2\,B_{21}\,\rho}_{\dot{N}_\text{IE}} + \underbrace{n_2\,A_{21}}_{\dot{N}_\text{E}}\ \ \text{und}\\
 	\frac{d\,n_2}{d\,t} = \ \ \ &\overbrace{n_1\,B_{12}\,\rho}_{} - \overbrace{n_2\,B_{21}\,\rho}_{} - \overbrace{n_2\,A_{21}}_{}
 \end{align}
-$\dot{N}_\text{A}$ ist der Niveauübergang für die Absorbtion, $\dot{N}_\text{IE}$ für die induzierte Emission und $\dot{N}_\text{E}$ für die spntane Emission. Die Einsteinkoeffizienten $A_{21}$, $B_{12}$ und $B_{21}$ sind Konstanten und geben die Übergangswahrscheinlichkeit von dem Grundzustand in den ersten angeregten Zustand an und $\rho$ ist die Energiedichte des Strahlungsfeldes. Damit nun mehr induzierte Emission auftritt als die spontane Emission muss eine Besetzungsinversion erschaffen werden, also müssen mehr Atome im höher energetischen Zustand sein als im Grundzustand. Dies wird über eine permanente Zufuhr von elektrischer Energie in das Lasermedium erzeugt. \\
-Dieser Vorgang wird als \textbf{Pumpen} bezeichnet. Bei einem He-Ne-Laser werden zunächst die Helium-Atome mittels elektrischer Entladung angeregt. Dann Stoßen die angeregten Helium-Atome mit den Neon-Atomen, wodurch Energie auf die Neon-Atome übertragen wird und diese danach überwiegend das 3s-Orbital besetzen. Bei dem Übergang von dem 3s-Orbital in das 2p-Orbital (Grundzustand) wird ein Photon mit der charakteristischen Wellenlänge $\lambda = 632,8$nm emittiert
 
+$\dot{N}_\text{A}$ ist der Niveauübergang für die Absorbtion, $\dot{N}_\text{IE}$ für die induzierte Emission und $\dot{N}_\text{E}$ für die spontane Emission (siehe Abbildung \eqref{fig:Emission}). Die Einsteinkoeffizienten $A_{21}$, $B_{12}$ und $B_{21}$ sind Konstanten und geben die Übergangswahrscheinlichkeit von dem Grundzustand in den ersten angeregten Zustand an und $\rho$ ist die Energiedichte des Strahlungsfeldes. Damit nun mehr induzierte Emission auftritt als die spontane Emission muss eine Besetzungsinversion erschaffen werden, also müssen mehr Atome im höher energetischen Zustand sein als im Grundzustand. Dies wird über eine permanente Zufuhr von elektrischer Energie in das Lasermedium erzeugt. \\
+Dieser Vorgang wird als \textbf{Pumpen} bezeichnet. Bei einem He-Ne-Laser werden zunächst die Helium-Atome mittels elektrischer Entladung angeregt. Dann Stoßen die angeregten Helium-Atome mit den Neon-Atomen, wodurch Energie auf die Neon-Atome übertragen wird und diese danach überwiegend das 3s-Orbital besetzen. Bei dem Übergang von dem 3s-Orbital in das 2p-Orbital (Grundzustand) wird ein Photon mit der charakteristischen Wellenlänge $\lambda = 632,8$nm emittiert.
+
+\begin{figure}[H]
+	\includegraphics[width=\linewidth]{Emission.PNG}
+	\caption{Schematische Darstellung der drei möglichen Niveauübergänge. \cite{V61}}
+	\label{fig:Emission}
+\end{figure}
+
+Das Licht welches in dem Lasermedium emittiert wird, wird nun durch zwei gegenüberstehende Spiegel (siehe Abbildung \eqref{fig:Laser}), dem Resonator, hin- und hergeworfen und dadurch verstärkt.
+
+\begin{figure}[H]
+	\includegraphics[width=\linewidth]{Resonator.png}
+	\caption{Schematische Darstellung eines offenen Lasers. \cite{V61}}
+	\label{fig:Laser}
+\end{figure}
 
 \subsection{Eigenschaften eines Lasers}
-Licht wird als Laser bezeichnet wenn es drei wichtige Eigenschaften hat. Es muss monochromatisch sein und eine hohe Intensität und Kohärenz haben. Desweiteren spielt die Polarisation des Lasers eine Rolle. Auf diese Eigenschaft des Lasers wird im folgenden geneauer eingegangen. \\
+Licht wird als Laser bezeichnet wenn es drei wichtige Eigenschaften hat. Es muss monochromatisch sein und eine hohe Intensität und Kohärenz haben. Desweiteren spielt die Polarisation des Lasers eine Rolle. Auf diese Eigenschaft des Lasers wird im folgenden genauer eingegangen. \\
 \textbf{Kohärenz} liegt vor wenn die Phasenverschiebung der Wellenzüge an einem festen Ort zeitlich konstant ist oder wenn sich die Phase gesetzmäßig mit der Zeit ändert.
 Das bedeutet, dass die Kohärenz ein Maß für die Interferenzfähigkeit zweier Wellen ist. \\
 Die \textbf{Intensität} $I_\text{lpq}$ beschreibt die Leistung pro Fläche welche von dem Laser ausgestrahlt wird und ist proportional zu dem Betragsquadrat der Feldverteilung $E_\text{lpq}$.
@@ -24,11 +39,13 @@ Die \textbf{Intensität} $I_\text{lpq}$ beschreibt die Leistung pro Fläche welc
 	I_\text{lpq} \propto |E_\text{lpq}|^2 \ .
 \end{align*}
 Die Indizes $l$, $p$ und $q$ geben die Anzahl der Knotenpunkte an, welche sich in dem Resonator ausbilden. Um genaueres über die Intensität sagen zu können muss zunächst die Feldverteilung näher betrachtet werden. Für einen konfokalen Resonator mit runden Spiegeln ist die Feldverteilung durch
+
 \begin{align*}
 	E_\text{lpq} \propto &\frac{\cos(l\varphi)\,(2\rho)^2}{(1+Z^2)^\frac{1+l}{2}}\, L_p^q\left(\frac{(2\rho)^2}{1+Z^2}\right)\,\exp \left(-\frac{\rho^2}{1+Z^2} \right) \\
 	&\exp \left(-i\left(\frac{R\pi(1+Z)}{\lambda}+ \frac{\rho^2Z}{1+Z^2}- (l+2p+1)\left(\frac{\pi}{2}-\arctan \left(\frac{1-Z}{1+Z} \right) \right)\right)\right) \\
 	&\text{mit:}\ \ \rho = \left(\frac{2\pi}{R\lambda} \right)^\frac{1}{2} \ \ \text{und} \ \ Z = \frac{2z}{R}
 \end{align*}
+
 gegeben. Darin steht $L_p^q(u)$ für das Laguerre-Polynom. \\
 Allerdings lässt sich die Intensität der TEM$_{00}$ Grundmode über
 \begin{align}
@@ -51,11 +68,10 @@ genähert werden. Damit kann die Wellenlänge eines Lasers über
 bestimmt werden.
 
 \begin{figure}[H]
-	\includegraphics{BeugungAmSpalt.PNG}
+	\includegraphics[width=\linewidth]{BeugungAmSpalt.PNG}
 	\caption{Schematische Darstellung der Fraunhofer Näherung am Mehrfachspalt. \cite{V406}}
 	\label{fig:BeugungAmSpalt}
 \end{figure}
-
 
 
 \subsection{Fehlerrechnung}
