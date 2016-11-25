@@ -13,7 +13,7 @@ Nach der Boltzmann-Verteilung ist der Grundzustand, in einem Gas, im thermischen
 	\frac{d\,n_2}{d\,t} = \ \ \ &\overbrace{n_1\,B_{12}\,\rho}_{} - \overbrace{n_2\,B_{21}\,\rho}_{} - \overbrace{n_2\,A_{21}}_{}
 \end{align}
 
-$\dot{N}_\text{A}$ ist der Niveauübergang für die Absorbtion, $\dot{N}_\text{IE}$ für die induzierte Emission und $\dot{N}_\text{E}$ für die spontane Emission (siehe Abbildung \eqref{fig:Emission}). Die Einsteinkoeffizienten $A_{21}$, $B_{12}$ und $B_{21}$ sind Konstanten und geben die Übergangswahrscheinlichkeit von dem Grundzustand in den ersten angeregten Zustand an und $\rho$ ist die Energiedichte des Strahlungsfeldes. Damit nun mehr induzierte Emission auftritt als die spontane Emission muss eine Besetzungsinversion erschaffen werden, also müssen mehr Atome im höher energetischen Zustand sein als im Grundzustand. Dies wird über eine permanente Zufuhr von elektrischer Energie in das Lasermedium erzeugt. \\
+Wobei $\dot{N}_\text{A}$ der Niveauübergang für die Absorbtion, $\dot{N}_\text{IE}$ für die induzierte Emission und $\dot{N}_\text{E}$ für die spontane Emission (siehe Abbildung \eqref{fig:Emission}) ist. Die Einsteinkoeffizienten $A_{21}$, $B_{12}$ und $B_{21}$ sind Konstanten und geben die Übergangswahrscheinlichkeit von dem Grundzustand in den ersten angeregten Zustand an und $\rho$ ist die Energiedichte des Strahlungsfeldes. Damit mehr induzierte Emission auftritt als die spontane Emission muss eine Besetzungsinversion erschaffen werden. Es müssen also mehr Atome im höher energetischen Zustand sein als im Grundzustand. Dies wird über eine permanente Zufuhr von elektrischer Energie in das Lasermedium erzeugt. \\
 Dieser Vorgang wird als \textbf{Pumpen} bezeichnet. Bei einem He-Ne-Laser werden zunächst die Helium-Atome mittels elektrischer Entladung angeregt. Dann Stoßen die angeregten Helium-Atome mit den Neon-Atomen, wodurch Energie auf die Neon-Atome übertragen wird und diese danach überwiegend das 3s-Orbital besetzen. Bei dem Übergang von dem 3s-Orbital in das 2p-Orbital (Grundzustand) wird ein Photon mit der charakteristischen Wellenlänge $\lambda = 632,8$nm emittiert.
 
 \begin{figure}[H]
@@ -38,6 +38,8 @@ gegeben, wobei $L$ der Abstand zwischen den Spiegeln ist und $r_\text{i}$ der Sp
 	\label{fig:Laser}
 \end{figure}
 
+Da $L >> \lambda$ gilt, erfüllen viele Frequenzen die Resonanzbedingung einer stehenden Welle in dem Resonator. Das heißt es bilden sich longitudinale Wellen mit der Knotenzahl $q$ aus. Desweiteren kommen transversale Schwingungen hinzu, mit den Knotenzahlen $p$ und $l$, welche durch Unebenheiten, Verkippungen und kleinen Fehlern in den Spiegeln entstehen. Die skalare Feldverteilung wird durch die transversalen Schwingungen dominiert. \\
+Die Eigenschwingungen des Resonators werden als TEM$_{lqp}$-Moden bezeichnet. TEM steht dabei für transversale elektromagnetische Mode. Demnach ist die TEM$_{00}$ die Mode mit der höchsten Symmetrie und den niedrigsten Verlusten. 
 
 \subsection{Eigenschaften eines Lasers}
 Licht wird als Laser bezeichnet wenn es drei wichtige Eigenschaften hat. Es muss monochromatisch sein und eine hohe Intensität und Kohärenz haben. Desweiteren spielt die Polarisation des Lasers eine Rolle. Auf diese Eigenschaft des Lasers wird im folgenden genauer eingegangen. \\
@@ -56,11 +58,11 @@ Die Indizes $l$, $p$ und $q$ geben die Anzahl der Knotenpunkte an, welche sich i
 \end{align*}
 
 gegeben. Darin steht $L_p^q(u)$ für das Laguerre-Polynom. \\
-Allerdings lässt sich die Intensität der TEM$_{00}$ Grundmode über
+Allerdings lässt sich die Intensität der TEM$_{00}$ Grundmode zu
 \begin{align}
 	I(r) = I_0\,\exp \left(\frac{-2\,r^2}{w^2} \right)
 \end{align}
-berechnen. \\
+vereinfachen. \\
 Die \textbf{Polarisation} tritt nur bei Transversallwellen auf und beschreibt die Richtung der Schwingung. Dabei steht der Wellenvektor senkrecht auf der Ausbreitungsrichtung. Wenn sich der Wellenvektor nur in Ausbreitungsrichtung verschiebt, spricht man von einer linearen Polarisation. Von zirkularer Polarisation spricht man wenn sich der Wellenvektor mit gleich bleibender Geschwindigkeit und konstantem Betrag um eine Achse dreht. In einem Laser wird die Polarisation durch optische Bauteile erreicht, zum Beispiel Brewster-Fenster. \\
 Für die \textbf{Beugung von Laserstrahlen} gilt unter der Annahme, dass der Abstand $L$ zwischen dem Beugungsgitter und dem Schirm viel Größer ist als der Abstand $a$ zwischen den Beugungsmaxima ($L >> a$), die Fraunhofer Näherung. Mit Hilfe der Abbildung \eqref{fig:BeugungAmSpalt} kann die Wellenlänge $\lambda$ zu
 \begin{align}
