@@ -17,7 +17,7 @@ Wobei $\dot{N}_\text{A}$ der Niveauübergang für die Absorbtion, $\dot{N}_\text
 Dieser Vorgang wird als \textbf{Pumpen} bezeichnet. Bei einem He-Ne-Laser werden zunächst die Helium-Atome mittels elektrischer Entladung angeregt. Dann Stoßen die angeregten Helium-Atome mit den Neon-Atomen, wodurch Energie auf die Neon-Atome übertragen wird und diese danach überwiegend das 3s-Orbital besetzen. Bei dem Übergang von dem 3s-Orbital in das 2p-Orbital (Grundzustand) wird ein Photon mit der charakteristischen Wellenlänge $\lambda = 632,8$nm emittiert.
 
 \begin{figure}[H]
-	\includegraphics[width=\linewidth]{Emission.PNG}
+	\includegraphics[width=\linewidth]{Bilder/Emission.PNG}
 	\caption{Schematische Darstellung der drei möglichen Niveauübergänge. \cite{V61}}
 	\label{fig:Emission}
 \end{figure}
@@ -25,6 +25,7 @@ Dieser Vorgang wird als \textbf{Pumpen} bezeichnet. Bei einem He-Ne-Laser werden
 Diese Photonen regen nun die induzierte Emission an, damit dieser Vorgang so oft wie möglich stattfindet wird der \textbf{Resonator} verwendet. Der Resonator besteht aus zwei gegenüberstehenden Spiegeln und in der Mitte ist das Lasermedium in einer Laserröhre (siehe Abbildung \eqref{fig:Laser}). Der Resonator sorgt dafür, dass das Licht so oft wie möglich durch das Lasermedium läuft und dadurch verstärkt wird (die Verstärkung wächst exponentiell mit der Lauflänge im Lasermedium). Die Stabilität des Resonators ist über die Spiegelparameter $g_\text{i}$ definiert und folgt der Bedingung:
 \begin{align}
 	0 \le g_1 \cdot g_2 \le 1 \ .
+	\label{eqn:Stab}
 \end{align}
 Die Spiegelparameter sind über
 \begin{align}
@@ -33,13 +34,13 @@ Die Spiegelparameter sind über
 gegeben, wobei $L$ der Abstand zwischen den Spiegeln ist und $r_\text{i}$ der Spiegelradius ist.
 
 \begin{figure}[H]
-	\includegraphics[width=\linewidth]{Resonator.png}
+	\includegraphics[width=\linewidth]{Bilder/Resonator.png}
 	\caption{Schematische Darstellung eines offenen Lasers. \cite{V61}}
 	\label{fig:Laser}
 \end{figure}
 
 Da $L >> \lambda$ gilt, erfüllen viele Frequenzen die Resonanzbedingung einer stehenden Welle in dem Resonator. Das heißt es bilden sich longitudinale Wellen mit der Knotenzahl $q$ aus. Desweiteren kommen transversale Schwingungen hinzu, mit den Knotenzahlen $p$ und $l$, welche durch Unebenheiten, Verkippungen und kleinen Fehlern in den Spiegeln entstehen. Die skalare Feldverteilung wird durch die transversalen Schwingungen dominiert. \\
-Die Eigenschwingungen des Resonators werden als TEM$_{lqp}$-Moden bezeichnet. TEM steht dabei für transversale elektromagnetische Mode. Demnach ist die TEM$_{00}$ die Mode mit der höchsten Symmetrie und den niedrigsten Verlusten. 
+Die Eigenschwingungen des Resonators werden als TEM$_{lqp}$-Moden bezeichnet. TEM steht dabei für transversale elektromagnetische Mode. Demnach ist die TEM$_{00}$ die Mode mit der höchsten Symmetrie und den niedrigsten Verlusten.
 
 \subsection{Eigenschaften eines Lasers}
 Licht wird als Laser bezeichnet wenn es drei wichtige Eigenschaften hat. Es muss monochromatisch sein und eine hohe Intensität und Kohärenz haben. Desweiteren spielt die Polarisation des Lasers eine Rolle. Auf diese Eigenschaft des Lasers wird im folgenden genauer eingegangen. \\
@@ -79,7 +80,7 @@ genähert werden. Damit kann die Wellenlänge eines Lasers über
 bestimmt werden.
 
 \begin{figure}[H]
-	\includegraphics[width=\linewidth]{BeugungAmSpalt.PNG}
+	\includegraphics[width=\linewidth]{Bilder/BeugungAmSpalt.PNG}
 	\caption{Schematische Darstellung der Fraunhofer Näherung am Mehrfachspalt. \cite{V406}}
 	\label{fig:BeugungAmSpalt}
 \end{figure}
