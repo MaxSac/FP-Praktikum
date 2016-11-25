@@ -57,20 +57,25 @@ plt.close()
 A, TEM00, TEM10 = np.loadtxt('TEM-Moden.txt', unpack=True)
 
 def gausian(x, a, v, my):
-    return a*np.exp(-(x+my)**2/(v**2))
+    return a*np.exp(-2*(x+my)**2/(v**2))
 params, cov = curve_fit(gausian, A, TEM00, bounds=([3,5,-20],[6,10,-10]))
 errors= np.sqrt(np.diag(cov))
 print('Parameter des Gaußfits a', params[0], errors[0], 'v ', params[1],
         errors[1], 'my ', params[2], errors[2])
 
 def gausian2( x, a, v, my):
-    return a*8*(x-my)**2/v**2*np.exp(-0.5*(x-my)**2/v**2)
+    return a*8*(x-my)**2/v**2*np.exp(-2*(x-my)**2/v**2)
 params2, cov2 = curve_fit(gausian2, A, TEM10,bounds=([0,0,12],[1,10,20])) 
+errors2= np.sqrt(np.diag(cov2))
+print('Parameter2 des Gaußfits a', params2[0], errors2[0], 'v ', params2[1],
+        errors2[1], 'my ', params2[2], errors2[2])
 
 x = np.linspace(0,max(A+1),100)
 plt.plot(x, gausian(x, *params), label='Fit')
 plt.plot(A, TEM00, 'x', label='Messwerte')
 plt.xlim(xmin=0, xmax=max(A+1))
+plt.xlabel('Abstand / mm')
+plt.ylabel(r'$TEM_{00}$ I / µA')
 plt.legend(loc='best')
 plt.savefig('build/TEM00.pdf')
 plt.close()
@@ -78,6 +83,8 @@ plt.close()
 plt.plot(x, gausian2(x, *params2),label='Fit')
 plt.plot(A, TEM10, 'x', label='Messwerte')
 plt.xlim(xmin=0, xmax=max(A+1))
+plt.xlabel('Auslenkung / mm')
+plt.ylabel('Intensität / µA' )
 plt.legend(loc='best')
 plt.savefig('build/TEM10.pdf')
 plt.close()
