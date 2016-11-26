@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.stats import sem
 from scipy.optimize import curve_fit
 from scipy.signal import find_peaks_cwt
 from uncertainties import ufloat
@@ -88,3 +89,11 @@ plt.ylabel('Intensität / µA' )
 plt.legend(loc='best')
 plt.savefig('build/TEM10.pdf')
 plt.close()
+
+#Bestimmung der Gitterkonstanten in Abhängigkeit der Wellenlänge
+
+def wl(a):
+    return a/(10**(5)*1.741)
+abstand = np.array([0.112,0.113,0.118,0.110,0.112,0.116])
+Wl = np.array([np.mean(wl(abstand)), sem(wl(abstand))])
+print('Berechnete Wellenlänge des HeNe Lasers: ',Wl)
