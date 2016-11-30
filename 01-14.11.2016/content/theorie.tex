@@ -1,20 +1,20 @@
 \section{Ziel des Versuches}
-Ziel des Versuches ist es die Funktionsweise eines He-Ne-Lasers zu verstehen und den Umgang mit diesem zu üben. Dafür soll die Wellenlänge des Lasers und die maximale Resonatorlänge gefunden werden. Außerdem soll die Intensität von zwei TEM-Moden und der Polarisation ausgemessen werden.
+Ziel des Versuches ist es die Funktionsweise eines He-Ne-Lasers zu verstehen und den Umgang mit diesem zu üben. Dafür soll die Wellenlänge des Lasers und die maximale Resonatorlänge gefunden werden. Außerdem soll die Intensität von zwei TEM-Moden und in Abhängigkeit der Polarisation ausgemessen werden.
 
 
 \section{Theoretische Grundlage}
 \subsection{Aufbau eines Gaslasers}
 Im folgenden wird kurz der Aufbau und die Funktionsweise eines Lasers (\textbf{L}ight \textbf{A}mplification by \textbf{S}timulated \textbf{E}mission of \textbf{R}adiation) erklärt, mit besonderem Augenmerk auf die Gaslaser (He-Ne-Laser). \\
 Das \textbf{aktive Lasermedium} des Lasers bestimmt das Strahlungsspektrum. Dafür muss das Lasermedium so manipuliert werden, dass das Strahlungsfeld der einfallenden Strahlung mit dem Gasgemisch wechselwirkt und die Strahlung verstärkt wird. Damit das passiert muss mehr induzierte Emission auftreten als spontane Emission. \\
-Nach der Boltzmann-Verteilung ist der Grundzustand, in einem Gas, im thermischen Gleichgewicht stärker besetzt als die angeregten Zustände. Also ist die Besetzungszahl $n_1$ für den Grundzustand größer als die Besetzungszahl $n_2$ für den ersten angeregten Zustand. Vereinfachend kann ein zwei Niveau-System angenommen werden, dann können die Ratengleichungen für die Besetzungszahlen wie folgt formuliert werden:
+Nach der Boltzmann-Verteilung ist der Grundzustand, in einem Gas, im thermischen Gleichgewicht stärker besetzt als die angeregten Zustände. Vereinfachend kann ein zwei Niveau-System angenommen werden, die Besetzungszahl $n_1$ für den Grundzustand ist größer als die Besetzungszahl $n_2$ für den ersten angeregten Zustand. Damit können die Ratengleichungen für die Besetzungszahlen wie folgt formuliert werden:
 
 \begin{align}
 	\frac{d\,n_1}{d\,t} = - &\underbrace{n_1\,B_{12}\,\rho}_{\dot{N}_\text{A}} + \underbrace{n_2\,B_{21}\,\rho}_{\dot{N}_\text{IE}} + \underbrace{n_2\,A_{21}}_{\dot{N}_\text{E}}\ \ \text{und}\\
 	\frac{d\,n_2}{d\,t} = \ \ \ &\overbrace{n_1\,B_{12}\,\rho}_{} - \overbrace{n_2\,B_{21}\,\rho}_{} - \overbrace{n_2\,A_{21}}_{}
 \end{align}
 
-Wobei $\dot{N}_\text{A}$ der Niveauübergang für die Absorbtion, $\dot{N}_\text{IE}$ für die induzierte Emission und $\dot{N}_\text{E}$ für die spontane Emission (siehe Abbildung \eqref{fig:Emission}) ist. Die Einsteinkoeffizienten $A_{21}$, $B_{12}$ und $B_{21}$ sind Konstanten und geben die Übergangswahrscheinlichkeit von dem Grundzustand in den ersten angeregten Zustand an und $\rho$ ist die Energiedichte des Strahlungsfeldes. Damit mehr induzierte Emission auftritt als die spontane Emission muss eine Besetzungsinversion erschaffen werden. Es müssen also mehr Atome im höher energetischen Zustand sein als im Grundzustand. Dies wird über eine permanente Zufuhr von elektrischer Energie in das Lasermedium erzeugt. \\
-Dieser Vorgang wird als \textbf{Pumpen} bezeichnet. Bei einem He-Ne-Laser werden zunächst die Helium-Atome mittels elektrischer Entladung angeregt. Dann Stoßen die angeregten Helium-Atome mit den Neon-Atomen, wodurch Energie auf die Neon-Atome übertragen wird und diese danach überwiegend das 3s-Orbital besetzen. Bei dem Übergang von dem 3s-Orbital in das 2p-Orbital (Grundzustand) wird ein Photon mit der charakteristischen Wellenlänge $\lambda = 632,8$nm emittiert.
+Wobei $\dot{N}_\text{A}$ die Anzahl der Niveauübergänge für die Absorbtion, $\dot{N}_\text{IE}$ für die induzierte Emission und $\dot{N}_\text{E}$ für die spontane Emission (siehe Abbildung \eqref{fig:Emission}) ist. Die Einsteinkoeffizienten $A_{21}$, $B_{12}$ und $B_{21}$ sind Konstanten und geben die Übergangswahrscheinlichkeit von dem Grundzustand in den ersten angeregten Zustand an und $\rho$ ist die Energiedichte des Strahlungsfeldes. Damit mehr induzierte Emission als spontane Emission auftritt, muss eine Besetzungsinversion erschaffen werden. Es müssen also mehr Atome im höher energetischen Zustand sein als im Grundzustand. Dies wird über eine permanente Zufuhr von elektrischer Energie in das Lasermedium erzeugt. \\
+Dieser Vorgang wird als \textbf{Pumpen} bezeichnet. Bei einem He-Ne-Laser werden zunächst die Helium-Atome mittels elektrischer Entladung angeregt. Die angeregten Helium-Atome stoßen mit den Neon-Atomen, wodurch Energie auf die Neon-Atome übertragen wird und diese danach überwiegend das 3s-Orbital besetzen. Bei dem Übergang von dem 3s-Orbital in das 2p-Orbital (Grundzustand) wird ein Photon mit der charakteristischen Wellenlänge $\lambda = 632,8$ nm emittiert.
 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{Bilder/Emission.PNG}
@@ -22,16 +22,17 @@ Dieser Vorgang wird als \textbf{Pumpen} bezeichnet. Bei einem He-Ne-Laser werden
 	\label{fig:Emission}
 \end{figure}
 
-Diese Photonen regen nun die induzierte Emission an, damit dieser Vorgang so oft wie möglich stattfindet wird der \textbf{Resonator} verwendet. Der Resonator besteht aus zwei gegenüberstehenden Spiegeln und in der Mitte ist das Lasermedium in einer Laserröhre (siehe Abbildung \eqref{fig:Laser}). Der Resonator sorgt dafür, dass das Licht so oft wie möglich durch das Lasermedium läuft und dadurch verstärkt wird (die Verstärkung wächst exponentiell mit der Lauflänge im Lasermedium). Die Stabilität des Resonators ist über die Spiegelparameter $g_\text{i}$ definiert und folgt der Bedingung:
+INDUZIERTE/SPONTANE EMISSION erklären
+Diese Photonen regen nun die induzierte Emission an, damit dieser Vorgang so oft wie möglich stattfindet wird der \textbf{Resonator} verwendet. Der Resonator besteht aus zwei gegenüberstehenden Spiegeln und in der Mitte ist das Lasermedium in einer Laserröhre (siehe Abbildung \eqref{fig:Laser}). Der Resonator verlängert den Weg des Lichts im Lasermedium und verstärkt die Intensität des Lasers. Der Laser läuft stabil, falls die Spiegelparameter $g_\text{i}$ der Ungleichung folgen:
 \begin{align}
 	0 \le g_1 \cdot g_2 \le 1 \ .
 	\label{eqn:Stab}
 \end{align}
-Die Spiegelparameter sind über
+Die Spiegelparameter sind als
 \begin{align}
 	g_\text{i} = 1 - \frac{L}{r_\text{i}}
 \end{align}
-gegeben, wobei $L$ der Abstand zwischen den Spiegeln ist und $r_\text{i}$ der Spiegelradius ist.
+definiert, wobei $L$ der Abstand zwischen den Spiegeln ist und $r_\text{i}$ der Spiegelradius ist.
 
 \begin{figure}[H]
 	\includegraphics[width=\linewidth]{Bilder/Resonator.png}
@@ -39,18 +40,18 @@ gegeben, wobei $L$ der Abstand zwischen den Spiegeln ist und $r_\text{i}$ der Sp
 	\label{fig:Laser}
 \end{figure}
 
-Da $L >> \lambda$ gilt, erfüllen viele Frequenzen die Resonanzbedingung einer stehenden Welle in dem Resonator. Das heißt es bilden sich longitudinale Wellen mit der Knotenzahl $q$ aus. Desweiteren kommen transversale Schwingungen hinzu, mit den Knotenzahlen $p$ und $l$, welche durch Unebenheiten, Verkippungen und kleinen Fehlern in den Spiegeln entstehen. Die skalare Feldverteilung wird durch die transversalen Schwingungen dominiert. \\
+Da die Resonatorlänge viel größer als die Wellenlänge des Lasers ist ($L >> \lambda$), erfüllen viele Frequenzen die Resonanzbedingung einer stehenden Welle in dem Resonator, dabei bilden sich longitudinale Wellen mit der Knotenzahl $q$ aus. Desweiteren kommen transversale Schwingungen hinzu, mit den Knotenzahlen $p$ und $l$, welche durch Unebenheiten, Verkippungen und kleinen Fehlern in den Spiegeln entstehen. Die skalare Feldverteilung wird durch die transversalen Schwingungen dominiert. \\
 Die Eigenschwingungen des Resonators werden als TEM$_{lqp}$-Moden bezeichnet. TEM steht dabei für transversale elektromagnetische Mode. Demnach ist die TEM$_{00}$ die Mode mit der höchsten Symmetrie und den niedrigsten Verlusten.
 
 \subsection{Eigenschaften eines Lasers}
-Licht wird als Laser bezeichnet wenn es drei wichtige Eigenschaften hat. Es muss monochromatisch sein und eine hohe Intensität und Kohärenz haben. Desweiteren spielt die Polarisation des Lasers eine Rolle. Auf diese Eigenschaft des Lasers wird im folgenden genauer eingegangen. \\
+Licht wird als Laser bezeichnet wenn es drei wichtige Eigenschaften erfüllt. Es muss monochromatisch sein, sowie eine hohe Intensität und Kohärenz haben. Auf diese Eigenschaften des Lasers wird im folgenden genauer eingegangen. \\
 \textbf{Kohärenz} liegt vor wenn die Phasenverschiebung der Wellenzüge an einem festen Ort zeitlich konstant ist oder wenn sich die Phase gesetzmäßig mit der Zeit ändert.
 Das bedeutet, dass die Kohärenz ein Maß für die Interferenzfähigkeit zweier Wellen ist. \\
 Die \textbf{Intensität} $I_\text{lpq}$ beschreibt die Leistung pro Fläche welche von dem Laser ausgestrahlt wird und ist proportional zu dem Betragsquadrat der Feldverteilung $E_\text{lpq}$.
 \begin{align*}
 	I_\text{lpq} \propto |E_\text{lpq}|^2 \ .
 \end{align*}
-Die Indizes $l$, $p$ und $q$ geben die Anzahl der Knotenpunkte an, welche sich in dem Resonator ausbilden. Um genaueres über die Intensität sagen zu können muss zunächst die Feldverteilung näher betrachtet werden. Für einen konfokalen Resonator mit runden Spiegeln ist die Feldverteilung durch
+Um genaueres über die Intensität sagen zu können muss zunächst die Feldverteilung näher betrachtet werden. Für einen Resonator bei dem die Brennpunkte der beiden Spiegeln auf den selben Punkt fallen, ist die Feldverteilung durch
 
 \begin{align*}
 	E_\text{lpq} \propto &\frac{\cos(l\varphi)\,(2\rho)^2}{(1+Z^2)^\frac{1+l}{2}}\, L_p^q\left(\frac{(2\rho)^2}{1+Z^2}\right)\,\exp \left(-\frac{\rho^2}{1+Z^2} \right) \\
@@ -65,13 +66,13 @@ Allerdings lässt sich die Intensität der TEM$_{00}$ Grundmode zu
 	\label{eqn:Grund}
 \end{align}
 vereinfachen. \\
-Die \textbf{Polarisation} tritt nur bei Transversallwellen auf und beschreibt die Richtung der Schwingung. Dabei steht der Wellenvektor senkrecht auf der Ausbreitungsrichtung. Wenn sich der Wellenvektor nur in Ausbreitungsrichtung verschiebt, spricht man von einer linearen Polarisation. Von zirkularer Polarisation spricht man wenn sich der Wellenvektor mit gleich bleibender Geschwindigkeit und konstantem Betrag um eine Achse dreht. In einem Laser wird die Polarisation durch optische Bauteile erreicht, zum Beispiel Brewster-Fenster. \\
+Die \textbf{Polarisation} tritt nur bei Transversallwellen auf und beschreibt die Richtung der Schwingung. Dabei steht der Wellenvektor senkrecht auf der Ausbreitungsrichtung. Wenn sich der Wellenvektor nur in Ausbreitungsrichtung verschiebt, wird von einer linearen Polarisation gesprochen. Zirkular polarisiertist es, wenn sich der Wellenvektor mit gleich bleibender Geschwindigkeit und konstantem Betrag um die Achse in Ausbreitungsrichtung dreht. In einem Laser wird die Polarisation durch optische Bauteile erreicht, zum Beispiel Brewster-Fenster. \\
 Für die \textbf{Beugung von Laserstrahlen} gilt unter der Annahme, dass der Abstand $L$ zwischen dem Beugungsgitter und dem Schirm viel Größer ist als der Abstand $a$ zwischen den Beugungsmaxima ($L >> a$), die Fraunhofer Näherung. Mit Hilfe der Abbildung \eqref{fig:BeugungAmSpalt} kann die Wellenlänge $\lambda$ zu
 \begin{align}
 	\lambda = s\cdot\sin\varphi
 	\label{eqn:lambda}
 \end{align}
-bestimmt werden, wobei $s = \frac{1}{g}$ der Gitterkonstanten enspricht und $\varphi$ der Beugungswinkel ist. Wenn jetzt noch die Einschränkung getroffen wird, dass nur kleine Beugungswinkel betrachtet werden kann
+bestimmt werden, wobei $s = \frac{1}{g}$ der Gitterkonstanten enspricht und $\varphi$ der Beugungswinkel ist. Unter der Einschränkung dass nur kleine Beugungswinkel betrachtet werden, kann
 \begin{align}
 	\sin\varphi \approx \tan\varphi = \frac{a}{L}
 \end{align}
