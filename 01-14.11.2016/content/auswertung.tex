@@ -2,7 +2,7 @@
 \label{sec:Auswertung}
 
 \subsection{Stabilitätsbedingung}
-Gemäß Formel \ref{eqn:Stab} wird die Stabilitätsbedingung für die beiden getroffenen Spiegelkonstatlationen im folgenden Untersucht. In Abbildung \ref{fig:stabi} sind die Spiegelparameter in Abhängikeit der Krümmungsradien aufgetragen. 
+Gemäß Formel \ref{eqn:Stab} wird die Stabilitätsbedingung für die beiden getroffenen Spiegelkonstellationen im folgenden untersucht. In Abbildung \ref{fig:stabi} ist das Produkt der Spiegelparameter in Abhängikeit der Resonatorlänge aufgetragen. 
 \begin{figure}
   \centering
   \includegraphics[height=6cm]{Stabilisationsparameter.pdf} 
@@ -11,28 +11,28 @@ Gemäß Formel \ref{eqn:Stab} wird die Stabilitätsbedingung für die beiden get
 \end{figure}
 Aus dem Diagramm kann abgelesen werden, dass bei Verwendung zweier Spiegel mit einem Krümmungsradius von 
 \begin{equation}
-  r_1 = 1400 \text{m}
+  r_1 = 1400 \text{mm}
   \label{eqn:rad1}
 \end{equation}
-die Maximal zu erwartenden Reichweite
+die Maximal zu erwartende Reichweite
 \begin{equation}
   R_\text{1 max} = 2.8 \, \text{m}
   \label{eqn:rmax1}
 \end{equation}
-ist. In diesem Bereich läuft der Laser stabil und es kann ein Laserstrahl detektiert werden. Dies kann jedoch im Experiment nicht verifiziert werden, da die Schiene auf welche die Resonatorspiegel sitzen zu kurz ist. Bei der Verwedung von einem graden und einem Spiegel Krümmungsradiuses $r_1$ ergibt sich eine theoretische Reichweite von
+ist. In diesem Bereich läuft der Laser stabil und es kann ein Laserstrahl detektiert werden. Dies kann jedoch im Experiment nicht verifiziert werden, da die Schiene auf welchen die Resonatorspiegel sitzen zu kurz ist. Bei der Verwendung von einem geraden und einem Spiegel mit Krümmungsradius $r_1$ ergibt sich eine theoretische Reichweite von
 \begin{equation}
   R_\text{2 max} = 1.4 \, \text{m} \ .
   \label{eqn:rmax2}
 \end{equation}
-Diese Reichweite wird verifiziert indem die Intensität der gemessenen Laserstrahlung von 100 \mu A bei einem Resonatorabstand von 140 auf 2 \mu A abfällt und der Laserstahl für weitere Reichweiten nicht weiter zu detektieren ist.
+Diese Reichweite wird verifiziert indem die Intensität der gemessenen Laserstrahlung von 100 $\mu$ A bei einem Resonatorabstand von 140 auf 2 $\mu$ A abfällt und der Laserstahl für weitere Reichweiten nicht weiter zu detektieren ist.
 
 \subsection{TEM-Moden}
-Da die Intensität der Laserstrahlung selbst nicht gemessen werden kann wird stattdessen ein Photostrom einer Diode gemessen. Dieser ist proportional zur Intensität. Auf die Ströme welche in Tabelle \ref{tab:tem} aufgetragen sind, wird in der weiteren Auswertung noch eingegangenen.
+Da die Intensität der Laserstrahlung selbst nicht gemessen werden kann wird stattdessen ein Photostrom einer Diode gemessen. Dieser ist proportional zur Intensität. Auf die Ströme welche in Tabelle \ref{tab:tem} aufgetragen sind, wird in der Auswertung noch weiter eingegangenen.
 \begin{table}
   \centering
   \begin{tabular}{c|c c}
      \toprule
-     	Abstand / mm & TEM 00 I / µA & TEM 10 I / µA \\
+     Abstand / mm & TEM$_{00}$ I / µA & TEM$_{10}$ I / µA \\
      \midrule
      0		& 0.058		& 0.041	\\
      1		& 0.112		& 0.078	\\
@@ -73,24 +73,24 @@ Da die Intensität der Laserstrahlung selbst nicht gemessen werden kann wird sta
 \end{table}
 Im folgenden wird geprüft ob die Intensitäten entsprechend von den Hermitpolynomen bzw Laguerre-Polynomen abhängig sind.
 \subsubsection{TEM$_\text{00}$-Mode}
-Die niedrigste Mode, welche gleichzeitigt die höchste Intensität aufweist wird ohne eine Modenblede erzeugt. Die mittels Photodiode gemessenen Ströme der $TEM_{00}$ - Mode sind in Tabelle \ref{tab:tem} aufgeführt und in Abbildung \ref{fig:TEM00} abgebildet. Dabei wurde die Auslenkung der Diode gegen den Photostrom aufgetragen.
+Die niedrigste Mode, welche gleichzeitigt die höchste Intensität aufweist wird ohne eine Modenblede erzeugt. Die mittels Photodiode gemessenen Ströme der TEM$_{00}$ - Mode sind in Tabelle \ref{tab:tem} aufgeführt und in Abbildung \ref{fig:TEM00} abgebildet. Dabei wurde die Auslenkung der Diode gegen den Photostrom aufgetragen.
 \begin{figure}
   \centering
   \includegraphics[height=6cm]{TEM00.pdf}
   \caption{Diodenstrom der Erste Mode in Abhängigkeit der Auslenkung der Diode}
   \label{fig:TEM00}
 \end{figure}
-Anhand von diesem wird entsprechend der Formel \ref{eqn:Grund} ein Fit der Form 
+Anhand von diesen wird entsprechend der Formel \ref{eqn:Grund} ein Fit der Form 
 \begin{equation}
-  I_0 \cdot e^{- \frac{(x-\bar{x})^2}{\omega^2} }
+  I(x) = I_0 \cdot e^{- \frac{(x-\bar{x})^2}{\omega^2} }
   \label{eqn:gausian}
 \end{equation}
-wobei $I_0$ die Amplitude, $\bar{x}$ der Mittelwert und $\omega$ die die Standardabweichung der Gaußfunktion durch die Messwerte gelegt. Dabei ist explizit eingegangen, dass das Hermitpolynom 0 Ordnung 
+durch die Messwerte gelegt. Wobei $I_0$ der Amplitude, $\bar{x}$ dem Mittelwert und $\omega$ der Standardabweichung der Gaußfunktion entspricht. Dabei ist explizit eingegangen, dass das Hermitpolynom 0. Ordnung 
 \begin{equation}
   H_0 = 1
   \label{}
 \end{equation}
-ist. Der Fit dient zum Vergleich mit dem Theoriewert und der Überprüfung ob die Intensitäten von den Laguerre-Polynomen abhängig sind. Es ergeben sich Fitparameter von 
+ist. Der Fit dient zum Vergleich mit dem Theoriewert und der Überprüfung ob die Intensität von den Laguerre-Polynomen abhängig sind. Es ergeben sich Fitparameter von 
 \begin{eqnarray}
   a =& (\num{4.53 +- 0.08})	\\
   \bar{x} =& (\num{9.9 +- 0.2})	\\
@@ -112,7 +112,7 @@ Das zweite Hermitpolynom lautet
 \end{equation}
 Daraus ergibt sich der Fit der Form 
 \begin{equation}
-  I_0 \cdot 8 \frac{\left( x - \bar{x} \right)}{\omega^2} \cdot e^{-2 \frac{\left( x - \bar{x} \right)^2}{\omega^2}}
+  I(x) = I_0 \cdot 8 \frac{\left( x - \bar{x} \right)}{\omega^2} \cdot e^{-2 \frac{\left( x - \bar{x} \right)^2}{\omega^2}}
   \label{eqn:TEM10}
 \end{equation}
 welcher durch die Messwerte gelegt wird um, diese mit den Theoretischen Vorhersage zu vergleichen. Die Fitparameter sind
@@ -154,9 +154,9 @@ Die Intensität in Anhängigkeit der Ausrichtung des Polarisationsfilter ist in 
   \caption{Intensität in Abhängigkeit des Polarisationswinkel}
   \label{tab:Pol}
 \end{table}
-Dabei wird ein Fit der Form von Formel 
+Dabei wird ein Fit der Form 
 \begin{equation}
-  A_0 \cdot \sin^2(\omega x + \mu) + d
+  I(\varphi) = A_0 \cdot \sin^2(\omega x + \mu) + d
   \label{eqn:pfit}
 \end{equation}
 durch die Messwerte gelegt. 
@@ -166,19 +166,19 @@ durch die Messwerte gelegt.
   \caption{Intensität in Abhängikeit des Polarisationswinkel}
   \label{fig:Pol}
 \end{figure}
-Anhand des Verlauf des Graphens wird in der Disskussion eine Aussage über die Polarisation getroffen. 
+Anhand des Graphens wird in der Disskussion eine Aussage über die Polarisation getroffen. 
 \subsection{Wellenlänge des Lasers}
-Zur bestimmung der Wellenlänge des Lasers wird ein Gitter der Gitterkonstanten 
+Zur Bestimmung der Wellenlänge des Lasers wird ein Gitter der Gitterkonstanten 
 \begin{equation}
   G = 10^5 \, \frac{1}{\text{m}}
   \label{eqn:constg}
 \end{equation}
-in den Laserstrahl gestellt. Im Abstand 
+in den Laserstrahl gestellt. Der Abstand von dem Gitter bis zum Schirm beträgt
 \begin{equation}
-  L = 1.741 \, \text{m}
+  L = 1.741 \, \text{m} \ .
   \label{eqn:K}
 \end{equation}
-wird vom Schirm der Abstand der einzelnen Nebenmaxima ausgemessen. Die Abstände $a$ der einzelen Nebenmaxima vom Hauptmaxima sind in Tabelle \ref{tab:max} aufgetragen.
+Die gemessenen Abstände $a$ der einzelen Nebenmaxima vom Hauptmaxima sind in Tabelle \ref{tab:max} aufgetragen.
 \begin{table}
   \centering
   \begin{tabular}{c c c}
