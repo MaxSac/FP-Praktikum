@@ -2,7 +2,7 @@
 \label{sec:Auswertung}
 
 \subsection{Stabilitätsbedingung}
-Gemäß Formel \ref{eqn:} wird die Stabilitätsbedingung für die beiden getroffenen Spiegelkonstatlationen im folgenden Untersucht. In Abbildung \ref{fig:stabi} sind die Spiegelparameter in Abhängikeit der Krümmungsradien aufgetragen. 
+Gemäß Formel \ref{eqn:Stab} wird die Stabilitätsbedingung für die beiden getroffenen Spiegelkonstatlationen im folgenden Untersucht. In Abbildung \ref{fig:stabi} sind die Spiegelparameter in Abhängikeit der Krümmungsradien aufgetragen. 
 \begin{figure}
   \centering
   \includegraphics[height=6cm]{Stabilisationsparameter.pdf} 
@@ -80,13 +80,17 @@ Die niedrigste Mode, welche gleichzeitigt die höchste Intensität aufweist wird
   \caption{Diodenstrom der Erste Mode in Abhängigkeit der Auslenkung der Diode}
   \label{fig:TEM00}
 \end{figure}
-
-Anhand von diesem wird entsprechend der Formel \ref{eqn:} ein Fit der Form 
+Anhand von diesem wird entsprechend der Formel \ref{eqn:Grund} ein Fit der Form 
 \begin{equation}
   I_0 \cdot e^{- \frac{(x-\bar{x})^2}{\omega^2} }
   \label{eqn:gausian}
 \end{equation}
-wobei $I_0$ die Amplitude, $\bar{x}$ der Mittelwert und $\omega$ die die Standardabweichung der Gaußfunktion durch die Messwerte gelegt. Dieser Dient zum Vergleich mit dem Theoriewert und der Überprüfung ob die Intensitäten von den Laguerre-Polynomen abhängig sind. Es ergeben sich Fitparameter von 
+wobei $I_0$ die Amplitude, $\bar{x}$ der Mittelwert und $\omega$ die die Standardabweichung der Gaußfunktion durch die Messwerte gelegt. Dabei ist explizit eingegangen, dass das Hermitpolynom 0 Ordnung 
+\begin{equation}
+  H_0 = 1
+  \label{}
+\end{equation}
+ist. Der Fit dient zum Vergleich mit dem Theoriewert und der Überprüfung ob die Intensitäten von den Laguerre-Polynomen abhängig sind. Es ergeben sich Fitparameter von 
 \begin{eqnarray}
   a =& (\num{4.53 +- 0.08})	\\
   \bar{x} =& (\num{9.9 +- 0.2})	\\
@@ -94,7 +98,7 @@ wobei $I_0$ die Amplitude, $\bar{x}$ der Mittelwert und $\omega$ die die Standar
   \label{eqn:coef}
 \end{eqnarray}
 \subsubsection{TEM$_\text{10}$-Mode}
-Zum erzeugen der ersten Mode wird ein Wolframdraht als Modenblende in den Strahlengang gestellt und solange ausjustiert bis der Strahlengang sich in zwei Punkte aufspaltet. Die mittels der Photodiode gemessenen Ströme in Abhängikeit der Auslenkung sind in Tabelle \ref{eqn:TEM} aufgetragen und in Abbildung \ref{fig:TEM10} dargestellt.
+Zum erzeugen der ersten Mode wird ein Wolframdraht als Modenblende in den Strahlengang gestellt und solange ausjustiert bis der Strahlengang sich in zwei Punkte aufspaltet. Die mittels der Photodiode gemessenen Ströme in Abhängikeit der Auslenkung sind in Tabelle \ref{tab:tem} aufgetragen und in Abbildung \ref{fig:TEM10} dargestellt.
 \begin{figure}
   \centering
   \includegraphics[height=6cm]{TEM10.pdf}
@@ -103,7 +107,7 @@ Zum erzeugen der ersten Mode wird ein Wolframdraht als Modenblende in den Strahl
 \end{figure}
 Das zweite Hermitpolynom lautet
 \begin{equation}
-  H_q^p = 4x^2 - 2
+  H_2 = 4x^2 - 2
   \label{eqn:Herm}
 \end{equation}
 Daraus ergibt sich der Fit der Form 
@@ -119,13 +123,50 @@ welcher durch die Messwerte gelegt wird um, diese mit den Theoretischen Vorhersa
 \end{eqnarray}
 
 \subsection{Polarisation der Laserstrahlung}
-
+Die Intensität in Anhängigkeit der Ausrichtung des Polarisationsfilter ist in Tabelle \ref{tab:Pol} und in Abbildung \ref{fig:Pol} aufgetragen.
+\begin{table}
+  \centering
+  \begin{tabular}{c c | c c}
+    \toprule
+    $\varphi$ / Grad & Intensität / µA & $\varphi$ / Grad & Intensität /µA \\
+    \midrule
+	0	& 44.3	& 10	& 23.6	\\
+	20	& 9.7	& 30	& 0.7	\\
+	40	& 2.8	& 50	& 13.8	\\
+	60	& 36.0	& 70	& 55.2	\\
+	80	& 89.0	& 90	& 143.0	\\
+	100	& 145.0	& 110	& 186.7	\\
+	120	& 181.5	& 130	& 205.0	\\
+	140	& 170.2	& 150	& 150.6	\\
+	160	& 122.9	& 170	& 66.0	\\
+	180	& 48.3	& 190	& 25.1	\\
+	200	& 7.9	& 210	& 0.7	\\
+	220	& 1.8	& 230	& 13.6	\\
+	240	& 27.0	& 250	& 52.2	\\
+	260	& 85.1	& 270	& 99.2	\\
+	280	& 163.2	& 290	& 178.9	\\
+	300	& 195.4	& 310	& 195.3	\\
+	320	& 166.6	& 330	& 149.5	\\
+	340	& 133.3 & 350	& 94.1	\\
+	360	& 43.2	\\
+    \bottomrule
+  \end{tabular}
+  \caption{Intensität in Abhängigkeit des Polarisationswinkel}
+  \label{tab:Pol}
+\end{table}
+Dabei wird ein Fit der Form von Formel 
+\begin{equation}
+  A_0 \cdot \sin^2(\omega x + \mu) + d
+  \label{eqn:pfit}
+\end{equation}
+durch die Messwerte gelegt. 
 \begin{figure}
   \centering
   \includegraphics[height=6cm]{Polar.pdf}
-  \caption{<+caption text+>}
-  \label{fig:}
+  \caption{Intensität in Abhängikeit des Polarisationswinkel}
+  \label{fig:Pol}
 \end{figure}
+Anhand des Verlauf des Graphens wird in der Disskussion eine Aussage über die Polarisation getroffen. 
 \subsection{Wellenlänge des Lasers}
 Zur bestimmung der Wellenlänge des Lasers wird ein Gitter der Gitterkonstanten 
 \begin{equation}
