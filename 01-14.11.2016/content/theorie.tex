@@ -3,8 +3,8 @@ Ziel des Versuches ist es die Funktionsweise eines He-Ne-Lasers zu verstehen und
 
 
 \section{Theoretische Grundlage}
+Im Folgenden wird kurz der Aufbau und die Funktionsweise eines Lasers (\textbf{L}ight \textbf{A}mplification by \textbf{S}timulated \textbf{E}mission of \textbf{R}adiation) erklärt, mit besonderem Augenmerk auf die Gaslaser (He-Ne-Laser).
 \subsection{Aufbau eines Gaslasers}
-Im Folgenden wird kurz der Aufbau und die Funktionsweise eines Lasers (\textbf{L}ight \textbf{A}mplification by \textbf{S}timulated \textbf{E}mission of \textbf{R}adiation) erklärt, mit besonderem Augenmerk auf die Gaslaser (He-Ne-Laser). \\
 Das \textbf{aktive Lasermedium} des Lasers bestimmt das Strahlungsspektrum. Dafür muss das Lasermedium so manipuliert werden, dass das Strahlungsfeld der einfallenden Strahlung mit dem Gasgemisch wechselwirkt und die Strahlung verstärkt wird. Damit das passiert, muss mehr induzierte Emission auftreten als spontane Emission. Bei der spontanen Emission fallen Atome ohne äußeren Einfluss von einem höher energetischen Zustand in den Grundzustand zurück. Anders als bei der spontanen Emission wird die induzierte Emission durch ein einfallendes Photon ausgelöst. Dabei werden zwei Photonen emittiert, welche die gleiche Frequenz und Polarisation haben wie das einfallende Photon. \\
 Nach der Boltzmann-Verteilung ist der Grundzustand, in einem Gas, im thermischen Gleichgewicht stärker besetzt als die angeregten Zustände. Vereinfachend kann ein zwei Niveau-System angenommen werden, die Besetzungszahl $n_1$ für den Grundzustand ist größer als die Besetzungszahl $n_2$ für den ersten angeregten Zustand. Damit können die Ratengleichungen für die Besetzungszahlen wie folgt formuliert werden:
 
@@ -17,7 +17,7 @@ Wobei $\dot{N}_\text{A}$ die Anzahl der Niveauübergänge für die Absorbtion, $
 Dieser Vorgang wird als \textbf{Pumpen} bezeichnet. Bei einem He-Ne-Laser werden zunächst die Helium-Atome mittels elektrischer Entladung angeregt. Die angeregten Helium-Atome stoßen mit den Neon-Atomen zusammen, wodurch Energie auf die Neon-Atome übertragen wird und diese danach überwiegend das 3s-Orbital besetzen. Bei dem Übergang von dem 3s-Orbital in das 2p-Orbital (Grundzustand) wird ein Photon mit der charakteristischen Wellenlänge $\lambda = 632,8$ nm emittiert.
 
 \begin{figure}[H]
-	\includegraphics[width=\linewidth]{Bilder/Emission.PNG}
+	\includegraphics[width=\linewidth]{Bilder/Emission.pdf}
 	\caption{Schematische Darstellung der drei möglichen Niveauübergänge. \cite{V61}}
 	\label{fig:Emission}
 \end{figure}
@@ -39,11 +39,11 @@ definiert, wobei $L$ der Abstand zwischen den Spiegeln ist und $r_\text{i}$ der 
 	\label{fig:Laser}
 \end{figure}
 
-Da die Resonatorlänge viel größer als die Wellenlänge des Lasers ist ($L >> \lambda$), erfüllen viele Frequenzen die Resonanzbedingung einer stehenden Welle in dem Resonator. Dabei bilden sich longitudinale Wellen mit der Knotenzahl $q$ aus. Desweiteren kommen transversale Schwingungen hinzu, mit den Knotenzahlen $p$ und $l$, welche durch Unebenheiten, Verkippungen und kleinen Fehlern in den Spiegeln entstehen. Die skalare Feldverteilung wird durch die transversalen Schwingungen dominiert. \\
-Die Eigenschwingungen des Resonators werden als TEM$_{lqp}$ bezeichnet. TEM steht dabei für transversale elektromagnetische Moden. Demnach ist die TEM$_{00}$ die Mode mit der höchsten Symmetrie und den niedrigsten Verlusten.
+Da die Resonatorlänge viel größer als die Wellenlänge des Lasers ist ($L \gg \lambda$), erfüllen viele Frequenzen die Resonanzbedingung einer stehenden Welle in dem Resonator. Dabei bilden sich longitudinale Wellen mit der Knotenzahl $q$ aus. Desweiteren kommen transversale Schwingungen hinzu, mit den Knotenzahlen $p$ und $l$, welche durch Unebenheiten, Verkippungen und kleinen Fehlern in den Spiegeln entstehen. Die skalare Feldverteilung wird durch die transversalen Schwingungen dominiert. \\
+Die Eigenschwingungen des Resonators werden als TEM$_{lpq}$ bezeichnet. Der Indize $q$ wird jedoch oft weggelassen, weil die longitudinale Knotenzahl nicht zu der skalaren Feldverteilung beiträgt. TEM steht dabei für transversale elektromagnetische Moden. Demnach ist die TEM$_{00}$ die Mode mit der höchsten Symmetrie und den niedrigsten Verlusten.
 
 \subsection{Eigenschaften eines Lasers}
-Licht wird als Laser bezeichnet, wenn es drei wichtige Eigenschaften erfüllt. Es muss monochromatisch sein, sowie eine hohe Intensität und Kohärenz haben. Auf diese Eigenschaften des Lasers wird im Folgenden genauer eingegangen. \\
+Ein Laser erfüllt drei wichtige Eigenschaften. Er muss monochromatisch sein, sowie eine hohe Intensität und Kohärenz haben. Auf diese Eigenschaften des Lasers wird im Folgenden genauer eingegangen. \\
 \textbf{Kohärenz} liegt vor, wenn die Phasenverschiebung der Wellenzüge an einem festen Ort zeitlich konstant ist oder wenn sich die Phase gesetzmäßig mit der Zeit ändert.
 Das bedeutet, dass die Kohärenz ein Maß für die Interferenzfähigkeit zweier Wellen ist. \\
 Die \textbf{Intensität} $I_\text{lpq}$ beschreibt die Leistung pro Fläche welche von dem Laser ausgestrahlt wird und ist proportional zu dem Betragsquadrat der Feldverteilung $E_\text{lpq}$.
@@ -65,8 +65,8 @@ Allerdings lässt sich die Intensität der TEM$_{00}$ Grundmode zu
 	\label{eqn:Grund}
 \end{align}
 vereinfachen. \\
-Die \textbf{Polarisation} tritt nur bei Transversalwellen auf und beschreibt die Richtung der Schwingung. Dabei steht der Wellenvektor senkrecht auf der Ausbreitungsrichtung. Wenn sich der Wellenvektor nur in Ausbreitungsrichtung verschiebt, wird von einer linearen Polarisation gesprochen. Zirkular polarisiert ist es, wenn sich der Wellenvektor mit gleich bleibender Geschwindigkeit und konstantem Betrag um die Achse in Ausbreitungsrichtung dreht. In einem Laser wird die Polarisation durch optische Bauteile erreicht, zum Beispiel Brewster-Fenster. \\
-Für die \textbf{Beugung von Laserstrahlen} gilt die Fraunhofer Näherung unter der Annahme, dass der Abstand $L$ zwischen dem Beugungsgitter und dem Schirm viel größer ist als der Abstand $a$ zwischen den Beugungsmaxima ($L >> a$). Mit Hilfe der Abbildung \eqref{fig:BeugungAmSpalt} kann die Wellenlänge $\lambda$ zu
+Die \textbf{Polarisation} tritt nur bei Transversalwellen auf und beschreibt die Richtung der Schwingung. Dabei steht der Wellenvektor senkrecht auf der Ausbreitungsrichtung. Wenn sich der Wellenvektor nur in Ausbreitungsrichtung verschiebt, wird von einer linearen Polarisation gesprochen. Zirkular polarisiert ist es, wenn sich der Wellenvektor mit gleich bleibender Geschwindigkeit und konstantem Betrag um die Achse in Ausbreitungsrichtung dreht. In einem Laser wird die Polarisation durch optische Bauteile erreicht, zum Beispiel Brewster-Fenster. Die Fensterflächen der Brewster-Fenster stehen dabei im Brewster-Winkel zur optischen Achse des Lasers. Der senkrecht zur Einfallsebene polarisierte Teil des Lichts wird teilreflektiert und der parallel polarisierte Teil kann transmittieren. Dadurch wird der senkrecht polarisierte Teil verstärkt. \\
+Für die \textbf{Beugung von Laserstrahlen} gilt die Fraunhofer Näherung unter der Annahme, dass der Abstand $L$ zwischen dem Beugungsgitter und dem Schirm viel größer ist als der Abstand $a$ zwischen den Beugungsmaxima ($L \gg a$). Mit Hilfe der Abbildung \eqref{fig:BeugungAmSpalt} kann die Wellenlänge $\lambda$ zu
 \begin{align}
 	\lambda = s\cdot\sin\varphi
 	\label{eqn:lambda}
