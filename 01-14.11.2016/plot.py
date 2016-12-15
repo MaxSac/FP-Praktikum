@@ -39,10 +39,10 @@ plt.close()
 winkel, intensi = np.loadtxt('Polarisation.txt', unpack=True)
 winkel = np.radians(winkel)
 def fsin(x, a, b, c, d):
-    return (np.sin(b*x +c)**2)*a +d 
+    return (np.sin(b*x +c))*a +d 
 
 params, cov = curve_fit(fsin, winkel, intensi,
-        bounds=([150,0.5,0,0],[250,1.5,2*np.pi,50]))
+        bounds=([80,1.8,0,80],[150,2.2,2*np.pi,120]))
 linw = np.linspace(-0.5,max(winkel)+0.5,100)
 plt.plot(winkel, intensi, 'x', label='Messwerte')
 plt.plot(linw , fsin(linw, *params), label='Fit')

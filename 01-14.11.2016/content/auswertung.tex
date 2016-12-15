@@ -5,7 +5,7 @@
 Gemäß Formel \ref{eqn:Stab} wird die Stabilitätsbedingung für die beiden getroffenen Spiegelkonstellationen im folgenden untersucht. In Abbildung \ref{fig:stabi} ist das Produkt der Spiegelparameter in Abhängikeit der Resonatorlänge aufgetragen.
 \begin{figure}
   \centering
-  \includegraphics[height=6cm]{Stabilisationsparameter.pdf}
+  \includegraphics[width=\textwidth]{Stabilisationsparameter.pdf}
   \caption{Stabilitätsbedingung des Resonators}
   \label{fig:stabi}
 \end{figure}
@@ -24,12 +24,13 @@ ist. In diesem Bereich läuft der Laser stabil und es kann ein Laserstrahl detek
   R_\text{2 max} = 1.4 \, \text{m} \ .
   \label{eqn:rmax2}
 \end{equation}
-Diese Reichweite wird verifiziert indem die Intensität der gemessenen Laserstrahlung von 100 $\mu$A bei einem Resonatorabstand von 140 auf 2 $\mu$A abfällt und der Laserstahl für weitere Reichweiten nicht weiter zu detektieren ist.
+Diese Reichweite wird verifiziert indem die Intensität der gemessenen Laserstrahlung von 100 $\mu$A bei einem Resonatorabstand von 1.40 m auf 2 $\mu$A abfällt und der Laserstahl für weitere Reichweiten nicht weiter zu detektieren ist.
 
 \subsection{TEM}
 Da die Intensität der Laserstrahlung selbst nicht gemessen werden kann, wird stattdessen ein Photostrom einer Diode gemessen. Dieser ist proportional zur Intensität. Auf die Ströme, welche in Tabelle \ref{tab:tem} aufgetragen sind, wird in der Auswertung noch weiter eingegangenen.
 \begin{table}
   \centering
+  \caption{Diodenstrom in Abhängigkeit des Abstandes}
   \begin{tabular}{c|c c}
      \toprule
      Abstand / mm & TEM$_{00}$ I / µA & TEM$_{10}$ I / µA \\
@@ -68,7 +69,6 @@ Da die Intensität der Laserstrahlung selbst nicht gemessen werden kann, wird st
      31		& 0.053		& 0.059	\\
      \bottomrule
   \end{tabular}
-  \caption{Diodenstrom in Abhängigkeit des Abstandes}
   \label{tab:tem}
 \end{table}
 Im folgenden wird geprüft, ob die Intensitäten entsprechend von den Hermitpolynomen bzw. Laguerre-Polynomen abhängig sind.
@@ -76,7 +76,7 @@ Im folgenden wird geprüft, ob die Intensitäten entsprechend von den Hermitpoly
 Die niedrigste Mode, welche gleichzeitig die höchste Intensität aufweist, wird ohne eine Modenblende erzeugt. Die mittels Photodiode gemessenen Ströme der TEM$_{00}$ sind in Tabelle \ref{tab:tem} aufgeführt und in Abbildung \ref{fig:TEM00} abgebildet. Dabei wurde die Auslenkung der Diode gegen den Photostrom aufgetragen.
 \begin{figure}
   \centering
-  \includegraphics[height=6cm]{TEM00.pdf}
+  \includegraphics[width=\textwidth]{TEM00.pdf}
   \caption{Diodenstrom der ersten Mode in Abhängigkeit von der Auslenkung der Diode}
   \label{fig:TEM00}
 \end{figure}
@@ -92,9 +92,9 @@ durch die Messwerte gelegt. Wobei $I_0$ der Amplitude, $\bar{x}$ dem Mittelwert 
 \end{equation}
 ist. Der Fit dient zum Vergleich mit dem Theoriewert und der Überprüfung, ob die Intensität von den Laguerre-Polynomen abhängig ist. Es ergeben sich Fitparameter von
 \begin{eqnarray}
-  a =& (\num{4.53 +- 0.08})	\\
+  I_0 =& (\num{4.53 +- 0.08})	\\
   \bar{x} =& (\num{9.9 +- 0.2})	\\
-  \omega =& (\num{-14.6 +-0.1})
+  \omega =& (\num{14.6 +-0.1})
   \label{eqn:coef}
 \end{eqnarray}
 \subsubsection{TEM$_\text{10}$}
@@ -126,6 +126,7 @@ welcher durch die Messwerte gelegt wird, um diese mit der theoretischen Vorhersa
 Die Intensität in Abhängigkeit der Ausrichtung des Polarisationsfilters ist in Tabelle \ref{tab:Pol} und in Abbildung \ref{fig:Pol} aufgetragen.
 \begin{table}
   \centering
+  \caption{Intensität in Abhängigkeit des Polarisationswinkels}
   \begin{tabular}{c c | c c}
     \toprule
     $\varphi$ / Grad & Intensität / µA & $\varphi$ / Grad & Intensität /µA \\
@@ -151,12 +152,11 @@ Die Intensität in Abhängigkeit der Ausrichtung des Polarisationsfilters ist in
 	360	& 43.2	\\
     \bottomrule
   \end{tabular}
-  \caption{Intensität in Abhängigkeit des Polarisationswinkels}
   \label{tab:Pol}
 \end{table}
 Dabei wird ein Fit der Form
 \begin{equation}
-  I(\varphi) = A_0 \cdot \sin^2(\omega x + \mu) + d
+  I(\varphi) = A_0 \cdot \sin(\omega x + \mu) + d
   \label{eqn:pfit}
 \end{equation}
 durch die Messwerte gelegt.
