@@ -1,7 +1,25 @@
 \section{Theoretische Grundlage}
 \label{sec:Theorie}
+Unter dem Zeemaneffekt wird die Aufspaltung der Energieniveaus der einzelnen Zustände, sowie die Polarisation des Lichtes verstanden. Dabei wird zwischen dem normalen und dem annormalen Zeemaneffekt differenziert. Im folgenden wird die Theoretische Grundlage des Versuches skizziert.
 
-
+\subsection{Magnetisches Moment eines Elektrons}
+Elektronen besitzen sowohl einen Bahndrehimpuls $l$ sowie ein Eigendrehimpuls $s$. In der weiteren Betrachtung werden nur die Drehimpulse der äußeren Schalen der Atome betrachtet, da die der abgeschlossenen Schalen verschwinden. Aufgehend von der eigenwertgleichung werden die Beträge der Quantenzahlen zu 
+\begin{eqnarray}
+  |\vec{l}| = \sqrt{l(l+1)} \hbar  \\  
+  |\vec{s}| = \sqrt{s(s+1)} \hbar
+  \label{eqn:betQua}
+\end{eqnarray}
+berechnet. Dabei laufen der Bahndrehimpuls $l$ von 0, 1, \ldots n-1 und der Spin $s$ ist $\frac{1}{2}$. Für die berechnung der Magnetischen Momenten wird das Borsche Magneton $\mu_\text{B}$ eingrführt welches eine Art infinitesimales magnetisches Moment. Es ist entspricht dem Magnetischen Moment welche ein Elektron mit $l$=1 erzeugt. Das in Maßeinheiten des Magnetorn berechnete magnetische Momente des Bahndrehimpuls beträgt
+\begin{equation}
+  \vec{\mu_\text{L}} = -\mu_\text{B} \sqrt{l(l+1)} \vec{l_\text{e}} \ .
+  \label{eqn:magL}
+\end{equation}
+Bei der Einführung des magnetischen Moment des Spins $\mu_\text{s}$ 
+\begin{equation}
+  \mu_\text{s} = - \mu_\text{B} g_\text{S} \sqrt{s(s+1)} \vec{s_\text{e}}
+  \label{eqn:magS}
+\end{equation}
+tritt der Lande-Faktor $g_\text{S}$ auf, auf diesen in folgenden noch weiter eingegangen wird.
 
 \subsection{Fehlerrechnung}
 Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
