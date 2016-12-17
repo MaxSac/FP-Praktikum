@@ -21,6 +21,65 @@ Bei der Einführung des magnetischen Moment des Spins $\mu_\text{s}$
 \end{equation}
 tritt der Lande-Faktor $g_\text{S}$ auf, auf diesen in folgenden noch weiter eingegangen wird.
 
+\subsection{Wechselwirkungen der Drehimpulse untereinander}
+Bei den Wechselwirkungen der einzelenen Drehimpulse untereinander unterscheidet man zwichen zwei verschiedenen Fällen die fließend ineinander über gehen.  Bei dem ersten Fall wird davon ausgegangen das die Kernladungszahl so niedrig ist das die Wechselwirkungen zwischen den einzelnen $\vec{l_\text{i}}$ so gering ist, dass ein Gesamtdrehimpuls $\vec{L}$ eingeführt werden kann.
+\begin{equation}
+  \vec{L} = \sum \vec{l_\text{i}}
+  \label{eqn:L}
+\end{equation}
+Dabei sind jegliche vektoriellen Additionen der einzelnen Bahndrehimpulse $l_\text{l}$ erlaubt bei denen der Gesamtdrehimpuls eine ganzzahlige Zahl ist. In analogie zu den einzelenen Drehimpulsen wird das magnetische Moment
+\begin{equation}
+  |\mu_\text{L}| = \mu_\text{B} \sqrt{L(L+1)}
+  \label{magL}
+\end{equation}
+des Gesmatbahndrehimpuls eingeführt. Analog zum Bahndrehimpuls wird auch eine Gesamtspinquantenzahl $S$ als auch ein magnetisches Moment eingeführt $\mu_\text{S}$. Für nicht zu großen Magnetfelder lässt sich der Gesamtdrehimpuls $\vec{J}$ aus der Summe von $L$ und $S$ einführen welcher auch als LS-Kopplung bezeichnet wird.
+Der zweite Fall der Kopplung von Spin und Bahndrehimpuls wird als j-j-Kopplung bezeichnet. Dabei wird angenommen das bei schweren Atomen die Wechslewirkung des Spins und des Bahndrehimpuls unteriander so groß wird das die nicht mehr vernachlässigt werden kann. Somit müssen die einzelnen Gesamtdrehimpuls 
+\begin{equation}
+  \vec{j_\text{i}} = \vec{l_\text{i}} + \vec{s_\text{i}}
+  \label{eqn:j}
+\end{equation}
+berücksichtigt werden, sodass der Gesamtdrehimpuls $\vec{J}$ die Summe der einzelnen $\vec{j_\text{i}}$ ist. 
+
+\subsection{Aufspaltung der Energieniveaus}
+Das magnetisches Moment des Gesamtdrehimpuls ist die Summe des Spins $mn_\text{s}$ und des magn. Momets $mn_\text{l}$.
+\begin{equation}
+  \mu = \mu_\text{l} + \mu_\text{l}
+\end{equation}
+Da der Lande-Faktor bei Elektronen welche ein Spin 1/2 haben meist den Wert 2, zeigen $\mu$ und $J$ im Regelfall nicht in die Gleiche richtung. Jedoch oszilliert das magnetische Moment um die Achse von $J$ sodass im Zeitmittel die Richtung von $\vec{\mu}$ nicht von $\vec{J}$ zu unterscheiden ist. Für den Betrag von von $\mu_\text{J}$ ergibt sich 
+\begin{equation}
+  |\vec{\mu_\text{J}}| = \mu_\text{B} g_\text{J} \sqrt{J(J+1)} \ ,
+  \label{eqn:muJ}
+\end{equation}
+wobei $g_\text{J}$ der Lande-Faktor ist. Dieser ist definiert als
+\begin{equation}
+  g_\text{J} = \frac{3J(J+1) + S(S+1) -L(L+1)}{2J(J+1)}
+  \label{eqn:Lan}
+\end{equation}
+Die Richtungsquantelung besagt das nur solche Winkel auftreten können bei dennen der Winkel zwichen $\vec{\mu}$ und $\vec{B}$ ein ganzzahliges Vielfaches von
+\begin{equation}
+\vec{\mu} = -m g_\text{J} \mu_\text{B}, 
+  \label{eqn:mu}
+\end{equation}
+wobei  $m  = (-J, \cdots, J)$ läuft. Somit Spaltet sich die Energieniveaus im Magnetfeld in 2J+1 niveaus auf, deren Energiedifferenzen zum Magnetfreien Niveau
+\begin{equation}
+	\Delta E_\text{mag} = m \vec{\mu_\text{B}} \vec{g_\text{J}}
+  \label{eqn:delE}
+\end{equation}
+Ein Beispiel für die Aufspaltung eine Niveaus mit J=2 ist in Abbildung \ref{eqn:Eniv} zu sehen.
+\begin{figure}
+  \centering
+  \includegraphics[height=6cm]{./Bilder/ENiveaus.png}
+  \caption{blabla}
+   \label{fig:Eniv}
+\end{figure}
+
+\subsection{Auswahlregeln}
+Mithilfe der Schrödingergleichung wird untersucht welche Niveauübergänge möglich sind. Als Ansatz zur Lösung wird die Summe zweier Ebenen Wellen genommen bei denen der Spin berücksichtigt wird. Aus der Dichtefunktion lässt sich ablesen das die die Elektronen mit der Frequenz $\nu$ zwischen den Beiden Energie zuständen oszillieren.
+\begin{equation}
+  \nu_{\alpha\beta}=E_{\alpha} - E_{\beta}
+  \label{eqn:nu}
+\end{equation}
+
 \subsection{Fehlerrechnung}
 Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
 \subsubsection{Mittelwert}
