@@ -186,36 +186,31 @@ print('Mittelwert der Verschiebung =', deltaLambdaR)
 # Bestimmung der Lande Faktoren
 muB = 9.274 * 10**(-24)
 h = 6.626 * 10**(-34)
+c = 299792458
 
 print('-------------')
 print('rote Linie')
-dER = h / deltaLambdaR
-BR = ufloat(0.549, 0.05*0.549)
-gR = dER / (muB * BR)
-print('dE =', dER)
+BR = ufloat(0.549, 0.05*0.549) *1.09
+gR = (h * c * deltaLambdaR) / (WellenlängeRot**2 * muB * BR)
 print('B =', BR)
 print('g =', gR)
+print('Abweichung:', (1 - gR) / 1)
 
 print('-------------')
 print('sigma: blaue Linie')
-# Sigma-Komponente blaue Linie
-dEBs = h / deltaLambda1
-BB1 = ufloat(0.3, 0.05*0.3)
-gB1 = dEBs / (muB * BB1)
-print('dE =', dEBs)
+BB1 = ufloat(0.3, 0.05*0.3) *1.09
+gB1 = (h * c * deltaLambda1) / (WellenlängeBlau**2 * muB * BB1)
 print('B =', BB1)
 print('g =', gB1)
+print('Abweichung:', (1.75 - gB1) / 1.75)
 
 print('-------------')
 print('pi: blaue Linie')
-# Pi-Komponente blaue Linie
-dEBp = h / deltaLambda2
-BB2 = ufloat(1.057, 0.05*1.057)
-gB2 = dEBp / (muB * BB2)
-print('dE =', dEBp)
+BB2 = ufloat(1.057, 0.05*1.057) *1.09
+gB2 = (h * c * deltaLambda2) / (WellenlängeBlau**2 * muB * BB2)
 print('B =', BB2)
 print('g =', gB2)
-
+print('Abweichung:', (0.5 - gB2) / 0.5)
 
 
 print('--------------------------------------')
