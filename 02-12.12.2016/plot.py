@@ -1,12 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-
-
-# Konstanten
-
-
-
-
+from uncertainties import ufloat
 
 # Hysterese Kurve
 # B-Feld in mT, Strom in A
@@ -120,19 +114,21 @@ np.mean([2736, 2742, 2734]),
 np.mean([2866, 2858, 2862]), ])
 
 print('--------------------------------------')
-DS1 = DS(BoB)
+DSB = DS(BoB)
 dS1 = dS(B6ASig1, B6ASig2)
 dS2 = dS(B20APi1, B20APi2)
-deltaLambda1 = deltaLambda(dS1, DS1, lamBlau)
-deltaLambda2 = deltaLambda(dS2, DS1, lamBlau)
-print('Ds =', DS1)
+deltaLambda1 = deltaLambda(dS1, DSB, lamBlau)
+deltaLambda1 = ufloat(np.mean(deltaLambda1), np.std(deltaLambda1))
+deltaLambda2 = deltaLambda(dS2, DSB, lamBlau)
+deltaLambda2 = ufloat(np.mean(deltaLambda2), np.std(deltaLambda2))
+print('Ds =', DSB)
 print('ds1 =', dS1)
-print('Verschiebung mit der blauen Linie(6A) =', deltaLambda1)
-print('Mittelwert der Verschiebung =', np.mean(deltaLambda1), np.std(deltaLambda1))
+#print('Verschiebung mit der blauen Linie(6A) =', deltaLambda1)
+print('Mittelwert der Verschiebung =', deltaLambda1)
 print('------')
 print('ds2 =', dS2)
-print('Verschiebung mit der blauen Linie(20A) =', deltaLambda2)
-print('Mittelwert der Verschiebung =', np.mean(deltaLambda2), np.std(deltaLambda2))
+#print('Verschiebung mit der blauen Linie(20A) =', deltaLambda2)
+print('Mittelwert der Verschiebung =', deltaLambda2)
 
 
 # RoB = Rot ohne B-Feld
@@ -174,24 +170,51 @@ np.mean([2527, 2518, 2512]),
 np.mean([2709, 2703, 2696]), ])
 
 print('--------------------------------------')
-DS1 = DS(RoB)
-dS = dS(R9ASig1, R9ASig2)
-deltaLambda = deltaLambda(dS, DS1, lamRot)
-print('Ds =', DS1)
-print('ds1 =', dS)
-print('Verschiebung mit der roten Linie(9A) =', deltaLambda)
-print('Mittelwert der Verschiebung =', np.mean(deltaLambda), np.std(deltaLambda))
+DSR = DS(RoB)
+dSR = dS(R9ASig1, R9ASig2)
+deltaLambdaR = deltaLambda(dSR, DSR, lamRot)
+deltaLambdaR = ufloat(np.mean(deltaLambdaR), np.std(deltaLambdaR))
+print('Ds =', DSR)
+print('ds1 =', dSR)
+#print('Verschiebung mit der roten Linie(9A) =', deltaLambdaR)
+print('Mittelwert der Verschiebung =', deltaLambdaR)
 
 
 
 
 
+# Bestimmung der Lande Faktoren
+muB = 9.274 * 10**(-24)
+h = 6.626 * 10**(-34)
 
+print('-------------')
+print('rote Linie')
+dER = h / deltaLambdaR
+BR = ufloat(0.549, 0.05*0.549)
+gR = dER / (muB * BR)
+print('dE =', dER)
+print('B =', BR)
+print('g =', gR)
 
+print('-------------')
+print('sigma: blaue Linie')
+# Sigma-Komponente blaue Linie
+dEBs = h / deltaLambda1
+BB1 = ufloat(0.3, 0.05*0.3)
+gB1 = dEBs / (muB * BB1)
+print('dE =', dEBs)
+print('B =', BB1)
+print('g =', gB1)
 
-
-
-
+print('-------------')
+print('pi: blaue Linie')
+# Pi-Komponente blaue Linie
+dEBp = h / deltaLambda2
+BB2 = ufloat(1.057, 0.05*1.057)
+gB2 = dEBp / (muB * BB2)
+print('dE =', dEBp)
+print('B =', BB2)
+print('g =', gB2)
 
 
 

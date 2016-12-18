@@ -1,49 +1,68 @@
+\newpage
 \section{Auswertung}
 \label{sec:Auswertung}
 Im folgenden wird die Hysteresekurve des verwendeten Magneten bestimmt und die Verschiebung der Wellenlänge berechnet.
 
 \subsection{Hysteresekurve}
 In der Abbildung \eqref{fig:Hysterese} ist die Hysteresekurve des verwendeten Magneten zu sehen. Es ist eine Verschiebung der Kurve nach oben zu erkennen, allerdings sind mehrere Bereiche ohne Verschiebung dabei. Das kann durch die Ablesefehler des Feldstroms $I$ erklärt werden.
-\begin{align}
+\begin{align*}
   \Delta I = 0.25\, \text{A}
-\end{align}
+\end{align*}
 Die Ablesefehler kommen durch die analoge Anzeige zustande.
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=\linewidth]{Bilder/Hysterese.pdf}
   \caption{Die Hysteresekurve des verwendeten Magneten.}
   \label{fig:Hysterese}
 \end{figure}
 
-
-\subsection{Verschiebung der Wellenlänge}
-Die Dispersionsgebiete für die blaue und rote Linie lassen sich mit Formel \eqref{eqn:}, zu
+\subsection{Das Dispersionsgebiet}
+Das Dispersionsgebiet gibt die maximale Wellenlängendifferenz an, die zwei Wellen haben dürfen ohne sich zu überlagern. Sie wird mit
 \begin{align}
-  \Delta\lambda_\text{D,rot} = \frac{(643.8\cdot 10^{-9})^2}{8\cdot 10^{-3}} \cdot \sqrt{\frac{1}{1.4567^2 - 1}} = 0.0489 \cdot 10^{-9}\,\text{m}\ , \\
-  \Delta\lambda_\text{D,blau} = \frac{(480.0\cdot 10^{-9})^2}{8\cdot 10^{-3}} \cdot \sqrt{\frac{1}{1.4635^2 - 1}} = 0.0270 \cdot 10^{-9}\,\text{m}\ ,
+  \Delta\lambda_\text{D} = \frac{\lambda^2}{2\cdot d} \cdot \sqrt{\frac{1}{n^2 - 1}}
+  \label{eqn:Dispersionsgebiet}
 \end{align}
+berechnet. $\lambda$ entspricht dabei der Wellenlänge der verwendeten Linie und $n$ der Brechzahl. Die Dicke der Lummer-Gehrcke Platte $d$ beträgt 4\,mm. Die Brechzahlen und Wellenlängen der roten und blauen Linie sind:
+\begin{align*}
+  \lambda_\text{rot} &= 643.8\,\text{nm} \\
+  n_\text{rot} &= 1.4567 \\
+  \lambda_\text{blau} &= 480.0\,\text{nm} \\
+  n_\text{blau} &= 1.4635 \\
+\end{align*}
+Mit diesen Werten und der Formel \eqref{eqn:Dispersionsgebiet} ergeben sich folgende Dispersionsgebiete:
+\begin{align*}
+  \Delta\lambda_\text{D,rot} &= 0.0489 \cdot 10^{-9}\,\text{m}\ , \\
+  \Delta\lambda_\text{D,blau} &= 0.0270 \cdot 10^{-9}\,\text{m}\ ,
+\end{align*}
 bestimmen.
 
 
+\subsection{Die Wellenlängeänderung}
+Die Wellenlängenänderung $\delta\lambda$ lässt sich mit
+\begin{align}
+  \delta\lambda = \frac{\delta\text{s}}{2\,\Delta\text{s}}\cdot \Delta\lambda_\text{D}
+  \label{eqn:Verschiebung}
+\end{align}
+berechnen. $\Delta$s ist dabei der Abstand zwischen zwei Linien ohne ein äußeres B-Feld und $\delta$s ist der Abstand zwischen den aufgespaltenen Linien.
+
 
 \subsubsection{Verschiebung der blauen Linie}
-
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.8\linewidth]{Bilder/BoB.JPG}
   \caption{Die blaue Linie der Cd-Lampe ohne ein äußeres B-Feld.}
   \label{fig:BoB}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.8\linewidth]{Bilder/B6ASig.JPG}
   \caption{Die $\sigma$-Komponente der blauen Linie der Cd-Lampe mit einem äußeren B-Feld(6 A).}
   \label{fig:B6ASig}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[H]
   \centering
   \includegraphics[width=0.8\linewidth]{Bilder/B20APi.JPG}
   \caption{Die $\pi$-Komponente der blauen Linie der Cd-Lampe mit einem äußeren B-Feld(20 A).}
@@ -74,7 +93,7 @@ Die Werte für die Tabelle \eqref{tab:blau} werden aus den Abbildungen \eqref{fi
 \end{table}
 
 
-Mit Hilfe der Formel \eqref{eqn:}, der Dispersionsgebiete und der Tabelle \eqref{tab:blau} ergeben sich nach dem mitteln folgende Werte für die Verschiebung $\delta\lambda$:
+Mit Hilfe der Formel \eqref{eqn:Verschiebung}, der Dispersionsgebiete und der Tabelle \eqref{tab:blau} ergeben sich nach dem mitteln folgende Werte für die Verschiebung $\delta\lambda$:
 \begin{align*}
   \delta \lambda_{\sigma,blau} = (\num{5.9 +- 0.2})\cdot 10^{-12}\,\text{m} \\
   \delta \lambda_{\pi,blau} = (\num{6.4 +- 0.3})\cdot 10^{-12}\,\text{m}
@@ -83,10 +102,21 @@ Mit Hilfe der Formel \eqref{eqn:}, der Dispersionsgebiete und der Tabelle \eqref
 
 
 \subsubsection{Verschiebung der roten Linie}
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\linewidth]{Bilder/RoB.JPG}
+  \caption{Die rote Linie der Cd-Lampe ohne ein äußeres B-Feld.}
+  \label{fig:RoB}
+\end{figure}
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.8\linewidth]{Bilder/R9ASig.JPG}
+  \caption{Die $\sigma$-Komponente der roten Linie der Cd-Lampe mit einem äußeren B-Feld(9 A).}
+  \label{fig:R9ASig}
+\end{figure}
 
-
-Die Werte für die Tabelle \eqref{tab:blau} werden aus den Abbildungen \eqref{fig:BoB} bis \eqref{fig:B20APi} bestimmt.
+Die Werte für die Tabelle \eqref{tab:rot} werden aus den Abbildungen \eqref{fig:RoB} und \eqref{fig:R9ASig} bestimmt.
 
 \begin{table}[H]
   \centering
@@ -109,8 +139,48 @@ Die Werte für die Tabelle \eqref{tab:blau} werden aus den Abbildungen \eqref{fi
   \end{tabular}
 \end{table}
 
-
-Mit Hilfe der Formel \eqref{eqn:}, der Dispersionsgebiete und der Tabelle \eqref{tab:blau} ergeben sich nach dem mitteln folgende Werte für die Verschiebung $\delta\lambda$:
+Analog zu der blauen Linie, wird mit der Tabelle \eqref{tab:rot} die Verschiebung berechnet:
 \begin{align*}
   \delta \lambda_{\sigma,rot} = (\num{11.6 +- 0.4})\cdot 10^{-12}\,\text{m} \\
 \end{align*}
+
+
+\subsection{Lande-Faktoren}
+Die Lande-Faktoren $g_\text{ij}$ können nach umstellen der Formel \eqref{eqn:dE} bestimmt werden.
+\begin{align}
+  g_{ij} = m_1\,g_1 + m_2\,g_2 = \frac{\Delta E}{\mu_\text{B}\,B}
+\end{align}
+Dafür muss jedoch zunächst das Bohrsche Magneton $\mu_\text{B}$ und $\Delta E$ berechnet werden.
+\begin{align}
+  \mu_\text{B} &= - \frac{e_0\, \hbar}{2\, m_0} = 9.274 \cdot 10^{-24}\, \frac{\text{J}}{\text{T}}\\
+  \Delta E &= h\,\Delta\nu = \frac{h}{\delta\lambda}
+\end{align}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%
