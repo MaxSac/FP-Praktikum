@@ -11,7 +11,9 @@ Brunter = np.array([1057, 1036, 1004, 975, 935, 893, 849, 791, 734, 678, 600, 56
 Arunter = np.array([20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0])
 
 plt.plot(Ahoch, Bhoch, 'r-', label='Hysteresekurve beim hochdrehen')
+plt.plot(Ahoch, Bhoch, 'rx', label='Messwerte beim hochdrehen')
 plt.plot(Arunter, Brunter, 'g-', label='Hysteresekurve beim runterdrehen')
+plt.plot(Arunter, Brunter, 'gx', label='Messwerte beim runterdrehen')
 plt.legend(loc='best')
 plt.xlabel(r'$I$ / A')
 plt.ylabel(r'$B$ / mT')
