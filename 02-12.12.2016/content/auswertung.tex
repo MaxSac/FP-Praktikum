@@ -1,7 +1,7 @@
 \newpage
 \section{Auswertung}
 \label{sec:Auswertung}
-Im folgenden wird die Hysteresekurve des verwendeten Magneten bestimmt und die Verschiebung der Wellenlänge berechnet.
+Im folgenden wird die Hysteresekurve des verwendeten Magneten bestimmt und aus der Verschiebung der Wellenlänge werden die Landé-Faktoren berechnet.
 
 
 
@@ -90,7 +90,7 @@ Die Werte für die Tabelle \eqref{tab:rot} werden aus den Abbildungen \eqref{fig
   \end{tabular}
 \end{table}
 
-Analog zu der blauen Linie, wird mit der Tabelle \eqref{tab:rot} die Verschiebung berechnet:
+Mit Hilfe der Formel \eqref{eqn:Verschiebung}, der Dispersionsgebiete und der Tabelle \eqref{tab:rot} ergeben sich nach dem mitteln folgende Werte für die Verschiebung $\delta\lambda$:
 \begin{align*}
   \delta \lambda_{\sigma,\text{rot}} = (\num{11.6 +- 0.4})\cdot 10^{-12}\,\text{m} \\
 \end{align*}
@@ -143,7 +143,7 @@ Die Werte für die Tabelle \eqref{tab:blau} werden aus den Abbildungen \eqref{fi
 \end{table}
 
 
-Mit Hilfe der Formel \eqref{eqn:Verschiebung}, der Dispersionsgebiete und der Tabelle \eqref{tab:blau} ergeben sich nach dem mitteln folgende Werte für die Verschiebung $\delta\lambda$:
+Mit Hilfe der Formel \eqref{eqn:Verschiebung}, der Dispersionsgebiete und der Tabelle \eqref{tab:blau} ergeben sich nach dem mitteln folgende Werte für die Verschiebung $\delta\lambda$\,:
 \begin{align*}
   \delta \lambda_{\sigma,blau} = (\num{5.9 +- 0.2})\cdot 10^{-12}\,\text{m} \\
   \delta \lambda_{\pi,blau} = (\num{6.4 +- 0.3})\cdot 10^{-12}\,\text{m}
@@ -151,44 +151,45 @@ Mit Hilfe der Formel \eqref{eqn:Verschiebung}, der Dispersionsgebiete und der Ta
 
 
 
-\subsection{Lande-Faktoren}
-Die Lande-Faktoren $g_\text{ij}$ können nach umstellen der Formel \eqref{eqn:dE} bestimmt werden.
+\subsection{Landé-Faktoren}
+Die Landé-Faktoren $g_\text{ij}$ können nach umstellen der Formel \eqref{eqn:dE} bestimmt werden.
 \begin{align}
   g_{ij} = m_1\,g_1 + m_2\,g_2 = \frac{\Delta E}{\mu_\text{B}\,B}
 \end{align}
-Dabei ist das Bohrsche Magneton $\mu_\text{B} = 9.274 \cdot 10^{-24}\,\frac{\text{J}}{\text{T}}$.\\
+Dabei ist das Bohrsche Magneton gegeben durch $\mu_\text{B} = 9.274 \cdot 10^{-24}\,\frac{\text{J}}{\text{T}}$.\\
 Die Energiedifferenz kann über
 \begin{align}
   |\Delta E| \approx \left| \frac{\partial E}{\partial \lambda}\right| \cdot |\delta\lambda| = \frac{h\,c}{\lambda^2}\cdot \delta\lambda
 \end{align}
-berechnet werden. Dabei ist eingegangen, dass sich $\Delta E$ nicht linear mit $\lambda$ ändert. Damit ergibt sich für die Lande-Faktoren $g_{ij}$:
+berechnet werden. Dabei ist eingegangen, dass sich $\Delta E$ nicht linear mit $\lambda$ ändert. Damit ergibt sich für die Landé-Faktoren $g_{ij}$:
 \begin{align}
   g_{ij} = \frac{h\,c}{\mu_\text{B}}\,\frac{\delta\lambda}{B\,\lambda^2}
-  \label{eqn:Lande}
+  \label{eqn:Landé}
 \end{align}
 
 
-\subsubsection{Lande-Faktoren der roten Linie}
-Der theoretische Lande-Faktor der roten Linie ist gleich 1 ($g_\text{theo,rot} = 1$), weil die Gesamtspinquantenzahl gleich 0 ist ($S$ = 0). \\
+
+\subsubsection{Landé-Faktoren der roten Linie}
+Der theoretische Landé-Faktor der roten Linie ist gleich 1 ($g_\text{theo,rot} = 1$), weil die Gesamtspinquantenzahl gleich 0 ist ($S$ = 0). \\
 Das B-Feld für die Messung beträgt
 \begin{align*}
   B_{\sigma,\text{rot}} = \num{0.55 +- 0.03} \text{T} \ .
 \end{align*}
-Der experimentelle Lande-Faktor wird mit Formel \eqref{eqn:Lande} zu
+Der experimentelle Landé-Faktor wird mit Formel \eqref{eqn:Landé} zu
 \begin{align*}
   g_{\text{exp},\sigma,\text{rot}} = \frac{h\,c}{\mu_\text{B}}\,\frac{\delta \lambda_{\sigma,\text{rot}}}{B_{\sigma,\text{rot}}\,\lambda_\text{rot}^2} = \num{1.09 +- 0.07}
 \end{align*}
+berechnet.
 
 
-
-\subsubsection{Lande-Faktoren der blauen Linie}
-Die theoretischen Lande-Faktoren der blauen Linie kann mit Formel \eqref{eqn:Lan} bestimmt werden. Damit ergibt sich ein Lande-Faktor der $\pi$-Komponente $g_{\text{theo},\pi,\text{blau}} = 0.5$. Für die $\sigma$-Komponente ergeben sich $g_{\text{theo},\sigma,\text{blau},1} = 1.5$ und $g_{\text{theo},\sigma,\text{blau},2} = 2.0$. Allerdings kann wegen der geringen Abweichung nur eine Linie erkannt werden. Deswegen wird der Lande-Faktor zu $g_{\text{theo},\sigma,\text{blau}} = 1.75$ gemittelt.
+\subsubsection{Landé-Faktoren der blauen Linie}
+Die theoretischen Landé-Faktoren der blauen Linie kann mit Formel \eqref{eqn:Lan} bestimmt werden. Damit ergibt sich ein Landé-Faktor der $\pi$-Komponente $g_{\text{theo},\pi,\text{blau}} = 0.5$. Für die $\sigma$-Komponente ergeben sich $g_{\text{theo},\sigma,\text{blau},1} = 1.5$ und $g_{\text{theo},\sigma,\text{blau},2} = 2.0$. Allerdings kann wegen der geringen Abweichung nur eine Linie erkannt werden. Deswegen wird der Landé-Faktor zu $g_{\text{theo},\sigma,\text{blau}} = 1.75$ gemittelt.
 Das B-Feld für die Messungen beträgt
 \begin{align*}
   B_{\sigma,\text{blau}} = \num{0.3 +- 0.02}\, \text{T}\ , \\
   B_{\pi,\text{blau}} = \num{1.06 +- 0.05}\, \text{T}\ .
 \end{align*}
-Die experimentellen Lande-Faktoren werden zu
+Die experimentellen Landé-Faktoren werden zu
 \begin{align*}
   g_{\text{exp},\sigma,\text{blau}} &= \frac{h\,c}{\mu_\text{B}}\,\frac{\delta \lambda_{\sigma,\text{blau}}}{B_{\sigma,\text{blau}}\,\lambda_\text{blau}^2} = \num{1.8 +- 0.1} \\
   g_{\text{exp},\pi,\text{blau}} &= \frac{h\,c}{\mu_\text{B}}\,\frac{\delta \lambda_{\pi,\text{blau}}}{B_{\pi,\text{blau}}\,\lambda_\text{blau}^2} = \num{0.56 +- 0.04}
