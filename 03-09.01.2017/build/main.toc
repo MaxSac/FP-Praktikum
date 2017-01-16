@@ -15,10 +15,10 @@
 \contentsline {section}{\numberline {3}Durchführung und Aufbau}{5}{section.3}
 \contentsline {section}{\numberline {4}Auswertung}{5}{section.4}
 \contentsline {subsection}{\numberline {4.1}Kalibrieren des Detektors anhand EU$^{152}$ Spektrums}{5}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}$^{137}$Cs-Strahler}{8}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Photopeak}{8}{subsubsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.2}Compton-Kontinum}{11}{subsubsection.4.2.2}
-\contentsline {subsubsection}{\numberline {4.2.3}Verteilung des Photopeaks}{12}{subsubsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.4}Absorptionswahrscheinlichkeit im Detektor}{13}{subsubsection.4.2.4}
-\contentsline {subsection}{\numberline {4.3}Aktivitätsbestimmung der verwendeten $^{133}$Ba-Quelle}{13}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.2}$^{137}$Cs-Strahler}{9}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Photopeak}{9}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}Compton-Kontinum}{10}{subsubsection.4.2.2}
+\contentsline {subsubsection}{\numberline {4.2.3}Verteilung des Photopeaks}{11}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}Absorptionswahrscheinlichkeit im Detektor}{12}{subsubsection.4.2.4}
+\contentsline {subsection}{\numberline {4.3}Aktivitätsbestimmung der verwendeten $^{133}$Ba-Quelle}{12}{subsection.4.3}
 \contentsline {section}{\numberline {5}Diskussion}{13}{section.5}

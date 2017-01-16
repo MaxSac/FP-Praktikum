@@ -26,7 +26,7 @@ Zunächst wird die Kanalnummer auf die Energie anhand des Spektrums des EU$^{152
   \label{tab:CsSpekt}
 \end{table} 
 Um die Korrelation zwischen der Energie und der Kanalnummer zu bestimmen wird eine lineare Regression durch die Tupel aus Energie und Kanalnummer gelegt. Das Ergebniss ist in Abbildung \ref{fig:RegCs} zu sehen. 
-\begin{figure}
+\begin{figure}[htpb]
   \centering
   \includegraphics[width=\textwidth]{./build/CsReg.pdf}
   \caption{<+caption text+>}
@@ -38,7 +38,7 @@ Aus der Regression ergibt sich eine Energiedifferenz zweier benachbarter Kanäle
   \label{eqn:Reg}
 \end{equation}
 Anhand der Energieskala werden die gemessenen Counts im weiteren in Abhängikeit der $\gamma$-Quanten Energie $E_{\gamma}$ dargestellt. Das für den Cs-Strahler aufgenommene Spektrum ist in Abbildung \ref{fig:SpekCs} zu sehen. 
-\begin{figure}
+\begin{figure}[htpb]
   \centering
   \includegraphics[width=\textwidth]{./build/SpektEu.pdf}
   \caption{<+caption text+>}
@@ -75,7 +75,7 @@ gemessen. Aus diesen lässt sich durch einsetzen in Formel \ref{eqn:??} ein Raum
   \label{eqn:Raum}
 \end{equation}
 berechnen. Aus dem Raumwinkel $\Omega$, der Wechselwirkungswahrscheinlickeit $W$, der Aktivität $A_\text{Durch}$ sowie die effektiv gemessene Zeit lässt sich nach Formel \ref{eqn:??} die Effizienz $Q$ berechnen. Die Ergebnisse in Abhängikeit der Energie sind in Tabelle \ref{tab:CsSpekt} aufgeführt. Um in erster Näherung die Effizienz in den folgenden Auswertungsteil \ref{sec:??} zur berücksichtigen wird die Effizenz in erster Näherung durch ein Potenzfunktion dargestellt. 
-\begin{figure} 
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{./build/Effizienz.pdf}
   \caption{<+caption text+>}
@@ -115,7 +115,7 @@ beträgt. Aus der natürlichen Energie $\varepsilon$ des Strahlers kann die theo
   \label{eqn:KanTheo}
 \end{equation} 
 Das Spektrum im bereich des Compton-Kontinums ist in Abbildung \ref{fig:Compt} zu sehen.
-\begin{figure}
+\begin{figure}[htpb]
   \centering
   \includegraphics[width=\textwidth]{./build/Compton.pdf}
   \caption{Compton-Kontinum mit Rückstreupeak und maximalen Energieübertrag}
@@ -170,7 +170,48 @@ seien. Das Verhältniss zwischen den experimentell Bestimmten breiten ist
 Daraus wird geschlossen das hinreichend viele Werte genommen worden sind, sodass die Poissonverteilung in die Gaußverteilung übergeht.
 
 \subsubsection{Absorptionswahrscheinlichkeit im Detektor}
-
+Aus Abbildung \ref{fig:??} kann der Extinktionskoeffizient $\mu$ in abhängigkeit von Germanium entsprechend der auftretenden Effekte abgelesen werden . Es lässt sich ablesen das der Extinktionskoeffizient beim Photoeffekt bei einer Energie von ~650 keV in etwa
+\begin{equation}
+  \mu_\text{Photo} = 0.002 \, \text{cm} ^{-1}
+  \label{eqn:muPhoto}
+\end{equation}
+ist. Unter Verwendung von Formel \ref{eqn:??} lässt sich die Absorptionswahrscheinlichkeit durch den Photoeffekt auf
+\begin{equation}
+  W_\text{Absorp, Photo} = 0.5 \, \%
+  \label{eqn:AbsorpPhoto}
+\end{equation}
+berechnen. Der Extinktionskoeffizient beim Comptoneffekt bei ~650 keV beträgt 
+\begin{equation}
+  \mu_\text{Compt} = 0.4 \, \text{cm} ^{-1} \ .
+  \label{eqn:muCompt}
+\end{equation}
+Daraus errrechnet sich eine Absorptionswahrscheinlichkeit von
+\begin{equation}
+  W_\text{Absorp, Compton} = 70 \, \% \ .
+  \label{eqn:AbsorpComp}
+\end{equation}
 \subsection{Aktivitätsbestimmung der verwendeten $^{133}$Ba-Quelle}
 
-
+Die Intensitäten der Spektrallinien $Z$ und die Wechselwirkungswahrscheinlickeit $W$ sind in Tabelle \ref{tab:??} zusammen mit den kalibrierten Energien aufgetragen. Der Raumwinkel wurde bereits in Kapitel \ref{sec:??} bestimmt und beträgt $\Omega$ = 0.19.
+\begin{table}
+  \centering
+  \begin{tabular}{c c c c}
+    \toprule
+	Energie $E_\gamma$ \ keV & Intensität $Z$ & Wechselwirkungsw. / \% $W$ & Aktivität $A$ \\
+    \hline
+	82	& 3177	& 34.1	& 1307	\\
+	162	& 144	& 0.6	& 3994	\\
+	304	& 918	& 18.3	& 1142	\\
+	357	& 2509	& 62.1	& 1038	\\
+	389	& 320	& 8.9	& 995	\\
+    \bottomrule
+  \end{tabular}
+  \caption{<+Caption text+>}
+  \label{tab:Ba}
+\end{table}
+Durch umstellen der Gleichung \ref{eqn:??} nach A lässt sich die Aktivität der Probe ermitteln wobei die Zählergebnisse noch einmal durch die Messdauer geteilt werden müssen. Die Lifetime des Detektors beträgt 3595 s. Die Aktivitäten der einzelnen Energien sind in Tabelle \ref{tab:Ba} aufgetragen. Das gemittelte Ergebniss beträgt 
+\begin{equation}
+  (\num{1120 +- 30}) \, \text{Bq}
+  \label{eqn:aktBq}
+\end{equation}
+wobei die Aktivität der Messunf mit der Energie von 162 keV vernachlässigt wurde, da der Messfehler bei der geringen Aktivität, verhältnissmäßig groß in anbetracht der anderen Aktivitäten scheint.

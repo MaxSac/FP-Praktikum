@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.23)  16 JAN 2017 12:43
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.10.23)  16 JAN 2017 14:33
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -466,7 +466,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.122 seconds)
+luaotfload | main : initialization completed in 0.123 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX. (/home/maximilian/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
 \l_fontspec_script_int=\count117
@@ -2113,7 +2113,7 @@ File: ./build/Effizienz.pdf Graphic file (type pdf)
  <use ./build/Effizienz.pdf>
 Package luatex.def Info: ./build/Effizienz.pdf used on input line 80.
 (luatex.def)             Requested size: 418.25555pt x 278.85017pt.
-
+ [8<./build/Effizienz.pdf>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 89.
@@ -2126,65 +2126,80 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 89.
 
-<./build/SpektCS.pdf, id=155, 433.62pt x 289.08pt>
+<./build/SpektCS.pdf, id=186, 433.62pt x 289.08pt>
 File: ./build/SpektCS.pdf Graphic file (type pdf)
  <use ./build/SpektCS.pdf>
 Package luatex.def Info: ./build/SpektCS.pdf used on input line 95.
 (luatex.def)             Requested size: 418.25555pt x 278.85017pt.
 
 
-LaTeX Warning: Reference `sec:' on page 8 undefined on input line 99.
+LaTeX Warning: Reference `sec:' on page 9 undefined on input line 99.
+
+[9<./build/SpektCS.pdf>]
+
+LaTeX Warning: Reference `eqn:??' on page 10 undefined on input line 107.
 
 
-LaTeX Warning: Reference `eqn:??' on page 8 undefined on input line 107.
+LaTeX Warning: Reference `eqn:??' on page 10 undefined on input line 112.
 
-[8] [9<./build/Effizienz.pdf>] [10<./build/SpektCS.pdf>]
-
-LaTeX Warning: Reference `eqn:??' on page 11 undefined on input line 112.
-
-<./build/Compton.pdf, id=222, 433.62pt x 289.08pt>
+<./build/Compton.pdf, id=218, 433.62pt x 289.08pt>
 File: ./build/Compton.pdf Graphic file (type pdf)
  <use ./build/Compton.pdf>
 Package luatex.def Info: ./build/Compton.pdf used on input line 120.
 (luatex.def)             Requested size: 418.25555pt x 278.85017pt.
- <./build/2Wertsbreite.pdf, id=224, 433.62pt x 289.08pt>
+ [10<./build/Compton.pdf>] <./build/2Wertsbreite.pdf, id=245, 433.62pt x 289.08pt>
 File: ./build/2Wertsbreite.pdf Graphic file (type pdf)
  <use ./build/2Wertsbreite.pdf>
 Package luatex.def Info: ./build/2Wertsbreite.pdf used on input line 142.
 (luatex.def)             Requested size: 209.12778pt x 139.41846pt.
- <./build/10Wertsbreite.pdf, id=225, 433.62pt x 289.08pt>
+ <./build/10Wertsbreite.pdf, id=246, 433.62pt x 289.08pt>
 File: ./build/10Wertsbreite.pdf Graphic file (type pdf)
  <use ./build/10Wertsbreite.pdf>
 Package luatex.def Info: ./build/10Wertsbreite.pdf used on input line 147.
 (luatex.def)             Requested size: 209.12778pt x 139.41846pt.
- [11<./build/Compton.pdf>]
+ [11<./build/2Wertsbreite.pdf><./build/10Wertsbreite.pdf>]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 172.
+LaTeX Warning: Reference `fig:??' on page 12 undefined on input line 173.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 172.
+LaTeX Warning: Reference `eqn:??' on page 12 undefined on input line 178.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 172.
+(hyperref)                removing `math shift' on input line 193.
 
-) (./content/diskussion.tex)
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 193.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 193.
+
+
+LaTeX Warning: Reference `tab:??' on page 12 undefined on input line 195.
+
+
+LaTeX Warning: Reference `sec:??' on page 12 undefined on input line 195.
+
+
+LaTeX Warning: Reference `eqn:??' on page 12 undefined on input line 212.
+
+) (./content/diskussion.tex [12])
 
 LaTeX Warning: Empty bibliography on input line 23.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
-[12<./build/2Wertsbreite.pdf><./build/10Wertsbreite.pdf>] [13]
+[13]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
  (./build/main.aux
 Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 3449D75377E8344D7C1EC1982193A861;15544.
+(rerunfilecheck)             Checksum: A70A1555DEA0ABEA084FE3D34546E69C;16215.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: F9AFA0D79D40399348AADBAA57609951;2107.
+(rerunfilecheck)             Checksum: 5F59B26BEB63B8134EEDBB9479422480;2107.
 
 
 LaTeX Warning: There were undefined references.
@@ -2203,19 +2218,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45381 strings out of 495118
+ 45396 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 2831 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 257 glue, 1 kern, 142 attribute, 59 glue_spec, 142 attribute_list, 1 write nodes
-   avail lists: 1:4,2:978,3:152,4:66,5:215,6:2129,7:752,8:164,9:308,10:11,11:250
- 47533 multiletter control sequences out of 65536+600000
+ 3081 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 283 glue, 1 kern, 159 attribute, 59 glue_spec, 159 attribute_list, 1 write nodes
+   avail lists: 1:4,2:945,3:152,4:67,5:215,6:2129,7:726,8:164,9:308,10:10,11:253
+ 47542 multiletter control sequences out of 65536+600000
  114 fonts using 37102659 bytes
  71i,14n,104p,8833b,2482s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/maximilian/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/maximilian/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/maximilian/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/maximilian/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/maximilian/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/maximilian/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/maximilian/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/maximilian/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (13 pages, 861319 bytes).
+Output written on main.pdf (13 pages, 865154 bytes).
 
-PDF statistics: 420 PDF objects out of 1000 (max. 8388607)
- 345 compressed objects within 4 object streams
- 68 named destinations out of 1000 (max. 131072)
+PDF statistics: 429 PDF objects out of 1000 (max. 8388607)
+ 354 compressed objects within 4 object streams
+ 74 named destinations out of 1000 (max. 131072)
  169 words of extra memory for PDF output out of 10000 (max. 10000000)
 
