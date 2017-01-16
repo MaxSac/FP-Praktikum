@@ -75,7 +75,7 @@ gemessen. Aus diesen lässt sich durch einsetzen in Formel \ref{eqn:??} ein Raum
   \label{eqn:Raum}
 \end{equation}
 berechnen. Aus dem Raumwinkel $\Omega$, der Wechselwirkungswahrscheinlickeit $W$, der Aktivität $A_\text{Durch}$ sowie die effektiv gemessene Zeit lässt sich nach Formel \ref{eqn:??} die Effizienz $Q$ berechnen. Die Ergebnisse in Abhängikeit der Energie sind in Tabelle \ref{tab:CsSpekt} aufgeführt. Um in erster Näherung die Effizienz in den folgenden Auswertungsteil \ref{sec:??} zur berücksichtigen wird die Effizenz in erster Näherung durch ein Potenzfunktion dargestellt. 
-\begin{figure}
+\begin{figure} 
   \centering
   \includegraphics[width=\textwidth]{./build/Effizienz.pdf}
   \caption{<+caption text+>}
@@ -86,3 +86,91 @@ Die ermittelte Potenzfunktion hatt die Form
   Q(E_\gamma)= 1.2 \cdot 10^{-14} \left( x - 1850 \right)^4 + 0.01 \ .
   \label{eqn:QCs}
 \end{equation}
+\subsection{$^{137}$Cs-Strahler}
+Zunächst wird die Laage des Photopeaks bestimmt und das Compton-Kontinum genauer untersucht . Anschließend wird geprüft ob der Photopeak einer Gaußverteilung entspricht. Zuletzt wird die Absorptionswahrscheinlichkeit des Detektors berechnet und erklärungen für die Gestalt des Compton-Kontinums, sowie des Photopeaks gesucht.
+\subsubsection{Photopeak}
+In dem Aufgenommenen Spektrum wird mittels der Funktion find\_peaks\_cwt aus der numpy Biblothek die Laage des Photopeaks bestimmt. Das Ergebniss ist in Abbildung \ref{fig:SpekCs} zu sehen. 
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{./build/SpektCS.pdf}
+  \caption{Spektrum des Cs-Strahlers}
+  \label{fig:SpekCS}
+\end{figure}
+Dabei wurde die X-Achse schon mittels der in Auswertungsteil \ref{sec:} Energie geeicht. Der Photopeak wird bei Energie von 
+\begin{equation}
+  E_\gamma = 663 \, \text{keV}
+  \label{eqn:CsPhoto}
+\end{equation} 
+detektiert. Im späteren Teil der Auswertung wird geprüft ob der Photopeak einer Gaußförmigen Verteilung zu Grunde liegt.
+
+\subsubsection{Compton-Kontinum}
+Für die weiteren Rechnungen wird zunächst die natürliche Energie $\varepsilon$ nach Formel \ref{eqn:??} eingeführt, welche 
+\begin{equation}
+  \varepsilon = 1.292 
+  \label{eqn:nE}
+\end{equation}
+beträgt. Aus der natürlichen Energie $\varepsilon$ des Strahlers kann die theoretische Laage der Comptonkante $E_\text{ComKan, theo}$ nach Formel \ref{eqn:??} berechnet werden. Sie beträgt
+\begin{equation}
+  E_\text{ComKan, theo} = 478 \, \text{keV}
+  \label{eqn:KanTheo}
+\end{equation} 
+Das Spektrum im bereich des Compton-Kontinums ist in Abbildung \ref{fig:Compt} zu sehen.
+\begin{figure}
+  \centering
+  \includegraphics[width=\textwidth]{./build/Compton.pdf}
+  \caption{Compton-Kontinum mit Rückstreupeak und maximalen Energieübertrag}
+  \label{fig:Compt}
+\end{figure}
+Aus ihm wird ein Rückstreupeak von 
+\begin{equation}
+  E_\text{rück} = 193 \, \text{keV}
+  \label{eqn:KanExp}
+\end{equation}
+und die Energie der maximalen Energieübertragung von 
+\begin{equation}
+  E_\text{l,max} = 470 \, \text{keV}
+  \label{eqn:RückExp}
+\end{equation} 
+abgelesen. 
+\subsubsection{Verteilung des Photopeaks}
+Um zu überprüfen ob der Photopeak gaußverteilt ist wird der Zusammenhang zwischen der Zehntelwertsbreite und der Halbwertsbreite überprüft. Dazu wird zunächst das Maximum $M$ bestimmt. Anschließend wird eine Linie in die Messwerte gelegt die dem $M/n$ fachen entspricht. Zwischen den jeweiligen Werten die am nächsten an der Linien des $M/n$ fachen liegt wird eine lineare Regression durchgeführt und der Punkt bestimmt bei dem die Regression den Wert $M/n$ angenommen hatt. Die Punkte werden jeweils für die Seite links und rechts vom Maximum bestimmt und der Abstand dortzwischen ermittelt. Der Abstand wird als $1/n$ fach Breite bezeichnet. 
+Die Halbwertsbreite sowie die Zehntelwertsbreite sind in Abbildung \ref{fig:Halb} zu sehen.
+\begin{figure*}[htpb]
+	\centering
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{./build/2Wertsbreite.pdf}
+		\caption{Halbwertsbreite}
+	\end{subfigure}%
+	\begin{subfigure}[t]{0.5\textwidth}
+		\centering
+		\includegraphics[width=\textwidth]{./build/10Wertsbreite.pdf}
+		\caption{Zehntelwertsbreite}
+	\end{subfigure}
+	\caption{Caption place holder}
+	\label{fig:Halb}
+\end{figure*}
+Die ermittelte Halbwertsbreite $E_{1/2}$ beträgt 
+\begin{equation}
+  E_{1/2} = 1.46 \, \text{keV}
+\end{equation}
+und die Zehntelwertsbreite $E_{1/10}$ beträgt 
+\begin{equation}
+  E_{1/10} = 2.60 \, \text{keV}
+\end{equation}
+Im Falle einer Gaußverteilung müsste das Verhältniss zwischen Halb- und Zehntelwertsbreite 
+\begin{equation}
+  E_{1/10} = 1.823 E_{1/2}
+\end{equation}
+seien. Das Verhältniss zwischen den experimentell Bestimmten breiten ist
+\begin{equation}
+  E_{1/10} = 1.78 E_{1/2}
+  \label{eqn:Ver}
+\end{equation}
+Daraus wird geschlossen das hinreichend viele Werte genommen worden sind, sodass die Poissonverteilung in die Gaußverteilung übergeht.
+
+\subsubsection{Absorptionswahrscheinlichkeit im Detektor}
+
+\subsection{Aktivitätsbestimmung der verwendeten $^{133}$Ba-Quelle}
+
+
