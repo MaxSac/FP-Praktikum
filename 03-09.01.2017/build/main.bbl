@@ -16,5 +16,32 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \sortlist[entry]{nty/global/}
+    \entry{Cs}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=fcb71c29df8b022ba715500512af3cc3}{%
+           family={EHS},
+           familyi={E\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {ehs.missouri.edu/rad/isotopedata/cs-137.pdf}%
+      }
+      \strng{namehash}{fcb71c29df8b022ba715500512af3cc3}
+      \strng{fullhash}{fcb71c29df8b022ba715500512af3cc3}
+      \strng{authornamehash}{fcb71c29df8b022ba715500512af3cc3}
+      \strng{authorfullhash}{fcb71c29df8b022ba715500512af3cc3}
+      \field{sortinit}{E}
+      \field{sortinithash}{fefc5210ef4721525b2a478df41efcd4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{RADIONUCLIDE DATA SHEET}
+      \field{year}{2017}
+    \endentry
+  \endsortlist
+  \missing{V18}
+\endrefsection
 \endinput
 

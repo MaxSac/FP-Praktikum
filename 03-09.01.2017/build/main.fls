@@ -394,13 +394,13 @@ INPUT ./content/durchfuehrung.tex
 INPUT ./content/durchfuehrung.tex
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
-INPUT ./build/CsReg.pdf
-INPUT ./build/CsReg.pdf
 INPUT /home/maximilian/.local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
 INPUT /home/maximilian/.local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmss8.tfm
 INPUT /home/maximilian/.local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmtt8.tfm
 INPUT /home/maximilian/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /home/maximilian/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT ./build/CsReg.pdf
+INPUT ./build/CsReg.pdf
 INPUT /home/maximilian/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc
 INPUT ./build/SpektEu.pdf
 INPUT ./build/SpektEu.pdf
@@ -414,6 +414,8 @@ INPUT ./build/2Wertsbreite.pdf
 INPUT ./build/2Wertsbreite.pdf
 INPUT ./build/10Wertsbreite.pdf
 INPUT ./build/10Wertsbreite.pdf
+INPUT ./build/SpektSt.pdf
+INPUT ./build/SpektSt.pdf
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT build/main.aux

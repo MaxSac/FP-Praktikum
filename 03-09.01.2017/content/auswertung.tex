@@ -1,10 +1,13 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-Für die Untersuchung der verschiedenen $\gamma$-Spektren werden die Kanäle des ``ADC'' auf die entsprechenden Energien kalibriert. Desweiteren wird die Effizienz des Detektors exemplarisch an dem EU-Spektrum berechnet und anschließend die Messwerte zur Bestimmung der aktivität der verwendeten Bariumquelle mit ihr bereinigt. Zuletzt wird anhand des Spektrums versucht auf die Zerfallsprodukte eines Minerals zu schließen und somit deren Zerfallskette zu bestimmen.
-\subsection{Kalibrieren des Detektors anhand EU$^{152}$ Spektrums}
+Für die Untersuchung der verschiedenen aufgenommenen $\gamma$-Spektren werden die Kanäle des ``ADC'' auf die entsprechenden Energien kalibriert. Desweiteren wird die Effizienz des Detektors exemplarisch an dem Eu-Spektrum berechnet und anschließend die Messwerte zur Bestimmung der Aktivität der verwendeten Bariumquelle mit ihr bereinigt. Desweiteren wird das Compton-Kontinum sowie der Photopeak einer Cs-Quelle untersucht, sowie geprüft ob der Photopeak Gaußverteilt ist. Zuletzt wird anhand des Spektrums versucht auf die Zerfallsprodukte eines Minerals zu schließen und somit deren Zerfallskette zu bestimmen.
+\subsection{Kalibrieren des Detektors anhand $^{152}$EU Spektrums}
+Zum Kalibrieren des Detektors wird im folgenden die Kanalnummer entsprechenden Energien zugewiesen, sowie die Effizenz des Detektors bestimmt.
+\subsubsection{Energiekalibrierung}
 Zunächst wird die Kanalnummer auf die Energie anhand des Spektrums des EU$^{152}$ Strahlers kalibriert. Die Energie mit den entsprechenden Kanalnummern sind in Tabelle \ref{tab:CsSpekt} aufgeführt.
 \begin{table}
   \centering
+  \caption{Kenngrößen eines $^{152}$Eu-Strahlers, sowie des Detektors}
   \begin{tabular}{c | c c c c}
     \toprule
     Energie $E_{\gamma}$ / keV& Kanal & Emissionwahrscheinlichkeit / \% & Counts & Effizienz / \% \\	
@@ -22,22 +25,24 @@ Zunächst wird die Kanalnummer auf die Energie anhand des Spektrums des EU$^{152
     1408.00	& 4593	& 21.0 	& 134	& \num{1.04 +- 0.02}	\\
     \bottomrule
   \end{tabular}
-  \caption{<+Caption text+>}
   \label{tab:CsSpekt}
 \end{table} 
 Um die Korrelation zwischen der Energie und der Kanalnummer zu bestimmen wird eine lineare Regression durch die Tupel aus Energie und Kanalnummer gelegt. Das Ergebniss ist in Abbildung \ref{fig:RegCs} zu sehen. 
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=\textwidth]{./build/CsReg.pdf}
-  \caption{<+caption text+>}
+  \caption{Lineare Regression zur Bestimmung der Korrelation zwischen Kanalnummer und $\gamma$-Quantenenergie}
   \label{fig:RegCs}
 \end{figure}
 Aus der Regression ergibt sich eine Energiedifferenz zweier benachbarter Kanäle beträgt von 
 \begin{equation}
-  \Delta E = (\num{0.30697 +- 0.00003}) \, \text{eV}
+  \Delta E = (\num{306.97 +- 0.03}) \, \text{keV}
   \label{eqn:Reg}
 \end{equation}
-Anhand der Energieskala werden die gemessenen Counts im weiteren in Abhängikeit der $\gamma$-Quanten Energie $E_{\gamma}$ dargestellt. Das für den Cs-Strahler aufgenommene Spektrum ist in Abbildung \ref{fig:SpekCs} zu sehen. 
+Anhand der Energieskala werden die gemessenen Counts im weiteren in Abhängikeit der $\gamma$-Quanten Energie $E_{\gamma}$ dargestellt. 
+\subsubsection{Effizienzbestimmung}
+\label{sec:Q}
+Das für den Eu-Strahler aufgenommene Spektrum ist in Abbildung \ref{fig:SpekCs} zu sehen. 
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=\textwidth]{./build/SpektEu.pdf}
@@ -51,7 +56,7 @@ Die Aktivität $A_\text{Eich}$ der verwendeten Europium Isotop betrug am 01.10.2
 \end{equation}
 und die Halbwertszeit
 \begin{equation}
-  \tau_{1/2} = (\num{4943 +- 5}) \, \text{Tage} 
+  \tau_{1/2} = (\num{4943 +- 5}) \, \text{Tage} \ .
   \label{eqn:halb}
 \end{equation}
 Anhand Formel \ref{eqn:??} lässt sich mittels der Zeitdifferenz zwischen der geeichten Aktivität und dem am Tag der Durchführung der Messung (09.01.2017) eine Aktivität von 
@@ -74,14 +79,14 @@ gemessen. Aus diesen lässt sich durch einsetzen in Formel \ref{eqn:??} ein Raum
   \Omega = 0.196 
   \label{eqn:Raum}
 \end{equation}
-berechnen. Aus dem Raumwinkel $\Omega$, der Wechselwirkungswahrscheinlickeit $W$, der Aktivität $A_\text{Durch}$ sowie die effektiv gemessene Zeit lässt sich nach Formel \ref{eqn:??} die Effizienz $Q$ berechnen. Die Ergebnisse in Abhängikeit der Energie sind in Tabelle \ref{tab:CsSpekt} aufgeführt. Um in erster Näherung die Effizienz in den folgenden Auswertungsteil \ref{sec:??} zur berücksichtigen wird die Effizenz in erster Näherung durch ein Potenzfunktion dargestellt. 
+berechnen. Der Raumwinkel $\Omega$ ist jedoch nur unter vorbehalt zu verwenden, da der Abstand zwischen Quelle und Detektor kleiner als 10 cm ist und dies nicht mehr im gültigkeitsbereich der Formel \ref{eqn:??} liegt. Aus dem Raumwinkel $\Omega$, der Wechselwirkungswahrscheinlickeit $W$, der Aktivität $A_\text{Durch}$ sowie die effektive Messzeit lässt sich nach Formel \ref{eqn:??} die Effizienz $Q$ berechnen. Die Ergebnisse in Abhängikeit der Energie sind in Tabelle \ref{tab:CsSpekt} aufgeführt. Um die Effizienz in den folgenden Auswertungsteil \ref{sec:??} zur berücksichtigen, wird die Effizenz in erster Näherung durch ein Potenzfunktion dargestellt. 
 \begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{./build/Effizienz.pdf}
-  \caption{<+caption text+>}
-  \label{fig:<+label+>}
+  \caption{Effizienz des verwendeten Germaniumdetektors}
+  \label{fig:Efi}
 \end{figure}
-Die ermittelte Potenzfunktion hatt die Form 
+Die ermittelte Potenzfunktion zur berechnung der Effizienz in Abhängigkeit der Energie, hat die Form 
 \begin{equation}
   Q(E_\gamma)= 1.2 \cdot 10^{-14} \left( x - 1850 \right)^4 + 0.01 \ .
   \label{eqn:QCs}
@@ -96,12 +101,12 @@ In dem Aufgenommenen Spektrum wird mittels der Funktion find\_peaks\_cwt aus der
   \caption{Spektrum des Cs-Strahlers}
   \label{fig:SpekCS}
 \end{figure}
-Dabei wurde die X-Achse schon mittels der in Auswertungsteil \ref{sec:} Energie geeicht. Der Photopeak wird bei Energie von 
+Dabei wurde die X-Achse schon mittels der in Auswertungsteil \ref{sec:} Energie skaliert. Der Photopeak wird bei Energie von 
 \begin{equation}
   E_\gamma = 663 \, \text{keV}
   \label{eqn:CsPhoto}
 \end{equation} 
-detektiert. Im späteren Teil der Auswertung wird geprüft ob der Photopeak einer Gaußförmigen Verteilung zu Grunde liegt.
+detektiert. Im späteren Teil der Auswertung wird geprüft ob der Photopeak einer gaußförmigen Verteilung zu Grunde liegt.
 
 \subsubsection{Compton-Kontinum}
 Für die weiteren Rechnungen wird zunächst die natürliche Energie $\varepsilon$ nach Formel \ref{eqn:??} eingeführt, welche 
@@ -133,7 +138,7 @@ und die Energie der maximalen Energieübertragung von
 \end{equation} 
 abgelesen. 
 \subsubsection{Verteilung des Photopeaks}
-Um zu überprüfen ob der Photopeak gaußverteilt ist wird der Zusammenhang zwischen der Zehntelwertsbreite und der Halbwertsbreite überprüft. Dazu wird zunächst das Maximum $M$ bestimmt. Anschließend wird eine Linie in die Messwerte gelegt die dem $M/n$ fachen entspricht. Zwischen den jeweiligen Werten die am nächsten an der Linien des $M/n$ fachen liegt wird eine lineare Regression durchgeführt und der Punkt bestimmt bei dem die Regression den Wert $M/n$ angenommen hatt. Die Punkte werden jeweils für die Seite links und rechts vom Maximum bestimmt und der Abstand dortzwischen ermittelt. Der Abstand wird als $1/n$ fach Breite bezeichnet. 
+Um zu überprüfen ob der Photopeak gaußverteilt ist wird der Zusammenhang zwischen der Zehntelwertsbreite und der Halbwertsbreite überprüft. Dazu wird zunächst das Maximum $M$ bestimmt. Anschließend wird eine Linie in die Messwerte gelegt die dem $M/n$ fachen entspricht. Zwischen den jeweiligen Werten die am nächsten an der Linien des $M/n$ fachen liegt wird eine lineare Regression durchgeführt und der Punkt bestimmt bei dem die Regression den Wert $M/n$ angenommen hatt. Die Punkte werden jeweils für die Seite links und rechts vom Maximum bestimmt und der Abstand dortzwischen ermittelt. Der Abstand wird als $1/n$-Wertsbreite bezeichnet. 
 Die Halbwertsbreite sowie die Zehntelwertsbreite sind in Abbildung \ref{fig:Halb} zu sehen.
 \begin{figure*}[htpb]
 	\centering
@@ -170,12 +175,12 @@ seien. Das Verhältniss zwischen den experimentell Bestimmten breiten ist
 Daraus wird geschlossen das hinreichend viele Werte genommen worden sind, sodass die Poissonverteilung in die Gaußverteilung übergeht.
 
 \subsubsection{Absorptionswahrscheinlichkeit im Detektor}
-Aus Abbildung \ref{fig:??} kann der Extinktionskoeffizient $\mu$ in abhängigkeit von Germanium entsprechend der auftretenden Effekte abgelesen werden . Es lässt sich ablesen das der Extinktionskoeffizient beim Photoeffekt bei einer Energie von ~650 keV in etwa
+Aus Abbildung \ref{fig:??} kann der Extinktionskoeffizient $\mu$ in abhängigkeit von Germanium entsprechend der auftretenden Effekte abgelesen werden . Der Extinktionskoeffizient beim Photoeffekt bei einer Energie von ~650 keV ist in etwa
 \begin{equation}
-  \mu_\text{Photo} = 0.002 \, \text{cm} ^{-1}
+  \mu_\text{Photo} = 0.002 \, \text{cm} ^{-1} \ .
   \label{eqn:muPhoto}
 \end{equation}
-ist. Unter Verwendung von Formel \ref{eqn:??} lässt sich die Absorptionswahrscheinlichkeit durch den Photoeffekt auf
+Unter Verwendung von Formel \ref{eqn:??} lässt sich die Absorptionswahrscheinlichkeit durch den Photoeffekt auf
 \begin{equation}
   W_\text{Absorp, Photo} = 0.5 \, \%
   \label{eqn:AbsorpPhoto}
@@ -190,11 +195,12 @@ Daraus errrechnet sich eine Absorptionswahrscheinlichkeit von
   W_\text{Absorp, Compton} = 70 \, \% \ .
   \label{eqn:AbsorpComp}
 \end{equation}
+Eine mögliche Erklärung dafür, dass der Photopeak dennoch im Spektrum so hoch ausfällt könnte seien, dass der Extinktionskoeffizient in dem Abschirmmaterial deutlich größer ist. Die Elektronen könnten möglicherweise mit aufgrund ihrer kinetischen Energie zwar aus dem Aluminium herausgelöst werden, aber erst in der Sperrschicht detektiert. 
 \subsection{Aktivitätsbestimmung der verwendeten $^{133}$Ba-Quelle}
-
-Die Intensitäten der Spektrallinien $Z$ und die Wechselwirkungswahrscheinlickeit $W$ sind in Tabelle \ref{tab:??} zusammen mit den kalibrierten Energien aufgetragen. Der Raumwinkel wurde bereits in Kapitel \ref{sec:??} bestimmt und beträgt $\Omega$ = 0.19.
+Die Intensitäten der Spektrallinien $Z$ und die Wechselwirkungswahrscheinlickeit $W$ sind in Tabelle \ref{tab:Ba} zusammen mit den kalibrierten Energien aufgetragen. Der Raumwinkel wurde bereits in Kapitel \ref{sec:Q} bestimmt und beträgt $\Omega$ = 0.19.
 \begin{table}
   \centering
+  \caption{Aktivität in Abhängigkeit der Energie sowie der Effizienz und der Wechselwirkungswahrscheinlichkeit}
   \begin{tabular}{c c c c}
     \toprule
 	Energie $E_\gamma$ \ keV & Intensität $Z$ & Wechselwirkungsw. / \% $W$ & Aktivität $A$ \\
@@ -206,7 +212,6 @@ Die Intensitäten der Spektrallinien $Z$ und die Wechselwirkungswahrscheinlickei
 	389	& 320	& 8.9	& 995	\\
     \bottomrule
   \end{tabular}
-  \caption{<+Caption text+>}
   \label{tab:Ba}
 \end{table}
 Durch umstellen der Gleichung \ref{eqn:??} nach A lässt sich die Aktivität der Probe ermitteln wobei die Zählergebnisse noch einmal durch die Messdauer geteilt werden müssen. Die Lifetime des Detektors beträgt 3595 s. Die Aktivitäten der einzelnen Energien sind in Tabelle \ref{tab:Ba} aufgetragen. Das gemittelte Ergebniss beträgt 
@@ -215,3 +220,12 @@ Durch umstellen der Gleichung \ref{eqn:??} nach A lässt sich die Aktivität der
   \label{eqn:aktBq}
 \end{equation}
 wobei die Aktivität der Messunf mit der Energie von 162 keV vernachlässigt wurde, da der Messfehler bei der geringen Aktivität, verhältnissmäßig groß in anbetracht der anderen Aktivitäten scheint.
+\subsection{Zerfallsreihe des unbekannten Minerals}
+Es wird versucht aus dem Linienspektrum des verwendeten Minerals auf die Zerfallsreihe der Probe zu schließen. Das Linienspektrum des Minerals ist in Abbildung \ref{fig:Stone} zu sehen.
+\begin{figure}[htpb]
+  \centering
+  \includegraphics[width=\textwidth]{./build/SpektSt.pdf}
+  \caption{Spektrum von verwendeten Mineral}
+  \label{fig:Stone}
+\end{figure}
+Bei dem Vergleich mit der $^{238}$Uran-Zerfallsreine fällt auf das das die Isotope von $^{236}$Ra bis $^{210}$Bi$^\text{m}$ alle auftreten. Dabei wird der Zerfall von $^{210}$Pb jedoch aufgrund der langen Halbwertszeit im vergleich zur Versuchdauer nicht detektiert.  
