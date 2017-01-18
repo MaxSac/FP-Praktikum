@@ -6,7 +6,7 @@ Im folgenden wird die Hysteresekurve des verwendeten Magneten bestimmt und aus d
 
 
 \subsection{Hysteresekurve}
-In der Abbildung \eqref{fig:Hysterese} ist die Hysteresekurve des verwendeten Magneten zu sehen. Es ist eine Verschiebung der Kurve nach oben zu erkennen, allerdings sind mehrere Bereiche ohne Verschiebung dabei. Das kann durch die Ablesefehler des Feldstroms $I$ erklärt werden.
+In der Abbildung \eqref{fig:Hysterese} ist die Hysteresekurve des verwendeten Magneten zu sehen. Es ist eine Verschiebung der Kurve zu erkennen, allerdings sind mehrere Bereiche ohne Verschiebung dabei. Das kann durch die Ablesefehler des Feldstroms $I$ erklärt werden.
 \begin{align*}
   \Delta I = 0.25\, \text{A}
 \end{align*}
@@ -38,18 +38,19 @@ berechnet. $\lambda$ entspricht dabei der Wellenlänge der verwendeten Linie und
 Mit diesen Werten und der Formel \eqref{eqn:Dispersionsgebiet} ergeben sich folgende Dispersionsgebiete:
 \begin{align*}
   \Delta\lambda_\text{D,rot} &= 0.0489 \cdot 10^{-9}\,\text{m}\ , \\
-  \Delta\lambda_\text{D,blau} &= 0.0270 \cdot 10^{-9}\,\text{m}\ ,
+  \Delta\lambda_\text{D,blau} &= 0.0270 \cdot 10^{-9}\,\text{m}\ .
 \end{align*}
-bestimmen.
 
 
-\subsection{Wellenlängeänderung}
+
+\subsection{Wellenlängenänderung}
 Die Wellenlängenänderung $\delta\lambda$ lässt sich mit
 \begin{align}
   \delta\lambda = \frac{\delta\text{s}}{2\,\Delta\text{s}}\cdot \Delta\lambda_\text{D}
   \label{eqn:Verschiebung}
 \end{align}
-berechnen. $\Delta$s ist dabei der Abstand zwischen zwei Linien ohne ein äußeres B-Feld und $\delta$s ist der Abstand zwischen den aufgespaltenen Linien.
+berechnen. $\Delta$s ist dabei der Abstand zwischen zwei Linien ohne ein äußeres B-Feld und $\delta$s ist der Abstand zwischen den aufgespaltenen Linien durch ein äußeres B-Feld. \\
+Um den Abstand zwischen zwei Linien bestimmen zu können, müssen die Maxima der einzelnen Linien bestimmt werden. Dazu werden die Pixelwerte der Linien aus den Bildern abgelesen. 
 
 
 
@@ -174,7 +175,7 @@ berechnet werden. Dabei ist eingegangen, dass sich $\Delta E$ nicht linear mit $
 Der theoretische Landé-Faktor der roten Linie ist gleich 1 ($g_\text{theo,rot} = 1$), weil die Gesamtspinquantenzahl gleich 0 ist ($S$ = 0). \\
 Das B-Feld für die Messung beträgt
 \begin{align*}
-  B_{\sigma,\text{rot}} = \num{0.55 +- 0.03} \text{T} \ .
+  B_{\sigma,\text{rot}} = (\num{0.55 +- 0.03}) \text{T} \ .
 \end{align*}
 Der experimentelle Landé-Faktor wird mit Formel \eqref{eqn:Landé} zu
 \begin{align*}
@@ -184,11 +185,11 @@ berechnet.
 
 
 \subsubsection{Landé-Faktoren der blauen Linie}
-Die theoretischen Landé-Faktoren der blauen Linie kann mit Formel \eqref{eqn:Lan} bestimmt werden. Damit ergibt sich ein Landé-Faktor der $\pi$-Komponente $g_{\text{theo},\pi,\text{blau}} = 0.5$. Für die $\sigma$-Komponente ergeben sich $g_{\text{theo},\sigma,\text{blau},1} = 1.5$ und $g_{\text{theo},\sigma,\text{blau},2} = 2.0$. Allerdings kann wegen der geringen Abweichung nur eine Linie erkannt werden. Deswegen wird der Landé-Faktor zu $g_{\text{theo},\sigma,\text{blau}} = 1.75$ gemittelt.
+Die theoretischen Landé-Faktoren der blauen Linie können mit Formel \eqref{eqn:Lan} bestimmt werden. Damit ergibt sich ein Landé-Faktor der $\pi$-Komponente $g_{\text{theo},\pi,\text{blau}} = 0.5$. Für die $\sigma$-Komponente ergeben sich $g_{\text{theo},\sigma,\text{blau},1} = 1.5$ und $g_{\text{theo},\sigma,\text{blau},2} = 2.0$. Allerdings kann wegen der geringen Abweichung nur eine Linie erkannt werden. Deswegen wird der Landé-Faktor zu $g_{\text{theo},\sigma,\text{blau}} = 1.75$ gemittelt.
 Das B-Feld für die Messungen beträgt
 \begin{align*}
-  B_{\sigma,\text{blau}} = \num{0.3 +- 0.02}\, \text{T}\ , \\
-  B_{\pi,\text{blau}} = \num{1.06 +- 0.05}\, \text{T}\ .
+  B_{\sigma,\text{blau}} = (\num{0.3 +- 0.02})\, \text{T}\ , \\
+  B_{\pi,\text{blau}} = (\num{1.06 +- 0.05})\, \text{T}\ .
 \end{align*}
 Die experimentellen Landé-Faktoren werden zu
 \begin{align*}
