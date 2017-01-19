@@ -49,8 +49,8 @@ Die Wellenlängenänderung $\delta\lambda$ lässt sich mit
   \delta\lambda = \frac{\delta\text{s}}{2\,\Delta\text{s}}\cdot \Delta\lambda_\text{D}
   \label{eqn:Verschiebung}
 \end{align}
-berechnen. $\Delta$s ist dabei der Abstand zwischen zwei Linien ohne ein äußeres B-Feld und $\delta$s ist der Abstand zwischen den aufgespaltenen Linien durch ein äußeres B-Feld. \\
-Um den Abstand zwischen zwei Linien bestimmen zu können, müssen die Maxima der einzelnen Linien bestimmt werden. Dazu werden die Pixelwerte der Linien aus den Bildern abgelesen. 
+berechnen. $\Delta$s ist dabei der Abstand zwischen zwei Linien ohne ein äußeres B-Feld. $\delta$s ist der Abstand zwischen den aufgespaltenen Linien durch ein äußeres B-Feld. \\
+Um den Abstand zwischen zwei Linien bestimmen zu können, müssen die Intensitätsmaxima der einzelnen Linien bestimmt werden. Dazu werden die Pixelwerte der Linien aus den Bildern abgelesen.
 
 
 
@@ -92,7 +92,7 @@ Die Werte für die Tabelle \eqref{tab:rot} werden aus den Abbildungen \eqref{fig
   \end{tabular}
 \end{table}
 
-Mit Hilfe der Formel \eqref{eqn:Verschiebung}, der Dispersionsgebiete und der Tabelle \eqref{tab:rot} ergeben sich nach dem mitteln folgende Werte für die Verschiebung $\delta\lambda$:
+Mit Hilfe der Formel \eqref{eqn:Verschiebung}, des Dispersionsgebietes $\Delta\lambda_\text{D,rot}$ und der Tabelle \eqref{tab:rot}, ergibt sich nach der Bestimmung des Mittelwertes folgender Wert für die Verschiebung $\delta\lambda$:
 \begin{align*}
   \delta \lambda_{\sigma,\text{rot}} = (\num{11.6 +- 0.4})\cdot 10^{-12}\,\text{m} \\
 \end{align*}
@@ -145,7 +145,7 @@ Die Werte für die Tabelle \eqref{tab:blau} werden aus den Abbildungen \eqref{fi
 \end{table}
 
 
-Mit Hilfe der Formel \eqref{eqn:Verschiebung}, der Dispersionsgebiete und der Tabelle \eqref{tab:blau} ergeben sich nach dem mitteln folgende Werte für die Verschiebung $\delta\lambda$\,:
+Mit Hilfe der Formel \eqref{eqn:Verschiebung}, des Dispersionsgebietes $\Delta\lambda_\text{D,blau}$ und der Tabelle \eqref{tab:blau}, ergeben sich nach der Bestimmung der Mittelwerte folgende Werte für die Verschiebung $\delta\lambda$\,:
 \begin{align*}
   \delta \lambda_{\sigma,blau} = (\num{5.9 +- 0.2})\cdot 10^{-12}\,\text{m} \\
   \delta \lambda_{\pi,blau} = (\num{6.4 +- 0.3})\cdot 10^{-12}\,\text{m}
@@ -154,16 +154,16 @@ Mit Hilfe der Formel \eqref{eqn:Verschiebung}, der Dispersionsgebiete und der Ta
 
 
 \subsection{Landé-Faktoren}
-Die Landé-Faktoren $g_\text{ij}$ können nach umstellen der Formel \eqref{eqn:dE} bestimmt werden.
+Die Landé-Faktoren $g_\text{ij}$ können nach Umstellen der Formel \eqref{eqn:dE} bestimmt werden.
 \begin{align}
-  g_{ij} = m_1\,g_1 + m_2\,g_2 = \frac{\Delta E}{\mu_\text{B}\,B}
+  g_{ij} = m_1\,g_1 - m_2\,g_2 = \frac{\Delta E}{\mu_\text{B}\,B}
 \end{align}
 Dabei ist das Bohrsche Magneton gegeben durch $\mu_\text{B} = 9.274 \cdot 10^{-24}\,\frac{\text{J}}{\text{T}}$.\\
 Die Energiedifferenz kann über
 \begin{align}
   |\Delta E| \approx \left| \frac{\partial E}{\partial \lambda}\right| \cdot |\delta\lambda| = \frac{h\,c}{\lambda^2}\cdot \delta\lambda
 \end{align}
-berechnet werden. Dabei ist eingegangen, dass sich $\Delta E$ nicht linear mit $\lambda$ ändert. Damit ergibt sich für die Landé-Faktoren $g_{ij}$:
+berechnet werden. In der Berechnung ist berücksichtigt, dass sich $\Delta E$ nicht linear mit $\lambda$ ändert. Damit ergibt sich für die Landé-Faktoren $g_{ij}$:
 \begin{align}
   g_{ij} = \frac{h\,c}{\mu_\text{B}}\,\frac{\delta\lambda}{B\,\lambda^2}
   \label{eqn:Landé}
