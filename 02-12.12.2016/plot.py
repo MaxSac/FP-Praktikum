@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from uncertainties import ufloat
+from scipy.optimize import curve_fit
+from lmfit import minimize, Parameter, Model
 
 # Hysterese Kurve
 # B-Feld in mT, Strom in A
@@ -10,10 +12,29 @@ Ahoch = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 
 Brunter = np.array([1057, 1036, 1004, 975, 935, 893, 849, 791, 734, 678, 600, 562, 496, 432, 371, 303, 244, 182, 129, 58, 7])
 Arunter = np.array([20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0])
 
-plt.plot(Ahoch, Bhoch, 'r-', label='Hysteresekurve beim hochdrehen')
+#B = mu_r * mu_0 * n/l * I
+
+def f(I, a, b, c): return a * (I+b)**3 + c
+#def f(I, a, b, c): return a * np.arctan((I+b)/c)
+#def f(I, a, b, c): return a * np.tanh((I+b)/c)
+
+params, covariance = curve_fit(f, Ahoch, Bhoch)
+print('Curve Parameter =', params)
+print('Curve Covariance =', covariance)
+
+model = Model(f, independent_vars=['I'])
+result1 = model.fit(Bhoch, I=Ahoch, a=Parameter(value=100), b=Parameter(value=1), c=Parameter(value=1))
+result2 = model.fit(Brunter, I=Arunter, a=Parameter(value=1), b=Parameter(value=1), c=Parameter(value=1))
+print('lmfit Parameter =')
+print(result1.params)
+print(result2.params)
+
+#plt.plot(Ahoch, f(Ahoch, *params), 'r-', label='Hysteresekurve beim hochdrehen')
+plt.plot(Ahoch, f(Ahoch, **result1.params), 'b-')
+plt.plot(Arunter, f(Arunter, **result2.params), 'g-')
 plt.plot(Ahoch, Bhoch, 'rx', label='Messwerte beim hochdrehen')
-plt.plot(Arunter, Brunter, 'g-', label='Hysteresekurve beim runterdrehen')
-plt.plot(Arunter, Brunter, 'gx', label='Messwerte beim runterdrehen')
+#plt.plot(Arunter, Brunter, 'g-', label='Hysteresekurve beim runterdrehen')
+#plt.plot(Arunter, Brunter, 'gx', label='Messwerte beim runterdrehen')
 plt.legend(loc='best')
 plt.xlabel(r'$I$ / A')
 plt.ylabel(r'$B$ / mT')
@@ -22,7 +43,7 @@ plt.savefig('Bilder/Hysterese.pdf')
 plt.close()
 
 
-
+'''
 
 
 # Berechnung des Dispersionsgebietes Delta lambda
@@ -214,5 +235,5 @@ print('B =', BB2)
 print('g =', gB2)
 print('Abweichung:', (0.5 - gB2) / 0.5)
 
-
+'''
 print('--------------------------------------')
