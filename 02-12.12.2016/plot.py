@@ -1,62 +1,57 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from uncertainties import ufloat
+from uncertainties import unumpy as unp
 from scipy.optimize import curve_fit
-from lmfit import minimize, Parameter, Model
 
 # Hysterese Kurve
 # B-Feld in mT, Strom in A
 Bhoch = np.array([4, 61, 119, 178, 245, 300, 374, 427, 488, 549, 600, 666, 732, 790, 835, 879, 935, 968, 999, 1030, 1057])
-Ahoch = np.array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
+Ahoch = np.arange(0, 21)
 
 Brunter = np.array([1057, 1036, 1004, 975, 935, 893, 849, 791, 734, 678, 600, 562, 496, 432, 371, 303, 244, 182, 129, 58, 7])
-Arunter = np.array([20, 19, 18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0])
+Arunter = np.arange(0, 21)[::-1]
 
-#B = mu_r * mu_0 * n/l * I
+# Fitfunktion
+def f(I, a, b, c, d):
+    return a * np.arctan(b * I + c) + d
 
-def f(I, a, b, c): return a * (I+b)**3 + c
-#def f(I, a, b, c): return a * np.arctan((I+b)/c)
-#def f(I, a, b, c): return a * np.tanh((I+b)/c)
+print('Ansteigender Strom:')
+params1, covariance1 = curve_fit(f, Ahoch, Bhoch)
+for i in range(4):
+    print('Parameter =', params1[i], np.sqrt(covariance1[i, i]))
 
-params, covariance = curve_fit(f, Ahoch, Bhoch)
-print('Curve Parameter =', params)
-print('Curve Covariance =', covariance)
+print('Abfallender Strom:')
+params2, covariance2 = curve_fit(f, Arunter, Brunter)
+for i in range(4):
+    print('Parameter =', params2[i], np.sqrt(covariance2[i, i]))
 
-model = Model(f, independent_vars=['I'])
-result1 = model.fit(Bhoch, I=Ahoch, a=Parameter(value=100), b=Parameter(value=1), c=Parameter(value=1))
-result2 = model.fit(Brunter, I=Arunter, a=Parameter(value=1), b=Parameter(value=1), c=Parameter(value=1))
-print('lmfit Parameter =')
-print(result1.params)
-print(result2.params)
 
-#plt.plot(Ahoch, f(Ahoch, *params), 'r-', label='Hysteresekurve beim hochdrehen')
-plt.plot(Ahoch, f(Ahoch, **result1.params), 'b-')
-plt.plot(Arunter, f(Arunter, **result2.params), 'g-')
 plt.plot(Ahoch, Bhoch, 'rx', label='Messwerte beim hochdrehen')
-#plt.plot(Arunter, Brunter, 'g-', label='Hysteresekurve beim runterdrehen')
-#plt.plot(Arunter, Brunter, 'gx', label='Messwerte beim runterdrehen')
+plt.plot(Ahoch, f(Ahoch, *params1), 'r-', linewidth=0.5, label='Fit')
+
+plt.plot(Arunter, Brunter, 'gx', label='Messwerte beim runterdrehen')
+plt.plot(Arunter, f(Arunter, *params2), 'g-', linewidth=0.5, label='Fit')
+
 plt.legend(loc='best')
 plt.xlabel(r'$I$ / A')
 plt.ylabel(r'$B$ / mT')
-#plt.show()
 plt.savefig('Bilder/Hysterese.pdf')
 plt.close()
 
 
-'''
 
-
-# Berechnung des Dispersionsgebietes Delta lambda
+# Berechnung des Dispersionsgebietes
 def Dispersionsgebiet(lam, n, d=0.004):
     return lam**2 / (2*d) * np.sqrt(1 / (n**2 - 1))
 
 WellenlängeRot = 643.8 * 10**(-9)
-BrechzahlRot = 1.4567
+nRot = 1.4567
 WellenlängeBlau = 480.0 * 10**(-9)
-BrechzahlBlau = 1.4635
+nBlau = 1.4635
 
-lamRot = Dispersionsgebiet(WellenlängeRot, BrechzahlRot)
-lamBlau = Dispersionsgebiet(WellenlängeBlau, BrechzahlBlau)
+lamRot = Dispersionsgebiet(WellenlängeRot, nRot)
+lamBlau = Dispersionsgebiet(WellenlängeBlau, nBlau)
 print('--------------------------------------')
 print('Dispersionsgebiet Rot =', lamRot)
 print('Dispersionsgebiet Blau =', lamBlau)
@@ -69,7 +64,7 @@ def DS(A):
 def dS(A, B):
     return B - A
 
-# Berechnung der Wellenlängen Verschiebung delta lambda
+# Berechnung der Wellenlängen Verschiebung
 def deltaLambda(dS, DS, lam):
     return 0.5 * lam * dS / DS
 
@@ -100,6 +95,7 @@ np.mean([2358, 2352, 2356]),
 np.mean([2486, 2478, 2482]),
 np.mean([2602, 2602, 2606]),
 np.mean([2722, 2726, 2726]), ])
+
 B6ASig2 = np.array([
 np.mean([1624, 1626, 1628]),
 np.mean([1760, 1758, 1762]),
@@ -124,6 +120,7 @@ np.mean([2420, 2426, 2430]),
 np.mean([2548, 2554, 2556]),
 np.mean([2678, 2682, 2684]),
 np.mean([2804, 2806, 2814]), ])
+
 B20APi2 = np.array([
 np.mean([1660, 1664, 1666]),
 np.mean([1814, 1810, 1808]),
@@ -180,6 +177,7 @@ np.mean([2022, 2026, 2026]),
 np.mean([2227, 2230, 2236]),
 np.mean([2418, 2430, 2436]),
 np.mean([2612, 2618, 2624]), ])
+
 R9ASig2 = np.array([
 np.mean([780, 785, 795]),
 np.mean([1035, 1020, 1015]),
@@ -235,5 +233,4 @@ print('B =', BB2)
 print('g =', gB2)
 print('Abweichung:', (0.5 - gB2) / 0.5)
 
-'''
 print('--------------------------------------')

@@ -6,13 +6,32 @@ Im folgenden wird die Hysteresekurve des verwendeten Magneten bestimmt und aus d
 
 
 \subsection{Hysteresekurve}
-In der Abbildung \eqref{fig:Hysterese} ist die Hysteresekurve des verwendeten Magneten zu sehen. Die zugehörigen Messwerte sind in Tabelle \eqref{tab:Hysterese} aufgetragen. Es ist eine Verschiebung der Kurve zu erkennen, allerdings sind mehrere Bereiche ohne Verschiebung dabei. Das kann durch die Ablesefehler des Feldstroms $I$ erklärt werden.
+In der Abbildung \eqref{fig:Hysterese} ist die Hysteresekurve des verwendeten Magneten zu sehen. Die zugehörigen Messwerte sind in Tabelle \eqref{tab:Hysterese} aufgetragen. Der Fit wurde mit der folgenden Funktion
 \begin{align*}
-  \Delta I = 0.25\, \text{A}
+  B(I) = a\cdot \arctan(b\cdot I + c) + d
 \end{align*}
-Die Ablesefehler kommen durch die analoge Anzeige zustande.
+durchgeführt. Dafür muss zwischen aufsteigendem Feldstrom $I_\text{auf}$ und absteigendem Feldstrom $I_\text{ab}$ unterschieden werden. Die daraus folgenden Parameter sind in Tabelle \eqref{tab:Parameter} aufgetragen.
 
-\begin{table}
+\begin{table}[H] %Fitparameter: Hysteresekurve
+  \centering
+  \caption{Die Parameter für den Fit der Hysteresekurve.}
+  \label{tab:Parameter}
+  \begin{tabular}{c|c|c|c|c}
+    & a & b & c & d \\
+    \hline
+    $I_\text{auf}$ & $\num{830 +- 50}$ & $\num{0.077 +- 0.005}$ & $\num{-0.50 +- 0.06}$ & $\num{400 +- 20}$ \\
+    $I_\text{ab}$ & $\num{800 +- 50}$ & $\num{0.081 +- 0.005}$ & $\num{-0.54 +- 0.06}$ & $\num{400 +- 20}$ \\
+  \end{tabular}
+\end{table}
+
+\begin{figure}[H] %Diagramm: Hysteresekurve
+  \centering
+  \includegraphics[width=\linewidth]{Bilder/Hysterese.pdf}
+  \caption{Die Hysteresekurve des verwendeten Magneten.}
+  \label{fig:Hysterese}
+\end{figure}
+
+\begin{table}[H] %Messwerte: Hysteresekurve
   \centering
   \caption{Messwerte für die Hysteresekurve des verwendeten Magneten.}
   \label{tab:Hysterese}
@@ -43,14 +62,12 @@ Die Ablesefehler kommen durch die analoge Anzeige zustande.
   \end{tabular}
 \end{table}
 
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=\linewidth]{Bilder/Hysterese.pdf}
-  \caption{Die Hysteresekurve des verwendeten Magneten.}
-  \label{fig:Hysterese}
-\end{figure}
+Es ist eine Verschiebung der Kurve zu erkennen, allerdings sind mehrere Bereiche ohne Verschiebung dabei. Das kann durch die Ablesefehler des Feldstroms $I$ erklärt werden.
+\begin{align*}
+  \Delta I = 0.25\, \text{A}
+\end{align*}
+Die Ablesefehler kommen durch die analoge Anzeige zustande. Im folgenden wird der Fehler des B-Feldes auf 5\,\% geschätzt.
 
-Im folgenden wird der Fehler des B-Feldes auf 5\,\% geschätzt.
 
 
 \subsection{Dispersionsgebiet}
@@ -175,7 +192,6 @@ Die Werte für die Tabelle \eqref{tab:blau} werden aus den Abbildungen \eqref{fi
   \end{tabular}
 \end{table}
 
-
 Mit Hilfe der Formel \eqref{eqn:Verschiebung}, des Dispersionsgebietes $\Delta\lambda_\text{D,blau}$ und der Tabelle \eqref{tab:blau}, ergeben sich nach der Bestimmung der Mittelwerte folgende Werte für die Verschiebung $\delta\lambda$\,:
 \begin{align*}
   \delta \lambda_{\sigma,blau} = (\num{5.9 +- 0.2})\cdot 10^{-12}\,\text{m} \\
@@ -215,6 +231,7 @@ Der experimentelle Landé-Faktor wird mit Formel \eqref{eqn:Landé} zu
 berechnet.
 
 
+
 \subsubsection{Landé-Faktoren der blauen Linie}
 Die theoretischen Landé-Faktoren der blauen Linie können mit Formel \eqref{eqn:Lan} bestimmt werden. Damit ergibt sich ein Landé-Faktor der $\pi$-Komponente $g_{\text{theo},\pi,\text{blau}} = 0.5$. Für die $\sigma$-Komponente ergeben sich $g_{\text{theo},\sigma,\text{blau},1} = 1.5$ und $g_{\text{theo},\sigma,\text{blau},2} = 2.0$. Allerdings kann wegen der geringen Abweichung nur eine Linie erkannt werden. Deswegen wird der Landé-Faktor zu $g_{\text{theo},\sigma,\text{blau}} = 1.75$ gemittelt.
 Das B-Feld für die Messungen beträgt
@@ -228,25 +245,3 @@ Die experimentellen Landé-Faktoren werden zu
   g_{\text{exp},\pi,\text{blau}} &= \frac{h\,c}{\mu_\text{B}}\,\frac{\delta \lambda_{\pi,\text{blau}}}{B_{\pi,\text{blau}}\,\lambda_\text{blau}^2} = \num{0.56 +- 0.04}
 \end{align*}
 bestimmt.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-%
