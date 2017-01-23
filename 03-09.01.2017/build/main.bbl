@@ -40,8 +40,32 @@
       \field{title}{RADIONUCLIDE DATA SHEET}
       \field{year}{2017}
     \endentry
+    \entry{V18}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=dc2ae4c35ceafbe06809d2b3f38a367b}{%
+           family={TU\bibnamedelima Dortmund},
+           familyi={T\bibinitperiod\bibinitdelim D\bibinitperiod},
+           given={Physikalisches\bibnamedelima Praktikum},
+           giveni={P\bibinitperiod\bibinitdelim P\bibinitperiod},
+           prefix={der},
+           prefixi={d\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {http://129.217.224.2/HOMEPAGE/PHYSIKER/BACHELOR/FP/SKRIPT/V18.pdf}%
+      }
+      \strng{namehash}{dc2ae4c35ceafbe06809d2b3f38a367b}
+      \strng{fullhash}{dc2ae4c35ceafbe06809d2b3f38a367b}
+      \strng{authornamehash}{dc2ae4c35ceafbe06809d2b3f38a367b}
+      \strng{authorfullhash}{dc2ae4c35ceafbe06809d2b3f38a367b}
+      \field{sortinit}{T}
+      \field{sortinithash}{423d138a005a533b47e6475e39378bf2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{01}
+      \field{title}{Versuch 18, Der Germanium-Detektor}
+      \field{year}{2017}
+    \endentry
   \endsortlist
-  \missing{V18}
 \endrefsection
 \endinput
 
