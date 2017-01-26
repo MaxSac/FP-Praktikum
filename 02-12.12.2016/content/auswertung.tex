@@ -3,10 +3,11 @@
 \label{sec:Auswertung}
 Im folgenden wird die Hysteresekurve des verwendeten Magneten bestimmt und aus der Verschiebung der Wellenlänge werden die Landé-Faktoren berechnet.
 
+{Hier würde ich einmal kurz auflisten welche Zielgrößen du alle in der Auswertung bestimmen möchtest. Energiediff, Landefaktoren usw\ldots}
 
 
 \subsection{Hysteresekurve}
-In der Abbildung \eqref{fig:Hysterese} ist die Hysteresekurve des verwendeten Magneten zu sehen. Die zugehörigen Messwerte sind in Tabelle \eqref{tab:Hysterese} aufgetragen. Der Fit wurde mit der folgenden Funktion
+In Abbildung \eqref{fig:Hysterese} ist die Hysteresekurve des verwendeten Magneten zu sehen. Die zugehörigen Messwerte sind in Tabelle \eqref{tab:Hysterese} aufgetragen. Der Fit wurde mit der folgenden Funktion
 \begin{align*}
   B(I) = a\cdot \arctan(b\cdot I + c) + d
 \end{align*}
@@ -67,7 +68,7 @@ Es ist eine Verschiebung der Kurve zu erkennen, allerdings sind mehrere Bereiche
   \Delta I = 0.25\, \text{A}
 \end{align*}
 Die Ablesefehler kommen durch die analoge Anzeige zustande. Im folgenden wird der Fehler des B-Feldes auf 5\,\% geschätzt.
-
+\left( Vlt noch einen Satz warum wir die Messung machen. Die MEssung zeigt das der eisenkern eine geringe Hysterese aufzeigt :D \right)
 
 
 \subsection{Dispersionsgebiet}
@@ -76,7 +77,7 @@ Das Dispersionsgebiet gibt die maximale Wellenlängendifferenz an, die zwei Well
   \Delta\lambda_\text{D} = \frac{\lambda^2}{2\cdot d} \cdot \sqrt{\frac{1}{n^2 - 1}}
   \label{eqn:Dispersionsgebiet}
 \end{align}
-berechnet. $\lambda$ entspricht dabei der Wellenlänge der verwendeten Linie und $n$ der Brechzahl. Die Dicke der Lummer-Gehrcke Platte $d$ beträgt 4\,mm. Die Brechzahlen und Wellenlängen der roten und blauen Linie sind:
+berechnet. $\lambda$ entspricht dabei der Wellenlänge der verwendeten Linie(Spektrallinie? Linien haben keine Wellenlängen ;D) und $n$ der Brechzahl (der Lummer-Gehrcke-Platte). Die Dicke der Lummer-Gehrcke Platte $d$ beträgt 4\,mm. Die Brechzahlen und Wellenlängen der roten und blauen Linie sind: (auch wenn es dumm ist würde ich vlt schreiben woher du die Zahlenwerte hast. Anleitung? andere Quelle?)
 \begin{align*}
   \lambda_\text{rot} &= 643.8\,\text{nm} \\
   n_\text{rot} &= 1.4567 \\
@@ -86,10 +87,8 @@ berechnet. $\lambda$ entspricht dabei der Wellenlänge der verwendeten Linie und
 Mit diesen Werten und der Formel \eqref{eqn:Dispersionsgebiet} ergeben sich folgende Dispersionsgebiete:
 \begin{align*}
   \Delta\lambda_\text{D,rot} &= 0.0489 \cdot 10^{-9}\,\text{m}\ , \\
-  \Delta\lambda_\text{D,blau} &= 0.0270 \cdot 10^{-9}\,\text{m}\ .
+  \Delta\lambda_\text{D,blau} &= 0.0270 \cdot 10^{-9}\,\text{m}\ . (vlt in nm bzw picometer angeben. Einheiten  mit denen man was anfangen kann :p)
 \end{align*}
-
-
 
 \subsection{Wellenlängenänderung}
 Die Wellenlängenänderung $\delta\lambda$ lässt sich mit
@@ -205,7 +204,7 @@ Die Landé-Faktoren $g_\text{ij}$ können nach Umstellen der Formel \eqref{eqn:d
 \begin{align}
   g_{ij} = m_1\,g_1 - m_2\,g_2 = \frac{\Delta E}{\mu_\text{B}\,B}
 \end{align}
-Dabei ist das Bohrsche Magneton gegeben durch $\mu_\text{B} = 9.274 \cdot 10^{-24}\,\frac{\text{J}}{\text{T}}$.\\
+Dabei ist das Bohrsche Magneton gegeben durch $\mu_\text{B} = 9.274 \cdot 10^{-24}\,\frac{\text{J}}{\text{T}}$.\\ (Zitieren)
 Die Energiedifferenz kann über
 \begin{align}
   |\Delta E| \approx \left| \frac{\partial E}{\partial \lambda}\right| \cdot |\delta\lambda| = \frac{h\,c}{\lambda^2}\cdot \delta\lambda
@@ -219,8 +218,8 @@ berechnet werden. In der Berechnung ist berücksichtigt, dass sich $\Delta E$ ni
 
 
 \subsubsection{Landé-Faktoren der roten Linie}
-Der theoretische Landé-Faktor der roten Linie ist gleich 1 ($g_\text{theo,rot} = 1$), weil die Gesamtspinquantenzahl gleich 0 ist ($S$ = 0). \\
-Das B-Feld für die Messung beträgt
+Der theoretische Landé-Faktor der roten Linie ist gleich 1 ($g_\text{theo,rot} = 1$) (doppelt sich irgendwie), weil die Gesamtspinquantenzahl gleich 0 ist ($S$ = 0). \\ (Vlt besser: Aufgrund eines verschwindenen Gesamtspins S=0, handelt es sich um den normalen Zeemaneffekt sodas der Landefaktor g = 1 ist.)
+Das B-Feld für die Messung beträgt(Für die Messung wird ein B-Feld von \ldots angelgt.)
 \begin{align*}
   B_{\sigma,\text{rot}} = (\num{0.55 +- 0.03}) \text{T} \ .
 \end{align*}
@@ -233,7 +232,7 @@ berechnet.
 
 
 \subsubsection{Landé-Faktoren der blauen Linie}
-Die theoretischen Landé-Faktoren der blauen Linie können mit Formel \eqref{eqn:Lan} bestimmt werden. Damit ergibt sich ein Landé-Faktor der $\pi$-Komponente $g_{\text{theo},\pi,\text{blau}} = 0.5$. Für die $\sigma$-Komponente ergeben sich $g_{\text{theo},\sigma,\text{blau},1} = 1.5$ und $g_{\text{theo},\sigma,\text{blau},2} = 2.0$. Allerdings kann wegen der geringen Abweichung nur eine Linie erkannt werden. Deswegen wird der Landé-Faktor zu $g_{\text{theo},\sigma,\text{blau}} = 1.75$ gemittelt.
+Die theoretischen Landé-Faktoren der blauen Linie können mit Formel \eqref{eqn:Lan} bestimmt werden. Damit ergibt sich ein Landé-Faktor der $\pi$-Komponente $g_{\text{theo},\pi,\text{blau}} = 0.5$. Für die $\sigma$-Komponente ergeben sich $g_{\text{theo},\sigma,\text{blau},1} = 1.5$ und $g_{\text{theo},\sigma,\text{blau},2} = 2.0$. Allerdings kann wegen der geringen Abweichung nur eine Linie erkannt werden.(Zu schwaches Feld? zu schlechte Auflösung? Gründe angeben) Deswegen wird der Landé-Faktor zu $g_{\text{theo},\sigma,\text{blau}} = 1.75$ gemittelt.
 Das B-Feld für die Messungen beträgt
 \begin{align*}
   B_{\sigma,\text{blau}} = (\num{0.3 +- 0.02})\, \text{T}\ , \\
