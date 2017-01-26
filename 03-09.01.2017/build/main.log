@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.12.1)  23 JAN 2017 15:34
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.12.1)  26 JAN 2017 00:01
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -466,7 +466,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.109 seconds)
+luaotfload | main : initialization completed in 0.090 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX. (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
 \l_fontspec_script_int=\count117
@@ -1879,11 +1879,7 @@ File: german.lbx 2016/09/17 v3.6 biblatex localization (PK/JW/AB)
 ) (./build/main.aux
 luatex-hyphen: loading patterns and exceptions for: german (\language4)
 luatex-hyphen: info: no hyphenation exceptions for this language
-Language ngerman already loaded; id is 8
-
-LaTeX Warning: Label `<++>' multiply defined.
-
-)
+Language ngerman already loaded; id is 8)
 \openout1 = main.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -2062,178 +2058,52 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
 (Font)              scaled to size 12.00018pt on input line 12.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 11.99982pt on input line 12.
-(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc) [3] [4] [5]) (./content/durchfuehrung.tex) (./content/auswertung.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 4.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 4.
-
-[6]
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 10.
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 10.
-
-Overfull \hbox (1.4398pt too wide) in paragraph at lines 11--29
- [][] 
- []
-
-<./build/CsReg.pdf, id=120, 433.62pt x 289.08pt>
-File: ./build/CsReg.pdf Graphic file (type pdf)
- <use ./build/CsReg.pdf>
-Package luatex.def Info: ./build/CsReg.pdf used on input line 33.
-(luatex.def)             Requested size: 418.25555pt x 278.85017pt.
-(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc) <./build/SpektEu.pdf, id=122, 433.62pt x 289.08pt>
-File: ./build/SpektEu.pdf Graphic file (type pdf)
- <use ./build/SpektEu.pdf>
-Package luatex.def Info: ./build/SpektEu.pdf used on input line 48.
-(luatex.def)             Requested size: 418.25555pt x 278.85017pt.
- [7] [8<./build/CsReg.pdf>] [9<./build/SpektEu.pdf>]
-
-LaTeX Warning: Reference `eqn:??' on page 10 undefined on input line 62.
-
-
-LaTeX Warning: Reference `eqn:??' on page 10 undefined on input line 77.
-
-
-LaTeX Warning: Reference `eqn:??' on page 10 undefined on input line 82.
-
-
-LaTeX Warning: Reference `eqn:??' on page 10 undefined on input line 82.
-
-
-LaTeX Warning: Reference `sec:??' on page 10 undefined on input line 82.
-
-<./build/Effizienz.pdf, id=188, 433.62pt x 289.08pt>
-File: ./build/Effizienz.pdf Graphic file (type pdf)
- <use ./build/Effizienz.pdf>
-Package luatex.def Info: ./build/Effizienz.pdf used on input line 85.
-(luatex.def)             Requested size: 418.25555pt x 278.85017pt.
- [10]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 94.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 94.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 94.
-
-<./build/SpektCS.pdf, id=200, 433.62pt x 289.08pt>
-File: ./build/SpektCS.pdf Graphic file (type pdf)
- <use ./build/SpektCS.pdf>
-Package luatex.def Info: ./build/SpektCS.pdf used on input line 100.
-(luatex.def)             Requested size: 418.25555pt x 278.85017pt.
-
-
-LaTeX Warning: Reference `sec:' on page 11 undefined on input line 104.
-
-[11<./build/Effizienz.pdf>] [12<./build/SpektCS.pdf>]
-
-LaTeX Warning: Reference `eqn:??' on page 13 undefined on input line 112.
-
-
-LaTeX Warning: Reference `eqn:??' on page 13 undefined on input line 117.
-
-<./build/Compton.pdf, id=271, 433.62pt x 289.08pt>
-File: ./build/Compton.pdf Graphic file (type pdf)
- <use ./build/Compton.pdf>
-Package luatex.def Info: ./build/Compton.pdf used on input line 125.
-(luatex.def)             Requested size: 418.25555pt x 278.85017pt.
- [13<./build/Compton.pdf>] <./build/2Wertsbreite.pdf, id=298, 433.62pt x 289.08pt>
-File: ./build/2Wertsbreite.pdf Graphic file (type pdf)
- <use ./build/2Wertsbreite.pdf>
-Package luatex.def Info: ./build/2Wertsbreite.pdf used on input line 147.
-(luatex.def)             Requested size: 209.12778pt x 139.41846pt.
- <./build/10Wertsbreite.pdf, id=299, 433.62pt x 289.08pt>
-File: ./build/10Wertsbreite.pdf Graphic file (type pdf)
- <use ./build/10Wertsbreite.pdf>
-Package luatex.def Info: ./build/10Wertsbreite.pdf used on input line 152.
-(luatex.def)             Requested size: 209.12778pt x 139.41846pt.
- [14<./build/2Wertsbreite.pdf><./build/10Wertsbreite.pdf>]
-
-LaTeX Warning: Reference `fig:??' on page 15 undefined on input line 178.
-
-
-LaTeX Warning: Reference `eqn:??' on page 15 undefined on input line 183.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 199.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 199.
-
-
-LaTeX Warning: Reference `eqn:??' on page 15 undefined on input line 217.
-
-<./build/SpektSt.pdf, id=347, 433.62pt x 289.08pt>
-File: ./build/SpektSt.pdf Graphic file (type pdf)
- <use ./build/SpektSt.pdf>
-Package luatex.def Info: ./build/SpektSt.pdf used on input line 227.
-(luatex.def)             Requested size: 418.25555pt x 278.85017pt.
-) (./content/diskussion.tex [15]) [16<./build/SpektSt.pdf>]
-Overfull \hbox (4.32645pt too wide) in paragraph at lines 24--24
-[]\EU2/lmr/m/n/10.95 EHS. \EU2/lmr/m/it/10.95 RA-DI-O-NU-CLI-DE DA-TA SHEET\EU2/lmr/m/n/10.95 . ehs.mis-sou-ri.edu/rad/iso-to-pe-da-ta/cs-137.pdf,
- []
-
-
+(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc) [3] [4] [5] <Bilder/V1.png, id=89, 805.0075pt x 721.69624pt>
+File: Bilder/V1.png Graphic file (type png)
+ <use Bilder/V1.png>
+Package luatex.def Info: Bilder/V1.png used on input line 108.
+(luatex.def)             Requested size: 204.94751pt x 183.73828pt.
+ <Bilder/V2.png, id=90, 609.27625pt x 742.775pt>
+File: Bilder/V2.png Graphic file (type png)
+ <use Bilder/V2.png>
+Package luatex.def Info: Bilder/V2.png used on input line 112.
+(luatex.def)             Requested size: 204.94751pt x 249.85403pt.
+ [6<./Bilder/V1.png><./Bilder/V2.png>]) (./content/durchfuehrung.tex)
 Overfull \hbox (8.56255pt too wide) in paragraph at lines 24--24
 \EU2/lmr/m/n/10.95 http://129.217.224.2/HOME-PAGE/PHY-SI-KER/BA-CHE-LOR/FP/SKRIPT/V18.pdf,
  []
 
+[7]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
-[17]
+ [8]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
  (./build/main.aux
 Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 467F53DF3A482481037E0D595452E561;19064.
+(rerunfilecheck)             Checksum: 8E4BF9BA23F7F37107052F96B917F4D5;10319.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 53CDBC304DF4B4B419B49055CB7306D4;2469.
-
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
+(rerunfilecheck)             Checksum: 61CFACCD06A0B1402818068CBF7F4184;1568.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 45481 strings out of 495118
+ 45286 strings out of 495118
  100000,1648299 words of node,token memory allocated
- 4693 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 488 glue, 1 kern, 202 attribute, 60 glue_spec, 202 attribute_list, 1 write nodes
-   avail lists: 1:3,2:833,3:179,4:79,5:268,6:3093,7:1379,8:147,9:296,10:28,11:397,12:1
- 47604 multiletter control sequences out of 65536+600000
- 114 fonts using 37103519 bytes
- 71i,14n,104p,8833b,2523s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/xits/xits-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (17 pages, 1132825 bytes).
+ 3000 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 309 glue, 1 kern, 92 attribute, 60 glue_spec, 92 attribute_list, 1 write nodes
+   avail lists: 1:3,2:454,3:128,4:46,5:186,6:1965,7:442,8:86,9:281,10:11,11:234
+ 47506 multiletter control sequences out of 65536+600000
+ 103 fonts using 32914975 bytes
+ 71i,12n,104p,8833b,2995s stack positions out of 5000i,500n,10000p,200000b,100000s
+</home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/xits/xits-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (8 pages, 150074 bytes).
 
-PDF statistics: 545 PDF objects out of 1000 (max. 8388607)
- 448 compressed objects within 5 object streams
- 94 named destinations out of 1000 (max. 131072)
- 201 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 234 PDF objects out of 1000 (max. 8388607)
+ 186 compressed objects within 2 object streams
+ 44 named destinations out of 1000 (max. 131072)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
