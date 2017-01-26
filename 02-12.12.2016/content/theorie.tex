@@ -74,7 +74,7 @@ ist. Ein Beispiel für die Aufspaltung eines Niveaus mit $J=2$ ist in Abbildung 
 \end{figure}
 
 \subsection{Auswahlregeln}
-Mithilfe der Schrödingergleichung wird untersucht, welche Niveauübergänge möglich sind. Als Ansatz zur Lösung wird die Summe zweier ebener Wellen genommen, bei denen der Spin berücksichtigt wird. Aus der Dichtefunktion lässt sich die Schwingungsfrequenz $\nu_{\alpha\beta}$ der Elektronen von 
+Mithilfe der Schrödingergleichung wird untersucht, welche Niveauübergänge möglich sind. Als Ansatz zur Lösung wird die Summe zweier ebener Wellen genommen, bei denen der Spin berücksichtigt wird. Aus der Dichtefunktion lässt sich die Schwingungsfrequenz $\nu_{\alpha\beta}$ der Elektronen von
 \begin{equation}
   \nu_{\alpha\beta}= \frac{E_{\alpha} - E_{\beta}}{\hbar}
   \label{eqn:nu}
@@ -89,7 +89,7 @@ gelöst werden. Anhand der Lösung kann aus dem Poyntingvektor abgeleitet werden
   \Delta m = -1,0,1
 \end{equation}
 annimmt. Aus der Herleitung lässt sich schließen, dass bei Anlegung eines äußeren magnetischen Feldes für $m = 0$ das Licht linear entlang des Feld polarisiert ist. Dieser Übergang wird $\pi$ Übergang genannt und ist nur in voller Intensität zu beobachten, wenn der Polfilter senkrecht zum angelegtem B-Feld steht. Der $\pi$ Übergang besitzt die selbe Energie wie der feldfreie Fall, kann jedoch unterdrückt werden indem der Polarisationsfilter parallel zum Feld gestellt wird. \\
-Ist die Orientierungsquantenzahl $m = \pm 1$, ist das E-Feld um die B-Feldachse zirkular polarisiert. Dieser Übergang wird $\sigma^{+/-}$ genannt, entsprechemd des Vorzeichens von $m$ und ist aufgrund der zirkularpolarisation sowohl longitudinal als auch transversaler Betrachtung zu beobachten. 
+Ist die Orientierungsquantenzahl $m = \pm 1$, ist das E-Feld um die B-Feldachse zirkular polarisiert. Dieser Übergang wird $\sigma^{+/-}$ genannt, entsprechemd des Vorzeichens von $m$ und ist aufgrund der zirkularpolarisation sowohl longitudinal als auch transversaler Betrachtung zu beobachten.
 
 \subsection{Normaler Zeeman-Effekt}
 Beim normalen Zeeman-Effekt verschwindet die Summe der einzelnen Spins ($S=0$), sodass der entsprechende Landé-Faktor für alle $J : g_\text{J} = 1$ ist. Dabei ist die Aufspaltung der einzelnen Energieniveaus unabhängig von der Quantenzahl.(welcher Quantenzahl? Gesamtdrehimpuls J, Bahndrehimpuls L?) Die Energiedifferenz der Übergänge kann mittels Formel \ref{eqn:delE} berechnet werden.
@@ -101,38 +101,9 @@ Bei der Aufspaltung von Spektrallinien im Magnetfeld bei denen der Gesamtspin vo
 \end{equation}
 berechenen.
 
+
+
 \subsection{Fehlerrechnung}
-Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
-\subsubsection{Mittelwert}
-Der Mittelwert einer Messreihe $x_\text{1}, ... ,x_\text{n}$ lässt sich durch die Formel
-\begin{equation}
-	\overline{x} = \frac{1}{N} \sum_{\text{k}=1}^\text{N} x_k
-	\label{eqn:ave}
-\end{equation}
-berechnen. Die Standardabweichung des Mittelwertes beträgt
-\begin{equation}
-	\Delta \overline{x} = \sqrt{ \frac{1}{N(N-1)} \sum_{\text{k}=1}^\text{N} (x_\text{k} - \overline{x})^2}
-	\label{eqn:std}
-\end{equation}
-
-\subsubsection{Gauß'sche Fehlerfortpflanzung}
-Wenn $x_\text{1}, ..., x_\text{n}$ fehlerbehaftete Messgrößen im weiteren Verlauf benutzt werden, wird der neue Fehler $\Delta f$ mit Hilfe der Gaußschen Fehlerfortpflanzung angegeben.
-\begin{equation}
-	\Delta f = \sqrt{\sum_{\text{k}=1}^\text{N} \left( \frac{ \partial f}{\partial x_\text{k}} \right) ^2 \cdot (\Delta x_\text{k})^2}
-	\label{eqn:var}
-\end{equation}
-
-\subsubsection{Lineare Regression}
-Die Steigung und y-Achsenabschnitt einer Ausgleichsgeraden werden gegebenfalls mittels Linearen Regression berechnet.
-\begin{equation}
-	y = m \cdot x + b
-	\label{eqn:reg}
-\end{equation}
-\begin{equation}
-	m = \frac{ \overline{xy} - \overline{x} \overline{y} } {\overline{x^2} - \overline{x}^2}
-	\label{eqn:reg_m}
-\end{equation}
-\begin{equation}
-	b = \frac{ \overline{x^2}\overline{y} - \overline{x} \, \overline{xy}} { \overline{x^2} - \overline{x}^2}
-	\label{eqn:reg_b}
-\end{equation}
+Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt. \\
+Für die Berechnung der Mittelwerte wird die Funktion "mean" aus dem Paket Numpy genommen und für die Standardabweichung die Funktion "std". Für die Fehlerfortpflanzung wird das Paket "uncertainties" \cite{uncertainties} verwendet. \\
+Als Fitfunktion wird "scipy.optimize.curve\_fit" verwendet.

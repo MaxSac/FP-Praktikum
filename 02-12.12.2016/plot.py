@@ -26,12 +26,11 @@ params2, covariance2 = curve_fit(f, Arunter, Brunter)
 for i in range(4):
     print('Parameter =', params2[i], np.sqrt(covariance2[i, i]))
 
-
 plt.plot(Ahoch, Bhoch, 'rx', label='Messwerte beim hochdrehen')
 plt.plot(Ahoch, f(Ahoch, *params1), 'r-', linewidth=0.5, label='Fit')
 
 plt.plot(Arunter, Brunter, 'gx', label='Messwerte beim runterdrehen')
-plt.plot(Arunter, f(Arunter, *params2), 'g-', linewidth=0.5, label='Fit')
+plt.plot(Arunter, f(Arunter, *params2), 'g--', linewidth=0.5, label='Fit')
 
 plt.legend(loc='best')
 plt.xlabel(r'$I$ / A')
