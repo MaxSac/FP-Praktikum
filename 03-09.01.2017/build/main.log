@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.12.1)  26 JAN 2017 00:01
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.12.1)  28 JAN 2017 17:11
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -466,7 +466,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.090 seconds)
+luaotfload | main : initialization completed in 0.082 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX. (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
 \l_fontspec_script_int=\count117
@@ -1857,12 +1857,191 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-)) (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
 \multirow@colwidth=\skip103
 \multirow@cntb=\count422
 \multirow@dima=\skip104
 \bigstrutjot=\dimen262
+)) (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/todonotes/todonotes.sty
+Package: todonotes 2015/07/09 .dtx Todonotes source and documentation.
+Package: todonotes 2012/07/25
+ (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks31
+\pgfutil@tempdima=\dimen263
+\pgfutil@tempdimb=\dimen264
+ (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box57
+ (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+)) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+ (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+ (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks32
+\pgfkeys@temptoks=\toks33
+ (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks34
+))
+\pgf@x=\dimen265
+\pgf@y=\dimen266
+\pgf@xa=\dimen267
+\pgf@ya=\dimen268
+\pgf@xb=\dimen269
+\pgf@yb=\dimen270
+\pgf@xc=\dimen271
+\pgf@yc=\dimen272
+\w@pgf@writea=\write5
+\r@pgf@reada=\read3
+\c@pgf@counta=\count423
+\c@pgf@countb=\count424
+\c@pgf@countc=\count425
+\c@pgf@countd=\count426
+\t@pgf@toka=\toks35
+\t@pgf@tokb=\toks36
+\t@pgf@tokc=\toks37
+ (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-luatex.def
+ (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+File: pgfsys-luatex.def 2014/10/11  (rcs-revision 1.35)
+ (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+))) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count427
+\pgfsyssoftpath@bigbuffer@items=\count428
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+)) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+ (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen273
+\pgfmath@count=\count429
+\pgfmath@box=\box58
+\pgfmath@toks=\toks38
+\pgfmath@stack@operand=\toks39
+\pgfmath@stack@operation=\toks40
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count430
+)) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen274
+\pgf@picmaxx=\dimen275
+\pgf@picminy=\dimen276
+\pgf@picmaxy=\dimen277
+\pgf@pathminx=\dimen278
+\pgf@pathmaxx=\dimen279
+\pgf@pathminy=\dimen280
+\pgf@pathmaxy=\dimen281
+\pgf@xx=\dimen282
+\pgf@xy=\dimen283
+\pgf@yx=\dimen284
+\pgf@yy=\dimen285
+\pgf@zx=\dimen286
+\pgf@zy=\dimen287
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen288
+\pgf@path@lasty=\dimen289
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen290
+\pgf@shorten@start@additional=\dimen291
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box59
+\pgf@hbox=\box60
+\pgf@layerbox@main=\box61
+\pgf@picture@serial@count=\count431
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen292
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen293
+\pgf@pt@y=\dimen294
+\pgf@pt@temp=\dimen295
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen296
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen297
+\pgf@sys@shading@range@num=\count432
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+ (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box62
+)) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+))) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box63
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen298
+\pgf@nodesepend=\dimen299
+) (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+)) (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+ (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen300
+\pgffor@skip=\dimen301
+\pgffor@stack=\toks41
+\pgffor@toks=\toks42
+)) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+ (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count433
+\pgfplotmarksize=\dimen302
+)
+\tikz@lastx=\dimen303
+\tikz@lasty=\dimen304
+\tikz@lastxsaved=\dimen305
+\tikz@lastysaved=\dimen306
+\tikzleveldistance=\dimen307
+\tikzsiblingdistance=\dimen308
+\tikz@figbox=\box64
+\tikz@figbox@bg=\box65
+\tikz@tempbox=\box66
+\tikz@tempbox@bg=\box67
+\tikztreelevel=\count434
+\tikznumberofchildren=\count435
+\tikznumberofcurrentchild=\count436
+\tikz@fig@count=\count437
+ (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count438
+\pgfmatrixcurrentcolumn=\count439
+\pgf@matrix@numberofcolumns=\count440
+)
+\tikz@expandcount=\count441
+ (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+))) (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+)
+\c@@todonotes@numberoftodonotes=\count442
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'polyglossia' package.
@@ -1910,17 +2089,17 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
  (/home/philip/.local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count423
-\scratchdimen=\dimen263
-\scratchbox=\box57
-\nofMPsegments=\count424
-\nofMParguments=\count425
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count426
-\MPscratchDim=\dimen264
-\MPnumerator=\count427
-\makeMPintoPDFobject=\count428
-\everyMPtoPDFconversion=\toks32
+\scratchcounter=\count443
+\scratchdimen=\dimen309
+\scratchbox=\box68
+\nofMPsegments=\count444
+\nofMParguments=\count445
+\everyMPshowfont=\toks43
+\MPscratchCnt=\count446
+\MPscratchDim=\dimen310
+\MPnumerator=\count447
+\makeMPintoPDFobject=\count448
+\everyMPtoPDFconversion=\toks44
 ) (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
  (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -1970,19 +2149,20 @@ Package biblatex Info: ... file 'main.bbl' found.
  (./build/main.bbl)
 Package biblatex Info: Reference section=0 on input line 11.
 Package biblatex Info: Reference segment=0 on input line 11.
-\AtBeginShipoutBox=\box58
+\AtBeginShipoutBox=\box69
 Package hyperref Info: Link coloring OFF on input line 11.
  (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
  (/home/philip/.local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count429
+\c@section@level=\count449
 )
 LaTeX Info: Redefining \ref on input line 11.
 LaTeX Info: Redefining \pageref on input line 11.
 LaTeX Info: Redefining \nameref on input line 11.
-\c__siunitx_mathsf_int=\count430
+ ABD: EveryShipout initializing macros
+\c__siunitx_mathsf_int=\count450
 Package microtype Info: Loading generic settings for font family
 (microtype)             `LatinModernMath' (encoding: EU2).
 (microtype)             For optimal results, create family-specific settings.
@@ -2019,38 +2199,43 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             `cmss' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-\c__siunitx_mathtt_int=\count431
+\c__siunitx_mathtt_int=\count451
 Package microtype Info: Loading generic settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc)
 Package microtype Info: Loading generic settings for font family
 (microtype)             `lmss' (encoding: EU2).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-bold.luc)(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc)
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 14.4002pt on input line 14.
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 10.00015pt on input line 14.
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 14.
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 14.39977pt on input line 14.
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 9.99985pt on input line 14.
-LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 14.
+(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-bold.luc) (./build/main.tdo)
+\tf@tdo=\write6
+
+\openout6 = main.tdo
  [1
 
-{/home/philip/.local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package tocbasic Info: character protrusion at toc deactivated on input line 15.
+{/home/philip/.local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}](load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc)(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc)
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 14.4002pt on input line 16.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 10.00015pt on input line 16.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 7.0001pt on input line 16.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 14.39977pt on input line 16.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 9.99985pt on input line 16.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 6.9999pt on input line 16.
+
+warning  (pdf backend): ignoring duplicate destination with the name 'page.1'
+[1]
+Package tocbasic Info: character protrusion at toc deactivated on input line 17.
  (./build/main.toc
 Language ngerman already loaded; id is 8)
-\tf@toc=\write5
+\tf@toc=\write7
 
-\openout5 = main.toc
+\openout7 = main.toc
  [2
 
 ] (./content/theorie.tex
@@ -2058,52 +2243,59 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
 (Font)              scaled to size 12.00018pt on input line 12.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 11.99982pt on input line 12.
-(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc) [3] [4] [5] <Bilder/V1.png, id=89, 805.0075pt x 721.69624pt>
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 18.
+ <Bilder/WkeitWW.png, id=65, 529.98pt x 664.4825pt>
+File: Bilder/WkeitWW.png Graphic file (type png)
+ <use Bilder/WkeitWW.png>
+Package luatex.def Info: Bilder/WkeitWW.png used on input line 35.
+(luatex.def)             Requested size: 125.47794pt x 157.31941pt.
+ [3](load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc) [4<./Bilder/WkeitWW.png>] [5] [6] <Bilder/V1.png, id=114, 805.0075pt x 721.69624pt>
 File: Bilder/V1.png Graphic file (type png)
  <use Bilder/V1.png>
-Package luatex.def Info: Bilder/V1.png used on input line 108.
+Package luatex.def Info: Bilder/V1.png used on input line 129.
 (luatex.def)             Requested size: 204.94751pt x 183.73828pt.
- <Bilder/V2.png, id=90, 609.27625pt x 742.775pt>
+ <Bilder/V2.png, id=115, 609.27625pt x 742.775pt>
 File: Bilder/V2.png Graphic file (type png)
  <use Bilder/V2.png>
-Package luatex.def Info: Bilder/V2.png used on input line 112.
+Package luatex.def Info: Bilder/V2.png used on input line 133.
 (luatex.def)             Requested size: 204.94751pt x 249.85403pt.
- [6<./Bilder/V1.png><./Bilder/V2.png>]) (./content/durchfuehrung.tex)
-Overfull \hbox (8.56255pt too wide) in paragraph at lines 24--24
+ [7<./Bilder/V1.png><./Bilder/V2.png>]) (./content/durchfuehrung.tex)
+Overfull \hbox (8.56255pt too wide) in paragraph at lines 26--26
 \EU2/lmr/m/n/10.95 http://129.217.224.2/HOME-PAGE/PHY-SI-KER/BA-CHE-LOR/FP/SKRIPT/V18.pdf,
  []
 
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 25.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 25.
+[8] [9]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
  (./build/main.aux
 Language ngerman already loaded; id is 8)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 25.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 25.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 27.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 8E4BF9BA23F7F37107052F96B917F4D5;10319.
+(rerunfilecheck)             Checksum: 9D942EFD4F6CF0B9027170DBA6259437;11103.
+Package rerunfilecheck Info: File `main.tdo' has not changed.
+(rerunfilecheck)             Checksum: 8F5348E734C142DCAC2DA21E2F9FF508;117.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 61CFACCD06A0B1402818068CBF7F4184;1568.
+(rerunfilecheck)             Checksum: 97B7748B6710734C929EC66DC66D5CF3;1498.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 45286 strings out of 495118
- 100000,1648299 words of node,token memory allocated
- 3000 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 309 glue, 1 kern, 92 attribute, 60 glue_spec, 92 attribute_list, 1 write nodes
-   avail lists: 1:3,2:454,3:128,4:46,5:186,6:1965,7:442,8:86,9:281,10:11,11:234
- 47506 multiletter control sequences out of 65536+600000
- 103 fonts using 32914975 bytes
- 71i,12n,104p,8833b,2995s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/xits/xits-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (8 pages, 150074 bytes).
+ 55256 strings out of 495118
+ 100000,1977958 words of node,token memory allocated
+ 7732 words of node memory still in use:
+   85 hlist, 12 vlist, 2 rule, 16 disc, 6 local_par, 483 glue, 7 kern, 14 penalty, 12 margin_kern, 106 glyph, 382 attribute, 60 glue_spec, 382 attribute_list, 5 write, 4 save_pos, 190 pdf_literal nodes
+   avail lists: 1:4,2:912,3:329,4:46,5:173,6:1976,7:450,8:85,9:297,10:11,11:253
+ 57076 multiletter control sequences out of 65536+600000
+ 103 fonts using 32915279 bytes
+ 80i,12n,104p,8833b,2999s stack positions out of 5000i,500n,10000p,200000b,100000s
+</home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/xits/xits-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
+Output written on main.pdf (10 pages, 166795 bytes).
 
-PDF statistics: 234 PDF objects out of 1000 (max. 8388607)
- 186 compressed objects within 2 object streams
- 44 named destinations out of 1000 (max. 131072)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 256 PDF objects out of 1000 (max. 8388607)
+ 203 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 131072)
+ 128 words of extra memory for PDF output out of 10000 (max. 10000000)
 

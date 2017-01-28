@@ -14,9 +14,28 @@ Im folgenden werden der Wirkungsquerschnitt $\sigma$ und der Extinktionskoeffizi
 
 
 
-\subsubsection{Der Wirkungsquerschnitt \texorpdfstring{$\sigma$}{}}
+\subsubsection{Der Wirkungsquerschnitt \texorpdfstring{$\sigma$}{} und der Extinktionskoeffizient \texorpdfstring{$\mu$}{}}
+Der Wirkungsquerschnitt $\sigma$ ist ein Maß für die Wahrscheinlichkeit, dass eine Wechselwirkung zwischen der $\gamma$-Strahlung und dem Absorber stattfindet. $\sigma$ hat die Dimension einer Fläche und man kann sich diese als Zielscheibe vorstellen. \todo{man wegmachen} Es tritt also genau dann eine Wechselwirkung auf, wenn ein $\gamma$-Quant die Zielscheibe trifft. \\
+Die Wahrscheinlichkeit $dW$ einer Wechselwirkung zwischen dem einfallenden Strahl ("Projektil") und dem Absorber ("Target") wird mit Hilfe der Abbildung \eqref{fig:WkeitWW} zu
+\begin{align}
+	dW = n\,\sigma\,dx
+\end{align}
+bestimmt. Daraus folgt das Absorbtionsgesetzt \todo{wirklich Absorbtionsgesetzt?}
+\begin{align}
+	N(D) = N_0 \exp(-n\,\sigma\,D) \ .
+\end{align}
+Darin ist $N_0$ die Anzahl der auftreffenden Quanten und $N(D)$ ist die Anzahl der austretenden Quanten. $n$ ist die Teilchendichte des Absorbers. Der Extinktionskoeffizient $\mu$ wird als
+\begin{align}
+	\mu = n\,\sigma
+\end{align}
+deffiniert. Sein reziproker Wert ist gleich der mittleren Reichweite $\overline{x}$ der $\gamma$-Quanten in Materie \cite[2]{V18}.
 
-\subsubsection{Der Extinktionskoeffizient \texorpdfstring{$\mu$}{}}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.3\textwidth]{Bilder/WkeitWW.png}
+	\caption{Definition des Wirkungsquerschnitts: Die Pfeile kennzeichnen die Projektile welche auf das Target treffen \cite{V18}.}
+	\label{fig:WkeitWW}
+\end{figure}
 
 
 
@@ -93,11 +112,10 @@ Bei der Paarbildung wird die gesamte Energie des Photons in dem Absorber deponie
 \newpage
 \subsection{Wirkungsweise eines Halbleiter-Detektors (Germanium-Detektor)}
 Halbleiter-Detektoren werden häufig verwendet um ionisierende Strahlung nachzuweisen und die Energie der Strahlung zu bestimmen. Im folgenden wird der Germanium-Detektor für die $\gamma$-Spektroskopie genauer betrachtet. \\
-Der wesentliche Bestandteil des Detektors ist eine Diode. Daher exestieren in dem Detektor-Kristall zwei an einander grenzende Bereiche, die p- bzw. n-dotiert sind (vgl. \cite[10]{V18}).
+Der wesentliche Bestandteil des Detektors ist eine Diode. Das bedeutet es gibt einen p- und einen n-dotierten Bereich. Diese Bereiche grenzen aneinander und können freie \todo{wirklich freie Ladungsträger?} Ladungsträger (Elektronen und Löcher) austauschen. Die Elektronen und Löcher rekombinieren in den unterschiedlich dotierten Bereichen. Zurück bleiben in der p-Schicht die ortsfesten Akzeptoren und in der n-Schicht die ortsfesten Donatoren \cite[10]{V18}. Diese bilden ein elektrisches Feld aus, wodurch die Elektronen und Löcher nicht mehr rekombinieren können und es entsteht eine ladungsträgerarme Zone. 
 
 
--Ladungsträger diffundieren
--es bleiben Ortsfeste Donatoren und Akzeptoren über
+
 -es bildet sich ein E-Feld aus
 -dadurch entsteht Ladungsträger arme Zone
 -diese kann durch eine äußere Spannung vergrößert werden
