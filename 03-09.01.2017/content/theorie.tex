@@ -20,9 +20,10 @@ Die Wahrscheinlichkeit $dW$ einer Wechselwirkung zwischen dem einfallenden Strah
 \begin{align}
 	dW = n\,\sigma\,dx
 \end{align}
-bestimmt. Daraus folgt das Absorbtionsgesetzt \todo{wirklich Absorbtionsgesetzt?}
+bestimmt. Daraus folgt das Absorbtionsgesetzt
 \begin{align}
 	N(D) = N_0 \exp(-n\,\sigma\,D) \ .
+	\label{eqn:Absorbtion}
 \end{align}
 Darin ist $N_0$ die Anzahl der auftreffenden Quanten und $N(D)$ ist die Anzahl der austretenden Quanten. $n$ ist die Teilchendichte des Absorbers. Der Extinktionskoeffizient $\mu$ wird als
 \begin{align}
@@ -112,48 +113,95 @@ Bei der Paarbildung wird die gesamte Energie des Photons in dem Absorber deponie
 \newpage
 \subsection{Wirkungsweise eines Halbleiter-Detektors (Germanium-Detektor)}
 Halbleiter-Detektoren werden häufig verwendet um ionisierende Strahlung nachzuweisen und die Energie der Strahlung zu bestimmen. Im folgenden wird der Germanium-Detektor für die $\gamma$-Spektroskopie genauer betrachtet. \\
-Der wesentliche Bestandteil des Detektors ist eine Diode. Das bedeutet es gibt einen p- und einen n-dotierten Bereich. Diese Bereiche grenzen aneinander und können freie \todo{wirklich freie Ladungsträger?} Ladungsträger (Elektronen und Löcher) austauschen. Die Elektronen und Löcher rekombinieren in den unterschiedlich dotierten Bereichen. Zurück bleiben in der p-Schicht die ortsfesten Akzeptoren und in der n-Schicht die ortsfesten Donatoren \cite[10]{V18}. Diese bilden ein elektrisches Feld aus, wodurch die Elektronen und Löcher nicht mehr rekombinieren können und es entsteht eine ladungsträgerarme Zone. 
-
-
-
--es bildet sich ein E-Feld aus
--dadurch entsteht Ladungsträger arme Zone
--diese kann durch eine äußere Spannung vergrößert werden
+Der wesentliche Bestandteil des Detektors ist eine Halbleiter-Diode. Das bedeutet es gibt einen p- und einen n-dotierten Bereich. Diese Bereiche grenzen aneinander und können freie Ladungsträger (Elektronen und Löcher) austauschen. Die Elektronen und Löcher rekombinieren in den unterschiedlich dotierten Bereichen. Zurück bleiben in der p-Schicht die ortsfesten Akzeptoren und in der n-Schicht die ortsfesten Donatoren \cite[10]{V18}. Diese erzeugen ein elektrisches Potential $U_\text{D}$, wodurch die Elektronen und Löcher nicht mehr rekombinieren können und es entsteht eine ladungsträgerarme Zone. Wie in Abbildung \eqref{fig:Potential} dargestellt ist, kann die ladungsträgerarme Zone durch eine Sperrspannung $U$ vergrößert werden. Im folgenden wird näher darauf eingegangen wie die Verarmungszone vergrößert werden kann.
 
 \begin{figure}[H]
 	\centering
-	\begin{subfigure}[b]{0.49\linewidth}
-		\includegraphics[width=\linewidth]{Bilder/V1.png}
+	\begin{subfigure}[b]{0.45\linewidth}
+		\includegraphics[height=7cm]{Bilder/V1.png}
 		\caption{Potentialverhältnis ohne äußere Spannung.}
+		\label{fig:Potentiala}
 	\end{subfigure}
-	\begin{subfigure}[b]{0.49\linewidth}
-		\includegraphics[width=\linewidth]{Bilder/V2.png}
+	\hfill
+	\begin{subfigure}[b]{0.45\linewidth}
+		\includegraphics[height=7cm]{Bilder/V2.png}
 		\caption{Potentialverhältnis mit äußere Spannung.}
+		\label{fig:Potentialb}
 	\end{subfigure}
 	\caption{Schematische Darstellung der Potentialverhältnisse an einem pn-Übergang \cite{V18}.}
+	\label{fig:Potential}
 \end{figure}
 
--wenn ein y-Quant in die Verarmungszone eindringt, wird ein Energiereiches Elektron frei
--dieses stößt mit weiteren Elektronen im Valenzband und löst diese aus, dadurch entsteht eine Spannung welche gemessen wird
--
+Wenn ein $\gamma$-Quant in die ladungsträgerarme Zone eindringt kann einer der drei beschriebenen Prozesse eintretten. Das bei diesen Prozessen freigesetzte Elektron stößt auf seinem Weg durch den Festkörper mit vielen anderen Elektronen aus dem Valenzband zusammen. Dabei gibt das freigesetzte Elektron einen Teil seiner Energie zur Erzeugung von Phononen ab. Die restliche Energie wird an die Valenzelektronen abgegeben, wodurch diese in das Leitfähigkeitsband oder darüber hinaus gehoben werden. Es entsteht dadurch ein Elektronen-Loch-Paar, welches durch die anliegende Spannung getrennt wird und einen Ladungsimpuls erzeugen. \\
+Die Absorbtionswahrscheinlichkeit (siehe Gl. \eqref{eqn:Absorbtion}) eines $\gamma$-Quants hängt von der Schichtdicke des Absorbermaterials ab. Deshalb ist es besonders wichtig, dass die Verarmungszone so groß wie möglich ist. Dies wird im wesentlichen über eine unsymmetrische Dotierung und die Sperrspannung $U$ gewährleistet. Die Breite der n-Schicht $d_\text{n}$ und die Breite der p-Schicht $d_\text{p}$ sind durch
+\begin{align}
+	d_\text{n}^2 &= \frac{2\,\varepsilon\,\varepsilon_0} {e_0} \, \frac{U_\text{D} + U}{n_\text{A} + n_\text{D}} \, \frac{n_\text{A}}{n_\text{D}} \\
+	d_\text{p}^2 &= \frac{2\,\varepsilon\,\varepsilon_0} {e_0} \, \frac{U_\text{D} + U} {n_\text{A} + n_\text{D}} \, \frac{n_\text{D}}{n_\text{A}}
+\end{align}
+\hfil {\footnotesize($\varepsilon$ = relative Dielektrizitätszahl, $\varepsilon_0$ = elektrische Feldkonstante)} \hfil \\
+gegeben. Um die p-Schicht groß gegenüber der n-Schicht zu machen, wird die Donatordichte $n_\text{D}$ viel größer als die Akzeptordichte $n_\text{A}$ gewählt. Dadurch wird die größe der Verarmungszone zu
+\begin{align}
+	d = d_\text{p} + d_\text{n} \approx d_\text{p} \approx \sqrt{\frac{2\,\varepsilon\,\varepsilon_0} {e_0} \, \frac{U_\text{D} + U}{n_\text{A}}}
+\end{align}
+genähert. Es ist also wichtig die Verunreinigung des Absorbers so gering wie möglich zu halten, dies wird über spezielle Kristallzüchtungsverfahren gewährleistet. \\ Außerdem kann die Verarmungszone durch eine möglichst hohe Sperrspannung weiter vergrößert werden. Diese Maßnahme ist allerdings begrenzt, weil in der Verarmungszone Ladungsträger vorhanden sind welche durch thermische Aktivierung entstanden sind. Diese können spontan die Energielücke $E_\text{g}$ (=0.67\,eV bei Ge \cite[13]{V18}) zwischen Valenzband und Leitfähigkeitsband überwinden. Diese Ladungsträger erzeugen einen Leckstrom, welcher als Rauschen gemessen wird. Die Dichte $n_\text{i}$ dieser Ladungsträger ist proportional zu
+\begin{align}
+	n_\text{i} \propto T^3 \exp\left(-\frac{E_\text{g}}{k_\text{b}\,T} \right) \ .
+\end{align}
+\hfil {\footnotesize($k_\text{b}$ = Boltzmann Konstante, $T$ = absolute Temperatur)} \hfil \\
+Wie aus der Gleichung hervorgeht, kann der Leckstrom durch das herabsetzten der Temperatur des Detektormaterials vermindert werden. \\
+Üblicherweise werden Germanium-Detektoren auf $T = 77$\,K abgekühlt. Dadurch kann die Verarmungszone mit einer Sperrspannung von $U = 5$\,kV auf
+\begin{align}
+	d \approx 3\,\text{cm}
+\end{align}
+verbeitert werden.
 
 
 
+\subsection{Eigenschaften und Kenngrößen eines Halbleiter-Detektors}
+Im folgenden werden das energetische Auflösungsvermögen und die Effizienz eines Halbleiter-Detektors bestimmt. Außerdem wird das aufgenommene Spektrum des Detektors beschrieben und daraus die Aktivität der $\gamma$-Quelle bestimmt.
 
 
 
+\subsubsection{Energetisches Auflösungsvermögen}
+\label{sec:EAuflösung}
+Ein Maß für das energetische Auflösungsvermögen ist die Halbwertsbreite $\Delta E_\frac{1}{2}$ der Impulshöhenverteilung. Um zwei Spektrallinien unterscheiden zu können müssen sich deren Mittelwerte mindestens um die Halbwertsbreite unterscheiden. \\
+Die Impulshöhenverteilung wird im wesentlichen durch die Anzahl $n$ der Elektron-Loch-Paare festgelegt, die bei der Absorbtion eines $\gamma$-Quants entstehen. Der Mittelwert $\overline{n}$ von $n$ ist gleich dem Quotienten aus der Energie $E_\gamma$ des einfallenden $\gamma$-Quants und der Bildungsenergie $E_\text{El}$ eines Elektron-Loch-Paares \cite[14]{V18}. Die Energielücke $E_\text{g}$ in Germanium beträgt 0.67\,eV, allerdings wird eine Bildungsenergie in Germanium von 2.9\,eV gemessen. Das bedeutet, dass die Bildung von Elektron-Loch-Paaren nur unter der Beteiligung von Phononen möglich ist. Die Energie, die das $\gamma$-Quant an den Detektor abgegeben hat, wird statistisch auf die Phononen- und Elektron-Loch-Paar -Erzeugung verteilt. Dieser Prozess wird durch eine Poisson-Verteilung beschrieben und die Standardabweichung für den unkorrelierten Fall ist durch
+\begin{align}
+	\sigma = \sqrt{\overline{n}}
+\end{align}
+gegeben. Allerdings kompensieren sich die Fluktuationen der Ladungsträgererzeugung und der Phononenanregung. Dadurch wird $\sigma$ kleiner, dies wird durch die Einführung des Fano-Faktors $F$ ausgeglichen.
+\begin{align}
+	\sigma = \sqrt{F\,\overline{n}} = \sqrt{F\,\frac{E_\gamma}{E_\text{El}}}
+\end{align}
+Für Germanium beträgt $F$ = 0.1 \cite[15]{V18}. Da $n$ sehr viel größer ist als 1, wird die Poisson-Verteilung durch eine Gauß-Verteilung angenähert. Damit folgt für die Halbwertsbreite
+\begin{align}
+	\Delta E_\frac{1}{2} = \sqrt{8\,\ln2} \, \frac{\sigma} {\overline{n}} E_\gamma = \sqrt{0.8\,\ln2\,E_\gamma \, E_\text{El}} \ .
+\end{align}
+Das energetische Auflösungsvermögen hängt zusätzlich noch von dem Leckstrom, den Feldinhomogenitäten und dem Verstärkerrauschen (Darauf wird in Kapitel \eqref{sec:} weiter eingegangen) ab. Diese Effekte sind unkorreliert, deshalb kann die Gesamthalbwertsbreite zu
+\begin{align}
+	H_\text{ges}^2 = \Delta E_\frac{1}{2}^2 + H_\text{R}^2 + H_\text{I}^2 + H_\text{E}^2
+\end{align}
+zusammengesetzt werden. $H_\text{R}$ ist die Halbwertsbreite des Leckstroms, $H_\text{I}$ ist die Halbwertsbreite der Feldinhomogenität und $H_\text{E}$ ist die Halbwertsbreite des Verstärkerrauschens. Der Leckstrom und das Verstärkerrauschen können durch abkühlen deutlich vermindert werden. Auch muss die Sperrspannung eine Mindesthöhe überschreiten (U > Depletionsspannung).
 
 
 
+\subsubsection{\texorpdfstring{$\gamma$}{}-Spektrum eines Germanium-Detektors}
+In Abbildung \eqref{fig:Spektrum} ist das Spektrum eines monochromatischen $\gamma$-Strahlers aufgenommen.
+
+\begin{figure} % y-Spektrum
+	\centering
+	\includegraphics[width=0.8\linewidth]{Bilder/Spektrum.png}
+	\caption{Das $\gamma$-Spektrum eines Germanium-Detektors \cite{V18}.}
+	\label{fig:Spektrum}
+\end{figure}
+
+Das Spektrum besteht aus dem Photopeak, dem Compton-Kontinuum und dem Rückstreupeak. Der Photopeak entsteht wenn der Photoeffekt an der Absorbtion beteiligt ist. Dabei wird die gesamte Energie des $\gamma$-Quants an den Absorber abgegeben. Seine Halbwertsbreite ist, wie in Kap.\ref{sec:EAuflösung} dargelegt, ein Maß für die Energieauflösung des Detektors \cite[22]{V18}. \\
+Das Compton-Kontinuum ist ein störender Bereich bei der $\gamma$-Spektroskopie. Dieser Bereich reicht von 0 bis zur Compton-Kante $E_\text{e,max} = E_\gamma \, \frac{2\,\varepsilon} {1 + 2\,\varepsilon}$. Er entsteht durch die Compton-Streuung an den Elektronen. Der Rückstreupeak liegt in dem Compton-Kontinuum und entsteht durch Quanten die nicht direkt in den Detektor fallen. Beispielsweise Quanten die an der Pb-Abschirmung oder der Quelle selbst getreut werden. Der Ort des Rückstreupeaks kann durch einsetzten von 180° in Gleichung \eqref{eqn:Egamma} abgeschätzt werden.
 
 
 
-
-
-
-
-
-
+\subsubsection{Aktivitäts- und Energiebestimmung einer \texorpdfstring{$\gamma$}{}-Quelle}
+\todo{Energie, Aktivitätsbestimmung}
 
 
 

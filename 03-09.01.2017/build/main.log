@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.12.1)  28 JAN 2017 17:11
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.12.1)  31 JAN 2017 03:25
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -466,7 +466,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.082 seconds)
+luaotfload | main : initialization completed in 0.089 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX. (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
 \l_fontspec_script_int=\count117
@@ -2244,27 +2244,60 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 11.99982pt on input line 12.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 18.
- <Bilder/WkeitWW.png, id=65, 529.98pt x 664.4825pt>
+ <Bilder/WkeitWW.png, id=77, 529.98pt x 664.4825pt>
 File: Bilder/WkeitWW.png Graphic file (type png)
  <use Bilder/WkeitWW.png>
-Package luatex.def Info: Bilder/WkeitWW.png used on input line 35.
+Package luatex.def Info: Bilder/WkeitWW.png used on input line 36.
 (luatex.def)             Requested size: 125.47794pt x 157.31941pt.
- [3](load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc) [4<./Bilder/WkeitWW.png>] [5] [6] <Bilder/V1.png, id=114, 805.0075pt x 721.69624pt>
+ [3](load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc) [4<./Bilder/WkeitWW.png>] [5] [6] <Bilder/V1.png, id=127, 805.0075pt x 721.69624pt>
 File: Bilder/V1.png Graphic file (type png)
  <use Bilder/V1.png>
-Package luatex.def Info: Bilder/V1.png used on input line 129.
-(luatex.def)             Requested size: 204.94751pt x 183.73828pt.
- <Bilder/V2.png, id=115, 609.27625pt x 742.775pt>
+Package luatex.def Info: Bilder/V1.png used on input line 121.
+(luatex.def)             Requested size: 222.15775pt x 199.16928pt.
+
+Overfull \hbox (33.94403pt too wide) in paragraph at lines 121--122
+[][] 
+ []
+
+<Bilder/V2.png, id=128, 609.27625pt x 742.775pt>
 File: Bilder/V2.png Graphic file (type png)
  <use Bilder/V2.png>
-Package luatex.def Info: Bilder/V2.png used on input line 133.
-(luatex.def)             Requested size: 204.94751pt x 249.85403pt.
- [7<./Bilder/V1.png><./Bilder/V2.png>]) (./content/durchfuehrung.tex)
+Package luatex.def Info: Bilder/V2.png used on input line 127.
+(luatex.def)             Requested size: 163.37257pt x 199.16928pt.
+ [7<./Bilder/V1.png><./Bilder/V2.png>](load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-regular.luc)
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 9.00014pt on input line 141.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 141.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 8.99986pt on input line 141.
+LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 141.
+(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc) [8]
+
+LaTeX Warning: Reference `sec:' on page 9 undefined on input line 180.
+
+[9] <Bilder/Spektrum.png, id=164, 1135.24126pt x 774.895pt>
+File: Bilder/Spektrum.png Graphic file (type png)
+ <use Bilder/Spektrum.png>
+Package luatex.def Info: Bilder/Spektrum.png used on input line 193.
+(luatex.def)             Requested size: 334.60571pt x 228.39104pt.
+ [10<./Bilder/Spektrum.png>]) (./content/durchfuehrung.tex <Bilder/Aufbau.png, id=177, 1408.26125pt x 523.9575pt>
+File: Bilder/Aufbau.png Graphic file (type png)
+ <use Bilder/Aufbau.png>
+Package luatex.def Info: Bilder/Aufbau.png used on input line 5.
+(luatex.def)             Requested size: 418.25555pt x 155.61345pt.
+ [11]) (./content/diskussion.tex) [12<./Bilder/Aufbau.png>]
+Overfull \hbox (4.32645pt too wide) in paragraph at lines 26--26
+[]\EU2/lmr/m/n/10.95 EHS. \EU2/lmr/m/it/10.95 RA-DI-O-NU-CLI-DE DA-TA SHEET\EU2/lmr/m/n/10.95 . ehs.mis-sou-ri.edu/rad/iso-to-pe-da-ta/cs-137.pdf,
+ []
+
+
 Overfull \hbox (8.56255pt too wide) in paragraph at lines 26--26
 \EU2/lmr/m/n/10.95 http://129.217.224.2/HOME-PAGE/PHY-SI-KER/BA-CHE-LOR/FP/SKRIPT/V18.pdf,
  []
 
-[8] [9]
+[13]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
  (./build/main.aux
@@ -2272,30 +2305,34 @@ Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 27.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 9D942EFD4F6CF0B9027170DBA6259437;11103.
+(rerunfilecheck)             Checksum: 4992FCB0BF3514F0014960D041D2B93F;16679.
 Package rerunfilecheck Info: File `main.tdo' has not changed.
-(rerunfilecheck)             Checksum: 8F5348E734C142DCAC2DA21E2F9FF508;117.
+(rerunfilecheck)             Checksum: B2F8D9AE1CBD4E156BFE3E141A96A367;120.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 97B7748B6710734C929EC66DC66D5CF3;1498.
+(rerunfilecheck)             Checksum: E7229279A1ECFB6473F415C30D923E90;2149.
+
+
+LaTeX Warning: There were undefined references.
+
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 55256 strings out of 495118
+ 55388 strings out of 495118
  100000,1977958 words of node,token memory allocated
- 7732 words of node memory still in use:
-   85 hlist, 12 vlist, 2 rule, 16 disc, 6 local_par, 483 glue, 7 kern, 14 penalty, 12 margin_kern, 106 glyph, 382 attribute, 60 glue_spec, 382 attribute_list, 5 write, 4 save_pos, 190 pdf_literal nodes
-   avail lists: 1:4,2:912,3:329,4:46,5:173,6:1976,7:450,8:85,9:297,10:11,11:253
- 57076 multiletter control sequences out of 65536+600000
- 103 fonts using 32915279 bytes
- 80i,12n,104p,8833b,2999s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/xits/xits-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on main.pdf (10 pages, 166795 bytes).
+ 9032 words of node memory still in use:
+   85 hlist, 12 vlist, 2 rule, 20 disc, 6 local_par, 637 glue, 9 kern, 14 penalty, 10 margin_kern, 110 glyph, 420 attribute, 60 glue_spec, 420 attribute_list, 5 write, 4 save_pos, 190 pdf_literal nodes
+   avail lists: 1:6,2:775,3:223,4:58,5:226,6:2526,7:1130,8:85,9:262,10:28,11:333
+ 57149 multiletter control sequences out of 65536+600000
+ 125 fonts using 41289783 bytes
+ 80i,13n,104p,8833b,2977s stack positions out of 5000i,500n,10000p,200000b,100000s
+</home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/xits/xits-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
+Output written on main.pdf (14 pages, 274802 bytes).
 
-PDF statistics: 256 PDF objects out of 1000 (max. 8388607)
- 203 compressed objects within 3 object streams
- 51 named destinations out of 1000 (max. 131072)
- 128 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 351 PDF objects out of 1000 (max. 8388607)
+ 284 compressed objects within 3 object streams
+ 73 named destinations out of 1000 (max. 131072)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 
