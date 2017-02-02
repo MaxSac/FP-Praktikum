@@ -489,6 +489,10 @@ INPUT ./Bilder/WkeitWW.png
 INPUT Bilder/WkeitWW.png
 INPUT /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc
 INPUT /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc
+INPUT ./Bilder/V1.png
+INPUT Bilder/V1.png
+INPUT ./Bilder/V2.png
+INPUT Bilder/V2.png
 INPUT /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-regular.luc
 INPUT /home/philip/.local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi9.tfm
 INPUT /home/philip/.local/texlive/2016/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
@@ -500,10 +504,6 @@ INPUT /home/philip/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symb
 INPUT /home/philip/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /home/philip/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /home/philip/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT ./Bilder/V1.png
-INPUT Bilder/V1.png
-INPUT ./Bilder/V2.png
-INPUT Bilder/V2.png
 INPUT /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc
 INPUT ./Bilder/Spektrum.png
 INPUT Bilder/Spektrum.png

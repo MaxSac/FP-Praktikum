@@ -15,20 +15,20 @@
 \contentsline {subsubsection}{\numberline {2.3.3}Aktivitäts- und Energiebestimmung einer $\mitgamma $-Quelle}{11}{subsubsection.2.3.3}
 \contentsline {subsection}{\numberline {2.4}Fehlerrechnung}{11}{subsection.2.4}
 \contentsline {subsubsection}{\numberline {2.4.1}Mittelwert}{11}{subsubsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.2}Gauß'sche Fehlerfortpflanzung}{11}{subsubsection.2.4.2}
-\contentsline {subsubsection}{\numberline {2.4.3}Lineare Regression}{11}{subsubsection.2.4.3}
+\contentsline {subsubsection}{\numberline {2.4.2}Gauß'sche Fehlerfortpflanzung}{12}{subsubsection.2.4.2}
+\contentsline {subsubsection}{\numberline {2.4.3}Lineare Regression}{12}{subsubsection.2.4.3}
 \contentsline {section}{\numberline {3}Aufbau und elektronische Beschaltung}{12}{section.3}
 \contentsline {section}{\numberline {4}Versuchsdurchführung}{15}{section.4}
-\contentsline {section}{\numberline {5}Auswertung}{15}{section.5}
+\contentsline {section}{\numberline {5}Auswertung}{16}{section.5}
 \contentsline {subsection}{\numberline {5.1}Kalibrieren des Detektors anhand $^{152}$EU Spektrums}{16}{subsection.5.1}
 \contentsline {subsubsection}{\numberline {5.1.1}Energiekalibrierung}{16}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Effizienzbestimmung}{16}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2}Effizienzbestimmung}{18}{subsubsection.5.1.2}
 \contentsline {subsection}{\numberline {5.2}$^{137}$Cs-Strahler}{20}{subsection.5.2}
 \contentsline {subsubsection}{\numberline {5.2.1}Photopeak}{20}{subsubsection.5.2.1}
-\contentsline {subsubsection}{\numberline {5.2.2}Compton-Kontinum}{22}{subsubsection.5.2.2}
-\contentsline {subsubsection}{\numberline {5.2.3}Verteilung des Photopeaks}{23}{subsubsection.5.2.3}
-\contentsline {subsubsection}{\numberline {5.2.4}Absorptionswahrscheinlichkeit im Detektor}{24}{subsubsection.5.2.4}
-\contentsline {subsection}{\numberline {5.3}Aktivitätsbestimmung der verwendeten $^{133}$Ba-Quelle}{24}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Zerfallsreihe des unbekannten Minerals}{25}{subsection.5.4}
-\contentsline {section}{\numberline {6}Diskussion}{27}{section.6}
-\contentsline {section}{\nonumberline Literatur}{27}{section*.24}
+\contentsline {subsubsection}{\numberline {5.2.2}Compton-Kontinum}{21}{subsubsection.5.2.2}
+\contentsline {subsubsection}{\numberline {5.2.3}Verteilung des Photopeaks}{22}{subsubsection.5.2.3}
+\contentsline {subsubsection}{\numberline {5.2.4}Absorptionswahrscheinlichkeit im Detektor}{23}{subsubsection.5.2.4}
+\contentsline {subsection}{\numberline {5.3}Aktivitätsbestimmung der verwendeten $^{133}$Ba-Quelle}{23}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Zerfallsreihe des unbekannten Minerals}{24}{subsection.5.4}
+\contentsline {section}{\numberline {6}Diskussion}{25}{section.6}
+\contentsline {section}{\nonumberline Literatur}{25}{section*.23}

@@ -97,9 +97,9 @@ Die kinetische Energie des entstandenen Elektron-Positron-Paares beträgt:
 Der Wirkungsquerschnitt der Paarbildung $\sigma_\text{Pa}$ hängt von der Kernladungszahl $z$ und der Abschirmung des Coulomb-Feldes ab. Im folgenden werden zwei Grenzfälle betrachtet. Wenn die Paarbildung in Kernnähe auftritt, also bei verschwindender Abschirmung wird der Wirkungsquerschnitt zu
 \begin{align}
 	&\sigma_\text{Pa} = \alpha\, r_\text{e}^2\, z^2\, \left(\frac{28}{9}\ln(2\,\varepsilon) - \frac{218}{27} \right) \\
+	(\alpha = &\text{Sommerfeldsche Feinstrukturkonstante})
 	\label{eqn:PaarVerschwindend}
 \end{align}
-\hfil {\footnotesize($\alpha$ = Sommerfeldsche Feinstrukturkonstante)} \hfil \\
 bestimmt. Die Gleichung \eqref{eqn:PaarVerschwindend} ist in einem Energiebereich von $10 < E_\gamma < 25$ MeV gültig. \\
 Wenn die Paarbildung am Rand der Elektronenhülle stattfindet, das Coulomb-Feld also vollständig abgeschirmt wird, ergibt sich folgende Gleichung
 \begin{align}
@@ -201,10 +201,17 @@ Das Compton-Kontinuum ist ein störender Bereich bei der $\gamma$-Spektroskopie.
 
 
 \subsubsection{Aktivitäts- und Energiebestimmung einer \texorpdfstring{$\gamma$}{}-Quelle}
-\todo{Energie, Aktivitätsbestimmung}
-
-
-
+Für die Energiebestimmung eines einzelnen Peaks muss zunächst der Detektor kalibriert. Dazu wird ein $\gamma$-Strahler mit bekannten Energien aufgenommen. Damit wird den Kanälen des Vielkanalanalysators eine Energie zugeordnet. Um die Fehler der linearen Regression zu minimieren wird ein linienreiches Spektrum benötigt. \\
+Zur Bestimmung der Aktivität $A$ muss zunächst die Effizienz $Q$ durch eine Kalibrierungsmessung ermittelt werden. Die Effizienz ist die Nachweißwahrscheinlichkeit eines Quants mit einer Energie $E_\gamma$. Dafür wird ein $\gamma$-Strahler mit bekannter Aktivität verwendet und mit dem gemessenen Zählergebnis $Z$ in Verbindung gebracht.
+\begin{align}
+	Z = \Omega\,A\,W\,Q
+\end{align}
+Da die Strahlung Kugelförmig aus dem Strahler austritt, wird nur ein kleiner Teil der Strahlung in dem Detektor aufgenommen. Diese Größe wird durch den Raumwinkel $\Omega$ beschrieben. $W$ ist die Emissionswahrscheinlichkeit einer bestimmten Energie bei Mehrlinienstrahlern. Um die Effizienz zu bestimmen müssen also $A$, $Z$, $W$ und $\Omega$ bekannt sein. Die Aktivität wird aus Herstellerangaben entnommen und das Zählergebnis aus einer Messung. Die Emissionswahrscheinlichkeit kann einschlägigen Tabellen entnommen werden \cite{V18}. Der Raumwinkel kann über
+\begin{align}
+	\Omega = 2\,\pi\,\left(1 - \frac{a}{\sqrt{a^2 + r^2}} \right)
+\end{align}
+\hfil {\footnotesize($a$ = Abstand zwischen Quelle und Detektor, $r$ = Detektorradius)} \hfil \\
+berechnet werden. Solbald die Effizienz bestimmt wurde kann die Energie und die Aktivität von unbekannten Strahlern bestimmt werden.
 
 
 
