@@ -1,5 +1,5 @@
 \section{Einleitung}
-In dem Versuch wird der Reinst-Germanium-Detektor näher betrachtet. Dazu werden wichtige Kenngrößen, wie das energetische Auflösungsvermögen und die spektrale Empfindlichkeit, des Detektors bestimmt. Im folgenden werden der Aufbau und die Funktionsweise des Ge-Detektors näher beschrieben.
+In dem Versuch wird die Funktionsweise des Reinst-Germanium-Detektor untersucht. Dazu werden wichtige Kenngrößen, wie das energetische Auflösungsvermögen und die spektrale Empfindlichkeit, des Detektors bestimmt. Im folgenden werden der Aufbau und die Funktionsweise des Ge-Detektors näher beschrieben.
 
 
 
@@ -10,22 +10,23 @@ Der Germanium-Detektor ist ein wichtiges Messinstrument in der $\gamma$-Spektros
 
 
 \subsection{Wechselwirkung von \texorpdfstring{$\gamma$}{}-Strahlung mit Materie}
-Im folgenden werden der Wirkungsquerschnitt $\sigma$ und der Extinktionskoeffizient $\mu$ angegeben, sowie die drei dominierenden Wechselwirkungen von $\gamma$-Strahlung mit Materie erläutert.
+Im folgenden werden der Begriff des Wirkungsquerschnittes $\sigma$ und des Extinktionskoeffizients $\mu$ eingeführt, sowie die drei dominierenden Wechselwirkungen von $\gamma$-Strahlung mit Materie erläutert.
 
 
 
 \subsubsection{Der Wirkungsquerschnitt \texorpdfstring{$\sigma$}{} und der Extinktionskoeffizient \texorpdfstring{$\mu$}{}}
-Der Wirkungsquerschnitt $\sigma$ ist ein Maß für die Wahrscheinlichkeit, dass eine Wechselwirkung zwischen der $\gamma$-Strahlung und dem Absorber stattfindet. $\sigma$ hat die Dimension einer Fläche und man kann sich diese als Zielscheibe vorstellen. \todo{man wegmachen} Es tritt also genau dann eine Wechselwirkung auf, wenn ein $\gamma$-Quant die Zielscheibe trifft. \\
+Der Wirkungsquerschnitt $\sigma$ ist ein Maß für die Wahrscheinlichkeit, dass eine Wechselwirkung zwischen der $\gamma$-Strahlung und dem Absorber stattfindet. $\sigma$ hat die Dimension einer Fläche und man kann sich diese als "Zielscheibe" vorstellen. \todo{man wegmachen} Es tritt genau dann eine Wechselwirkung auf, wenn ein $\gamma$-Quant die "Zielscheibe" trifft. \\
 Die Wahrscheinlichkeit $dW$ einer Wechselwirkung zwischen dem einfallenden Strahl ("Projektil") und dem Absorber ("Target") wird mit Hilfe der Abbildung \eqref{fig:WkeitWW} zu
 \begin{align}
 	dW = n\,\sigma\,dx
 \end{align}
-bestimmt. Daraus folgt das Absorbtionsgesetzt
+bestimmt. $n$ ist die Teilchendichte des Absorbers.
+Daraus folgt das Absorbtionsgesetzt
 \begin{align}
 	N(D) = N_0 \exp(-n\,\sigma\,D) \ .
 	\label{eqn:Absorbtion}
 \end{align}
-Darin ist $N_0$ die Anzahl der auftreffenden Quanten und $N(D)$ ist die Anzahl der austretenden Quanten. $n$ ist die Teilchendichte des Absorbers. Der Extinktionskoeffizient $\mu$ wird als
+Darin ist $N_0$ die Anzahl der auftreffenden Quanten und $N(D)$ ist die Anzahl der austretenden Quanten. Der Extinktionskoeffizient $\mu$ wird als
 \begin{align}
 	\mu = n\,\sigma
 \end{align}
@@ -41,11 +42,11 @@ deffiniert. Sein reziproker Wert ist gleich der mittleren Reichweite $\overline{
 
 
 \subsubsection{Der Photoeffekt}
-Ein Photon kann ein Elektron aus der Atomhülle schlagen, dafür muss das Photon mindestens die Bindungsenergie $E_\text{B}$ des Elektrons besitzten. Bei diesem Vorgang wird die gesamte Energie $h\nu$ des Photons auf das Elektron übertragen. Das Elektron besitzt also eine kinetische Energie von
+Ein Photon kann ein Elektron aus der Atomhülle schlagen. Dafür muss das Photon mindestens die Bindungsenergie $E_\text{B}$ des Elektrons besitzten. Bei diesem Vorgang wird die gesamte Energie $h\nu$ des Photons auf das Elektron übertragen. Das Elektron besitzt also eine kinetische Energie von
 \begin{align}
 	E_\text{kin} = h\nu - E_\text{B} \ .
 \end{align}
-Aus Energie-Impuls-Erhaltungsgründen kann dieser Prozess nur in der nähe eines Atomkerns stattfinden. Deshalb werden bevorzugt Elektronen aus der K-Schale ausgelöst (vgl. \cite[3]{V18}). Da sich das Atom nach dem Effekt in einem instabilen Zustand befindet, fallen Elektronen aus höheren Schalen in das enstandene "Loch". Dabei wird Röntgenstrahlung frei welche aber fast komplet in dem Absorber verbleibt. Deshalb kann gesagt werden, dass der Absorber die gesamte Energie des Photons absorbiert. \\
+Aufgrund der Energie-Impuls-Erhaltung kann dieser Prozess nur in der nähe eines Atomkerns stattfinden. Deshalb werden bevorzugt Elektronen aus der K-Schale ausgelöst (vgl. \cite[3]{V18}). Da sich das Atom nach dem Effekt in einem instabilen Zustand befindet, fallen Elektronen aus höheren Schalen in das enstandene "Loch". Dabei wird Röntgenstrahlung emittiert welche aber fast komplet in dem Absorber verbleibt. Deshalb kann gesagt werden, dass der Absorber die gesamte Energie des Photons absorbiert. \\
 Der Wirkungsquerschnitt $\sigma_\text{Ph}$ des Photoeffekts kann zu
 \begin{equation}
 	\sigma_\text{Ph} \approx z^{\alpha}\,E^{\delta}
@@ -60,7 +61,7 @@ Der Compton-Effekt ist die inelastische Streuung von Photonen an Elektronen. Das
 	E_{\gamma'} = \frac{E_{\gamma}}{1 + \varepsilon\,(1-\cos(\psi_{\gamma})}
 	\label{eqn:Egamma}
 \end{align}
-bestimmt werden. Dabei ist $E_{\gamma}$ die Energie des Photons vor dem Stoß und $E_{\gamma'}$ ist die Energie nach dem Stoß. $\varepsilon$ entspricht einer normierten Energie $\varepsilon = \frac{E_{\gamma}}{m_0\,c^2}$ und $\psi_{\gamma}$ ist der Streuwinkel des $\gamma$-Quants. Aus Formel \eqref{eqn:Egamma} folgt die Energie $E_\text{l}$ des gestoßenen Elektrons zu
+bestimmt werden. Dabei ist $E_{\gamma}$ die Energie des Photons vor dem Stoß und $E_{\gamma'}$ ist die Energie nach dem Stoß. $\varepsilon$ entspricht der normierten Energie $\varepsilon = \frac{E_{\gamma}}{m_0\,c^2}$ und $\psi_{\gamma}$ ist der Streuwinkel des $\gamma$-Quants. Aus Formel \eqref{eqn:Egamma} folgt die Energie $E_\text{l}$ des gestoßenen Elektrons zu
 \begin{align}
 	E_\text{l} = E_{\gamma} - E_{\gamma'} = E_{\gamma} \frac{\varepsilon\,(1-\cos(\psi_{\gamma})}{1 + \varepsilon\,(1-\cos(\psi_{\gamma})} \ .
 	\label{eqn:El}
@@ -106,7 +107,7 @@ Wenn die Paarbildung am Rand der Elektronenhülle stattfindet, das Coulomb-Feld 
 	\sigma_\text{Pa} = \alpha\, r_\text{e}^2\, z^2\, \left(\frac{28}{9}\ln\frac{183}{\sqrt[3]{z}} - \frac{2}{27} \right) \ .
 \end{align}
 Diese ist aber erst ab 500 MeV gültig. \\
-Bei der Paarbildung wird die gesamte Energie des Photons in dem Absorber deponiert. Allerdings kann nicht immer die gesamte Energie von dem Detektor gemessen werden, weil dazu Elektron und Positron in den Detektor fallen müssen. Passiert dies nicht, wird keine Energie gemessen. Auch verlieren Elektron und Positron durch Bremsstrahlung Energie, wodurch das Spektrum nach unten verbreitert wird.
+Bei der Paarbildung wird die gesamte Energie des Photons in dem Absorber deponiert. Allerdings kann nicht immer die gesamte Energie von dem Detektor gemessen werden, weil dazu Elektron und Positron in den Detektor fallen müssen. Wenn nur eines der Beiden Teilchen in den Detektor fällt wird $E_\gamma - m_0\,c^2$ gemessen. Treffen beide Teilchen den Detektor nicht wird eine Linie bei $E_\gamma - 2\,m_0\,c^2$ beobachtet. Auch verlieren Elektron und Positron durch Bremsstrahlung Energie, wodurch das Spektrum nach unten verbreitert wird.
 
 
 
@@ -132,18 +133,19 @@ Der wesentliche Bestandteil des Detektors ist eine Halbleiter-Diode. Das bedeute
 	\label{fig:Potential}
 \end{figure}
 
-Wenn ein $\gamma$-Quant in die ladungsträgerarme Zone eindringt kann einer der drei beschriebenen Prozesse eintretten. Das bei diesen Prozessen freigesetzte Elektron stößt auf seinem Weg durch den Festkörper mit vielen anderen Elektronen aus dem Valenzband zusammen. Dabei gibt das freigesetzte Elektron einen Teil seiner Energie zur Erzeugung von Phononen ab. Die restliche Energie wird an die Valenzelektronen abgegeben, wodurch diese in das Leitfähigkeitsband oder darüber hinaus gehoben werden. Es entsteht dadurch ein Elektronen-Loch-Paar, welches durch die anliegende Spannung getrennt wird und einen Ladungsimpuls erzeugen. \\
-Die Absorbtionswahrscheinlichkeit (siehe Gl. \eqref{eqn:Absorbtion}) eines $\gamma$-Quants hängt von der Schichtdicke des Absorbermaterials ab. Deshalb ist es besonders wichtig, dass die Verarmungszone so groß wie möglich ist. Dies wird im wesentlichen über eine unsymmetrische Dotierung und die Sperrspannung $U$ gewährleistet. Die Breite der n-Schicht $d_\text{n}$ und die Breite der p-Schicht $d_\text{p}$ sind durch
+Wenn ein $\gamma$-Quant in die ladungsträgerarme Zone eindringt kann einer der drei beschriebenen Wechselwirkungen eintretten. Das bei diesen Prozessen freigesetzte Elektron stößt auf seinem Weg durch den Festkörper mit vielen anderen Elektronen aus dem Valenzband zusammen. Dabei gibt das freigesetzte Elektron einen Teil seiner Energie zur Erzeugung von Phononen ab. Die restliche Energie wird an die Valenzelektronen abgegeben, wodurch diese in das Leitfähigkeitsband oder darüber hinaus gehoben werden. Es entsteht dadurch ein Elektronen-Loch-Paar, welches durch die anliegende Spannung getrennt wird und einen Ladungsimpuls erzeugen. \\
+Die Absorbtionswahrscheinlichkeit (siehe Gl. \eqref{eqn:Absorbtion}) eines $\gamma$-Quants hängt exponentiell von der Schichtdicke des Absorbermaterials ab. Deshalb ist es besonders wichtig, dass die Verarmungszone so groß wie möglich ist. Dies wird im wesentlichen über eine unsymmetrische Dotierung und die Sperrspannung $U$ gewährleistet. Die Breite der n-Schicht $d_\text{n}$ und die Breite der p-Schicht $d_\text{p}$ sind durch
 \begin{align}
 	d_\text{n}^2 &= \frac{2\,\varepsilon\,\varepsilon_0} {e_0} \, \frac{U_\text{D} + U}{n_\text{A} + n_\text{D}} \, \frac{n_\text{A}}{n_\text{D}} \\
 	d_\text{p}^2 &= \frac{2\,\varepsilon\,\varepsilon_0} {e_0} \, \frac{U_\text{D} + U} {n_\text{A} + n_\text{D}} \, \frac{n_\text{D}}{n_\text{A}}
 \end{align}
 \hfil {\footnotesize($\varepsilon$ = relative Dielektrizitätszahl, $\varepsilon_0$ = elektrische Feldkonstante)} \hfil \\
-gegeben. Um die p-Schicht groß gegenüber der n-Schicht zu machen, wird die Donatordichte $n_\text{D}$ viel größer als die Akzeptordichte $n_\text{A}$ gewählt. Dadurch wird die größe der Verarmungszone zu
+gegeben. Um die p-Schicht groß gegenüber der n-Schicht zu machen, wird die Donatordichte $n_\text{D}$ viel größer als die Akzeptordichte $n_\text{A}$ gewählt. Deshalb kann die Breite der Verarmungszone zu
 \begin{align}
 	d = d_\text{p} + d_\text{n} \approx d_\text{p} \approx \sqrt{\frac{2\,\varepsilon\,\varepsilon_0} {e_0} \, \frac{U_\text{D} + U}{n_\text{A}}}
 \end{align}
-genähert. Es ist also wichtig die Verunreinigung des Absorbers so gering wie möglich zu halten, dies wird über spezielle Kristallzüchtungsverfahren gewährleistet. \\ Außerdem kann die Verarmungszone durch eine möglichst hohe Sperrspannung weiter vergrößert werden. Diese Maßnahme ist allerdings begrenzt, weil in der Verarmungszone Ladungsträger vorhanden sind welche durch thermische Aktivierung entstanden sind. Diese können spontan die Energielücke $E_\text{g}$ (=0.67\,eV bei Ge \cite[13]{V18}) zwischen Valenzband und Leitfähigkeitsband überwinden. Diese Ladungsträger erzeugen einen Leckstrom, welcher als Rauschen gemessen wird. Die Dichte $n_\text{i}$ dieser Ladungsträger ist proportional zu
+genähert. Da die Akzeptordichte von der Verunreinigung des Kristalls abhängt, ist es wichtig diese gerin zu halten. Dies wird über spezielle Kristallzüchtungsverfahren gewährleistet. \\
+Außerdem kann die Verarmungszone durch eine möglichst hohe Sperrspannung weiter vergrößert werden. Diese Maßnahme ist allerdings begrenzt, weil in der Verarmungszone Ladungsträger vorhanden sind welche durch thermische Aktivierung entstehen. Diese können spontan die Energielücke $E_\text{g}$ (=0.67\,eV bei Ge \cite[13]{V18}) zwischen Valenzband und Leitfähigkeitsband überwinden. Diese Ladungsträger erzeugen einen Leckstrom, welcher als Rauschen gemessen wird. Die Dichte $n_\text{i}$ dieser Ladungsträger ist proportional zu
 \begin{align}
 	n_\text{i} \propto T^3 \exp\left(-\frac{E_\text{g}}{k_\text{b}\,T} \right) \ .
 \end{align}
@@ -177,11 +179,11 @@ Für Germanium beträgt $F$ = 0.1 \cite[15]{V18}. Da $n$ sehr viel größer ist 
 \begin{align}
 	\Delta E_\frac{1}{2} = \sqrt{8\,\ln2} \, \frac{\sigma} {\overline{n}} E_\gamma = \sqrt{0.8\,\ln2\,E_\gamma \, E_\text{El}} \ .
 \end{align}
-Das energetische Auflösungsvermögen hängt zusätzlich noch von dem Leckstrom, den Feldinhomogenitäten und dem Verstärkerrauschen (Darauf wird in Kapitel \eqref{sec:} weiter eingegangen) ab. Diese Effekte sind unkorreliert, deshalb kann die Gesamthalbwertsbreite zu
+Das energetische Auflösungsvermögen hängt zusätzlich noch von dem Leckstrom, den Feldinhomogenitäten und dem Verstärkerrauschen ab. Diese Effekte sind unkorreliert, deshalb kann die Gesamthalbwertsbreite zu
 \begin{align}
 	H_\text{ges}^2 = \Delta E_\frac{1}{2}^2 + H_\text{R}^2 + H_\text{I}^2 + H_\text{E}^2
 \end{align}
-zusammengesetzt werden. $H_\text{R}$ ist die Halbwertsbreite des Leckstroms, $H_\text{I}$ ist die Halbwertsbreite der Feldinhomogenität und $H_\text{E}$ ist die Halbwertsbreite des Verstärkerrauschens. Der Leckstrom und das Verstärkerrauschen können durch abkühlen deutlich vermindert werden. Auch muss die Sperrspannung eine Mindesthöhe überschreiten (U > Depletionsspannung).
+zusammengesetzt werden. $H_\text{R}$ ist die Halbwertsbreite des Leckstroms, $H_\text{I}$ ist die Halbwertsbreite der Feldinhomogenität und $H_\text{E}$ ist die Halbwertsbreite des Verstärkerrauschens. Der Leckstrom und das Verstärkerrauschen können durch abkühlen deutlich vermindert werden. Auch muss die Sperrspannung eine Mindesthöhe überschreiten (U > Depletionsspannung), weil $H_\text{I}$ und $H_\text{E}$ dadurch kleiner werden.
 
 
 
@@ -201,10 +203,17 @@ Das Compton-Kontinuum ist ein störender Bereich bei der $\gamma$-Spektroskopie.
 
 
 \subsubsection{Aktivitäts- und Energiebestimmung einer \texorpdfstring{$\gamma$}{}-Quelle}
-\todo{Energie, Aktivitätsbestimmung}
-
-
-
+Für die Energiebestimmung eines einzelnen Peaks muss zunächst der Detektor kalibriert. Dazu wird ein $\gamma$-Strahler mit bekannten Energien aufgenommen. Damit wird den Kanälen des Vielkanalanalysators eine Energie zugeordnet. Um die Fehler der linearen Regression zu minimieren wird ein linienreiches Spektrum benötigt. \\
+Zur Bestimmung der Aktivität $A$ muss zunächst die Effizienz $Q$ durch eine Kalibrierungsmessung ermittelt werden. Die Effizienz ist die Nachweißwahrscheinlichkeit eines Quants mit einer Energie $E_\gamma$. Dafür wird ein $\gamma$-Strahler mit bekannter Aktivität verwendet und mit dem gemessenen Zählergebnis $Z$ in Verbindung gebracht.
+\begin{align}
+	Z = \Omega\,A\,W\,Q
+\end{align}
+Da die Strahlung Kugelförmig aus dem Strahler austritt, wird nur ein kleiner Teil der Strahlung in dem Detektor aufgenommen. Diese Größe wird durch den Raumwinkel $\Omega$ beschrieben. $W$ ist die Emissionswahrscheinlichkeit einer bestimmten Energie bei Mehrlinienstrahlern. Um die Effizienz zu bestimmen müssen also $A$, $Z$, $W$ und $\Omega$ bekannt sein. Die Aktivität wird aus Herstellerangaben entnommen und das Zählergebnis aus einer Messung. Die Emissionswahrscheinlichkeit kann einschlägigen Tabellen entnommen werden \cite{V18}. Der Raumwinkel kann über
+\begin{align}
+	\Omega = 2\,\pi\,\left(1 - \frac{a}{\sqrt{a^2 + r^2}} \right)
+\end{align}
+\hfil {\footnotesize($a$ = Abstand zwischen Quelle und Detektor, $r$ = Detektorradius)} \hfil \\
+berechnet werden. Solbald die Effizienz bestimmt wurde kann die Energie und die Aktivität von unbekannten Strahlern bestimmt werden.
 
 
 
