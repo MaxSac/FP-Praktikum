@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.12.1)  31 JAN 2017 03:25
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.12.1)  2 FEB 2017 09:09
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -466,7 +466,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.089 seconds)
+luaotfload | main : initialization completed in 0.074 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX. (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
 \l_fontspec_script_int=\count117
@@ -2244,12 +2244,12 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(1)/m/n' will be
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 11.99982pt on input line 12.
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 18.
- <Bilder/WkeitWW.png, id=77, 529.98pt x 664.4825pt>
+ <Bilder/WkeitWW.png, id=84, 529.98pt x 664.4825pt>
 File: Bilder/WkeitWW.png Graphic file (type png)
  <use Bilder/WkeitWW.png>
 Package luatex.def Info: Bilder/WkeitWW.png used on input line 36.
 (luatex.def)             Requested size: 125.47794pt x 157.31941pt.
- [3](load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc) [4<./Bilder/WkeitWW.png>] [5] [6] <Bilder/V1.png, id=127, 805.0075pt x 721.69624pt>
+ [3](load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc) [4<./Bilder/WkeitWW.png>] [5] [6] <Bilder/V1.png, id=134, 805.0075pt x 721.69624pt>
 File: Bilder/V1.png Graphic file (type png)
  <use Bilder/V1.png>
 Package luatex.def Info: Bilder/V1.png used on input line 121.
@@ -2259,7 +2259,7 @@ Overfull \hbox (33.94403pt too wide) in paragraph at lines 121--122
 [][] 
  []
 
-<Bilder/V2.png, id=128, 609.27625pt x 742.775pt>
+<Bilder/V2.png, id=135, 609.27625pt x 742.775pt>
 File: Bilder/V2.png Graphic file (type png)
  <use Bilder/V2.png>
 Package luatex.def Info: Bilder/V2.png used on input line 127.
@@ -2277,17 +2277,31 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 
 LaTeX Warning: Reference `sec:' on page 9 undefined on input line 180.
 
-[9] <Bilder/Spektrum.png, id=164, 1135.24126pt x 774.895pt>
+[9] <Bilder/Spektrum.png, id=171, 1135.24126pt x 774.895pt>
 File: Bilder/Spektrum.png Graphic file (type png)
  <use Bilder/Spektrum.png>
 Package luatex.def Info: Bilder/Spektrum.png used on input line 193.
 (luatex.def)             Requested size: 334.60571pt x 228.39104pt.
- [10<./Bilder/Spektrum.png>]) (./content/durchfuehrung.tex <Bilder/Aufbau.png, id=177, 1408.26125pt x 523.9575pt>
+ [10<./Bilder/Spektrum.png>]) (./content/durchfuehrung.tex [11] <Bilder/Aufbau.png, id=195, 1408.26125pt x 523.9575pt>
 File: Bilder/Aufbau.png Graphic file (type png)
  <use Bilder/Aufbau.png>
-Package luatex.def Info: Bilder/Aufbau.png used on input line 5.
+Package luatex.def Info: Bilder/Aufbau.png used on input line 6.
 (luatex.def)             Requested size: 418.25555pt x 155.61345pt.
- [11]) (./content/diskussion.tex) [12<./Bilder/Aufbau.png>]
+ <Bilder/Germanium-Detektor.png, id=199, 1184.425pt x 693.59125pt>
+File: Bilder/Germanium-Detektor.png Graphic file (type png)
+ <use Bilder/Germanium-Detektor.png>
+Package luatex.def Info: Bilder/Germanium-Detektor.png used on input line 16.
+(luatex.def)             Requested size: 418.25555pt x 244.93016pt.
+ <Bilder/Vorverstärker.png, id=202, 1096.095pt x 637.38126pt>
+File: Bilder/Vorverstärker.png Graphic file (type png)
+ <use Bilder/Vorverstärker.png>
+Package luatex.def Info: Bilder/Vorverstärker.png used on input line 23.
+(luatex.def)             Requested size: 418.25555pt x 243.21886pt.
+ [12<./Bilder/Aufbau.png>] [13<./Bilder/Germanium-Detektor.png><./Bilder/Vorverstärker.png>]) (./content/diskussion.tex)
+
+LaTeX Warning: Marginpar on page 14 moved.
+
+
 Overfull \hbox (4.32645pt too wide) in paragraph at lines 26--26
 []\EU2/lmr/m/n/10.95 EHS. \EU2/lmr/m/it/10.95 RA-DI-O-NU-CLI-DE DA-TA SHEET\EU2/lmr/m/n/10.95 . ehs.mis-sou-ri.edu/rad/iso-to-pe-da-ta/cs-137.pdf,
  []
@@ -2297,7 +2311,7 @@ Overfull \hbox (8.56255pt too wide) in paragraph at lines 26--26
 \EU2/lmr/m/n/10.95 http://129.217.224.2/HOME-PAGE/PHY-SI-KER/BA-CHE-LOR/FP/SKRIPT/V18.pdf,
  []
 
-[13]
+[14] [15]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
  (./build/main.aux
@@ -2305,11 +2319,11 @@ Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 27.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 4992FCB0BF3514F0014960D041D2B93F;16679.
+(rerunfilecheck)             Checksum: 63FD6A9108420A264B0D262E57A9D651;18170.
 Package rerunfilecheck Info: File `main.tdo' has not changed.
-(rerunfilecheck)             Checksum: B2F8D9AE1CBD4E156BFE3E141A96A367;120.
+(rerunfilecheck)             Checksum: ECD5DABD9FA3C11BE4B1EDF8D4111C77;403.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: E7229279A1ECFB6473F415C30D923E90;2149.
+(rerunfilecheck)             Checksum: 7EC641AE75B23802BF8A6710AD90FB2D;2150.
 
 
 LaTeX Warning: There were undefined references.
@@ -2320,19 +2334,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 55388 strings out of 495118
+ 55435 strings out of 495118
  100000,1977958 words of node,token memory allocated
- 9032 words of node memory still in use:
-   85 hlist, 12 vlist, 2 rule, 20 disc, 6 local_par, 637 glue, 9 kern, 14 penalty, 10 margin_kern, 110 glyph, 420 attribute, 60 glue_spec, 420 attribute_list, 5 write, 4 save_pos, 190 pdf_literal nodes
-   avail lists: 1:6,2:775,3:223,4:58,5:226,6:2526,7:1130,8:85,9:262,10:28,11:333
- 57149 multiletter control sequences out of 65536+600000
- 125 fonts using 41289783 bytes
- 80i,13n,104p,8833b,2977s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 18020 words of node memory still in use:
+   224 hlist, 24 vlist, 2 rule, 62 disc, 15 local_par, 936 glue, 21 kern, 47 penalty, 42 margin_kern, 466 glyph, 845 attribute, 60 glue_spec, 845 attribute_list, 11 write, 10 save_pos, 475 pdf_literal, 1 pdf_action nodes
+   avail lists: 1:6,2:1258,3:430,4:83,5:240,6:3038,7:1432,8:85,9:267,10:28,11:386
+ 57183 multiletter control sequences out of 65536+600000
+ 125 fonts using 41289591 bytes
+ 80i,13n,104p,8833b,2999s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/xits/xits-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf>
-Output written on main.pdf (14 pages, 274802 bytes).
+Output written on main.pdf (16 pages, 332691 bytes).
 
-PDF statistics: 351 PDF objects out of 1000 (max. 8388607)
- 284 compressed objects within 3 object streams
- 73 named destinations out of 1000 (max. 131072)
+PDF statistics: 379 PDF objects out of 1000 (max. 8388607)
+ 305 compressed objects within 4 object streams
+ 80 named destinations out of 1000 (max. 131072)
  176 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -18,6 +18,6 @@
 \contentsline {subsubsection}{\numberline {2.4.2}Gauß'sche Fehlerfortpflanzung}{11}{subsubsection.2.4.2}
 \contentsline {subsubsection}{\numberline {2.4.3}Lineare Regression}{11}{subsubsection.2.4.3}
 \contentsline {section}{\numberline {3}Aufbau und elektronische Beschaltung}{12}{section.3}
-\contentsline {section}{\numberline {4}Versuchsdurchführung}{12}{section.4}
-\contentsline {section}{\numberline {5}Diskussion}{12}{section.5}
-\contentsline {section}{\nonumberline Literatur}{13}{section*.9}
+\contentsline {section}{\numberline {4}Versuchsdurchführung}{14}{section.4}
+\contentsline {section}{\numberline {5}Diskussion}{14}{section.5}
+\contentsline {section}{\nonumberline Literatur}{14}{section*.14}
