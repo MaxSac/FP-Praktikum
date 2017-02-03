@@ -30,13 +30,19 @@ Darin ist $N_0$ die Anzahl der auftreffenden Quanten und $N(D)$ ist die Anzahl d
 \begin{align}
 	\mu = n\,\sigma
 \end{align}
-deffiniert. Sein reziproker Wert ist gleich der mittleren Reichweite $\overline{x}$ der $\gamma$-Quanten in Materie \cite[2]{V18}.
+deffiniert. Die Werte für den Extinktionskoeffizient für die drei Effekte in Abhängigkeit der Strahlunsenergie, können in Abbildung \eqref{fig:Extink} abgelesen werden. Sein reziproker Wert ist gleich der mittleren Reichweite $\overline{x}$ der $\gamma$-Quanten in Materie \cite[2]{V18}.
 
 \begin{figure}
 	\centering
 	\includegraphics[width=0.3\textwidth]{Bilder/WkeitWW.png}
 	\caption{Definition des Wirkungsquerschnitts: Die Pfeile kennzeichnen die Projektile welche auf das Target treffen \cite{V18}.}
 	\label{fig:WkeitWW}
+\end{figure}
+
+\begin{figure}
+	\includegraphics[width=\linewidth]{Bilder/Extinktionskoeffizient.pdf}
+	\caption{Der Extinktionskoeffizient gegen die Energie der Strahlung aufgetragen \cite{V18}.}
+	\label{fig:Extink}
 \end{figure}
 
 
@@ -198,7 +204,11 @@ In Abbildung \eqref{fig:Spektrum} ist das Spektrum eines monochromatischen $\gam
 \end{figure}
 
 Das Spektrum besteht aus dem Photopeak, dem Compton-Kontinuum und dem Rückstreupeak. Der Photopeak entsteht wenn der Photoeffekt an der Absorbtion beteiligt ist. Dabei wird die gesamte Energie des $\gamma$-Quants an den Absorber abgegeben. Seine Halbwertsbreite ist, wie in Kap.\ref{sec:EAuflösung} dargelegt, ein Maß für die Energieauflösung des Detektors \cite[22]{V18}. \\
-Das Compton-Kontinuum ist ein störender Bereich bei der $\gamma$-Spektroskopie. Dieser Bereich reicht von 0 bis zur Compton-Kante $E_\text{e,max} = E_\gamma \, \frac{2\,\varepsilon} {1 + 2\,\varepsilon}$. Er entsteht durch die Compton-Streuung an den Elektronen. Der Rückstreupeak liegt in dem Compton-Kontinuum und entsteht durch Quanten die nicht direkt in den Detektor fallen. Beispielsweise Quanten die an der Pb-Abschirmung oder der Quelle selbst getreut werden. Der Ort des Rückstreupeaks kann durch einsetzten von 180° in Gleichung \eqref{eqn:Egamma} abgeschätzt werden.
+Das Compton-Kontinuum ist ein störender Bereich bei der $\gamma$-Spektroskopie. Dieser Bereich reicht von 0 bis zur Compton-Kante $E_\text{l,max}$, diese ist durch einsetzten von 180° in Gleichung \eqref{eqn:El} gegeben:
+\begin{align}
+	E_\text{l,max}= E_\gamma \, \frac{2\,\varepsilon} {1 + 2\,\varepsilon}
+\end{align}
+Er entsteht durch die Compton-Streuung an den Elektronen. Der Rückstreupeak liegt in dem Compton-Kontinuum und entsteht durch Quanten die nicht direkt in den Detektor fallen. Beispielsweise Quanten die an der Pb-Abschirmung oder der Quelle selbst getreut werden. Der Ort des Rückstreupeaks kann durch einsetzten von 180° in Gleichung \eqref{eqn:Egamma} abgeschätzt werden.
 
 
 
