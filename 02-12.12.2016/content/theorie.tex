@@ -3,7 +3,7 @@
 Unter dem Zeemaneffekt wird die Aufspaltung von Spektrallinien im Magnetfeld bezeichnet, sowie die Polarisation des Lichtes verstanden. Dabei wird zwischen dem normalen und dem anomalen Zeemaneffekt differenziert. Im folgenden wird die theoretische Grundlage des Versuches skizziert.
 
 \subsection{Magnetisches Moment eines Elektrons}
-Elektronen besitzen sowohl einen Bahndrehimpuls $l$ sowie einen Eigendrehimpuls $s$. In der weiteren Betrachtung werden nur die Drehimpulse der äußeren Schalen der Atome betrachtet, da die der abgeschlossenen Schalen in Summe verschwinden. Ausgehend von der Eigenwertgleichung der Zustände des Atoms werden die Beträge der Quantenzahlen zu
+Elektronen besitzen sowohl einen Bahndrehimpuls $\vec{l}$ sowie einen Eigendrehimpuls $\vec{s}$. In der weiteren Betrachtung werden nur die Drehimpulse der äußeren Schalen der Atome betrachtet, da die der abgeschlossenen Schalen in Summe verschwinden. Ausgehend von der Eigenwertgleichung der Zustände des Atoms werden die Beträge der Quantenzahlen zu
 \begin{eqnarray}
   |\vec{l}| = \sqrt{l(l+1)} \hbar  \\
   |\vec{s}| = \sqrt{s(s+1)} \hbar
@@ -32,7 +32,7 @@ In Analogie zu den einzelnen Drehimpulsen wird das magnetische Moment
   |\mu_\text{L}| = \mu_\text{B} \sqrt{L(L+1)}
   \label{magL}
 \end{equation}
-des Gesmatbahndrehimpuls eingeführt. Analog zum Bahndrehimpuls wird sowohl eine Gesamtspinquantenzahl $S$ als auch ein magnetisches Moment $\mu_\text{S}$ eingeführt. Für nicht zu groß Magnetfelder lässt sich der Gesamtdrehimpuls $\vec{J}$ aus der Summe von $L$ und $S$ einführen. Für den Fall, dass die Wechselwirkungen zwischen Spin und Bahndrehimpuls untereinander vernachlässigt wird, wird von LS-Kopplung gesprochen.
+des Gesmatbahndrehimpuls eingeführt. Analog zum Bahndrehimpuls wird sowohl eine Gesamtspinquantenzahl $\vec{S}$ als auch ein magnetisches Moment $\mu_\text{S}$ eingeführt. Für nicht zu groß Magnetfelder lässt sich der Gesamtdrehimpuls $\vec{J}$ aus der Summe von $\vec{L}$ und $\vec{S}$ einführen. Für den Fall, dass die Wechselwirkungen zwischen Spin und Bahndrehimpuls untereinander vernachlässigt wird, wird von LS-Kopplung gesprochen.
 Der zweite Fall der Kopplung von Spin und Bahndrehimpuls wird als j-j-Kopplung bezeichnet. Dabei wird angenommen, dass bei schweren Atomen die Wechselwirkung des Spins und des Bahndrehimpulses eines Elektrons untereinander so groß wird, dass diese nicht mehr vernachlässigt werden kann. Somit müssen die einzelnen Gesamtdrehimpulse
 \begin{equation}
   \vec{j_\text{i}} = \vec{l_\text{i}} + \vec{s_\text{i}}
@@ -45,7 +45,7 @@ Das magnetische Moment des Gesamtdrehimpulses ist die Summe der magnetischen Mom
 \begin{equation}
   \mu = \mu_\text{s} + \mu_\text{l}
 \end{equation}
-Da der Landé-Faktor bei Elektronen, welche ein Spin $\frac{1}{2}$ haben, in etwa den Wert 2 besitzt, zeigen $\vec{\mu}$ und $\vec{J}$ im Regelfall nicht in die gleiche Richtung. Dies hat zur folge, dass das magnetische Moment in einen Anteil welcher sich parallel zum Gesamtdrehimpuls befindet $\vec{\mu} \parallel \vec{J}$ und einem welcher sich antiprallel $\vec{\mu} \nparallel \vec{J}$ zum Gesamtdrehimpuls befindet zerlegt werden kann. Für die Messzeiten präzidiert der  $\vec{\mu} \nparallel \vec{J}$ Anteil, so schnell um den Gesamtdrehimpuls $J$ herum, dass das $\mu$ welches sich antiparallel zu $J$ befindet im zeitlichen Mittel wegfällt. Der parallele Anteil $\vec{\mu} \parallel \vec{J}$ wird im weiteren Verlauf $\vec{\mu_\text{J}}$ genannt. Für den Betrag von $\vec{\mu_\text{J}}$ ergibt sich
+Da der Landé-Faktor bei Elektronen, welche ein Spin $\frac{1}{2}$ haben, in etwa den Wert 2 besitzt, zeigen $\vec{\mu}$ und $\vec{J}$ im Regelfall nicht in die gleiche Richtung. Dies hat zur folge, dass das magnetische Moment in einen Anteil welcher sich parallel zum Gesamtdrehimpuls befindet $\vec{\mu}_\text{J}$ und einem welcher sich senkrecht $\vec{\mu_{\perp}}$ zum Gesamtdrehimpuls befindet zerlegt werden kann. Für die Messzeiten präzidiert der senkrechte Anteil $\vec{\mu_\text{\perp}}$, so schnell um den Gesamtdrehimpuls $\vec{J}$ herum, dass das $\vec{\mu_{\perp}}$ im zeitlichen Mittel wegfällt. Für den Betrag von $\vec{\mu_\text{J}}$ ergibt sich
 \begin{equation}
   |\vec{\mu_\text{J}}| = \mu_\text{B} g_\text{J} \sqrt{J(J+1)} \ ,
   \label{eqn:muJ}
@@ -87,7 +87,7 @@ gelöst werden. Anhand der Lösung kann aus dem Poyntingvektor abgeleitet werden
 \begin{equation}
   \Delta m = -1,0,1
 \end{equation}
-annimmt. Aus der Herleitung lässt sich schließen, dass bei Anlegung eines äußeren magnetischen Feldes für $m = 0$ das elektrische Feld des Lichtes $E_\text{Licht}$ entlang des B-Feldes ausgerichtet ist. Dieser Übergang wird $\pi$ Übergang genannt und ist nur in voller Intensität zu beobachten, wenn der Polfilter senkrecht zum angelegten B-Feld steht und kann unterdrückt werden indem der Polarisationsfilter parallel zum Feld gestellt wird. \\
+annimmt. Aus der Herleitung lässt sich schließen, dass bei Anlegung eines äußeren magnetischen Feldes für $m = 0$ das elektrische Feld des Lichtes $E_\text{Licht}$ entlang des B-Feldes ausgerichtet ist. Dieser Übergang wird $\pi$ Übergang genannt und ist nur in voller Intensität bei Betrachtung senkrecht zum $\vec{\text{B}}$-Feld (``transversal'') zu beobachten. \\
 Ist die Orientierungsquantenzahl $m = \pm 1$, ist das E-Feld um die B-Feldachse zirkular polarisiert. Dieser Übergang wird $\sigma^{+/-}$ genannt, entsprechend des Vorzeichens von $m$ und kann aufgrund der zirkularen Polarisation sowohl longitudinal, als auch transversal beobachtet werden. 
 
 \begin{figure}[H]
@@ -96,11 +96,10 @@ Ist die Orientierungsquantenzahl $m = \pm 1$, ist das E-Feld um die B-Feldachse 
   \caption{Longitudinale und transversale Aufspaltung des Zeemaneffektes bei Anlegung eines äußeren B-Feldes \cite{V27}}
   \label{fig:aufZe}
 \end{figure}
-Der Abbildung \ref{fig:aufZe} ist zu entnehmen das zur identifizierung des $\pi$ Übergangs der Polfilter vertikal auszurichten ist. Zur Betrachtung des $\sigma$ Übergangs muss der Polfilter zweckmäßiger Weise horizontal ausgerichtet werden.
-
+Der Abbildung \ref{fig:aufZe} ist zu entnehmen das zur Identifizierung des $\pi$ Übergangs transversal beobachtet wird. Zur Betrachtung des $\sigma$ Übergangs wird zweckmäßger Weise, die longitudinale Beobachtung gewählt. 
 \subsection{Normaler Zeeman-Effekt}
 Beim normalen Zeeman-Effekt verschwindet die Summe der einzelnen Spins ($S=0$), sodass der entsprechende Landé-Faktor, unabhängig von allen Quantenzahlen $L$ und $J$, $g_\text{J} = 1$ ist. Die Energiedifferenz der Übergänge kann mittels Formel \ref{eqn:delE} berechnet werden. Das Linenspektrum spaltet somit in $2 J + 1$ Linien auf. Eine Aufspaltung der Spektrallinie für $J = 2$ ist in Abbildung \ref{fig:Eniv} zu sehen.
-Die Übergänge des Linienspektrum unterliegen den Auswahlregeln, sodass lediglich 3, die $\sigma^{+/-}$ und $\pi$, Übergänge wie in Abbildung \ref{fig:adf} dargestellt detektierte werden können.
+Die Übergänge des Linienspektrum unterliegen den Auswahlregeln, sodass lediglich 3, die $\sigma^{+/-}$ und $\pi$, Übergänge wie in Abbildung \ref{fig:adf} dargestellt detektierte werden können. Dieses Übergänge werden werden ``Triplett'' genannt und ebenfalls beim anormalen Zeeman-Effekt gemessen. Beim annormalen Zeeman-Effekt kann es jedoch zur mehr der Aufspaltungen $\sigma$-Übergänge kommen.
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.6\textwidth]{./Bilder/asd.pdf}
@@ -109,9 +108,9 @@ Die Übergänge des Linienspektrum unterliegen den Auswahlregeln, sodass ledigli
 \end{figure}
 
 \subsection{Anomaler Zeeman-Effekt}
-Bei der Aufspaltung von Spektrallinien im Magnetfeld bei denen mindestens einer der beiden Zustände einen von Null verschiedenen Gesamtspin hat, wird vom anomalen Zeeman-Effekt gesprochen. Den anomalen Zeemaneffekt kennzeichnet das Landefaktoren auftreten, welche ungleich eins sein können. Die Energiedifferenz der einzelnen Niveaus lässt sich durch die Formel
+Bei der Aufspaltung von Spektrallinien im Magnetfeld, bei denen mindestens einer der beiden Zustände einen von Null verschiedenen Gesamtspin hat, wird vom anomalen Zeeman-Effekt gesprochen. Den anomalen Zeemaneffekt kennzeichnet, dass Landefaktoren auftreten, welche ungleich eins sein können. Die Energiedifferenz der einzelnen Niveaus lässt sich durch die Formel
 \begin{equation}
-  \Delta E = \mu_\text{B}\,B\,(m_1 g_1 + m_2 g_1)
+  \Delta E = \mu_\text{B}\,B\,(m_1 g_1 - m_2 g_1)
   \label{eqn:dE}
 \end{equation}
 berechnen. Da die Landefaktoren von L, J und S abhängen gibt es in der Regel mehr als 3 Übergänge zwischen den Energieniveaus die detektiert werden können.
