@@ -79,19 +79,19 @@ Anhand Formel \ref{eqn:??} lässt sich mittels der Zeitdifferenz zwischen der ge
 berechnen. Dem Versuchsaufbau wird ein Abstand $a$ zwischen Quelle und Detektor von
 \begin{equation}
   a = 8.8 \, \text{cm}
-  \label{<++>}
+  % \label{<++>}
 \end{equation}
 und ein Radius $r$ des Detektors von
 \begin{equation}
   r = 2.25 \, \text{cm}
-  \label{<++>}
+  % \label{<++>}
 \end{equation}
 gemessen. Aus diesen lässt sich durch einsetzen in Formel \ref{eqn:??} ein Raumwinkel $\Omega$ von
 \begin{equation}
   \Omega = 0.196
   \label{eqn:Raum}
 \end{equation}
-berechnen. Der Raumwinkel $\Omega$ ist jedoch nur unter vorbehalt zu verwenden, da der Abstand zwischen Quelle und Detektor kleiner als 10 cm ist und dies nicht mehr im gültigkeitsbereich der Formel \ref{eqn:??} liegt. Aus dem Raumwinkel $\Omega$, der Wechselwirkungswahrscheinlickeit $W$, der Aktivität $A_\text{Durch}$ sowie die effektive Messzeit lässt sich nach Formel \ref{eqn:??} die Effizienz $Q$ berechnen. Die Ergebnisse in Abhängikeit der Energie sind in Tabelle \ref{tab:CsSpekt} aufgeführt. Um die Effizienz in den folgenden Auswertungsteil \ref{sec:??} zur berücksichtigen, wird die Effizenz in erster Näherung durch ein Potenzfunktion dargestellt.
+berechnen. Der Raumwinkel $\Omega$ ist jedoch nur unter vorbehalt zu verwenden, da der Abstand zwischen Quelle und Detektor kleiner als 10 cm ist und dies nicht mehr im gültigkeitsbereich der Formel \ref{eqn:Raumwinkel} liegt. Aus dem Raumwinkel $\Omega$, der Wechselwirkungswahrscheinlickeit $W$, der Aktivität $A_\text{Durch}$ sowie der effektiven Messzeit lässt sich nach Formel \ref{eqn:Zählergebnis} die Effizienz $Q$ berechnen. Die Ergebnisse in Abhängikeit der Energie sind in Tabelle \ref{tab:CsSpekt} aufgeführt. Um die Effizienz in den folgenden Auswertungsteil \ref{sec:??} zur berücksichtigen, wird die Effizenz in erster Näherung durch ein Potenzfunktion dargestellt.
 
 \begin{figure}[H]
   \centering
@@ -130,12 +130,12 @@ detektiert. Im späteren Teil der Auswertung wird geprüft ob der Photopeak eine
 
 
 \subsubsection{Compton-Kontinum}
-Für die weiteren Rechnungen wird zunächst die natürliche Energie $\varepsilon$ nach Formel \ref{eqn:??} eingeführt, welche
+Für die weiteren Rechnungen wird zunächst die natürliche Energie $\varepsilon$ nach Formel \ref{eqn:normEnergie} eingeführt, welche
 \begin{equation}
   \varepsilon = 1.292
   \label{eqn:nE}
 \end{equation}
-beträgt. Aus der natürlichen Energie $\varepsilon$ des Strahlers kann die theoretische Laage der Comptonkante $E_\text{ComKan, theo}$ nach Formel \ref{eqn:??} berechnet werden. Sie beträgt
+beträgt. Aus der natürlichen Energie $\varepsilon$ des Strahlers kann die theoretische Lage der Comptonkante $E_\text{ComKan, theo}$ nach Formel \ref{eqn:Comptonkante} berechnet werden. Sie beträgt
 \begin{equation}
   E_\text{ComKan, theo} = 478 \, \text{keV}
   \label{eqn:KanTheo}
@@ -241,7 +241,7 @@ Die Intensitäten der Spektrallinien $Z$ und die Wechselwirkungswahrscheinlickei
   \end{tabular}
   \label{tab:Ba}
 \end{table}
-Durch umstellen der Gleichung \ref{eqn:??} nach A lässt sich die Aktivität der Probe ermitteln wobei die Zählergebnisse noch einmal durch die Messdauer geteilt werden müssen. Die Lifetime des Detektors beträgt 3595 s. Die Aktivitäten der einzelnen Energien sind in Tabelle \ref{tab:Ba} aufgetragen. Das gemittelte Ergebniss beträgt
+Durch umstellen der Gleichung \ref{eqn:Zählergebnis} nach A lässt sich die Aktivität der Probe ermitteln wobei die Zählergebnisse noch einmal durch die Messdauer geteilt werden müssen. Die Lifetime des Detektors beträgt 3595 s. Die Aktivitäten der einzelnen Energien sind in Tabelle \ref{tab:Ba} aufgetragen. Das gemittelte Ergebniss beträgt
 \begin{equation}
   (\num{1120 +- 30}) \, \text{Bq}
   \label{eqn:aktBq}

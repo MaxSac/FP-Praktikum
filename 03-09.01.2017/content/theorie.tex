@@ -65,7 +65,12 @@ Der Compton-Effekt ist die inelastische Streuung von Photonen an Elektronen. Das
 	E_{\gamma'} = \frac{E_{\gamma}}{1 + \varepsilon\,(1-\cos(\psi_{\gamma})}
 	\label{eqn:Egamma}
 \end{align}
-bestimmt werden. Dabei ist $E_{\gamma}$ die Energie des Photons vor dem Stoß und $E_{\gamma'}$ ist die Energie nach dem Stoß. $\varepsilon$ entspricht der normierten Energie $\varepsilon = \frac{E_{\gamma}}{m_0\,c^2}$ und $\psi_{\gamma}$ ist der Streuwinkel des $\gamma$-Quants. Aus Formel \eqref{eqn:Egamma} folgt die Energie $E_\text{l}$ des gestoßenen Elektrons zu
+bestimmt werden. Dabei ist $E_{\gamma}$ die Energie des Photons vor dem Stoß und $E_{\gamma'}$ ist die Energie nach dem Stoß. $\varepsilon$ entspricht der normierten Energie
+\begin{align}
+	\varepsilon = \frac{E_{\gamma}}{m_0\,c^2}
+	\label{eqn:normEnergie}
+\end{align}
+und $\psi_{\gamma}$ ist der Streuwinkel des $\gamma$-Quants. Aus Formel \eqref{eqn:Egamma} folgt die Energie $E_\text{l}$ des gestoßenen Elektrons zu
 \begin{align}
 	E_\text{l} = E_{\gamma} - E_{\gamma'} = E_{\gamma} \frac{\varepsilon\,(1-\cos(\psi_{\gamma})}{1 + \varepsilon\,(1-\cos(\psi_{\gamma})} \ .
 	\label{eqn:El}
@@ -205,6 +210,7 @@ Das Spektrum besteht aus dem Photopeak, dem Compton-Kontinuum und dem Rückstreu
 Das Compton-Kontinuum ist ein störender Bereich bei der $\gamma$-Spektroskopie. Dieser Bereich reicht von 0 bis zur Compton-Kante $E_\text{l,max}$, diese ist durch einsetzten von 180° in Gleichung \eqref{eqn:El} gegeben:
 \begin{align}
 	E_\text{l,max}= E_\gamma \, \frac{2\,\varepsilon} {1 + 2\,\varepsilon}
+	\label{eqn:Comptonkante}
 \end{align}
 Er entsteht durch die Compton-Streuung an den Elektronen. Der Rückstreupeak liegt in dem Compton-Kontinuum und entsteht durch Quanten die nicht direkt in den Detektor fallen. Beispielsweise Quanten die an der Pb-Abschirmung oder der Quelle selbst getreut werden. Der Ort des Rückstreupeaks kann durch einsetzten von 180° in Gleichung \eqref{eqn:Egamma} abgeschätzt werden.
 
@@ -215,10 +221,12 @@ Für die Energiebestimmung eines einzelnen Peaks muss zunächst der Detektor kal
 Zur Bestimmung der Aktivität $A$ muss zunächst die Effizienz $Q$ durch eine Kalibrierungsmessung ermittelt werden. Die Effizienz ist die Nachweißwahrscheinlichkeit eines Quants mit einer Energie $E_\gamma$. Dafür wird ein $\gamma$-Strahler mit bekannter Aktivität verwendet und mit dem gemessenen Zählergebnis $Z$ in Verbindung gebracht.
 \begin{align}
 	Z = \Omega\,A\,W\,Q
+	\label{eqn:Zählergebnis}
 \end{align}
 Da die Strahlung Kugelförmig aus dem Strahler austritt, wird nur ein kleiner Teil der Strahlung in dem Detektor aufgenommen. Diese Größe wird durch den Raumwinkel $\Omega$ beschrieben. $W$ ist die Emissionswahrscheinlichkeit einer bestimmten Energie bei Mehrlinienstrahlern. Um die Effizienz zu bestimmen, müssen also $A$, $Z$, $W$ und $\Omega$ bekannt sein. Die Aktivität wird aus den Herstellerangaben entnommen und das Zählergebnis aus einer Messung. Die Emissionswahrscheinlichkeit kann einschlägigen Tabellen entnommen werden \cite{V18}. Der Raumwinkel kann über
 \begin{align}
 	\Omega = 2\,\pi\,\left(1 - \frac{a}{\sqrt{a^2 + r^2}} \right)
+	\label{eqn:Raumwinkel}
 \end{align}
 \hfil {\footnotesize($a$ = Abstand zwischen Quelle und Detektor, $r$ = Detektorradius)} \hfil \\
 berechnet werden. Sobald die Effizienz bestimmt wurde, kann die Energie und die Aktivität von unbekannten Strahlern bestimmt werden.
