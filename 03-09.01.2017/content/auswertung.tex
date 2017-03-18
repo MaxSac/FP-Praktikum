@@ -1,68 +1,98 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-Für die Untersuchung der verschiedenen aufgenommenen $\gamma$-Spektren werden die Kanäle des ``ADC'' auf die entsprechenden Energien kalibriert. Desweiteren wird die Effizienz des Detektors exemplarisch an dem Eu-Spektrum berechnet und anschließend die Messwerte zur Bestimmung der Aktivität der verwendeten Bariumquelle mit ihr bereinigt. Desweiteren wird das Compton-Kontinum sowie der Photopeak einer Cs-Quelle untersucht, sowie geprüft ob der Photopeak Gaußverteilt ist. Zuletzt wird anhand des Spektrums versucht auf die Zerfallsprodukte eines Minerals zu schließen und somit deren Zerfallskette zu bestimmen.
+Für die Untersuchung der verschiedenen aufgenommenen $\gamma$-Spektren werden die Kanäle des ``VKA'' auf die entsprechenden Energien kalibriert. Desweiteren wird die Effizienz des Detektors an dem $^{152}$Eu-Spektrum berechnet und anschließend die Messwerte zur Bestimmung der Aktivität der verwendeten $^{133}$Bariumquelle mit ihr bereinigt. Desweiteren wird das Compton-Kontinum sowie der Photopeak einer $^{137}$Cs-Quelle untersucht, sowie geprüft ob der Photopeak gaußverteilt ist. Zuletzt wird anhand des Spektrums versucht auf die Zerfallsprodukte eines Minerals zu schließen und somit deren Zerfallskette zu bestimmen.
 
 
-\subsection{Kalibrieren des Detektors anhand $^{152}$EU Spektrums}
-Zum Kalibrieren des Detektors wird im folgenden die Kanalnummer entsprechenden Energien zugewiesen, sowie die Effizenz des Detektors bestimmt.
-
+\subsection{Kalibrieren des Detektors anhand $^{152}$Eu Spektrums}
+Zum Kalibrieren des Detektors wird im Folgenden die Kanalnummer entsprechenden Energien zugewiesen, sowie die Effizenz des Detektors bestimmt. Dazu wurde bei einer Messzeit von 3172 Sekunden das Spektrum welches in Abbildung \ref{fig:spekEu} zu sehen ist, aufgenommen.
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=\textwidth]{./build/SpektEu.pdf}
+  \caption{Unkalibriertes Spektrum des $^{152}$Eu-Strahlers}
+  \label{fig:spekEu}
+\end{figure}
 
 \subsubsection{Energiekalibrierung}
 \label{sec:Kalb}
-Zunächst wird die Kanalnummer auf die Energie anhand des Spektrums des EU$^{152}$ Strahlers kalibriert. Die Energie mit den entsprechenden Kanalnummern sind in Tabelle \ref{tab:CsSpekt} aufgeführt.
+Zunächst wird die Kanalnummer auf die Energie anhand des Spektrums des $^{152}$EU Strahlers kalibriert. Die Energie mit den entsprechenden Kanalnummern sind in Tabelle \ref{tab:CsSpekt} aufgeführt. Die Kanalnummern wurden aus den Hochpunkten der Counts bestimmt. Als Unsicherheit auf die Kanalnummer, wird die Standardabweichung der Gaußfunktion genommen, welches durch jeden Peak des Spektrums gefittet wird.
 
 \begin{table}
   \centering
   \caption{Kenngrößen eines $^{152}$Eu-Strahlers, sowie des Detektors}
-  \begin{tabular}{c | c c c c}
+  \begin{tabular}{c | c c }
     \toprule
-    Energie $E_{\gamma}$ / keV& Kanal & Emissionwahrscheinlichkeit / \% & Counts & Effizienz / \% \\
+    Energie $E_{\gamma}$ / keV& Kanal & $E_{Exp}$ / keV \\
     \hline
-    121.78	& 403	& 28.6	& 3078 	& ---	\\
-    244.70	& 803	& 7.6	& 485 	& \num{10.40 +- 0.1}	\\
-    344.30	& 1128	& 26.5	& 1048	& \num{6.40 +- 0.1}	\\
-    411.12	& 1345	& 2.2	& 79	& \num{5.80 +- 0.1}	\\
-    443.96	& 1452	& 3.1	& 112 	& \num{5.90 +- 0.1}	\\
-    778.90	& 2544	& 12.9	& 193	& \num{2.44 +- 0.04}	\\
-    867.37	& 2832	& 4.2	& 61	& \num{2.36 +- 0.03}	\\
-    964.08	& 3147	& 14.6	& 132	& \num{1.47 +- 0.02}	\\
-    1085.90	& 3543	& 10.2	& 88	& \num{1.40 +- 0.02}	\\
-    1112.10	& 3629	& 13.6	& 108	& \num{1.29 +- 0.02}	\\
-    1408.00	& 4593	& 21.0 	& 134	& \num{1.04 +- 0.02}	\\
+    121.78  & \num{403 +- 1.5}	& \num{121.81 +- 0.07}	\\
+    244.70  & \num{803 +- 1.7}  & \num{244.60 +- 0.07}	\\
+    344.30  & \num{1128+- 1.7}	& \num{344.37 +- 0.08}	\\
+    411.12  & \num{1345+- 2.2}	& \num{410.98 +- 0.08}	\\
+    443.96  & \num{1452+- 2.0}	& \num{443.98 +- 0.08}	\\
+    778.90  & \num{2544+- 2.4}	& \num{779.04 +- 0.10}	\\
+    867.37  & \num{2832+- 2.7}	& \num{867.45 +- 0.10}	\\
+    964.08  & \num{3147+- 2.5}	& \num{964.15 +- 0.11}	\\
+    1085.90 & \num{3543+- 2.5}	& \num{1085.71 +- 0.12}	\\
+    1112.10 & \num{3629+- 2.5}	& \num{1112.11 +- 0.12}	\\
+    1408.00 & \num{4593+- 2.5}	& \num{1408.03 +- 0.14}	\\
     \bottomrule
   \end{tabular}
   \label{tab:CsSpekt}
 \end{table}
 
-Um die Korrelation zwischen der Energie und der Kanalnummer zu bestimmen wird eine lineare Regression durch die Tupel aus Energie und Kanalnummer gelegt. Das Ergebniss ist in Abbildung \ref{fig:RegCs} zu sehen.
+Um die Korrelation zwischen der Energie und der Kanalnummer zu bestimmen wird eine lineare Regression durch die Tupel aus Energie und Kanalnummer gelegt, welche mit den Fehlern den Standardabweichungen der Kanalnummern gewichtet ist. Das Ergebnis ist in Abbildung \ref{fig:RegCs} zu sehen.
 
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=\textwidth]{./build/CsReg.pdf}
   \caption{Lineare Regression zur Bestimmung der Korrelation zwischen Kanalnummer und $\gamma$-Quantenenergie}
-  \label{fig:RegCs}
+  \label{fig:RegEu}
 \end{figure}
 
-Aus der Regression ergibt sich eine Energiedifferenz zweier benachbarter Kanäle beträgt von
+Aus der linearen Regression ergibt sich eine Steigung von  
 \begin{equation}
-  \Delta E = (\num{306.97 +- 0.03}) \, \text{keV}
+  \Delta E = (\num{306.97 +- 0.03}) \, \text{eV}
   \label{eqn:Reg}
 \end{equation}
-Anhand der Energieskala werden die gemessenen Counts im weiteren in Abhängikeit der $\gamma$-Quanten Energie $E_{\gamma}$ dargestellt.
+sowie eine Bios von 
+\begin{equation}
+  E_\text{Bios} = \num{-1910 +- 60} \, \text{eV} \ .
+  \label{eqn:Bios}
+\end{equation}
+Anhand der Energieskala werden die gemessenen Counts im weiteren in Abhängikeit der $\gamma$-Quanten Energie $E_{\gamma}$ dargestellt. In Tabelle \ref{tab:CsSpekt} sind die Energien die sich anhand der ermittelten Parametern und der Laage der Peaks ergeben mit ihren Abweichungen vom Literaturwert aufgeführt.
 
 
 \subsubsection{Effizienzbestimmung}
 \label{sec:Q}
-Das für den Eu-Strahler aufgenommene Spektrum ist in Abbildung \ref{fig:SpekCs} zu sehen.
-
-\begin{figure}[htpb]
+\begin{table}
+  \centering
+  \begin{tabular}{c| c c c}
+     \toprule
+    	Energie $E_{\gamma}$ / keV& Emissionwahrscheinlichkeit / \% & Counts & Effizienz / \% \\
+     \midrule
+     121.78  &28.6 &\num{12180 +- 280} 	& ---	\\
+     244.70  &7.6  &\num{2180 +- 110} 	& \num{7.2 +- 0.5}	\\
+     344.30  &26.5 &\num{5060 +- 74} 	& \num{4.5 +- 0.3} 	\\
+     411.12  &2.2  &\num{440 +- 60} 	& \num{4.0 +- 0.3} 	\\
+     443.96  &3.1  &\num{520 +- 60} 	& \num{4.1 +- 0.3} 	\\
+     778.90  &12.9 &\num{1120 +- 50}	& \num{1.7 +- 0.1}	\\
+     867.37  &4.2  &\num{420 +- 40} 	& \num{1.6 +- 0.1}	\\
+     964.08  &14.6 &\num{960 +- 40} 	& \num{1.0 +- 0.1}	\\
+     1085.90 &10.2 &\num{580 +- 40} 	& \num{0.97 +- 0.07}	\\
+     1112.10 &13.6 &\num{770 +- 30} 	& \num{0.89 +- 0.06}	\\
+     1408.00 &21.0 &\num{900 +- 35} 	& \num{0.72 +- 0.05}	\\
+     \bottomrule
+  \end{tabular}
+  \caption{<+Caption text+>}
+  \label{tab:<+label+>}
+\end{table}
+Das für den $^{152}$Eu-Strahler aufgenommene Spektrum ist in Abbildung \ref{fig:SpekCs} zu sehen.
+\begin{figure}[h]
   \centering
   \includegraphics[width=\textwidth]{./build/SpektEu.pdf}
    \caption{Spektrum des Eu$^{152}$ zur Bestimmung der Effizienz des Detektors}
   \label{fig:SpekCs}
 \end{figure}
-
-Die Aktivität $A_\text{Eich}$ der verwendeten Europium Isotop betrug am 01.10.2000
+Die Aktivität $A_\text{Eich}$ der verwendeten $^{152}$Europium betrug am 01.10.2000
 \begin{equation}
   A_\text{Eich} = (\num{4130 +- 60}) \, \text{Bq}
   \label{eqn:AktEu}
@@ -72,27 +102,34 @@ und die Halbwertszeit
   \tau_{1/2} = (\num{4943 +- 5}) \, \text{Tage} \ .
   \label{eqn:halb}
 \end{equation}
-Anhand des exponentiellen Zerfallsgesetztes lässt sich mittels der Zeitdifferenz zwischen der geeichten Aktivität und dem am Tag der Durchführung der Messung (09.01.2017) eine Aktivität von
+Anhand des exponentiellen Zerfallsgesetztes 
 \begin{equation}
-  A_\text{Durch} = (\num{1242 +- 35}) \, \text{Bq}
+  A(t) = A_\text{Eich} \cdot \exp \left(\frac{\ln(2)}{\tau_{1/2}} \, t \right)
+  \label{eqn:zerfG}
+\end{equation}
+lässt sich mittels der Zeitdifferenz
+\begin{equation}
+  \Delta t = 5938 \text{Tage} 
+\end{equation}
+zwischen der geeichten Aktivität und dem Tag der Durchführung der Messung (09.01.2017) eine Aktivität von
+\begin{equation}
+  A_\text{Durch} = (\num{1796 +- 26}) \, \text{Bq}
   \label{eqn:AktEEu}
 \end{equation}
-berechnen. Dem Versuchsaufbau wird ein Abstand $a$ zwischen Quelle und Detektor von
+berechnen. Beim Versuch wird versucht den Abstand zwischen Quelle und Detektor mittels eines Stabes, welcher bei der Justage der Quelle als Abstandsmaß dazwischen gespannt wird konstant zu halten. Der Abstand beträgt
 \begin{equation}
-  a = 8.8 \, \text{cm}
-  % \label{<++>}
+  a = (\num{8.8 +-0.3}) \, \text{cm}
 \end{equation}
 und ein Radius $r$ des Detektors von
 \begin{equation}
   r = 2.25 \, \text{cm}
-  % \label{<++>}
 \end{equation}
 gemessen. Aus diesen lässt sich durch einsetzen in Formel \ref{eqn:Raumwinkel} ein Raumwinkel $\Omega$ von
 \begin{equation}
-  \Omega = 0.196
+  \Omega = \num{0.196 +- 0.021}
   \label{eqn:Raum}
 \end{equation}
-berechnen. Der Raumwinkel $\Omega$ ist jedoch nur unter vorbehalt zu verwenden, da der Abstand zwischen Quelle und Detektor kleiner als 10 cm ist und dies nicht mehr im gültigkeitsbereich der Formel \ref{eqn:Raumwinkel} liegt. Aus dem Raumwinkel $\Omega$, der Wechselwirkungswahrscheinlickeit $W$, der Aktivität $A_\text{Durch}$ sowie der effektiven Messzeit lässt sich nach Formel \ref{eqn:Zählergebnis} die Effizienz $Q$ berechnen. Die Ergebnisse in Abhängikeit der Energie sind in Tabelle \ref{tab:CsSpekt} aufgeführt. Um die Effizienz in den folgenden Auswertungsteil \ref{sec:Q} zur berücksichtigen, wird die Effizenz in erster Näherung durch ein Potenzfunktion dargestellt.
+berechnen. Der Raumwinkel $\Omega$ ist jedoch nur unter vorbehalt zu verwenden, da der Abstand zwischen Quelle und Detektor kleiner als 10 cm ist und dies nicht mehr im Gültigkeitsbereich der Formel \ref{eqn:Raumwinkel} liegt. Aus dem Raumwinkel $\Omega$, der Wechselwirkungswahrscheinlickeit $W$, der Aktivität $A_\text{Durch}$ sowie der effektiven Messzeit lässt sich nach Formel \ref{eqn:Zählergebnis} die Effizienz $Q$ berechnen. Die Ergebnisse in Abhängikeit der Energie sind in Tabelle \ref{tab:CsSpekt} aufgeführt. Um die Effizienz in den folgenden Auswertungsteil \ref{sec:Q} zur berücksichtigen, wird die Effizenz in erster Näherung durch ein Potenzfunktion dargestellt. Bei dem Fit werden die Messwerte mit den Unsicherheiten der Effizienzen gewichtet. 
 
 \begin{figure}[H]
   \centering
@@ -101,13 +138,17 @@ berechnen. Der Raumwinkel $\Omega$ ist jedoch nur unter vorbehalt zu verwenden, 
   \label{fig:Efi}
 \end{figure}
 
-Die ermittelte Potenzfunktion zur berechnung der Effizienz in Abhängigkeit der Energie, hat die Form
+Die ermittelte Potenzfunktion zur Berechnung der Effizienz in Abhängigkeit der Energie, hat die Form
 \begin{equation}
-  Q(E_\gamma)= 1.2 \cdot 10^{-14} \left( x - 1850 \right)^4 + 0.01 \ .
+  Q(E_\gamma)=  a*\left( E_\gamma \right)^{b} .
   \label{eqn:QCs}
 \end{equation}
-
-
+und der Fit ergibt die Parameter 
+\begin{eqnarray}
+  a = (\num{306.97 +- 0.03})10^{-3} \\
+  b = (\num{-1.90 +- 0.07}) \ .
+\end{eqnarray}
+ 
 \subsection{$^{137}$Cs-Strahler}
 Zunächst wird die Laage des Photopeaks bestimmt und das Compton-Kontinum genauer untersucht . Anschließend wird geprüft ob der Photopeak einer Gaußverteilung entspricht. Zuletzt wird die Absorptionswahrscheinlichkeit des Detektors berechnet und erklärungen für die Gestalt des Compton-Kontinums, sowie des Photopeaks gesucht.
 
