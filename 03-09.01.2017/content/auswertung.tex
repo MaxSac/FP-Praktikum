@@ -4,19 +4,19 @@ Für die Untersuchung der verschiedenen aufgenommenen $\gamma$-Spektren werden d
 
 
 \subsection{Kalibrieren des Detektors anhand $^{152}$Eu Spektrums}
-Zum Kalibrieren des Detektors wird im Folgenden die Kanalnummer entsprechenden Energien zugewiesen, sowie die Effizenz des Detektors bestimmt. Dazu wurde bei einer Messzeit von 3172 Sekunden das Spektrum welches in Abbildung \ref{fig:spekEu} zu sehen ist, aufgenommen.
+Zum Kalibrieren des Detektors wird im Folgenden die Kanalnummer entsprechenden Energien zugewiesen, sowie die Effizenz des Detektors bestimmt. Dazu wurde bei einer Messzeit von 3172 Sekunden das Spektrum, welches in Abbildung \ref{fig:spekEu} zu sehen ist, aufgenommen.
 \begin{figure}[H]
   \centering
-  \includegraphics[width=\textwidth]{./build/SpektEu.pdf}
+  \includegraphics[width=\textwidth]{./Bilder/SpektEu.pdf}
   \caption{Unkalibriertes Spektrum des $^{152}$Eu-Strahlers}
   \label{fig:spekEu}
 \end{figure}
 
 \subsubsection{Energiekalibrierung}
 \label{sec:Kalb}
-Zunächst wird die Kanalnummer auf die Energie anhand des Spektrums des $^{152}$EU Strahlers kalibriert. Die Energie mit den entsprechenden Kanalnummern sind in Tabelle \ref{tab:CsSpekt} aufgeführt. Die Kanalnummern wurden aus den Hochpunkten der Counts bestimmt. Als Unsicherheit auf die Kanalnummer, wird die Standardabweichung der Gaußfunktion genommen, welches durch jeden Peak des Spektrums gefittet wird.
+Zunächst wird die Kanalnummer auf die Energie anhand des Spektrums des $^{152}$Eu Strahlers kalibriert. Die Energie mit den entsprechenden Kanalnummern sind in Tabelle \ref{tab:CsSpekt} aufgeführt. Die Kanalnummern wurden aus den Hochpunkten der Counts bestimmt. Als Unsicherheit auf die Kanalnummer, wird die Standardabweichung der Gaußfunktion genommen, welches durch jeden Peak des Spektrums gefittet wird.
 
-\begin{table}
+\begin{table}[H]
   \centering
   \caption{Kenngrößen eines $^{152}$Eu-Strahlers, sowie des Detektors}
   \begin{tabular}{c | c c }
@@ -39,9 +39,9 @@ Zunächst wird die Kanalnummer auf die Energie anhand des Spektrums des $^{152}$
   \label{tab:CsSpekt}
 \end{table}
 
-Um die Korrelation zwischen der Energie und der Kanalnummer zu bestimmen wird eine lineare Regression durch die Tupel aus Energie und Kanalnummer gelegt, welche mit den Fehlern den Standardabweichungen der Kanalnummern gewichtet ist. Das Ergebnis ist in Abbildung \ref{fig:RegCs} zu sehen.
+Um die Korrelation zwischen der Energie und der Kanalnummer zu bestimmen wird eine lineare Regression durch elf Tupel aus Energie und Kanalnummer gelegt, welche mit den Fehlern den Standardabweichungen der Kanalnummern gewichtet ist. Das Ergebnis ist in Abbildung \ref{fig:RegEu} zu sehen.
 
-\begin{figure}[htpb]
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{./build/CsReg.pdf}
   \caption{Lineare Regression zur Bestimmung der Korrelation zwischen Kanalnummer und $\gamma$-Quantenenergie}
@@ -58,33 +58,11 @@ sowie eine Bios von
   E_\text{Bios} = \num{-1910 +- 60} \, \text{eV} \ .
   \label{eqn:Bios}
 \end{equation}
-Anhand der Energieskala werden die gemessenen Counts im weiteren in Abhängikeit der $\gamma$-Quanten Energie $E_{\gamma}$ dargestellt. In Tabelle \ref{tab:CsSpekt} sind die Energien die sich anhand der ermittelten Parametern und der Laage der Peaks ergeben mit ihren Abweichungen vom Literaturwert aufgeführt.
+Anhand der Energieskala werden die gemessenen Counts im weiteren in Abhängikeit der $\gamma$-Quanten Energie $E_{\gamma}$ dargestellt. In Tabelle \ref{tab:CsSpekt} sind die Energien die sich anhand der ermittelten Parametern und der Laage der Peaks ergeben und der Literaturwert aufgeführt.
 
 
 \subsubsection{Effizienzbestimmung}
 \label{sec:Q}
-\begin{table}
-  \centering
-  \begin{tabular}{c| c c c}
-     \toprule
-    	Energie $E_{\gamma}$ / keV& Emissionwahrscheinlichkeit / \% & Counts & Effizienz / \% \\
-     \midrule
-     121.78  &28.6 &\num{12180 +- 280} 	& ---	\\
-     244.70  &7.6  &\num{2180 +- 110} 	& \num{7.2 +- 0.5}	\\
-     344.30  &26.5 &\num{5060 +- 74} 	& \num{4.5 +- 0.3} 	\\
-     411.12  &2.2  &\num{440 +- 60} 	& \num{4.0 +- 0.3} 	\\
-     443.96  &3.1  &\num{520 +- 60} 	& \num{4.1 +- 0.3} 	\\
-     778.90  &12.9 &\num{1120 +- 50}	& \num{1.7 +- 0.1}	\\
-     867.37  &4.2  &\num{420 +- 40} 	& \num{1.6 +- 0.1}	\\
-     964.08  &14.6 &\num{960 +- 40} 	& \num{1.0 +- 0.1}	\\
-     1085.90 &10.2 &\num{580 +- 40} 	& \num{0.97 +- 0.07}	\\
-     1112.10 &13.6 &\num{770 +- 30} 	& \num{0.89 +- 0.06}	\\
-     1408.00 &21.0 &\num{900 +- 35} 	& \num{0.72 +- 0.05}	\\
-     \bottomrule
-  \end{tabular}
-  \caption{<+Caption text+>}
-  \label{tab:<+label+>}
-\end{table}
 Das für den $^{152}$Eu-Strahler aufgenommene Spektrum ist in Abbildung \ref{fig:SpekCs} zu sehen.
 \begin{figure}[h]
   \centering
@@ -104,7 +82,7 @@ und die Halbwertszeit
 \end{equation}
 Anhand des exponentiellen Zerfallsgesetztes 
 \begin{equation}
-  A(t) = A_\text{Eich} \cdot \exp \left(\frac{\ln(2)}{\tau_{1/2}} \, t \right)
+  A(t) = A_\text{Eich} \cdot \exp \left(\frac{\ln(2)}{\tau_{1/2}} \, t \right) \ \text{\cite{V18}}
   \label{eqn:zerfG}
 \end{equation}
 lässt sich mittels der Zeitdifferenz
@@ -116,20 +94,44 @@ zwischen der geeichten Aktivität und dem Tag der Durchführung der Messung (09.
   A_\text{Durch} = (\num{1796 +- 26}) \, \text{Bq}
   \label{eqn:AktEEu}
 \end{equation}
-berechnen. Beim Versuch wird versucht den Abstand zwischen Quelle und Detektor mittels eines Stabes, welcher bei der Justage der Quelle als Abstandsmaß dazwischen gespannt wird konstant zu halten. Der Abstand beträgt
+berechnen. Beim Versuch wird versucht den Abstand zwischen Quelle und Detektor mittels eines Stabes, welcher bei der Justage der Quelle als Abstandsmaß dazwischen gespannt wird, konstant zu halten. Der Abstand beträgt
 \begin{equation}
   a = (\num{8.8 +-0.3}) \, \text{cm}
 \end{equation}
-und ein Radius $r$ des Detektors von
+und der Radius $r$ des Detektors 
 \begin{equation}
   r = 2.25 \, \text{cm}
 \end{equation}
-gemessen. Aus diesen lässt sich durch einsetzen in Formel \ref{eqn:Raumwinkel} ein Raumwinkel $\Omega$ von
+wird der Anleitung \cite{V18} entnommen. Aus diesen lässt sich durch einsetzen in Formel \ref{eqn:Raumwinkel} ein Raumwinkel $\Omega$ von
 \begin{equation}
   \Omega = \num{0.196 +- 0.021}
   \label{eqn:Raum}
 \end{equation}
-berechnen. Der Raumwinkel $\Omega$ ist jedoch nur unter vorbehalt zu verwenden, da der Abstand zwischen Quelle und Detektor kleiner als 10 cm ist und dies nicht mehr im Gültigkeitsbereich der Formel \ref{eqn:Raumwinkel} liegt. Aus dem Raumwinkel $\Omega$, der Wechselwirkungswahrscheinlickeit $W$, der Aktivität $A_\text{Durch}$ sowie der effektiven Messzeit lässt sich nach Formel \ref{eqn:Zählergebnis} die Effizienz $Q$ berechnen. Die Ergebnisse in Abhängikeit der Energie sind in Tabelle \ref{tab:CsSpekt} aufgeführt. Um die Effizienz in den folgenden Auswertungsteil \ref{sec:Q} zur berücksichtigen, wird die Effizenz in erster Näherung durch ein Potenzfunktion dargestellt. Bei dem Fit werden die Messwerte mit den Unsicherheiten der Effizienzen gewichtet. 
+berechnen. Der Raumwinkel $\Omega$ ist jedoch nur unter vorbehalt zu verwenden, da der Abstand zwischen Quelle und Detektor kleiner als 10 cm ist und dies nicht mehr im Gültigkeitsbereich der Formel \ref{eqn:Raumwinkel} liegt. Aus dem Raumwinkel $\Omega$, der Wechselwirkungswahrscheinlickeit $W$, der Aktivität $A_\text{Durch}$ sowie der effektiven Messzeit lässt sich nach Formel \ref{eqn:Zählergebnis} die Effizienz $Q$ berechnen. Die Ergebnisse in Abhängikeit der Energie sind in Tabelle \ref{tab:CsSpekt} aufgeführt. 
+\begin{table}
+  \centering
+  \begin{tabular}{c| c c c}
+     \toprule
+    	Energie $E_{\gamma}$ / keV& Emissionwahrscheinlichkeit / \% & Counts & Effizienz / \% \\
+     \midrule
+     121.78  &28.6 &\num{12180 +- 280} 	& ---	\\
+     244.70  &7.6  &\num{2180 +- 110} 	& \num{7.2 +- 0.5}	\\
+     344.30  &26.5 &\num{5060 +- 74} 	& \num{4.5 +- 0.3} 	\\
+     411.12  &2.2  &\num{440 +- 60} 	& \num{4.0 +- 0.3} 	\\
+     443.96  &3.1  &\num{520 +- 60} 	& \num{4.1 +- 0.3} 	\\
+     778.90  &12.9 &\num{1120 +- 50}	& \num{1.7 +- 0.1}	\\
+     867.37  &4.2  &\num{420 +- 40} 	& \num{1.6 +- 0.1}	\\
+     964.08  &14.6 &\num{960 +- 40} 	& \num{1.0 +- 0.1}	\\
+     1085.90 &10.2 &\num{580 +- 40} 	& \num{0.97 +- 0.07}	\\
+     1112.10 &13.6 &\num{770 +- 30} 	& \num{0.89 +- 0.06}	\\
+     1408.00 &21.0 &\num{900 +- 35} 	& \num{0.72 +- 0.05}	\\
+     \bottomrule
+  \end{tabular}
+  \caption{Messwerte zur Berechnung der Effizienzfunktion des Detektors}
+  \label{tab:<+label+>}
+\end{table}
+
+Um die Effizienz in den folgenden Auswertungsteil \ref{sec:Q} zur berücksichtigen, wird die Effizenz in erster Näherung durch ein Potenzfunktion dargestellt. Bei dem Fit werden die Messwerte mit den Unsicherheiten der Effizienzen gewichtet. 
 
 \begin{figure}[H]
   \centering
@@ -140,7 +142,7 @@ berechnen. Der Raumwinkel $\Omega$ ist jedoch nur unter vorbehalt zu verwenden, 
 
 Die ermittelte Potenzfunktion zur Berechnung der Effizienz in Abhängigkeit der Energie, hat die Form
 \begin{equation}
-  Q(E_\gamma)=  a*\left( E_\gamma \right)^{b} .
+  Q(E_\gamma)=  a \cdot \left( E_\gamma \right)^{b} .
   \label{eqn:QCs}
 \end{equation}
 und der Fit ergibt die Parameter 
@@ -164,7 +166,7 @@ In dem aufgenommenen Spektrum wird mittels der Funktion find\_peaks\_cwt aus der
 
 Dabei wurde die X-Achse schon mittels der in Auswertungsteil \ref{sec:Kalb} Energie skaliert. Der Photopeak wird bei Energie von
 \begin{equation}
-  E_\gamma = \num{663.4 +- 0.6} \, \text{keV}
+  E_\gamma = \num{661.5 +- 0.6} \, \text{keV}
   \label{eqn:CsPhoto}
 \end{equation}
 detektiert. Im späteren Teil der Auswertung wird geprüft ob dem Photopeak eine gaußförmige Verteilung zu Grunde liegt.
@@ -181,7 +183,7 @@ beträgt. Aus der natürlichen Energie $\varepsilon$ des Strahlers kann die theo
   E_\text{ComKan, theo} = \num{478 +- 0.6} \, \text{keV}
   \label{eqn:KanTheo}
 \end{equation}
-Das Spektrum im bereich des Compton-Kontinums ist in Abbildung \ref{fig:Compt} zu sehen.
+Das Spektrum im Bereich des Compton-Kontinums ist in Abbildung \ref{fig:Compt} zu sehen.
 
 \begin{figure}[htpb]
   \centering
@@ -200,7 +202,7 @@ Die Energie der maximalen Energieübertragung wird ebenfalls per Hand abgeschät
   E_\text{l,max} = \num{470 +- 25} \, \text{keV}
   \label{eqn:RückExp}
 \end{equation}
-Da die Compton-Kante jedoch eindeutig identifizierbar ist, wird der Bereich der möglichen Energien als Fehler geschätzt.
+Da auch die Compton-Kante nicht eindeutig identifizierbar ist, wird der Bereich der möglichen Energien als Fehler geschätzt.
 
 
 \subsubsection{Verteilung des Photopeaks}
@@ -226,10 +228,10 @@ Aufgrund der Aproximation der 1/n-Wertsbreiten durch eine Grade der Benachtbarte
 \end{equation}
 und die mittels Formel \ref{eqn:??} theoretische Halbwerrtsbreite
 \begin{equation}
-  \Delta E_{1/2 \text{theo}} \approx 1.00 \, \text{keV}
+  \Delta E_{1/2 \text{, theo}} \approx 1.00 \, \text{keV}
   \label{eqn:HalbTheo}
 \end{equation}
-Die Zehntelwertsbreite $\Delta E_{1/10}$ beträgt
+Mögliche Ursachen der Abweichung des experimentellen Halbwertsbreite von dwe theoretischen werden in der Diskussion aufgrführt. Die Zehntelwertsbreite $\Delta E_{1/10}$ beträgt
 \begin{equation}
   \Delta E_{1/10} = \num{2.60 +- 0.30} \, \text{keV}
 \end{equation}
@@ -287,15 +289,15 @@ Die unnormierten Events setzen sich zu
 \end{equation}
 zusammen. 
 \subsection{Aktivitätsbestimmung der verwendeten $^{133}$Ba-Quelle}
-Zur Bestimmung der Aktivität der verwendeten $^{133}$Bariumquelle wurde ein dass in Abbildung \ref{fig:BA} zu sehende Spektrum bei einer Messzeit von 3595 Sekunden aufgenommen.
-\begin{figure}[h]
+Zur Bestimmung der Aktivität der verwendeten $^{133}$Bariumquelle wurde das in Abbildung \ref{fig:BA} zu sehende Spektrum bei einer Messzeit von 3595 Sekunden aufgenommen.
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{./build/SpektBa.pdf}
   \caption{Spektrum der verwendeten $^{133}$Bariumquelle zur Bestimmung der Aktivität}
   \label{fig:BA}
 \end{figure}
 Die Zählergebnis der Spektrallinien $Z$, die Effizienzen $Q(E_\gamma)$ und die Wechselwirkungswahrscheinlickeit $W$ sind in Tabelle \ref{tab:Ba} zusammen mit den kalibrierten Energien aufgetragen. Der Raumwinkel wurde bereits in Kapitel \ref{sec:Q} bestimmt und beträgt $\Omega = \num{0.196 +- 0.021}$ .
-\begin{table}
+\begin{table}[H]
   \centering
   \caption{Aktivität in Abhängigkeit der Energie sowie der Effizienz und der Wechselwirkungswahrscheinlichkeit}
   \begin{tabular}{c c c c c}
@@ -311,21 +313,21 @@ Die Zählergebnis der Spektrallinien $Z$, die Effizienzen $Q(E_\gamma)$ und die 
   \end{tabular}
   \label{tab:Ba}
 \end{table}
-Durch umstellen der Gleichung \ref{eqn:Zählergebnis} nach A lässt sich die Aktivität der Probe ermitteln wobei die Zählergebnisse noch einmal durch die Messdauer geteilt werden müssen. Die Aktivitäten der einzelnen Energien sind in Tabelle \ref{tab:Ba} aufgetragen. Bei einer Energie $E_\gamma = \num{160.6 +- 2.5}$ ist die Detektionswahrscheinlickeit des Peaks so gering, dass in dem  Zählergebnis zu größerem Teil die Zählergebnisse des Compton-Kontinums gemessen wurden, anstelle der Spektrallinie. Aufgrund dessen wird dieser Wert im bei der Bestimmung der mitteleren Aktivität vernachlässigt. Das gemittelte Ergebniss beträgt
-\begin{equation}
-  (\num{510 +- 20}) \, \text{Bq}
+Durch umstellen der Gleichung \ref{eqn:Zählergebnis} nach A lässt sich die Aktivität der Probe ermitteln wobei die Zählergebnisse noch einmal durch die Messdauer geteilt werden müssen um die Aktivität auf die Einheit Sekunden zu Normen. Die Aktivitäten der einzelnen Energien sind in Tabelle \ref{tab:Ba} aufgetragen. Bei einer Energie $E_\gamma = \num{160.6 +- 2.5}$ ist die Detektionswahrscheinlickeit des Peaks so gering, dass in dem  Zählergebnis zu größerem Teil die Zählergebnisse des Compton-Kontinums gemessen wurden, anstelle der Spektrallinie. Aufgrund dessen wird dieser Wert im bei der Bestimmung der mitteleren Aktivität vernachlässigt. Das gemittelte Aktivität beträgt
+\begin{equation} 
+  (\num{510 +- 20}) \, \text{Bq} \ .
   \label{eqn:aktBq}
 \end{equation}
 \subsection{Zerfallsreihe des unbekannten Minerals}
 Es wird versucht aus dem in einer Messzeit von 2716 Sekunden aufgenommen Linienspektrum des verwendeten Minerals auf die Zerfallsreihe der Probe zu schließen. Das Linienspektrum des Minerals ist in Abbildung \ref{fig:Stone} zu sehen.
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{./build/SpektSt.pdf}
   \caption{Spektrum von verwendeten Mineral}
   \label{fig:Stone}
 \end{figure}
-Mit Hilfe der $find_peaks_cwt$ der scipy Biblothek wird in dem Spektrum die Peaks gesucht. Die Energien $E_\text{Peak}$ bei denen die Peaks vorgefunden werden sind in Tabelle \ref{tab:Stone} aufgeführt. Diese werden mit den Energien der $^{232}$Thorium- und $^{238}$Uran-Zerfallsreihe $E_\text{Zerfallsreihe}$ verglichen. 
-\begin{table}
+Mit Hilfe der $find\_peaks\_cwt$ der scipy Biblothek wird in dem Spektrum die Peaks gesucht. Die Energien $E_\text{Peak}$ bei denen die Peaks vorgefunden werden sind in Tabelle \ref{tab:Stone} aufgeführt. Diese werden mit den Energien der $^{232}$Thorium- und $^{238}$Uran-Zerfallsreihe $E_\text{Zerfallsreihe}$ verglichen. 
+\begin{table}[H]
   \centering
   \caption{Vergleich des Spektrums mit natürlichen Zerfallsreihen}
   \begin{tabular}{c c c c}
