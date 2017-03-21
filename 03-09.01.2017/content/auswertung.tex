@@ -289,15 +289,15 @@ Die unnormierten Events setzen sich zu
 \end{equation}
 zusammen. 
 \subsection{Aktivitätsbestimmung der verwendeten $^{133}$Ba-Quelle}
-Zur Bestimmung der Aktivität der verwendeten $^{133}$Bariumquelle wurde ein dass in Abbildung \ref{fig:BA} zu sehende Spektrum bei einer Messzeit von 3595 Sekunden aufgenommen.
-\begin{figure}[h]
+Zur Bestimmung der Aktivität der verwendeten $^{133}$Bariumquelle wurde das in Abbildung \ref{fig:BA} zu sehende Spektrum bei einer Messzeit von 3595 Sekunden aufgenommen.
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{./build/SpektBa.pdf}
   \caption{Spektrum der verwendeten $^{133}$Bariumquelle zur Bestimmung der Aktivität}
   \label{fig:BA}
 \end{figure}
 Die Zählergebnis der Spektrallinien $Z$, die Effizienzen $Q(E_\gamma)$ und die Wechselwirkungswahrscheinlickeit $W$ sind in Tabelle \ref{tab:Ba} zusammen mit den kalibrierten Energien aufgetragen. Der Raumwinkel wurde bereits in Kapitel \ref{sec:Q} bestimmt und beträgt $\Omega = \num{0.196 +- 0.021}$ .
-\begin{table}
+\begin{table}[H]
   \centering
   \caption{Aktivität in Abhängigkeit der Energie sowie der Effizienz und der Wechselwirkungswahrscheinlichkeit}
   \begin{tabular}{c c c c c}
@@ -313,21 +313,21 @@ Die Zählergebnis der Spektrallinien $Z$, die Effizienzen $Q(E_\gamma)$ und die 
   \end{tabular}
   \label{tab:Ba}
 \end{table}
-Durch umstellen der Gleichung \ref{eqn:Zählergebnis} nach A lässt sich die Aktivität der Probe ermitteln wobei die Zählergebnisse noch einmal durch die Messdauer geteilt werden müssen. Die Aktivitäten der einzelnen Energien sind in Tabelle \ref{tab:Ba} aufgetragen. Bei einer Energie $E_\gamma = \num{160.6 +- 2.5}$ ist die Detektionswahrscheinlickeit des Peaks so gering, dass in dem  Zählergebnis zu größerem Teil die Zählergebnisse des Compton-Kontinums gemessen wurden, anstelle der Spektrallinie. Aufgrund dessen wird dieser Wert im bei der Bestimmung der mitteleren Aktivität vernachlässigt. Das gemittelte Ergebniss beträgt
-\begin{equation}
-  (\num{510 +- 20}) \, \text{Bq}
+Durch umstellen der Gleichung \ref{eqn:Zählergebnis} nach A lässt sich die Aktivität der Probe ermitteln wobei die Zählergebnisse noch einmal durch die Messdauer geteilt werden müssen um die Aktivität auf die Einheit Sekunden zu Normen. Die Aktivitäten der einzelnen Energien sind in Tabelle \ref{tab:Ba} aufgetragen. Bei einer Energie $E_\gamma = \num{160.6 +- 2.5}$ ist die Detektionswahrscheinlickeit des Peaks so gering, dass in dem  Zählergebnis zu größerem Teil die Zählergebnisse des Compton-Kontinums gemessen wurden, anstelle der Spektrallinie. Aufgrund dessen wird dieser Wert im bei der Bestimmung der mitteleren Aktivität vernachlässigt. Das gemittelte Aktivität beträgt
+\begin{equation} 
+  (\num{510 +- 20}) \, \text{Bq} \ .
   \label{eqn:aktBq}
 \end{equation}
 \subsection{Zerfallsreihe des unbekannten Minerals}
 Es wird versucht aus dem in einer Messzeit von 2716 Sekunden aufgenommen Linienspektrum des verwendeten Minerals auf die Zerfallsreihe der Probe zu schließen. Das Linienspektrum des Minerals ist in Abbildung \ref{fig:Stone} zu sehen.
-\begin{figure}[h]
+\begin{figure}[H]
   \centering
   \includegraphics[width=\textwidth]{./build/SpektSt.pdf}
   \caption{Spektrum von verwendeten Mineral}
   \label{fig:Stone}
 \end{figure}
-Mit Hilfe der $find_peaks_cwt$ der scipy Biblothek wird in dem Spektrum die Peaks gesucht. Die Energien $E_\text{Peak}$ bei denen die Peaks vorgefunden werden sind in Tabelle \ref{tab:Stone} aufgeführt. Diese werden mit den Energien der $^{232}$Thorium- und $^{238}$Uran-Zerfallsreihe $E_\text{Zerfallsreihe}$ verglichen. 
-\begin{table}
+Mit Hilfe der $find\_peaks\_cwt$ der scipy Biblothek wird in dem Spektrum die Peaks gesucht. Die Energien $E_\text{Peak}$ bei denen die Peaks vorgefunden werden sind in Tabelle \ref{tab:Stone} aufgeführt. Diese werden mit den Energien der $^{232}$Thorium- und $^{238}$Uran-Zerfallsreihe $E_\text{Zerfallsreihe}$ verglichen. 
+\begin{table}[H]
   \centering
   \caption{Vergleich des Spektrums mit natürlichen Zerfallsreihen}
   \begin{tabular}{c c c c}
