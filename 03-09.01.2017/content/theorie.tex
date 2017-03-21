@@ -1,7 +1,6 @@
 \section{Einleitung}
-Der Reinst-Germanium-Detektor ist ein wichtiges Messinstrument in der $\gamma$-Spektroskopie. Er gehört zu der Gruppe der Halbleiterdetektoren, welche ein sehr hohes Auflösungsvermögen im Vergleich zu zum Beispiel Szintillationsdetektoren besitzten. Wichtige Kenngrößen des Germanium-Detektor sind das energetische Auflösungsvermögen, die Effizienz und die spektrale Empfindlichkeit. \\
-Im Folgenden werden die Wechselwirkung von Strahlung mit Materie, die Funktionsweise und die Kenngrößen eines Germanium-Detektors beschrieben. \\
-Ziel des Versuches ist es die Aktivität und Energie von unbekannten Strahlern aus dem $\gamma$-Spektrum zu bestimmen.
+Der Reinst-Germanium-Detektor ist ein wichtiges Messinstrument in der $\gamma$-Spektroskopie. Er gehört zu der Gruppe der Halbleiterdetektoren, welche ein sehr hohes Auflösungsvermögen im Vergleich zu zum Beispiel Szintillationsdetektoren besitzten. Wichtige Kenngrößen des Germanium-Detektors sind das energetische Auflösungsvermögen, die Effizienz und die spektrale Empfindlichkeit. \\
+Ziel des Versuches ist es die Aktivität und die Energie von unbekannten Strahlern aus dem $\gamma$-Spektrum zu bestimmen. Dafür werden im Folgenden die Wechselwirkung von Strahlung mit Materie, die Funktionsweise und die Kenngrößen eines Germanium-Detektors beschrieben. \\
 
 
 \section{Theoretische Grundlage}
@@ -28,7 +27,7 @@ Darin ist $N_0$ die Anzahl der auftreffenden Photonen und $N(D)$ ist die Anzahl 
 \begin{align}
 	\mu = n\,\sigma
 \end{align}
-definiert. Die Werte für die Extinktionskoeffizienten, für die drei Effekte in Abhängigkeit der Strahlunsenergie, können in Abbildung \eqref{fig:Extink} abgelesen werden. "Sein reziproker Wert ist gleich der mittleren Reichweite $\overline{x}$ der [Photonen] in Materie" \cite[2]{V18}.
+definiert. Die Werte für die Extinktionskoeffizienten, für die drei Effekte in Abhängigkeit der Strahlungsenergie, können in Abbildung \eqref{fig:Extink} abgelesen werden. "Sein reziproker Wert ist gleich der mittleren Reichweite $\overline{x}$ der [Photonen] in Materie" \cite[2]{V18}.
 
 \begin{figure}
 	\centering
@@ -53,7 +52,7 @@ Ein Photon kann ein Elektron aus der Atomhülle schlagen. Dafür muss das Photon
 Aufgrund der Energie-Impuls-Erhaltung kann dieser Prozess nur in der Nähe eines Atomkerns stattfinden. "Deshalb werden bevorzugt Elektronen aus der K-Schale ausgelöst" (vgl. \cite[3]{V18}). Da sich das Atom nach dem Effekt in einem instabilen Zustand befindet, fallen Elektronen aus höheren Schalen in das enstandene "Loch". Dabei wird Röntgenstrahlung emittiert welche fast komplett in dem Absorber verbleibt. Deshalb kann gesagt werden, dass der Absorber die gesamte Energie des Photons absorbiert. \\
 Der Wirkungsquerschnitt $\sigma_\text{Ph}$ des Photoeffekts ist proportional zu
 \begin{equation}
-	\sigma_\text{Ph} \propto z^{\alpha}\,E^{\delta} \ .
+	\sigma_\text{Ph} \propto z^{\alpha}\,E_\gamma^{\delta} \ .
 \end{equation}
 Für den Energiebereich der bei natürlichen Strahlern vorkommt ($E_\gamma$ < 5\,MeV) ist $4 < \alpha < 5$ und $\delta \approx -3.5$\ .
 
@@ -70,12 +69,12 @@ bestimmt werden. Dabei ist $E_{\gamma}$ die Energie des Photons vor dem Stoß un
 	\varepsilon = \frac{E_{\gamma}}{m_0\,c^2}
 	\label{eqn:normEnergie}
 \end{align}
-und $\psi_{\gamma}$ ist der Streuwinkel des $\gamma$-Quants. Aus Formel \eqref{eqn:Egamma} folgt die Energie $E_\text{l}$ des gestoßenen Elektrons zu
+und $\psi_{\gamma}$ ist der Streuwinkel des Photons. Aus Formel \eqref{eqn:Egamma} folgt die Energie $E_\text{l}$ des gestoßenen Elektrons zu
 \begin{align}
 	E_\text{l} = E_{\gamma} - E_{\gamma'} = E_{\gamma} \frac{\varepsilon\,(1-\cos(\psi_{\gamma})}{1 + \varepsilon\,(1-\cos(\psi_{\gamma})} \ .
 	\label{eqn:El}
 \end{align}
-"Der Compton-Effekt ist eine unerwünschte Erscheinung, weil nur ein variierender Bruchteil der Energie des $\gamma$-Quants an den Detektor abgegeben wird" (vgl. \cite[5]{V18}). Dadurch entsteht ein kontinuierliches Spektrum, welches schwer zu identifizieren ist. Der über alle Streuwinkel integrierte Wirkungsquerschnitt $\sigma_\text{Co}$ wurde von KLEIN und NISHINA hergeleitet und lautet:
+"Der Compton-Effekt ist eine unerwünschte Erscheinung, weil nur ein variierender Bruchteil der Energie des Photons an den Detektor abgegeben wird" (vgl. \cite[5]{V18}). Dadurch entsteht ein kontinuierliches Spektrum, welches schwer zu identifizieren ist. Der über alle Streuwinkel integrierte Wirkungsquerschnitt $\sigma_\text{Co}$ wurde von KLEIN und NISHINA hergeleitet und lautet:
 \begin{align}
 	\sigma_\text{Co} = \frac{3\,\sigma_\text{Th}}{4} \left( \frac{1+\varepsilon}{\varepsilon^2} \left[\frac{2+2\,\varepsilon}{1+2\,\varepsilon} - \frac{\ln(1+2\,\varepsilon)}{\varepsilon} \right] + \frac{\ln(1+2\,\varepsilon)}{2\,\varepsilon} - \frac{1+3\,\varepsilon}{(1+2\,\varepsilon)^2} \right)
 \end{align}
@@ -109,11 +108,11 @@ Die kinetische Energie des entstandenen Elektron-Positron-Paares beträgt:
 \end{align}
 Der Wirkungsquerschnitt der Paarbildung $\sigma_\text{Pa}$ hängt von der Kernladungszahl $z$ des Absorbers und der Abschirmung des Coulomb-Feldes ab. Bei natürlichen Strahlern findet die Paarbildung nur im Feld eines Atomkernes statt und nicht im elektrischen Feld eines Elektrons. Der Wirkungsquerschnitt kann dann zu
 \begin{align}
-	&\sigma_\text{Pa} = \alpha\, r_\text{e}^2\, z^2\, \left(\frac{28}{9}\ln(2\,\varepsilon) - \frac{218}{27} \right) \\
-	(\alpha = &\text{Sommerfeldsche Feinstrukturkonstante})
+	\sigma_\text{Pa} = \alpha\, r_\text{e}^2\, z^2\, \left(\frac{28}{9}\ln(2\,\varepsilon) - \frac{218}{27} \right)
 	\label{eqn:PaarVerschwindend}
 \end{align}
-bestimmt werden. Die Gleichung \eqref{eqn:PaarVerschwindend} ist in einem Energiebereich von $20 < \varepsilon < 50$ gültig. \todo{was ist hier falsch?} \\
+\hfil {\footnotesize($\alpha$ = Sommerfeldsche Feinstrukturkonstante)} \hfil \\
+bestimmt werden. Die Gleichung \eqref{eqn:PaarVerschwindend} ist in einem Energiebereich von $20 < \varepsilon < 50$ gültig. \todo{10 < E < 25 MeV, Was ist hier falsch?} \\
 Bei der Paarbildung wird die gesamte Energie des Photons in dem Absorber deponiert. Allerdings kann nicht immer die gesamte Energie von dem Detektor gemessen werden, weil dazu Elektron und Positron detektiert werden müssen. Wenn nur eines der Beiden Teilchen in den Detektor fällt wird $E_\gamma - m_0\,c^2$ gemessen. Treffen beide Teilchen den Detektor nicht wird eine Linie bei $E_\gamma - 2\,m_0\,c^2$ beobachtet. Auch verlieren Elektron und Positron durch Bremsstrahlung Energie, wodurch das Spektrum nach unten verbreitert wird. \todo{Warum ist dieser Abschnitt falsch?}
 
 
@@ -140,8 +139,8 @@ Der wesentliche Bestandteil des Detektors ist eine Halbleiter-Diode. Das bedeute
 	\label{fig:Potential}
 \end{figure}
 
-Wenn ein $\gamma$-Quant in die ladungsträgerarme Zone eindringt kann eine der drei beschriebenen Wechselwirkungen eintreten. Das bei diesen Prozessen freigesetzte Elektron stößt auf seinem Weg durch den Festkörper mit vielen anderen Elektronen aus dem Valenzband zusammen. Dabei gibt das freigesetzte Elektron einen Teil seiner Energie zur Erzeugung von Phononen ab. Die restliche Energie wird an die Valenzelektronen abgegeben, wodurch diese in das Leitfähigkeitsband oder darüber hinaus gehoben werden. Es entstehen dadurch Elektron-Loch-Paare, welche durch die anliegende Spannung getrennt werden und einen Ladungsimpuls erzeugen. \\
-Die Absorptionswahrscheinlichkeit (siehe Gl. \eqref{eqn:absorption}) eines $\gamma$-Quants hängt exponentiell von der Schichtdicke des Absorbermaterials ab. Deshalb ist es besonders wichtig, dass die Verarmungszone so groß wie möglich ist. Dies wird im Wesentlichen über eine unsymmetrische Dotierung und die Sperrspannung $U$ gewährleistet. Die Breite der n-Schicht $d_\text{n}$ und die Breite der p-Schicht $d_\text{p}$ sind durch
+Wenn ein Photon in die ladungsträgerarme Zone eindringt kann eine der drei beschriebenen Wechselwirkungen eintreten. Das bei diesen Prozessen freigesetzte Elektron stößt auf seinem Weg durch den Festkörper mit vielen anderen Elektronen aus dem Valenzband zusammen. Dabei gibt das freigesetzte Elektron einen Teil seiner Energie zur Erzeugung von Phononen ab. Die restliche Energie wird an die Valenzelektronen abgegeben, wodurch diese in das Leitfähigkeitsband oder darüber hinaus gehoben werden. Es entstehen dadurch Elektron-Loch-Paare, welche durch die anliegende Spannung getrennt werden und einen Ladungsimpuls erzeugen. \\
+Die Absorptionswahrscheinlichkeit (siehe Gl. \eqref{eqn:absorption}) eines Photons hängt exponentiell von der Schichtdicke des Absorbermaterials ab. Deshalb ist es besonders wichtig, dass die Verarmungszone so groß wie möglich ist. Dies wird im Wesentlichen über eine unsymmetrische Dotierung und die Sperrspannung $U$ gewährleistet. Die Breite der n-Schicht $d_\text{n}$ und die Breite der p-Schicht $d_\text{p}$ sind durch
 \begin{align}
 	d_\text{n}^2 &= \frac{2\,\varepsilon\,\varepsilon_0} {e_0} \, \frac{U_\text{D} + U}{n_\text{A} + n_\text{D}} \, \frac{n_\text{A}}{n_\text{D}} \\
 	d_\text{p}^2 &= \frac{2\,\varepsilon\,\varepsilon_0} {e_0} \, \frac{U_\text{D} + U} {n_\text{A} + n_\text{D}} \, \frac{n_\text{D}}{n_\text{A}}
@@ -174,7 +173,7 @@ Im Folgenden werden das energetische Auflösungsvermögen und die Effizienz eine
 \subsubsection{Energetisches Auflösungsvermögen}
 \label{sec:EAuflösung}
 Ein Maß für das energetische Auflösungsvermögen ist die Halbwertsbreite $\Delta E_\frac{1}{2}$ der Impulshöhenverteilung. Um zwei Spektrallinien unterscheiden zu können müssen sich deren Mittelwerte mindestens um die Halbwertsbreite unterscheiden. \\
-Die Impulshöhenverteilung wird im Wesentlichen durch die Anzahl $n$ der Elektron-Loch-Paare festgelegt, die bei der Absorption eines $\gamma$-Quants entstehen. "Der Mittelwert $\overline{n}$ von $n$ ist gleich dem Quotienten aus der Energie $E_\gamma$ des einfallenden $\gamma$-Quants und der Bildungsenergie $E_\text{El}$ eines Elektron-Loch-Paares" \cite[14]{V18}. Die Energielücke $E_\text{g}$ in Germanium beträgt 0,67\,eV, allerdings wird eine Bildungsenergie in Germanium von 2,9\,eV gemessen. Das bedeutet, dass die Bildung von Elektron-Loch-Paaren nur unter der Beteiligung von Phononen möglich ist. Die Energie, die das $\gamma$-Quant an den Detektor abgegeben hat, wird statistisch auf die Phononen- und Elektron-Loch-Paar -Erzeugung verteilt. Dieser Prozess wird durch eine Poisson-Verteilung beschrieben und die Standardabweichung für den unkorrelierten Fall ist durch
+Die Impulshöhenverteilung wird im Wesentlichen durch die Anzahl $n$ der Elektron-Loch-Paare festgelegt, die bei der Absorption eines Photons entstehen. "Der Mittelwert $\overline{n}$ von $n$ ist gleich dem Quotienten aus der Energie $E_\gamma$ des einfallenden Photons und der Bildungsenergie $E_\text{El}$ eines Elektron-Loch-Paares" \cite[14]{V18}. Die Energielücke $E_\text{g}$ in Germanium beträgt 0,67\,eV, allerdings wird eine Bildungsenergie in Germanium von 2,9\,eV gemessen. Das bedeutet, dass die Bildung von Elektron-Loch-Paaren nur unter der Beteiligung von Phononen möglich ist. Die Energie, die das Photon an den Detektor abgegeben hat, wird statistisch auf die Phononen- und Elektron-Loch-Paar -Erzeugung verteilt. Dieser Prozess wird durch eine Poisson-Verteilung beschrieben und die Standardabweichung für den unkorrelierten Fall ist durch
 \begin{align}
 	\sigma = \sqrt{\overline{n}}
 \end{align}
@@ -182,7 +181,7 @@ gegeben. Allerdings kompensieren sich die Fluktuationen der Ladungsträgererzeug
 \begin{align}
 	\sigma = \sqrt{F\,\overline{n}} = \sqrt{F\,\frac{E_\gamma}{E_\text{El}}}
 \end{align}
-Für Germanium beträgt $F$ = 0.1 \cite[15]{V18}. Da $n$ sehr viel größer ist als 1, wird die Poisson-Verteilung durch eine Gauß-Verteilung angenähert. Damit folgt für die Halbwertsbreite
+Für Germanium beträgt $F$ = 0,1 \cite[15]{V18}. Da $n$ sehr viel größer ist als 1, wird die Poisson-Verteilung durch eine Gauß-Verteilung angenähert. Damit folgt für die Halbwertsbreite
 \begin{align}
 	\Delta E_\frac{1}{2} = \sqrt{8\,\ln2} \, \frac{\sigma} {\overline{n}} E_\gamma = \sqrt{0.8\,\ln2\,E_\gamma \, E_\text{El}} \ .
 \end{align}
@@ -204,19 +203,19 @@ In Abbildung \eqref{fig:Spektrum} ist das Spektrum eines monochromatischen $\gam
 	\label{fig:Spektrum}
 \end{figure}
 \todo{welches spektrum sonst?} \\
-Das Spektrum besteht aus dem Photopeak, dem Compton-Kontinuum und dem Rückstreupeak. Der Photopeak entsteht wenn der Photoeffekt an der Absorption beteiligt ist. Dabei wird die gesamte Energie des $\gamma$-Quants an den Absorber abgegeben. "Seine Halbwertsbreite ist, wie in Kap.\ref{sec:EAuflösung} dargelegt, ein Maß für die Energieauflösung des Detektors" \cite[22]{V18}. \\
+Das Spektrum besteht aus dem Photopeak, dem Compton-Kontinuum und dem Rückstreupeak. Der Photopeak entsteht wenn der Photoeffekt an der Absorption beteiligt ist. Dabei wird die gesamte Energie des Photons an den Absorber abgegeben. "Seine Halbwertsbreite ist, wie in Kap.\ref{sec:EAuflösung} dargelegt, ein Maß für die Energieauflösung des Detektors" \cite[22]{V18}. \\
 Das Compton-Kontinuum ist ein störender Bereich bei der $\gamma$-Spektroskopie. Dieser Bereich reicht von 0 bis zur Compton-Kante $E_\text{l,max}$, diese ist durch einsetzten von 180° in Gleichung \eqref{eqn:El} gegeben:
 \begin{align}
 	E_\text{l,max}= E_\gamma \, \frac{2\,\varepsilon} {1 + 2\,\varepsilon}
 	\label{eqn:Comptonkante}
 \end{align}
-Der Bereich entsteht durch die Compton-Streuung an den Elektronen. Der Rückstreupeak liegt in dem Compton-Kontinuum und entsteht durch Quanten die nicht direkt in den Detektor fallen. Beispielsweise Quanten die an der Blei-Abschirmung oder der Quelle selbst getreut werden. Die Energie des Rückstreupeaks kann durch einsetzten von 180° in Gleichung \eqref{eqn:Egamma} abgeschätzt werden.
+Der Bereich entsteht durch die Compton-Streuung an den Elektronen. Der Rückstreupeak liegt in dem Compton-Kontinuum und entsteht durch Photonen die nicht direkt in den Detektor fallen. Beispielsweise Photonen die an der Blei-Abschirmung oder der Quelle selbst getreut werden. Die Energie des Rückstreupeaks kann durch einsetzten von 180° in Gleichung \eqref{eqn:Egamma} abgeschätzt werden.
 
 
 
 \subsubsection{Aktivitäts- und Energiebestimmung einer \texorpdfstring{$\gamma$}{}-Quelle}
 Für die Energiebestimmung eines einzelnen Peaks muss zunächst der Detektor kalibriert werden. Dazu wird ein $\gamma$-Strahler mit bekannten Energien aufgenommen. Damit wird den Kanälen des Vielkanalanalysators eine Energie zugeordnet. Um die Unsicherheiten der linearen Regression zu minimieren wird ein linienreiches Spektrum benötigt. \\
-Zur Bestimmung der Aktivität $A$ muss zunächst die Effizienz $Q$ durch eine Kalibrierungsmessung ermittelt werden. Die Effizienz ist die voll Energienachweiswahrscheinlichkeit eines Quants mit einer Energie $E_\gamma$. Dafür wird ein $\gamma$-Strahler mit bekannter Aktivität verwendet und mit dem gemessenen Zählergebnis $Z$ in Verbindung gebracht.
+Zur Bestimmung der Aktivität $A$ muss zunächst die Effizienz $Q$ durch eine Kalibrierungsmessung ermittelt werden. Die Effizienz ist die voll Energienachweiswahrscheinlichkeit eines Photons mit einer Energie $E_\gamma$. Dafür wird ein $\gamma$-Strahler mit bekannter Aktivität verwendet und mit dem gemessenen Zählergebnis $Z$ in Verbindung gebracht.
 \begin{align}
 	Z = \Omega\,A\,W\,Q
 	\label{eqn:Zählergebnis}
