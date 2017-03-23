@@ -48,8 +48,8 @@
   locale=DE,                 % deutsche Einstellungen
   separate-uncertainty=true, % immer Fehler mit \pm
   per-mode=reciprocal,       % ^-1 für inverse Einheiten
-  output-decimal-marker=.,   % . statt , für Dezimalzahlen
 ]{siunitx}
+\sisetup{output-decimal-marker = {,}}
 
 % chemische Formeln
 \usepackage[
@@ -141,9 +141,9 @@
 \usepackage{multirow} %ermöglicht Zeilen in Tabellen zu verbinden
 
 % ermöglicht es Notizen zu schreiben
-\usepackage{todonotes}
+% \usepackage{todonotes}
 % hiermit werden die Notizen ausgeblendet
-% \usepackage[disable]{todonotes}
+\usepackage[disable]{todonotes}
 
 % ermöglicht es Isotope darzustellen
 % \isotope[A][B]{X}
