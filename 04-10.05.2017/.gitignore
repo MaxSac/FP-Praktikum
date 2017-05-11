@@ -1,1 +1,4 @@
 /build
+/pictures
+*.pdf
+Makefile
