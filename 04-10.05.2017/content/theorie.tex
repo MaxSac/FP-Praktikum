@@ -1,8 +1,61 @@
 \section{Theoretische Grundlage}
 \label{sec:Theorie}
 
+\subsection{Einführung}
+Ist in einem Raum keine Matereie vorhanden und der Gasdruck verschwunden, wird dieser als perfektes Vakuum betitelt. Bereits die griechischen Philiosophen ende des 4 Jahrhundert konnten die Gedankenspiele über die Existenz eines eines leeren Raums nicht zweifelsfrei beantworten. Mit dem Aufstreben der Quantenmechanik, stellt sich erneut die Frage in wie fern überhaupt ein Teilchenfreier Raum in grenzen der Energie-Zeitunschärfe möglich ist, worauf im folgenden noch eingenangen wird. Rein phänomenologisch ist das Vakuum definiert als:
+
+``\textit{Vakuum heißt der Zustand eines Gases, wenn in einem Behälter der Druck des Gases und damit die Teilchenzahldichte niedriger ist als außerhalb oder wenn der Druck des Gases niedriger ist als 300 mbar, d. h. kleiner als der niedrigste auf der Erdoberfläche vorkommende Atmosphärendruck}'' \cite{DIN}
+
+Ziel des Versuches ist es die Grundlagen der Vakuumstechnik nachzuvollziehen und die für den Versuch benötigten Komponenten kennenzulernen. Dies geschieht indem für die beiden verwendeten Pumpenarten die Saugleistung, als auch eine Leckratenmessung durchgeführt wird.
+
+\subsection{Mesgrößen zur Bestimmung des Vakuums}
+Das Maß eines Vakuums ist der Druck $p$. Dieser ist definiert als Kraft $F$ pro Fläche $A$
+\begin{equation}
+  p = \frac{F}{A} = \left[ \frac{N}{m^2} \right]
+  \label{eqn:druck}
+\end{equation}
+Anhand dessen lassen sich Vakuums in verschiedene Kategorien unterteilen, was im späteren noch passieren wird. Desweiteren lässt sich bei einem gemsich aus Gasen der Gesamtdruck $p_\text{Ges}$ in mehre Partialdrücke aufteilen. Es gilt immer, dass die Summe über alle partialdrücke dem Gesamtdruck entspricht. Analog wird mit der Teilchenanzahl vorgegangen. Der Partialdruck entspricht dem Druck welcher das entsprechende gemisch in dem selben Volume wodrin sich $p_\text{Ges}$ befindet ausübern würde. \newline
+Desweiteren zeichnet sich ein Gas durch die mittlere freie Weglänge $\Lambda$ eines Teilcens aus, bis es mit einem anderen wechselwirkt. Durch einführen eines Stoßquerschnitts und einer konstanten Teilchenzahldichte $n$ lässt sich durch lösen einer Differentialgleichung 
+\begin{equation}
+  \frac{dN}{N} = -n \sigma \Delta x
+  \label{eqn:mfWDGL}
+\end{equation}
+zeigen, dass die mittlere freie Weglänge  inversproportional zu dem Produkt aus Teilchenzahlichte und Stoßquerschnitt ist.
+\begin{equation}
+  \Lambda = \frac{1}{n \sigma}= \frac{k T}{\sqrt{2} \pi D^2 p}
+  \label{eqn:mfW}
+\end{equation}
+Da die Teilchenanzahl von Luft bei Normaldruck als gegeben vorrausgesetzt wird kann aus der Vorraussetzung, dass das Produkt aus pV =const ist die Teilchenzahl bei den anderen Drücken berechnet werden. 
+\begin{table}
+  \centering
+  \caption{Druckbereiche, Mittlere Freie Weglänge und Teilchenanzahl}
+  \begin{tabular}{c|c c c}
+  	\toprule
+	Druckbereiche & Druck / mbar & Moleküle / $cm^3$ & mittlere freie Weglänge \\
+	\midrule
+	Normaldruck	& 1013.25			& $2.7 \cdot 10^{19}$ &	68 nm \\
+	Unterdruck	& > 300				& k.A. & k.A \\
+	Grobvakuum	& 300 \ldots 1 			&$10^{19} \cdot 10^{16}$&0.1 \ldots 100 $\mu m$ \\
+	Feinvakuum	& 1 \ldots $10^{-3}$		& $10^{16} \cdot 10^{13}$ & 0.1 \ldots 100 mm \\
+	Hochvakuum	& $10^{-3} \cdots 10^{-7}$	& $10^{13} \cdot 10^{9}$ & 100 mm \ldots 1km \\
+	Ultrahochvakuum	& $10^{-7} \cdots 10^{-12}$	& $10^9 \cdots 10^4$ & 1 m \ldots $10^5$ m \\
+	extrem hohes Vakuum & $< 10^{-12}$		& $<10^4$ & $> 10^5$ \\
+	\bottomrule
+  \end{tabular}
+  \label{tab:ueberblick}
+\end{table}
 
 
+Ausgasen
+
+
+\subsection{Teilchenfreier Raum}
+
+Teilchenfreier Raum
+-Energie Zeit unschärfe
+- Vakuums klassen 
+
+Vakuum lässt sich in verschiedene Klassen einteilen worauf in folgenden noch weiter eingegeangen wird.
 
 \subsection{Fehlerrechnung}
 Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
