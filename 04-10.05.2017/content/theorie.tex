@@ -15,6 +15,7 @@ Das Maß eines Vakuums ist der Druck $p$. Dieser ist definiert als Kraft $F$ pro
   \label{eqn:druck}
 \end{equation}
 Anhand dessen lassen sich Vakuums in verschiedene Kategorien unterteilen, was im späteren noch passieren wird. Desweiteren lässt sich bei einem gemsich aus Gasen der Gesamtdruck $p_\text{Ges}$ in mehre Partialdrücke aufteilen. Es gilt immer, dass die Summe über alle partialdrücke dem Gesamtdruck entspricht. Analog wird mit der Teilchenanzahl vorgegangen. Der Partialdruck entspricht dem Druck welcher das entsprechende gemisch in dem selben Volume wodrin sich $p_\text{Ges}$ befindet ausübern würde. \newline
+Einheiten \newline
 Desweiteren zeichnet sich ein Gas durch die mittlere freie Weglänge $\Lambda$ eines Teilcens aus, bis es mit einem anderen wechselwirkt. Durch einführen eines Stoßquerschnitts und einer konstanten Teilchenzahldichte $n$ lässt sich durch lösen einer Differentialgleichung 
 \begin{equation}
   \frac{dN}{N} = -n \sigma \Delta x
@@ -49,15 +50,64 @@ Da die Teilchenanzahl von Luft bei Normaldruck als gegeben vorrausgesetzt wird k
 Ausgasen
 
 
-\subsection{Teilchenfreier Raum}
+\subsection{p(t) Kurve}
+Für die Auswertung wird eine Funktion benötigt welche den Druck in abhängigkeit der Zeit angibt. Dafür muss die Annahme getroffen werden, dass die Saugleistug $S$ für den anegebenen Zeitraum konstant ist und nicht vom Druck $p(t)$ abhängt. Dann entspricht die zeitliche Änderung des Volumens 
+\begin{equation}
+  \frac{\text{d}V}{\text{d}t} = S \ .
+\end{equation}
+Zusätzlich wird eingefordert das die Temperatur des Gases bei dem Vorgang konstant ist. Mithilfe des idealen Gasgesetz
+\begin{equation}
+  p V = n R T
+\end{equation}
 
-Teilchenfreier Raum
--Energie Zeit unschärfe
-- Vakuums klassen 
+\begin{equation}
+  \frac{\text{d}}{\text{dt}} pV = \frac{\text{d}}{\text{dt}} n R T
+\end{equation}
 
-Vakuum lässt sich in verschiedene Klassen einteilen worauf in folgenden noch weiter eingegeangen wird.
+\begin{equation}
+  p(t) = p_0 \exp \left( \frac{-t}{\tau} \right)
+\end{equation}
+Durch einsetzen der Anfangsbedingungen und des Enddrucks $p_\text{E}$ ergibt sich für den Zeitabhängigen Druck 
+\begin{equation}
+  p(t) = (p_0 - p_\text{E}) \exp \left( -t \frac{S}{V} \right) + p_\text{E}
+\end{equation}
 
-\subsection{Fehlerrechnung}
+\subsection{Wechselwirkungsprozesse Restgas Umgebung}
+Befindet sich ein Gas oder eine Flüssigkeit eingeschloßen in einem Körper, wechseltwirkt diese mit der Grenzfläche. Dabei können die aufgeführten Prozesse auftreten und die Messreihe beeinflussen. In Kapitel \ref{??} werden Maßnahmen vorgestellt dem entgegenzuwirken. (Phönen, Rezipient verschließen).
+\begin{itemize}
+  \item \textbf{Absorption:} Trifft ein Teilchen auf die Grenzfläche, kann es passieren das es von dieser aufgenommen wird. Dannach befindet es sich für unestimmte Zeit im Absorbermaterial, kan jedoch auch wieder Reduktieren.
+  \item \textbf{Adsorption:} Trifft ein Teilchen auf die Grenzfläche kann es neben der Absorbtion sich auch am Rand des Absorbermaterials ablagern. Dabei wird es mittels der Van-der-Waals kräfte am Rand lokalisiert.
+  \item \textbf{Desorption:} Es ist der Umkehrprozess der Absorbtion. Dabei wird ein Teilchen aus des Rezipienten an das Vakuum abgegeben und ist somit nicht mer lokalisiert. 
+  \item \textbf{Diffusion:} Ist in einem geschlossenen System eine inhomogenen Gasverteilung, sorgt die Diffusion dafür das die Verteilung in den Gleicgewichtszustand über geht. Es beruht darauf das die ungerichteten Bewegungen die Zeitunkehrinvarianz brechen und das System in den Zustand der maximalen Entropie treibt.
+  \item \textbf{Ausgasen:} Ist ein Festkörper durch zu langen kontakt mit der Umwelt verureinigt, muss bei diesem die Gasteilchen zunächst ersteinmal an die Oberfläche diffundieren bevor sie desobiert werden können. dadurch kann nicht so schnell der Sättigungswert für die Pumpen errreicht werden.
+\end{itemize}
+\subsection{Ströungsprozesse und Leitwert}
+
+Laminare Strömung:
+
+molekulare Strömung:
+
+Leitwert:
+
+
+\section{Technische Grundlagen}
+
+\subsection{Pumpentypen und Funktionsweise}
+
+Drehschieberpumpe:
+
+Turbopumpe:
+
+
+\subsection{Messgeräte}
+
+Pirani-Messgerät
+
+Kaltkatohden-Messgerät
+
+Heißkathonden-Messgerät
+
+\section{Fehlerrechnung}
 Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
 \subsubsection{Mittelwert}
 Der Mittelwert einer Messreihe $x_\text{1}, ... ,x_\text{n}$ lässt sich durch die Formel
