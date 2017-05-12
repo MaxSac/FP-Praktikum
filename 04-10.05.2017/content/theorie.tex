@@ -93,33 +93,71 @@ Leitwert:
 \section{Technische Grundlagen}
 
 \subsection{Pumpentypen und Funktionsweise}
+Pumpen lassen sich neben den verschiedenen Saugraten $S$ und den erreichten Enddrücke $p_\text{E}$ kategorisieren. Beispielhaft werden drei Pumpen vorgestellt, welche weit verbreitet in der Vakuumstechnik sind. 
 
-Drehschieberpumpe:
-\begin{figure}[H]
+
+
+Drei verschiedene Pumptypen
+Drehschiebe pumpe
+turbo
+Ionisationspumpe
+
+Kategorien
+Transport 
+kinetisce 
+Speicher
+\subsubsection{Drehschieberpumpe:}
+\begin{wrapfigure}{r}{0.32\textwidth}
+    \vspace{-1cm}
     \centering
     \includegraphics[width=0.3\textwidth]{./picture/Drehschieberpumpe.png}
-    \caption{<+caption text+>}
-    \label{fig:<+label+>}
-\end{figure}
+    \caption{Querschnitt \cite{??}}
+    \label{fig:Dreh}
+\end{wrapfigure}
+Die Drehschiebepumpe ist eine kinetische Pumpe und eine Skizze vom Aufbau ist in Abbildung \ref{fig:Dreh} abgebildet. Sie kennzeichnet sich durch eine zylinrischen Kammer aus wodrin ein zylindrischer Rotor gelagert ist. An dem Rotor befinden sich zwei Drehschieber welchen en Inhalt der Drehkammer in zwei Volumina aufteilt. Die Zylinderische Kammer ist einerseits mit dem Rezipient und der Außenwelt verbunden. Durch die Volumenvergrößerung des Rezipienten strömt Gas in die Pumpe welche durch ein Überdruckventil durch kompression nach einem halben Rotorumschlag das Gas an die Umwelt abgibt. Der Enddruck $p_\text{E}$ ist im wesentlichen durch das Restvolumen bestimmt wenn die Luft grade beim Auslass komprimiert wird. Drehschieberpumpen haben typischerweise eine Saugleistung von einigen Litern. Der Enddruck befindet sich im Bereich von hPa. 
 
-Turbopumpe:
-\begin{figure}[H]
+
+\subsubsection{Turbomolekularpumpe:}
+
+\begin{wrapfigure}{l}{0.3\textwidth}
+    \vspace{-1cm}
     \centering
     \includegraphics[width=0.3\textwidth]{./picture/Turbo.jpg}
-    \caption{<+caption text+>}
-    \label{fig:<+label+>}
-\end{figure}
+    \caption{Querschnitt Turbopumpe \cite{??}}
+    \label{fig:Turbo}
+\end{wrapfigure}
+Die Turbopumpe benötigt für die inbetriebnahmen ein Vorvakuum. Sie zeichnet sich durch ihren Abwechselnden aufbau aus Turbinen und statorscheiben aus. Die Ventilatorblätter sind gegen die Scheibenebene gekippt und haben nach außen hin ein immer größer werdenden Neigungswinkel.  
 
+
+\subsubsection{Ionengetter-Pumpe}
+bls bls
 
 \subsection{Messgeräte}
+Für die Messung von verschiedenen Drücken werden verschiedene Messinstrumente benötigt. Jedes hatt ihren eigenen Arbeitsbereich und daher muss zur vollständigen Beobachtung der Erzeugung eines Hochvakuums ausgehend vom Normaldruck eine hinternanderschaltung und bedachtes in die Vakuumskammer bringen gewährleistet werden. Die Messgeräte werden im Folgenden sotiert nach ihrem Wirkungsbereich von Normaldruck zum Vakuum vorgestellt und ihre funktionsweise kurz erläutert.
 
-Pirani-Messgerät
+\subsubsection{Pirani Messgerät}
+\begin{wrapfigure}{l}{0.5\textwidth}
+  \centering
+  \includegraphics[width=0.48\textwidth]{picture/Pirani.JPG}
+  \caption{Abhänigkeit der Wärmekapazität vom Druck \cite{??}}
+  \label{fig:pirani}
+  \vspace{-0.6cm}
+\end{wrapfigure}
+Das Pirani Mesgerät bei denen die Druckabhängige Wärmeleitung des Gases ausgenutzt wird kommt bei drücken zwischen $50 \cdot$ nbar zum Einsatz. Die Wirkungsweise beruht darauf, dass in dem genannte Gebiet, wie in Abbildung \ref{fig:pirani} zu sehen, die Wärmeleifähigkeit proportional zum Druck ist. Das technsiche Prinzip beruht darauf, dass ein Draht durch einen konstanten Strom geheißt wird und dieser seine Wärme über statischtische Prozesse an die sich in dem zu messenden Körper befindlichen Teilchen abgibt. Somit sint die Temperatur des gases, welcher mit dem spezifischen Widerstand des Strimes korreliert ist. Wird nun der Strom gemessen, kann nach einer Eichung der Druck gemessen werde. In den Bereichen A und C der Abildung \ref{fig:pirani} ist die Wärmeeitfähigkeit nicht mehr proportional zum Druck. In gewissen Maßen lässt sich jedoch noch Drücke oberhalb von 1 mbar abschätzen, jeoch liegt dem Messprinzip ein anderes physikalisches Prinzip zugrunde.
 
+\subsubsection{Kaltkatohden-Messgerät}
+Beim Kaltkathoden-Messgerät wird ein großes E-Feld angelegt welches Primär-Elektronen welche con der natürlichen Raumionisation stammen abziehen. Aufgrund der Beschleunigung durch das Feld Ionisieren die Primär-Elektronen weitere Gasmolekühle, sodass der Strom vergrößert wird. Dieser effekt wird durch anlegung eines äußeren Feldes verstärkt, da dadurch die Elektronen aufgrund der Lorentz-Kraft auf Kreisbahnen gezwungen werden und der Weg zur Anode hin anwächst. Durch messung des Ionisationsstrom kann auf den Druck rückgeschlossen werden, jedoch muss berücksichtigt werden das der Strom auch von der Gasart abhängig ist.  
 
-Kaltkatohden-Messgerät
-
-Heißkathonden-Messgerät
-
+\subsubsection{Heißkathonden-Messgerät}
+\begin{wrapfigure}{r}{0.3\textwidth}
+  \vspace{-1.0cm}
+  \centering
+  \includegraphics[width=0.28\textwidth]{picture/Heißkathode.png}
+  \caption{Funktionsweise Heißkathoden-Messgerät}
+  \label{fig:Heißkathode}
+  \vspace{-1cm}
+\end{wrapfigure}
+Die Wirkungsweise des Heißkathoden-Messgerät ähnelt dem des Kaltkathoden-Messgerät stark. Dadruch das es jedoch bei niedigeren Drücken zum einsatz kommt, werden zu wenig Elektronen durch die natürlichen Raumionisation frei. Aufgrund dessen wird eine Glühkathode gentutz welche Elektronen freisetzt welche auf dem weg zur Anode Gasmolekühle Ionsiert. Durch Messung des Ionenstrom kann somit der Druck bestimmt werden.  
 \section{Fehlerrechnung}
 Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
 \subsubsection{Mittelwert}
