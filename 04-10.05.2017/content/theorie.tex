@@ -83,11 +83,18 @@ Befindet sich ein Gas oder eine Flüssigkeit eingeschloßen in einem Körper, we
 \end{itemize}
 \subsection{Ströungsprozesse und Leitwert}
 
-Laminare Strömung:
+\subsubsection{Laminare Strömung:}
+Als laminare Strömung wird eine turbulenzfreie Strömung verstanden. Dabei mischen die Schichten von Flüssigkeiten wenn sie an Hindernissen vorbeifließen sich nicht untereinander.
 
-molekulare Strömung:
+\subsubsection{Molekulare Strömung:}
+Als molekular wird eine Strömung bezeichnet, wenn ihre mittlere freie Weglänge größer ist als der Durchmesser der Strömung. Dies passiert immer dann, wenn die Drücke hinreichend klein (typisch wären Hoch-/Ultrahochvakuum) sind. Aufgroß der Geringenteilchendichte wechselwiken diese öfters mit den Grenzflächen als untereinander.
 
-Leitwert:
+\subsubsection{Leitwert:}
+Zur Berechnung des Saugvermögens einer Pumpe wird der Strömngswiderstand der geometrie des Aufbaus berücksichtigt. Dafür wird der Quotient aus der Länge der Leitung und des Strömngswiederstand gebildet.
+
+\begin{equation}
+  C = \frac{l}{W}
+\end{equation}
 
 
 \section{Technische Grundlagen}
@@ -95,17 +102,6 @@ Leitwert:
 \subsection{Pumpentypen und Funktionsweise}
 Pumpen lassen sich neben den verschiedenen Saugraten $S$ und den erreichten Enddrücke $p_\text{E}$ kategorisieren. Beispielhaft werden drei Pumpen vorgestellt, welche weit verbreitet in der Vakuumstechnik sind. 
 
-
-
-Drei verschiedene Pumptypen
-Drehschiebe pumpe
-turbo
-Ionisationspumpe
-
-Kategorien
-Transport 
-kinetisce 
-Speicher
 \subsubsection{Drehschieberpumpe:}
 \begin{wrapfigure}{r}{0.32\textwidth}
     \vspace{-1cm}
@@ -125,12 +121,13 @@ Die Drehschiebepumpe ist eine kinetische Pumpe und eine Skizze vom Aufbau ist in
     \includegraphics[width=0.3\textwidth]{./picture/Turbo.jpg}
     \caption{Querschnitt Turbopumpe \cite{??}}
     \label{fig:Turbo}
+    \vspace{-1cm}
 \end{wrapfigure}
-Die Turbopumpe benötigt für die inbetriebnahmen ein Vorvakuum. Sie zeichnet sich durch ihren Abwechselnden aufbau aus Turbinen und statorscheiben aus. Die Ventilatorblätter sind gegen die Scheibenebene gekippt und haben nach außen hin ein immer größer werdenden Neigungswinkel.  
+Die Turbopumpe benötigt für die inbetriebnahmen ein Vorvakuum. Sie zeichnet sich durch ihren Abwechselnden aufbau aus Turbinen und statorscheiben aus. Die Ventilatorblätter sind gegen die Scheibenebene gekippt und haben nach außen hin ein immer größer werdenden Neigungswinkel. Fällt ein Gas-Molekühl aus dem Rezipienten auf die Turbinenscheibe wird dieser Kurz von diesen Absorbiert, Adsorbiert bzw Stößt mit diesen und anschließend weiter zu den Rototbletter mit einem höheren Neigungswinkel durchgereicht. Damit diese Arbeiten kann muss die Mittlere freie weglänge der Gasmolekühle dementsprechend in Größenordung des Abstandes der Rotorblätter oder größer sein.
 
 
 \subsubsection{Ionengetter-Pumpe}
-bls bls
+Die Ionengetterpumpe gehört zu dem Bereich der Sorptionspumpen. Das Wirkungsprinzip beruht darauf das die Gasteilchen ionisiert werden und anschließend mittels eines angelegten Feldes zum Gettermaterial befördert werden. Somit ist dieses an der Oberfläche des Gettermaterials gebunden und verringert den Druck effektiv im Volumen des Rezipientens welches keinen Kontakt zur Grenzfläche besitzt. Durch thermische Prozesse lässt sich in gewissen Grenzen die beschränkte Aufnahmefähigkeit des Gettermaterials erhöhen. Daher ist es von intresse beim Einsatz ein gutes Hochvakuum zu besitzen. Mit der Ionengetter-Pumpe ist es möglich ein Hichvakuum zu erzeugen.
 
 \subsection{Messgeräte}
 Für die Messung von verschiedenen Drücken werden verschiedene Messinstrumente benötigt. Jedes hatt ihren eigenen Arbeitsbereich und daher muss zur vollständigen Beobachtung der Erzeugung eines Hochvakuums ausgehend vom Normaldruck eine hinternanderschaltung und bedachtes in die Vakuumskammer bringen gewährleistet werden. Die Messgeräte werden im Folgenden sotiert nach ihrem Wirkungsbereich von Normaldruck zum Vakuum vorgestellt und ihre funktionsweise kurz erläutert.
