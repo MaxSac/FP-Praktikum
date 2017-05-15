@@ -32,12 +32,15 @@ Der Fehler des Saugvermögens wird im folgenden mit
 \end{align*}
 berechnet.
 
+
+
 \subsubsection{Für die Drehschieberpumpe}
 In den Tabellen \eqref{tab:Leck0.1Dreh} bis \eqref{tab:Leck1.0Dreh} sind die Messwerte der Leckratenmessung für fünf unterschiedliche Gleichgewichtsdrücke aufgetragen. Außerdem ist der Mittelwert der Zeiten und der Fehler gebildet worden. Das Volumen $V_0$ aus Gleichung \eqref{eqn:SaugLeck} entspricht für die Drehschieberpumpe $V_\text{Dreh} = (\num{8.4 +- 0.7})$\,l
 
 \begin{table}[H]
-  \begin{minipage}{0.45\textwidth}
-    \caption{Messwerte der Leckratenmessung bei\\ einem Gleichgewichtsdruck von 0.1\,mbar}
+  \caption{Messwerte der Leckratenmessung bei fünf unterschiedlichen Gleichgewichtsdrücken.}
+  \begin{subtable}{0.45\textwidth}
+    \subcaption{Gleichgewichtsdruck von 0.1\,mbar}
     \begin{tabular}{c|c|c|c|c}\label{tab:Leck0.1Dreh}
       $p$\,/\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
       \hline
@@ -47,9 +50,9 @@ In den Tabellen \eqref{tab:Leck0.1Dreh} bis \eqref{tab:Leck1.0Dreh} sind die Mes
       0.8 & 140 & 142 & 141 & $\num{141.0 +- 0.6}$ \\
       1.0 & 175 & 177 & 179 & $\num{177.0 +- 1.0}$ \\
     \end{tabular}
-  \end{minipage}\hfill
-  \begin{minipage}{0.45\textwidth}
-    \caption{Messwerte der Leckratenmessung bei\\ einem Gleichgewichtsdruck von 0.4\,mbar}
+  \end{subtable}\hfill
+  \begin{subtable}{0.45\textwidth}
+    \subcaption{Gleichgewichtsdruck von 0.4\,mbar}
     \begin{tabular}{c|c|c|c|c}\label{tab:Leck0.4Dreh}
       $p$\,/\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
       \hline
@@ -59,13 +62,12 @@ In den Tabellen \eqref{tab:Leck0.1Dreh} bis \eqref{tab:Leck1.0Dreh} sind die Mes
       2.0 & 51  & 51 & 50 & $\num{50.7 +- 0.3}$ \\
       4.0 & 100 & 99 & 98 & $\num{99.0 +- 0.6}$ \\
     \end{tabular}
-  \end{minipage}
-\end{table}
+  \end{subtable}
 
-\begin{table}
-  \begin{minipage}{0.45\textwidth}
-    \centering
-    \caption{Messwerte der Leckratenmessung bei\\ einem Gleichgewichtsdruck von 0.6\,mbar}
+  \vspace{1cm}
+
+  \begin{subtable}{0.45\textwidth}
+    \subcaption{Gleichgewichtsdruck von 0.6\,mbar}
     \begin{tabular}{c|c|c|c|c}\label{tab:Leck0.6Dreh}
       $p$\,/\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
       \hline
@@ -75,10 +77,9 @@ In den Tabellen \eqref{tab:Leck0.1Dreh} bis \eqref{tab:Leck1.0Dreh} sind die Mes
       4.0 & 54 & 56 & 52 & $\num{54.8 +- 1.0}$ \\
       6.0 & 82 & 80 & 81 & $\num{81.0 +- 0.6}$ \\
     \end{tabular}
-  \end{minipage}\hfill
-  \begin{minipage}{0.45\textwidth}
-    \centering
-    \caption{Messwerte der Leckratenmessung bei\\ einem Gleichgewichtsdruck von 0.8\,mbar}
+  \end{subtable}\hfill
+  \begin{subtable}{0.45\textwidth}
+    \subcaption{Gleichgewichtsdruck von 0.8\,mbar}
     \begin{tabular}{c|c|c|c|c}\label{tab:Leck0.8Dreh}
       $p$\,/\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
       \hline
@@ -88,24 +89,24 @@ In den Tabellen \eqref{tab:Leck0.1Dreh} bis \eqref{tab:Leck1.0Dreh} sind die Mes
       6.0 & 55 & 54 & 57 & $\num{55.3 +- 0.9}$ \\
       8.0 & 75 & 78 & 76 & $\num{76.3 +- 0.9}$ \\
     \end{tabular}
-  \end{minipage}
+  \end{subtable}
+
+  \vspace{1cm}
+  \begin{subtable}{0.45\textwidth}
+    \subcaption{Gleichgewichtsdruck von 1.0\,mbar}
+    \begin{tabular}{c|c|c|c|c}\label{tab:Leck1.0Dreh}
+      $p$\,/\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
+      \hline
+      2.0  & 10 & 10 & 10 & $\num{10.0 +- 0.0}$ \\
+      4.0  & 27 & 27 & 28 & $\num{27.3 +- 0.3}$ \\
+      6.0  & 42 & 41 & 41 & $\num{41.3 +- 0.3}$ \\
+      8.0  & 57 & 57 & 58 & $\num{57.3 +- 0.3}$ \\
+      10.0 & 72 & 71 & 74 & $\num{72.3 +- 0.9}$ \\
+    \end{tabular}
+  \end{subtable}
 \end{table}
 
-\begin{table}
-  \centering
-  \caption{Messwerte der Leckratenmessung bei\\ einem Gleichgewichtsdruck von 1.0\,mbar}
-  \begin{tabular}{c|c|c|c|c}\label{tab:Leck1.0Dreh}
-    $p$\,/\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
-    \hline
-    2.0  & 10 & 10 & 10 & $\num{10.0 +- 0.0}$ \\
-    4.0  & 27 & 27 & 28 & $\num{27.3 +- 0.3}$ \\
-    6.0  & 42 & 41 & 41 & $\num{41.3 +- 0.3}$ \\
-    8.0  & 57 & 57 & 58 & $\num{57.3 +- 0.3}$ \\
-    10.0 & 72 & 71 & 74 & $\num{72.3 +- 0.9}$ \\
-  \end{tabular}
-\end{table}
-
-In den Diagrammen \eqref{fig:Leck0.1Dreh} bis \eqref{fig:Leck1.0Dreh} sind die Werte aus den oben stehenden Tabellen aufgetragen. Außerdem ist eine lineare Regression durch die Messwerte gelegt worden, dazu wird folgende Funktion verwendet.
+In den Abbildungen \eqref{fig:Leck0.1Dreh} bis \eqref{fig:Leck1.0Dreh} sind die Werte aus den oben stehenden Tabellen aufgetragen. Außerdem ist eine lineare Regression durch die Messwerte gelegt worden, dazu wird folgende Funktion verwendet.
 \begin{align}
   p = a \cdot t + b
 \end{align}
@@ -141,11 +142,12 @@ In den Diagrammen \eqref{fig:Leck0.1Dreh} bis \eqref{fig:Leck1.0Dreh} sind die W
   \caption{Die lineare Regression der Leckratenmessung für die Drehschieberpumpe bei unterschiedlichen Anfangsdrücken.}
 \end{figure}
 
+In Tabelle \eqref{tab:SaugLeckDreh} ist das Saugvermögen für die fünf Gleichgewichtsdrücke berechnet worden. Auf den großen Fehler von ca. 10\,\% wird in der Diskussion weiter eingegangen.
 
 \begin{table}[H]
    \centering
-   \caption{}
-   \label{tab:}
+   \caption{Messwerte zur Bestimmung des Saugvermögens.}
+   \label{tab:SaugLeckDreh}
    \begin{tabular}{c|c|c|c|c}
      & Gleichgewichtsdruck & \multicolumn{2}{c|}{Parameter} & Saugvermögen \\
      \hline
@@ -161,10 +163,128 @@ In den Diagrammen \eqref{fig:Leck0.1Dreh} bis \eqref{fig:Leck1.0Dreh} sind die W
 
 
 
-
-
-
 \subsubsection{Für die Turbopumpe}
+In den Tabellen \eqref{tab:Leck5Turbo} bis \eqref{tab:Leck20Turbo} sind die Messwerte der Leckratenmessung für vier unterschiedliche Gleichgewichtsdrücke aufgetragen. Außerdem ist der Mittelwert der Zeiten und der Fehler gebildet worden. Das Volumen $V_0$ aus Gleichung \eqref{eqn:SaugLeck} entspricht für die Turbopumpe $V_\text{Turbo} = (\num{8.2 +- 0.7})$\,l
+
+\begin{landscape}
+\begin{table}
+  \caption{Messwerte der Leckratenmessung bei vier unterschiedlichen Gleichgewichtsdrücken.}
+  \begin{subtable}{0.49\textwidth}
+    \subcaption{Gleichgewichtsdruck von $5\cdot 10^{-5}$\,mbar}
+    \begin{tabular}{c|c|c|c|c}\label{tab:Leck5Turbo}
+      $p$\,/\,$10^{-4}$\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
+      \hline
+      2  & 1.6  & 1.5  & 1.8  & $\num{1.63 +- 0.01}$\\
+      4  & 4.8  & 4.8  & 5.1  & $\num{4.9 +- 0.1}$\\
+      6  & 7.8  & 8.0  & 8.3  & $\num{8.0 +- 0.1}$\\
+      8  & 10.6 & 10.9 & 11.3 & $\num{10.9 +- 0.2}$\\
+      10 & 14.2 & 15.1 & 15.1 & $\num{14.8 +- 0.3}$\\
+      20 & 27.2 & 28.7 & 29.3 & $\num{28.4 +- 0.6}$\\
+      30 & 39.2 & 41.3 & 43.0 & $\num{41.0 +- 1.0}$\\
+      40 & 49.9 & 53.1 & 54.0 & $\num{52.0 +- 1.0}$\\
+      50 & 60.9 & 64.2 & 65.1 & $\num{63.0 +- 1.0}$\\
+    \end{tabular}
+  \end{subtable}\hspace{2cm}
+  \begin{subtable}{0.49\textwidth}
+    \subcaption{Gleichgewichtsdruck von $10\cdot 10^{-5}$\,mbar}
+    \begin{tabular}{c|c|c|c|c}\label{tab:Leck10Turbo}
+      $p$\,/\,$10^{-4}$\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
+      \hline
+      2  & 0.2  & 0.3  & 0.2  & $\num{0.23 +- 0.03}$ \\
+      4  & 1.1  & 1.1  & 0.9  & $\num{1.03 +- 0.07}$ \\
+      6  & 2.4  & 2.4  & 2.2  & $\num{2.33 +- 0.07}$ \\
+      8  & 3.6  & 3.5  & 3.4  & $\num{3.50 +- 0.06}$ \\
+      10 & 5.3  & 5.8  & 5.7  & $\num{5.6 +- 0.2}$ \\
+      20 & 10.2 & 11.5 & 11.2 & $\num{11.0 +- 0.4}$ \\
+      40 & 19.6 & 21.7 & 21.4 & $\num{20.9 +- 0.7}$ \\
+      60 & 28.0 & 30.7 & 31.4 & $\num{30.0 +- 1.0}$ \\
+      80 & 35.2 & 37.9 & 37.9 & $\num{37.0 +- 0.9}$ \\
+    \end{tabular}
+  \end{subtable}
+
+  \vspace{1cm}
+
+  \begin{subtable}{0.49\textwidth}
+    \subcaption{Gleichgewichtsdruck von $15\cdot 10^{-5}$\,mbar}
+    \begin{tabular}{c|c|c|c|c}\label{tab:Leck15Turbo}
+      $p$\,/\,$10^{-4}$\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
+      \hline
+      4  & 0.2  & 0.3  & 0.4  & $\num{0.33 +- 0.06}$ \\
+      6  & 1.0  & 1.0  & 1.1  & $\num{1.03 +- 0.03}$ \\
+      8  & 1.8  & 1.9  & 1.9  & $\num{1.87 +- 0.03}$ \\
+      10 & 3.3  & 3.4  & 3.4  & $\num{3.37 +- 0.03}$ \\
+      20 & 7.1  & 7.3  & 7.3  & $\num{7.23 +- 0.07}$ \\
+      40 & 14.1 & 14.0 & 14.1 & $\num{14.07 +- 0.03}$ \\
+      60 & 20.2 & 20.2 & 20.2 & $\num{20.20 +- 0.0}$ \\
+      80 & 25.6 & 25.4 & 25.2 & $\num{25.40 +- 0.1}$ \\
+    \end{tabular}
+  \end{subtable}\hspace{2cm}
+  \begin{subtable}{0.49\textwidth}
+    \subcaption{Gleichgewichtsdruck von $20\cdot 10^{-5}$\,mbar}
+    \begin{tabular}{c|c|c|c|c}\label{tab:Leck20Turbo}
+      $p$\,/\,$10^{-4}$\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
+      \hline
+      4  & 0.3  & 0.3  & 0.4  & $\num{0.33 +- 0.03}$ \\
+      6  & 0.6  & 0.5  & 0.6  & $\num{0.57 +- 0.03}$ \\
+      8  & 1.1  & 1.2  & 1.2  & $\num{1.17 +- 0.03}$ \\
+      10 & 2.5  & 2.3  & 2.5  & $\num{2.43 +- 0.07}$ \\
+      20 & 5.1  & 5.2  & 5.2  & $\num{5.17 +- 0.03}$ \\
+      40 & 10.4 & 10.5 & 10.5 & $\num{10.47 +- 0.03}$ \\
+      60 & 15.1 & 15.1 & 15.0 & $\num{15.07 +- 0.03}$ \\
+      80 & 18.7 & 19.1 & 19.1 & $\num{19.0 +- 0.1}$ \\
+    \end{tabular}
+  \end{subtable}
+\end{table}
+\end{landscape}
+
+In den Abbildungen \eqref{fig:Leck5Turbo} bis \eqref{fig:Leck20Turbo} sind die Werte aus den oben stehenden Tabellen aufgetragen. Außerdem ist eine lineare Regression durch die Messwerte gelegt worden, dazu wird folgende Funktion verwendet.
+\begin{align}
+  p = a \cdot t + b
+\end{align}
+
+\begin{figure}
+  \begin{subfigure}[c]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{pictures/Leck-5mbar-T.pdf}
+    \subcaption{Leckratenmessung mit einem Gleichgewichtsdruck $p_g = 5 \cdot 10^{-5}$\,mbar}
+    \label{fig:Leck5Turbo}
+  \end{subfigure}\hfill
+  \begin{subfigure}[c]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{pictures/Leck-10mbar-T.pdf}
+    \subcaption{Leckratenmessung mit einem Gleichgewichtsdruck $p_g = 10 \cdot 10^{-5}$\,mbar}
+    \label{fig:Leck10Turbo}
+  \end{subfigure}
+
+  \begin{subfigure}[c]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{pictures/Leck-15mbar-T.pdf}
+    \subcaption{Leckratenmessung mit einem Gleichgewichtsdruck $p_g = 15 \cdot 10^{-5}$\,mbar}
+    \label{fig:Leck15Turbo}
+  \end{subfigure}\hfill
+  \begin{subfigure}[c]{0.49\textwidth}
+    \includegraphics[width=\textwidth]{pictures/Leck-20mbar-T.pdf}
+    \subcaption{Leckratenmessung mit einem Gleichgewichtsdruck $p_g = 20 \cdot 10^{-5}$ \,mbar}
+    \label{fig:Leck20Turbo}
+  \end{subfigure}
+
+  \caption{Die lineare Regression der Leckratenmessung für die Drehschieberpumpe bei unterschiedlichen Anfangsdrücken.}
+\end{figure}
+
+In Tabelle \eqref{tab:SaugLeckTurbo} ist das Saugvermögen für die vier Gleichgewichtsdrücke berechnet worden.
+
+\begin{table}
+   \centering
+   \caption{Messwerte zur Bestimmung des Saugvermögens.}
+   \label{tab:SaugLeckTurbo}
+   \begin{tabular}{c|c|c|c|c}
+     & Gleichgewichtsdruck & \multicolumn{2}{c|}{Parameter} & Saugvermögen \\
+     \hline
+     Aus Diagramm & $p_\text{g}$ / $10^{-5}\cdot$mbar & $a$ / $10^{-4}\cdot \frac{\text{mbar}}{\text{s}}$ & $b$ / $10^{-4}\cdot \frac{\text{mbar}}{\text{s}}$ & $S$ / $\frac{\text{l}}{\text{s}}$ \\
+     \hline
+     Abb. \eqref{fig:Leck5Turbo} & $(\num{5 +- 0.5})$ & $(\num{0.77 +- 0.02})$ & $(\num{-0.4 +- 0.6})$ & $(\num{13.0 +- 2.0})$ \\
+     Abb. \eqref{fig:Leck10Turbo} & $(\num{10.0 +- 1.0})$ & $(\num{2.05 +- 0.06})$ & $(\num{0.1 +- 1.0})$ & $(\num{17.0 +- 2.0}) $ \\
+     Abb. \eqref{fig:Leck15Turbo} & $(\num{15.0 +- 2.0})$ & $(\num{3.0 +- 0.1})$ & $(\num{1.0 +- 1.0})$ & $(\num{16.0 +- 2.0}) $ \\
+     Abb. \eqref{fig:Leck20Turbo} & $(\num{20.0 +- 2.0})$ & $(\num{4.0 +- 0.1})$ & $(\num{2.0 +- 1.0})$ & $(\num{16.0 +- 2.0}) $ \\
+  \end{tabular}
+\end{table}
 
 
 
