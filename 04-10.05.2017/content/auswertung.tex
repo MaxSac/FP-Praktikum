@@ -13,13 +13,32 @@ Im Folgenden wird das Saugvermögen für die Drehschieberpumpe und die Turbomole
 
 
 \subsection{Bestimmung des Saugvermögens über die Leckratenmessung}
+Im Folgenden wird das Saugvermögen $S$ aus der Leckratenmessung bestimmt. Das Saugvermögen ist gleich dem Quotienten aus des Leckrate des Rezipienten $Q$ und dem Gleichgewichtsdruck $p_\text{g}$.
+\begin{align}
+  S = \frac{Q}{p_\text{g}}
+\end{align}
+Die Leckrate $Q$ ergibt sich zu
+\begin{align}
+  Q = V_0\, \frac{\Delta p}{\Delta t}
+\end{align}
+Dabei ist $V_0$ das Volumen des Rezipienten und $\frac{\Delta p}{\Delta t}$ entspricht der Steigung $a$, wenn die Zeit $t$ gegen den Druck $p$ aufgetragen wird. Daraus folgt für das Saugvermögen
+\begin{align}\label{eqn:SaugLeck}
+  S = \frac{V_0}{p_\text{g}}\, \frac{\Delta p}{\Delta t} = \frac{V_0}{p_\text{g}} \cdot a
+\end{align}
+Der Fehler des Saugvermögens wird im folgenden mit
+\begin{align*}
+  \Delta S &= \sqrt{ \left(\frac{\partial S}{\partial V_0} \right)^2 (\Delta V_0)^2 + \left(\frac{\partial S}{\partial p_g} \right)^2 (\Delta p_g)^2 + \left(\frac{\partial S}{\partial a} \right)^2 (\Delta a)^2 } \\
+  &= \sqrt{ \left(\frac{a}{p_g} \right)^2 (\Delta V_0)^2 + \left(-\,\frac{V_0\,a}{p_g^2} \right)^2 (\Delta p_g)^2 + \left(\frac{V_0}{p_g} \right)^2 (\Delta a)^2 }
+\end{align*}
+berechnet.
 
 \subsubsection{Für die Drehschieberpumpe}
+In den Tabellen \eqref{tab:Leck0.1Dreh} bis \eqref{tab:Leck1.0Dreh} sind die Messwerte der Leckratenmessung für fünf unterschiedliche Gleichgewichtsdrücke aufgetragen. Außerdem ist der Mittelwert der Zeiten und der Fehler gebildet worden. Das Volumen $V_0$ aus Gleichung \eqref{eqn:SaugLeck} entspricht für die Drehschieberpumpe $V_\text{Dreh} = (\num{8.4 +- 0.7})$\,l
 
 \begin{table}[H]
   \begin{minipage}{0.45\textwidth}
-    \caption{Messwerte der Leckratenmessung bei\\ einem Anfangsdruck von 0.1\,mbar}
-    \begin{tabular}{c|c|c|c|c}
+    \caption{Messwerte der Leckratenmessung bei\\ einem Gleichgewichtsdruck von 0.1\,mbar}
+    \begin{tabular}{c|c|c|c|c}\label{tab:Leck0.1Dreh}
       $p$\,/\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
       \hline
       0.2 & 11  & 12  & 12  & $\num{11.7 +- 0.3}$ \\
@@ -30,8 +49,8 @@ Im Folgenden wird das Saugvermögen für die Drehschieberpumpe und die Turbomole
     \end{tabular}
   \end{minipage}\hfill
   \begin{minipage}{0.45\textwidth}
-    \caption{Messwerte der Leckratenmessung bei\\ einem Anfangsdruck von 0.4\,mbar}
-    \begin{tabular}{c|c|c|c|c}
+    \caption{Messwerte der Leckratenmessung bei\\ einem Gleichgewichtsdruck von 0.4\,mbar}
+    \begin{tabular}{c|c|c|c|c}\label{tab:Leck0.4Dreh}
       $p$\,/\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
       \hline
       0.6 & 6   & 7  & 7  & $\num{6.7 +- 0.3}$ \\
@@ -46,8 +65,8 @@ Im Folgenden wird das Saugvermögen für die Drehschieberpumpe und die Turbomole
 \begin{table}
   \begin{minipage}{0.45\textwidth}
     \centering
-    \caption{Messwerte der Leckratenmessung bei\\ einem Anfangsdruck von 0.6\,mbar}
-    \begin{tabular}{c|c|c|c|c}
+    \caption{Messwerte der Leckratenmessung bei\\ einem Gleichgewichtsdruck von 0.6\,mbar}
+    \begin{tabular}{c|c|c|c|c}\label{tab:Leck0.6Dreh}
       $p$\,/\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
       \hline
       0.8 & 4  & 4  & 4  & $\num{4.0 +- 0.0}$ \\
@@ -59,8 +78,8 @@ Im Folgenden wird das Saugvermögen für die Drehschieberpumpe und die Turbomole
   \end{minipage}\hfill
   \begin{minipage}{0.45\textwidth}
     \centering
-    \caption{Messwerte der Leckratenmessung bei\\ einem Anfangsdruck von 0.8\,mbar}
-    \begin{tabular}{c|c|c|c|c}
+    \caption{Messwerte der Leckratenmessung bei\\ einem Gleichgewichtsdruck von 0.8\,mbar}
+    \begin{tabular}{c|c|c|c|c}\label{tab:Leck0.8Dreh}
       $p$\,/\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
       \hline
       1.0 & 2  & 2  & 3  & $\num{2.3 +- 0.3}$ \\
@@ -74,8 +93,8 @@ Im Folgenden wird das Saugvermögen für die Drehschieberpumpe und die Turbomole
 
 \begin{table}
   \centering
-  \caption{Messwerte der Leckratenmessung bei\\ einem Anfangsdruck von 1.0\,mbar}
-  \begin{tabular}{c|c|c|c|c}
+  \caption{Messwerte der Leckratenmessung bei\\ einem Gleichgewichtsdruck von 1.0\,mbar}
+  \begin{tabular}{c|c|c|c|c}\label{tab:Leck1.0Dreh}
     $p$\,/\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
     \hline
     2.0  & 10 & 10 & 10 & $\num{10.0 +- 0.0}$ \\
@@ -86,32 +105,73 @@ Im Folgenden wird das Saugvermögen für die Drehschieberpumpe und die Turbomole
   \end{tabular}
 \end{table}
 
+In den Diagrammen \eqref{fig:Leck0.1Dreh} bis \eqref{fig:Leck1.0Dreh} sind die Werte aus den oben stehenden Tabellen aufgetragen. Außerdem ist eine lineare Regression durch die Messwerte gelegt worden, dazu wird folgende Funktion verwendet.
+\begin{align}
+  p = a \cdot t + b
+\end{align}
 
 \begin{figure}[H]
   \begin{subfigure}[c]{0.49\textwidth}
     \includegraphics[width=\textwidth]{pictures/Leck-0.1mbar-D.pdf}
-    \subcaption{Leckratenmessung mit einem Anfangsdruck $p_g$ = 0.1\,mbar}
+    \subcaption{Leckratenmessung mit einem Gleichgewichtsdruck $p_g$ = 0.1\,mbar}
+    \label{fig:Leck0.1Dreh}
   \end{subfigure}\hfill
   \begin{subfigure}[c]{0.49\textwidth}
     \includegraphics[width=\textwidth]{pictures/Leck-0.4mbar-D.pdf}
-    \subcaption{Leckratenmessung mit einem Anfangsdruck $p_g$ = 0.4\,mbar}
+    \subcaption{Leckratenmessung mit einem Gleichgewichtsdruck $p_g$ = 0.4\,mbar}
+    \label{fig:Leck0.4Dreh}
   \end{subfigure}
 
   \begin{subfigure}[c]{0.49\textwidth}
     \includegraphics[width=\textwidth]{pictures/Leck-0.6mbar-D.pdf}
-    \subcaption{Leckratenmessung mit einem Anfangsdruck $p_g$ = 0.6\,mbar}
+    \subcaption{Leckratenmessung mit einem Gleichgewichtsdruck $p_g$ = 0.6\,mbar}
+    \label{fig:Leck0.6Dreh}
   \end{subfigure}\hfill
   \begin{subfigure}[c]{0.49\textwidth}
     \includegraphics[width=\textwidth]{pictures/Leck-0.8mbar-D.pdf}
-    \subcaption{Leckratenmessung mit einem Anfangsdruck $p_g$ = 0.8\,mbar}
+    \subcaption{Leckratenmessung mit einem Gleichgewichtsdruck $p_g$ = 0.8\,mbar}
+    \label{fig:Leck0.8Dreh}
   \end{subfigure}
 
   \begin{subfigure}[c]{0.49\textwidth}
     \includegraphics[width=\textwidth]{pictures/Leck-1.0mbar-D.pdf}
-    \subcaption{Leckratenmessung mit einem Anfangsdruck $p_g$ = 1.0\,mbar}
+    \subcaption{Leckratenmessung mit einem Gleichgewichtsdruck $p_g$ = 1.0\,mbar}
+    \label{fig:Leck1.0Dreh}
   \end{subfigure}
   \caption{Die lineare Regression der Leckratenmessung für die Drehschieberpumpe bei unterschiedlichen Anfangsdrücken.}
 \end{figure}
 
 
+\begin{table}[H]
+   \centering
+   \caption{}
+   \label{tab:}
+   \begin{tabular}{c|c|c|c|c}
+     & Gleichgewichtsdruck & \multicolumn{2}{c|}{Parameter} & Saugvermögen \\
+     \hline
+     Aus Diagramm & $p_\text{g}$ / mbar & $a$ / $\frac{\text{mbar}}{\text{s}}$ & $b$ / $\frac{\text{mbar}}{\text{s}}$ & $S$ / $\frac{\text{l}}{\text{s}}$ \\
+     \hline
+     Abb. \eqref{fig:Leck0.1Dreh} & $(\num{0.1 +- 0.01})$ & $(\num{4.7 +- 0.1}) \cdot 10^{-3}$ & $(\num{0.16 +- 0.02})$ & $(\num{0.39 +- 0.05})$ \\
+     Abb. \eqref{fig:Leck0.4Dreh} & $(\num{0.4 +- 0.04})$ & $(\num{3.7 +- 0.1}) \cdot 10^{-2} $ & $(\num{0.27 +- 0.07}) $ & $(\num{0.8 +- 0.1}) $ \\
+     Abb. \eqref{fig:Leck0.6Dreh} & $(\num{0.6 +- 0.06})$ & $(\num{6.7 +- 0.2}) \cdot 10^{-2} $ & $(\num{0.46 +- 0.08}) $ & $(\num{0.9 +- 0.1}) $ \\
+     Abb. \eqref{fig:Leck0.8Dreh} & $(\num{0.8 +- 0.08})$ & $(\num{9.5 +- 0.2}) \cdot 10^{-2} $ & $(\num{0.67 +- 0.08}) $ & $(\num{1.0 +- 0.1}) $ \\
+     Abb. \eqref{fig:Leck1.0Dreh} & $(\num{1.0 +- 0.1})$ & $(\num{1.29 +- 0.02}) \cdot 10^{-1} $ & $(\num{0.6 +- 0.1}) $ & $(\num{1.1 +- 0.1}) $ \\
+ \end{tabular}
+\end{table}
+
+
+
+
+
+
 \subsubsection{Für die Turbopumpe}
+
+
+
+
+
+
+
+
+
+%
