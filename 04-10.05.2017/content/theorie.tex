@@ -15,7 +15,7 @@ Das Maß eines Vakuums ist der Druck $p$. Dieser ist definiert als Kraft $F$ pro
   \label{eqn:druck}
 \end{equation}
 Anhand dessen lassen sich Vakuums in verschiedene Kategorien unterteilen, was im späteren noch passieren wird. Desweiteren lässt sich bei einem gemsich aus Gasen der Gesamtdruck $p_\text{Ges}$ in mehre Partialdrücke aufteilen. Es gilt immer, dass die Summe über alle partialdrücke dem Gesamtdruck entspricht. Analog wird mit der Teilchenanzahl vorgegangen. Der Partialdruck entspricht dem Druck welcher das entsprechende gemisch in dem selben Volume wodrin sich $p_\text{Ges}$ befindet ausübern würde. \newline
-Einheiten \newline
+Der Druck wird üblicherweise in den Einheiten mbar gemessen. Der Normaldruck ist auf 1013 mbar definiert. 1 bar Entspricht in etwa $10^{5}$ Pa. \newline
 Desweiteren zeichnet sich ein Gas durch die mittlere freie Weglänge $\Lambda$ eines Teilcens aus, bis es mit einem anderen wechselwirkt. Durch einführen eines Stoßquerschnitts und einer konstanten Teilchenzahldichte $n$ lässt sich durch lösen einer Differentialgleichung 
 \begin{equation}
   \frac{dN}{N} = -n \sigma \Delta x
@@ -96,8 +96,18 @@ Der Strömungswiederstand verhält sich analog zum elektrischen Widerstand. Deme
 \section{Technische Grundlagen}
 
 \subsection{Pumpentypen und Funktionsweise}
-Pumpen lassen sich neben den verschiedenen Saugraten $S$ und den erreichten Enddrücke $p_\text{E}$ kategorisieren. Beispielhaft werden drei Pumpen vorgestellt, welche weit verbreitet in der Vakuumstechnik sind. 
-
+Pumpen lassen sich neben den verschiedenen Saugraten $S$ und den erreichten Enddrücke $p_\text{E}$ kategorisieren. Eine Übersicht über die Verschiedenen Pumpen Kategorisiert nach deren funktionsweisenen ist in Abblidung \ref{fig:Uebersicht} zu sehen.
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.9\textwidth]{picture/Uebersicht.png}
+  \caption{Übersicht der verschiedenen Kategorien von Vakuumpumpen \cite{Uebersicht}}
+  \label{fig:Uebersicht}
+\end{figure}
+Die funktionsweise von kinetische Pumpen beruht darauf das durch Beschleunigung des Gases in Pumprichtung der Gasdruck verringert wird.
+Verdrängerpumpen kennzeichen sich dadurch das aufgrund von Volumenvergrößerungen der Gasdruck gesenkt wird.
+Gasbindenende Pumpen zeichnen sich dadurch aus das Sie die Gas-Molekühle an der Oberfläche des Rezipienten binden und senken somit den Druck. Sie werden manchmal auch als Speicher-Pumpen bezeichnet weil Sie die Molekühle nicht abtranspotieren sondern an der Oberfläche des Rezipienten lokalisieren. Mit ihnenen lassen sich nach Einstellung eines Vovakuums sehr geringe Drücke einstellen.
+Allgemein lassen sich alle Pumpen die Gas aus dem Rezipienten an die Umgebung transportieren als Transportpumpen zusammenfassen. 
+Beispielhaft werden drei Pumpen vorgestellt, welche weit verbreitet in der Vakuumstechnik sind. 
 \subsubsection{Drehschieberpumpe:}
 \begin{wrapfigure}{r}{0.32\textwidth}
     \vspace{-1cm}
@@ -106,24 +116,24 @@ Pumpen lassen sich neben den verschiedenen Saugraten $S$ und den erreichten Endd
     \caption{Querschnitt \cite{Dreh},\cite{Jena}}
     \label{fig:Dreh}
 \end{wrapfigure}
-Die Drehschiebepumpe ist eine kinetische Pumpe und eine Skizze vom Aufbau ist in Abbildung \ref{fig:Dreh} abgebildet. Sie kennzeichnet sich durch eine zylinrischen Kammer aus wodrin ein zylindrischer Rotor gelagert ist. An dem Rotor befinden sich zwei Drehschieber welchen en Inhalt der Drehkammer in zwei Volumina aufteilt. Die Zylinderische Kammer ist einerseits mit dem Rezipient und der Außenwelt verbunden. Durch die Volumenvergrößerung des Rezipienten strömt Gas in die Pumpe welche durch ein Überdruckventil durch kompression nach einem halben Rotorumschlag das Gas an die Umwelt abgibt. Der Enddruck $p_\text{E}$ ist im wesentlichen durch das Restvolumen bestimmt wenn die Luft grade beim Auslass komprimiert wird. Drehschieberpumpen haben typischerweise eine Saugleistung von einigen Litern. Der Enddruck befindet sich im Bereich von hPa. 
+Die Drehschiebepumpe ist eine Verdrängerpumpe und eine Skizze vom Aufbau ist in Abbildung \ref{fig:Dreh} abgebildet. Sie kennzeichnet sich durch eine zylinrischen Kammer aus wodrin ein zylindrischer Rotor gelagert ist. An dem Rotor befinden sich zwei Drehschieber welchen en Inhalt der Drehkammer in zwei Volumina aufteilt. Die Zylinderische Kammer ist einerseits mit dem Rezipient und der Außenwelt verbunden. Durch die Volumenvergrößerung des Rezipienten strömt Gas in die Pumpe welche durch ein Überdruckventil durch kompression nach einem halben Rotorumschlag das Gas an die Umwelt abgibt. Der Enddruck $p_\text{E}$ ist im wesentlichen durch das Restvolumen bestimmt wenn die Luft grade beim Auslass komprimiert wird. Drehschieberpumpen haben typischerweise eine Saugleistung von einigen Litern. Der Enddruck befindet sich im Bereich von hPa. 
 
 
 \subsubsection{Turbomolekularpumpe:}
 
-\begin{wrapfigure}{l}{0.3\textwidth}
+\begin{wrapfigure}{l}{0.35\textwidth}
     \vspace{-1cm}
     \centering
-    \includegraphics[width=0.3\textwidth]{./picture/Turbo.jpg}
+    \includegraphics[width=0.33\textwidth]{./picture/Turbo.jpg}
     \caption{Querschnitt Turbopumpe \cite{Turbo}}
     \label{fig:Turbo}
-    \vspace{-1cm}
+    \vspace{-0.5cm}
 \end{wrapfigure}
-Die Turbopumpe benötigt für die inbetriebnahmen ein Vorvakuum. Sie zeichnet sich durch ihren Abwechselnden aufbau aus Turbinen und statorscheiben aus. Die Ventilatorblätter sind gegen die Scheibenebene gekippt und haben nach außen hin ein immer größer werdenden Neigungswinkel. Fällt ein Gas-Molekühl aus dem Rezipienten auf die Turbinenscheibe wird dieser Kurz von diesen Absorbiert, Adsorbiert bzw Stößt mit diesen und anschließend weiter zu den Rototbletter mit einem höheren Neigungswinkel durchgereicht. Damit diese Arbeiten kann muss die Mittlere freie weglänge der Gasmolekühle dementsprechend in Größenordung des Abstandes der Rotorblätter oder größer sein.
-
+kinetische Pumpe \newline
+Die Turbopumpe benötigt für die inbetriebnahmen ein Vorvakuum. Sie zeichnet sich durch ihren Abwechselnden aufbau aus Turbinen und statorscheiben aus. Die Ventilatorblätter sind gegen die Scheibenebene gekippt und haben nach außen hin ein immer größer werdenden Neigungswinkel. Fällt ein Gas-Molekühl aus dem Rezipienten auf die Turbinenscheibe wird dieser Kurz von diesen Absorbiert, Adsorbiert bzw Stößt mit diesen und anschließend weiter zu den Rototbletter mit einem höheren Neigungswinkel durchgereicht. Damit diese Arbeiten kann muss die Mittlere freie weglänge der Gasmolekühle dementsprechend in Größenordung des Abstandes der Rotorblätter oder größer sein. Die Turbomolekularpumpe erzeugen typischerweise Enddrücke von bis zu $10^{-6}$ mbar. Bei Drehzahlen von einigen 10.000 Umdrehungen pro Minute erreichen Turboolekularpumpen je nach Geometrie Saugleistungen von mehreren Litern bis zu tausenden von Litern.
 
 \subsubsection{Ionengetter-Pumpe}
-Die Ionengetterpumpe gehört zu dem Bereich der Sorptionspumpen. Das Wirkungsprinzip beruht darauf das die Gasteilchen ionisiert werden und anschließend mittels eines angelegten Feldes zum Gettermaterial befördert werden. Somit ist dieses an der Oberfläche des Gettermaterials gebunden und verringert den Druck effektiv im Volumen des Rezipientens welches keinen Kontakt zur Grenzfläche besitzt. Durch thermische Prozesse lässt sich in gewissen Grenzen die beschränkte Aufnahmefähigkeit des Gettermaterials erhöhen. Daher ist es von intresse beim Einsatz ein gutes Hochvakuum zu besitzen. Mit der Ionengetter-Pumpe ist es möglich ein Hichvakuum zu erzeugen.
+Die Ionengetterpumpe gehört zu dem Bereich der Sorptionspumpen. Das Wirkungsprinzip beruht darauf das die Gasteilchen ionisiert werden und anschließend mittels eines angelegten Feldes zum Gettermaterial befördert werden. Somit ist dieses an der Oberfläche des Gettermaterials gebunden und verringert den Druck effektiv im Volumen des Rezipientens welches keinen Kontakt zur Grenzfläche besitzt. Durch thermische Prozesse lässt sich in gewissen Grenzen die beschränkte Aufnahmefähigkeit des Gettermaterials erhöhen. Daher ist es von intresse beim Einsatz ein gutes Hochvakuum zu besitzen. Mit der Ionengetter-Pumpe ist es möglich Drücke von bis zu $10^{-11}$ mbar zu erzeugen.
 
 \subsection{Messgeräte}
 Für die Messung von verschiedenen Drücken werden verschiedene Messinstrumente benötigt. Jedes hatt ihren eigenen Arbeitsbereich und daher muss zur vollständigen Beobachtung der Erzeugung eines Hochvakuums ausgehend vom Normaldruck eine hinternanderschaltung und bedachtes in die Vakuumskammer bringen gewährleistet werden. Die Messgeräte werden im Folgenden sotiert nach ihrem Wirkungsbereich von Normaldruck zum Vakuum vorgestellt und ihre funktionsweise kurz erläutert.
@@ -136,21 +146,21 @@ Für die Messung von verschiedenen Drücken werden verschiedene Messinstrumente 
   \label{fig:pirani}
   \vspace{-0.6cm}
 \end{wrapfigure}
-Das Pirani Mesgerät bei denen die Druckabhängige Wärmeleitung des Gases ausgenutzt wird kommt bei drücken zwischen $50 \cdot$ nbar zum Einsatz. Die Wirkungsweise beruht darauf, dass in dem genannte Gebiet, wie in Abbildung \ref{fig:pirani} zu sehen, die Wärmeleifähigkeit proportional zum Druck ist. Das technsiche Prinzip beruht darauf, dass ein Draht durch einen konstanten Strom geheißt wird und dieser seine Wärme über statischtische Prozesse an die sich in dem zu messenden Körper befindlichen Teilchen abgibt. Somit sint die Temperatur des gases, welcher mit dem spezifischen Widerstand des Strimes korreliert ist. Wird nun der Strom gemessen, kann nach einer Eichung der Druck gemessen werde. In den Bereichen A und C der Abildung \ref{fig:pirani} ist die Wärmeeitfähigkeit nicht mehr proportional zum Druck. In gewissen Maßen lässt sich jedoch noch Drücke oberhalb von 1 mbar abschätzen, jeoch liegt dem Messprinzip ein anderes physikalisches Prinzip zugrunde.
+Das Pirani Mesgerät bei denen die Druckabhängige Wärmeleitung des Gases ausgenutzt wird kommt bei drücken zwischen Normaldruck und 50 nbar zum Einsatz. Die Wirkungsweise beruht darauf, dass in dem genannte Gebiet, wie in Abbildung \ref{fig:pirani} zu sehen, die Wärmeleifähigkeit proportional zum Druck ist. Das technsiche Prinzip beruht darauf, dass ein Draht durch einen konstanten Strom geheißt wird und dieser seine Wärme über statischtische Prozesse an die sich in dem zu messenden Körper befindlichen Teilchen abgibt. Somit sint die Temperatur des gases, welcher mit dem spezifischen Widerstand des Strimes korreliert ist. Wird nun der Strom gemessen, kann nach einer Eichung der Druck gemessen werde. In den Bereichen A und C der Abildung \ref{fig:pirani} ist die Wärmeeitfähigkeit nicht mehr proportional zum Druck. In gewissen Maßen lässt sich jedoch noch Drücke oberhalb von 1 mbar abschätzen, jeoch liegt dem Messprinzip ein anderes physikalisches Prinzip zugrunde.
 
 \subsubsection{Kaltkatohden-Messgerät}
-Beim Kaltkathoden-Messgerät wird ein großes E-Feld angelegt welches Primär-Elektronen welche con der natürlichen Raumionisation stammen abziehen. Aufgrund der Beschleunigung durch das Feld Ionisieren die Primär-Elektronen weitere Gasmolekühle, sodass der Strom vergrößert wird. Dieser effekt wird durch anlegung eines äußeren Feldes verstärkt, da dadurch die Elektronen aufgrund der Lorentz-Kraft auf Kreisbahnen gezwungen werden und der Weg zur Anode hin anwächst. Durch messung des Ionisationsstrom kann auf den Druck rückgeschlossen werden, jedoch muss berücksichtigt werden das der Strom auch von der Gasart abhängig ist.  
+Beim Kaltkathoden-Messgerät wird ein großes E-Feld angelegt welches Primär-Elektronen welche con der natürlichen Raumionisation stammen abziehen. Aufgrund der Beschleunigung durch das Feld Ionisieren die Primär-Elektronen weitere Gasmolekühle, sodass der Strom vergrößert wird. Dieser effekt wird durch anlegung eines äußeren Feldes verstärkt, da dadurch die Elektronen aufgrund der Lorentz-Kraft auf Kreisbahnen gezwungen werden und der Weg zur Anode hin anwächst. Durch messung des Ionisationsstrom kann auf den Druck rückgeschlossen werden, jedoch muss berücksichtigt werden das der Strom auch von der Gasart abhängig ist. Der Messbereich des Kaltkathodenmessgerät ist nach unten hin bis ca $10^{-4}$ mbar beschränkt da trotz der verlängerten Messtrecke nicht genügend Gasmolekühle Ionisiert werden.
 
 \subsubsection{Heißkathonden-Messgerät}
 \begin{wrapfigure}{r}{0.3\textwidth}
   \vspace{-1.0cm}
   \centering
   \includegraphics[width=0.28\textwidth]{picture/Heißkathode.png}
-  \caption{Funktionsweise Heißkathoden-Messgerät}
+  \caption{Funktionsweise Heißkathoden-Messgerät \cite{Heiss}}
   \label{fig:Heißkathode}
   \vspace{-1cm}
 \end{wrapfigure}
-Die Wirkungsweise des Heißkathoden-Messgerät ähnelt dem des Kaltkathoden-Messgerät stark. Dadruch das es jedoch bei niedigeren Drücken zum einsatz kommt, werden zu wenig Elektronen durch die natürlichen Raumionisation frei. Aufgrund dessen wird eine Glühkathode gentutz welche Elektronen freisetzt welche auf dem weg zur Anode Gasmolekühle Ionsiert. Durch Messung des Ionenstrom kann somit der Druck bestimmt werden.  
+Die Wirkungsweise des Heißkathoden-Messgerät ähnelt dem des Kaltkathoden-Messgerät stark. Dadruch das es jedoch bei niedigeren Drücken zum einsatz kommt, werden zu wenig Elektronen durch die natürlichen Raumionisation frei. Aufgrund dessen wird eine Glühkathode gentutz welche Elektronen freisetzt welche auf dem weg zur Anode Gasmolekühle Ionsiert. Durch Messung des Ionenstrom kann somit der Druck bestimmt werden. Der Messbereich ist nach oben bis ca $10^{-2}$ mbar beschränkt weil sonst die Glühkathode beschädigt wird und nach unten bis ca $10^{-9}$.  
 \section{Fehlerrechnung}
 Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
 \subsubsection{Mittelwert}
