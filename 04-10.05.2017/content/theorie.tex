@@ -56,11 +56,16 @@ Zusätzlich wird eingefordert das die Temperatur des Gases bei dem Vorgang konst
 \begin{equation}
   p V = n R T
 \end{equation}
-
+lässt dich für eine zeitabhängige Druckänderung
 \begin{equation}
   \frac{\text{d}}{\text{dt}} pV = \frac{\text{d}}{\text{dt}} n R T
 \end{equation}
-
+bei konstanter Stoffmenge $n$ im System die Gleichung 
+\begin{equation}
+  \frac{\text{d}p}{\text{d}t} V= \frac{\text{d}V}{\text{d}t} p
+  \label{eqn:konti}
+\end{equation}
+herleiten. Durch lösen der DGL ergibt sich die Gleichung:
 \begin{equation}
   p(t) = p_0 \exp \left( \frac{-t}{\tau} \right)
 \end{equation}
@@ -68,9 +73,21 @@ Durch einsetzen der Anfangsbedingungen und des Enddrucks $p_\text{E}$ ergibt sic
 \begin{equation}
   p(t) = (p_0 - p_\text{E}) \exp \left( -t \frac{S}{V} \right) + p_\text{E}
 \end{equation}
-
+\subsection{Bestimmung des Saugvermögens über die Leckratenmessung}
+Im Folgenden wird das Saugvermögen $S$ aus der Leckratenmessung bestimmt. Das Saugvermögen ist gleich dem Quotienten aus des Leckrate des Rezipienten $Q$ und dem Gleichgewichtsdruck $p_\text{g}$.
+\begin{align}
+   S = \frac{Q}{p_\text{g}}
+\end{align}
+Die Leckrate $Q$ ergibt sich zu
+\begin{align}
+   Q = V_0\, \frac{\Delta p}{\Delta t}
+\end{align}
+Aus dem Volumen $V_0$ des Rezipienten und dem Quotienten $\frac{\Delta p}{\Delta t}$ lässt sich das Saugvermögen der Pumpe bestimmen, wenn die Zeit $t$ gegen den Druck $p$ aufgetragen wird. Daraus folgt für das Saugvermögen
+\begin{align}\label{eqn:SaugLeck}
+   S = \frac{V_0}{p_\text{g}}\, \frac{\Delta p}{\Delta t}
+\end{align}
 \subsection{Wechselwirkungsprozesse Restgas Umgebung}
-Befindet sich ein Gas oder eine Flüssigkeit eingeschloßen in einem Körper, wechseltwirkt diese mit der Grenzfläche. Dabei können die aufgeführten Prozesse auftreten und die Messreihe beeinflussen. In Kapitel \ref{??} werden Maßnahmen vorgestellt dem entgegenzuwirken. (Phönen, Rezipient verschließen).
+Befindet sich ein Gas oder eine Flüssigkeit eingeschloßen in einem Körper, wechseltwirkt diese mit der Grenzfläche. Dabei können die aufgeführten Prozesse auftreten und die Messreihe beeinflussen. In Kapitel \ref{Durchführung} werden Maßnahmen vorgestellt dem entgegenzuwirken. (Phönen, Rezipient verschließen).
 \begin{itemize}
   \item \textbf{Absorption:} Trifft ein Teilchen auf die Grenzfläche, kann es passieren das es von dieser aufgenommen wird. Dannach befindet es sich für unestimmte Zeit im Absorbermaterial, kan jedoch auch wieder Reduktieren.
   \item \textbf{Adsorption:} Trifft ein Teilchen auf die Grenzfläche kann es neben der Absorbtion sich auch am Rand des Absorbermaterials ablagern. Dabei wird es mittels der Van-der-Waals kräfte am Rand lokalisiert.
@@ -94,7 +111,7 @@ Zur Berechnung des Saugvermögens einer Pumpe wird der Strömngswiderstand der g
 Der Strömungswiederstand verhält sich analog zum elektrischen Widerstand. Dementsprechend sind die Kirchhoffschenregeln ebenso gültig. 
 
 \section{Technische Grundlagen}
-
+Im folgenden werden die für den Versuch benötigten Technischen Grundlagen skizziert.
 \subsection{Pumpentypen und Funktionsweise}
 Pumpen lassen sich neben den verschiedenen Saugraten $S$ und den erreichten Enddrücke $p_\text{E}$ kategorisieren. Eine Übersicht über die Verschiedenen Pumpen Kategorisiert nach deren funktionsweisenen ist in Abblidung \ref{fig:Uebersicht} zu sehen.
 \begin{figure}[htbp]
@@ -169,9 +186,9 @@ Der Mittelwert einer Messreihe $x_\text{1}, ... ,x_\text{n}$ lässt sich durch d
 	\overline{x} = \frac{1}{N} \sum_{\text{k}=1}^\text{N} x_k
 	\label{eqn:ave}
 \end{equation}
-berechnen. Die Standardabweichung des Mittelwertes beträgt
+berechnen. Der Fehler des Mittelwertes beträgt
 \begin{equation}
-	\Delta \overline{x} = \sqrt{ \frac{1}{N(N-1)} \sum_{\text{k}=1}^\text{N} (x_\text{k} - \overline{x})^2}
+	\Delta \overline{x} = \sqrt{ \frac{1}{N(N-1)} \sum_{\text{k}=1}^\text{N} (x_\text{k} - \overline{x})^2} \ .
 	\label{eqn:std}
 \end{equation}
 
@@ -182,17 +199,3 @@ Wenn $x_\text{1}, ..., x_\text{n}$ fehlerbehaftete Messgrößen im weiteren Verl
 	\label{eqn:var}
 \end{equation}
 
-\subsubsection{Lineare Regression}
-Die Steigung und y-Achsenabschnitt einer Ausgleichsgeraden werden gegebenfalls mittels Linearen Regression berechnet.
-\begin{equation}
-	y = m \cdot x + b
-	\label{eqn:reg}
-\end{equation}
-\begin{equation}
-	m = \frac{ \overline{xy} - \overline{x} \overline{y} } {\overline{x^2} - \overline{x}^2}
-	\label{eqn:reg_m}
-\end{equation}
-\begin{equation}
-	b = \frac{ \overline{x^2}\overline{y} - \overline{x} \, \overline{xy}} { \overline{x^2} - \overline{x}^2}
-	\label{eqn:reg_b}
-\end{equation}
