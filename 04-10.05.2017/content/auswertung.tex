@@ -2,7 +2,7 @@
 \label{sec:Auswertung}
 Im Folgenden wird das Saugvermögen für die Drehschieberpumpe und die Turbomolekularpumpe (kurz Turbopumpe), auf zwei Arten bestimmt. Als erstes wird das Saugvermögen $S$ aus der $p(t)$-Kurve bestimmt. Danach wird $S$ aus der Leckratenmessung bestimmt. \\
 Das Pirani-Messgerät hat nach den Herstellerangaben eine Messgenauigkeit von $20\,\%$ und die Heißkathode eine Messgenauigkeit von $10\,\%$ auf der linearen Skala (\cite{V70}). Das Pirani-Messgerät wurde für die Messung in Verbindung mit der Drehschieberpumpe verwendet, also in einem Druckbereich von $10^{3}$\,mbar bis $10^{-2}$\,mbar. Die Heißkathode wird für die Turbopumpe, in einem Druckbereich von $10^{-2}$\,mbar bis $10^{-5}$\,mbar, verwendet. Im Folgenden wird darauf verzichtet den Fehler des Drucks in die Tabellen einzutragen.
-
+\todo{Anfangs und Enddruck}
 
 
 \subsection{Volumen}
@@ -10,7 +10,7 @@ Wie in Kapitel \eqref{sec:Durchführung} erwähnt, werden für die beiden Versuc
 \textbf{Drehschieberpumpe:} \\
 Aus Abbildung \eqref{fig:Dreh} kann entnommen werden um welche Bauteile es sich handelt. In Tabelle \eqref{tab:VD} sind die Volumen der Bauteile und das Gesamtvolumen aufgelistet.
 
-\begin{table} % Volumen Drehschieberpumpe
+\begin{table}[H] % Volumen Drehschieberpumpe
   \centering
   \caption{Volumen der verwendeten Bauteile für die Drehschieberpumpe.}
   \label{tab:VD}
@@ -34,7 +34,7 @@ Aus Abbildung \eqref{fig:Dreh} kann entnommen werden um welche Bauteile es sich 
 \textbf{Turbopumpe:} \\
 Aus Abbildung \eqref{fig:Turbo} kann entnommen werden um welche Bauteile es sich handelt. In Tabelle \eqref{tab:VT} sind die Volumen der Bauteile und das Gesamtvolumen aufgelistet.
 
-\begin{table} % Volumen Turbopumpe
+\begin{table}[H] % Volumen Turbopumpe
   \centering
   \caption{Volumen der verwendeten Bauteile für die Turbopumpe.}
   \label{tab:VT}
@@ -55,37 +55,50 @@ Aus Abbildung \eqref{fig:Turbo} kann entnommen werden um welche Bauteile es sich
 
 
 \subsection{Bestimmung des Saugvermögens, aus der p(t)-Kurve}
+Im Folgenden wird das Saugvermögen $S$ aus der $p(t)$-Kurve bestimmt. Dazu wird Gleichung \eqref{eqn:pt} nach $S$ umgestellt
+\begin{align}
+  S = -\ln\left(\frac{p - p_\text{E}}{p_0 - p_\text{E}} \right) \cdot \frac{V_0}{t} \ .
+\end{align}
+$S$ entspricht damit der Steigung aus dem $p(t)$-Diagramm. Dabei wird $t$ gegen $y = -\ln\left(\frac{p - p_\text{E}}{p_0 - p_\text{E}} \right) \cdot V_0$ aufgetragen. \\
+Der Fehler von $y$ wird mit
+\begin{align}
+  \Delta y &= \sqrt{ \left(\frac{\partial y}{\partial p} \right)^2 (\Delta p)^2 + \left(\frac{\partial y}{\partial p_0} \right)^2 (\Delta p_0)^2 + \left(\frac{\partial y}{\partial p_\text{E}} \right)^2 (\Delta p_\text{E})^2 + \left(\frac{\partial y}{\partial V_0} \right)^2 (\Delta V_0)^2 } \nonumber \\
+  &= \sqrt{ \left(\frac{V_0}{p_\text{E}-p} \right)^2 (\Delta p)^2 + \left(\frac{V_0}{p_0-p_\text{E}} \right)^2 (\Delta p_0)^2 + \left(\frac{(p_0-p)\cdot V_0}{(p_\text{E}-p_0)(p_\text{E}-p)} \right)^2 (\Delta p_\text{E})^2 \atop + \ln\left(\frac{p-p_\text{E}}{p_0-p_\text{E}} \right)(\Delta V_0)^2 }
+\end{align}
+berechnet. Das Saugvermögen und der Fehler wird mit Hilfe der Funktion "scipy.optimize.curve\_fit" \cite{curvefit} und dem optionalen Argument "Sigma" bestimmt.
+
 
 \subsubsection{Für die Drehschieberpumpe}
+In Tabelle \eqref{tab:ptdreh} sind die Messwerte zur Bestimmung des Saugvermögens der Drehschieberpumpe aufgetragen. Diese Werte sind in Abbildung \eqref{fig:ptdreh} aufgetragen und in drei Abschnitte mit unterschiedlicher Steigung unterteilt.
 
 \begin{table} % p(t)-Kurve Drehschieberpumpe
   \centering
-  \caption{}
-  \label{}
-  \begin{tabular}{c|c|c|c|c|c|c}
-    $p$ / mbar & $t_1$ / s & $t_2$ / s & $t_3$ / s & $t_4$ / s & $t_5$ / s & $\overline{t}$ / s \\
+  \caption{Alle Messwerte für die Bestimmung des Saugvermögens der Drehschieberpumpe.}
+  \label{tab:ptDreh}
+  \begin{tabular}{c|c|c|c|c|c|c|c}
+    $p$ / mbar & $t_1$ / s & $t_2$ / s & $t_3$ / s & $t_4$ / s & $t_5$ / s & $\overline{t}$ / s & $-\ln\left( \frac{p-p_\text{E}}{p_0-p_\text{E}} \right) \cdot V_\text{D}$ / l \\
     \hline
-    100  & 16  & 15  & 16  & 16  & 17  & $\num{16.0 +- 0.3}$ \\
-    60   & 25  & 26  & 26  & 26  & 27  & $\num{26.0 +- 0.3}$ \\
-    40   & 31  & 32  & 32  & 33  & 34  & $\num{32.4 +- 0.5}$ \\
+    100  & 16  & 15  & 16  & 16  & 17  & $\num{16.0 +- 0.3}$ & $\num{19.0 +- 3.0}$ \\
+    60   & 25  & 26  & 26  & 26  & 27  & $\num{26.0 +- 0.3}$ & $\num{24.0 +- 3.0}$ \\
+    40   & 31  & 32  & 32  & 33  & 34  & $\num{32.4 +- 0.5}$ & $\num{27.0 +- 3.0}$ \\
     \hline
-    20   & 39  & 39  & 40  & 41  & 41  & $\num{40.0 +- 0.4}$ \\
-    10   & 46  & 47  & 47  & 48  & 48  & $\num{47.2 +- 0.4}$ \\
-    8    & 49  & 49  & 49  & 50  & 51  & $\num{49.6 +- 0.4}$ \\
-    6    & 53  & 52  & 52  & 53  & 54  & $\num{52.8 +- 0.4}$ \\
-    4    & 57  & 56  & 57  & 57  & 58  & $\num{57.0 +- 0.4}$ \\
-    2    & 63  & 63  & 64  & 64  & 64  & $\num{63.6 +- 0.3}$ \\
+    20   & 39  & 39  & 40  & 41  & 41  & $\num{40.0 +- 0.4}$ & $\num{33.0 +- 4.0}$ \\
+    10   & 46  & 47  & 47  & 48  & 48  & $\num{47.2 +- 0.4}$ & $\num{39.0 +- 4.0}$ \\
+    8    & 49  & 49  & 49  & 50  & 51  & $\num{49.6 +- 0.4}$ & $\num{41.0 +- 4.0}$ \\
+    6    & 53  & 52  & 52  & 53  & 54  & $\num{52.8 +- 0.4}$ & $\num{43.0 +- 4.0}$ \\
+    4    & 57  & 56  & 57  & 57  & 58  & $\num{57.0 +- 0.4}$ & $\num{47.0 +- 5.0}$ \\
+    2    & 63  & 63  & 64  & 64  & 64  & $\num{63.6 +- 0.3}$ & $\num{52.0 +- 5.0}$ \\
     \hline
-    1    & 70  & 70  & 71  & 71  & 72  & $\num{70.8 +- 0.2}$ \\
-    0.8  & 73  & 73  & 74  & 73  & 75  & $\num{73.6 +- 0.4}$ \\
-    0.6  & 77  & 77  & 77  & 79  & 79  & $\num{77.8 +- 0.4}$ \\
-    0.4  & 84  & 84  & 83  & 86  & 85  & $\num{84.4 +- 0.5}$ \\
-    0.2  & 96  & 96  & 97  & 97  & 98  & $\num{96.8 +- 0.4}$ \\
+    1    & 70  & 70  & 71  & 71  & 72  & $\num{70.8 +- 0.2}$ & $\num{58.0 +- 5.0}$ \\
+    0.8  & 73  & 73  & 74  & 73  & 75  & $\num{73.6 +- 0.4}$ & $\num{60.0 +- 6.0}$ \\
+    0.6  & 77  & 77  & 77  & 79  & 79  & $\num{77.8 +- 0.4}$ & $\num{63.0 +- 6.0}$ \\
+    0.4  & 84  & 84  & 83  & 86  & 85  & $\num{84.4 +- 0.5}$ & $\num{66.0 +- 6.0}$ \\
+    0.2  & 96  & 96  & 97  & 97  & 98  & $\num{96.8 +- 0.4}$ & $\num{73.0 +- 7.0}$ \\
     \hline
-    0.1  & 108 & 107 & 108 & 109 & 110 & $\num{108.4 +- 0.5}$ \\
-    0.08 & 114 & 114 & 113 & 114 & 115 & $\num{114.0 +- 0.3}$ \\
-    0.06 & 126 & 124 & 123 & 124 & 125 & $\num{124.4 +- 0.5}$ \\
-    0.04 & 165 & 150 & 152 & 154 & 155 & $\num{155.0 +- 3.0}$ \\
+    0.1  & 108 & 107 & 108 & 109 & 110 & $\num{108.4 +- 0.5}$ & $\num{79.0 +- 7.0}$ \\
+    0.08 & 114 & 114 & 113 & 114 & 115 & $\num{114.0 +- 0.3}$ & $\num{82.0 +- 7.0}$ \\
+    0.06 & 126 & 124 & 123 & 124 & 125 & $\num{124.4 +- 0.5}$ & $\num{85.0 +- 8.0}$ \\
+    0.04 & 165 & 150 & 152 & 154 & 155 & $\num{155.0 +- 3.0}$ & $\num{91.0 +- 9.0}$ \\
   \end{tabular}
 \end{table}
 
@@ -93,7 +106,7 @@ Aus Abbildung \eqref{fig:Turbo} kann entnommen werden um welche Bauteile es sich
   \centering
   \includegraphics[width=\textwidth]{pictures/pt-Kurve-Drehschieberpumpe.pdf}
   \caption{test}
-  \label{fig:test}
+  \label{fig:ptdreh}
 \end{figure}
 
 
@@ -140,23 +153,11 @@ Aus Abbildung \eqref{fig:Turbo} kann entnommen werden um welche Bauteile es sich
 
 
 \subsection{Bestimmung des Saugvermögens über die Leckratenmessung}
-Im Folgenden wird das Saugvermögen $S$ aus der Leckratenmessung bestimmt. Das Saugvermögen ist gleich dem Quotienten aus des Leckrate des Rezipienten $Q$ und dem Gleichgewichtsdruck $p_\text{g}$.
+Im Folgenden wird das Saugvermögen $S$ aus der Leckratenmessung bestimmt. Dafür wird die Gleichung \eqref{eqn:} verwendet. Der Fehler des Saugvermögens wird im folgenden mit
 \begin{align}
-  S = \frac{Q}{p_\text{g}}
-\end{align}
-Die Leckrate $Q$ ergibt sich zu
-\begin{align}
-  Q = V_0\, \frac{\Delta p}{\Delta t}
-\end{align}
-Dabei ist $V_0$ das Volumen des Rezipienten und $\frac{\Delta p}{\Delta t}$ entspricht der Steigung $a$, wenn die Zeit $t$ gegen den Druck $p$ aufgetragen wird. Daraus folgt für das Saugvermögen
-\begin{align}\label{eqn:SaugLeck}
-  S = \frac{V_0}{p_\text{g}}\, \frac{\Delta p}{\Delta t} = \frac{V_0}{p_\text{g}} \cdot a
-\end{align}
-Der Fehler des Saugvermögens wird im folgenden mit
-\begin{align*}
-  \Delta S &= \sqrt{ \left(\frac{\partial S}{\partial V_0} \right)^2 (\Delta V_0)^2 + \left(\frac{\partial S}{\partial p_g} \right)^2 (\Delta p_g)^2 + \left(\frac{\partial S}{\partial a} \right)^2 (\Delta a)^2 } \\
+  \Delta S &= \sqrt{ \left(\frac{\partial S}{\partial V_0} \right)^2 (\Delta V_0)^2 + \left(\frac{\partial S}{\partial p_g} \right)^2 (\Delta p_g)^2 + \left(\frac{\partial S}{\partial a} \right)^2 (\Delta a)^2 } \nonumber \\
   &= \sqrt{ \left(\frac{a}{p_g} \right)^2 (\Delta V_0)^2 + \left(-\,\frac{V_0\,a}{p_g^2} \right)^2 (\Delta p_g)^2 + \left(\frac{V_0}{p_g} \right)^2 (\Delta a)^2 }
-\end{align*}
+\end{align}
 berechnet.
 
 \subsubsection{Für die Drehschieberpumpe}
@@ -290,74 +291,74 @@ In Tabelle \eqref{tab:SaugLeckDreh} ist das Saugvermögen für die fünf Gleichg
 In den Tabellen \eqref{tab:Leck5Turbo} bis \eqref{tab:Leck20Turbo} sind die Messwerte der Leckratenmessung für vier unterschiedliche Gleichgewichtsdrücke aufgetragen. Außerdem ist der Mittelwert der Zeiten und der Fehler gebildet worden. Das Volumen $V_0$ aus Gleichung \eqref{eqn:SaugLeck} entspricht für die Turbopumpe $V_\text{Turbo} = (\num{8.2 +- 0.7})$\,l
 
 \begin{landscape}
-\begin{table}
-  \caption{Messwerte der Leckratenmessung bei vier unterschiedlichen Gleichgewichtsdrücken.}
-  \begin{subtable}{0.49\textwidth}
-    \subcaption{Gleichgewichtsdruck von $5\cdot 10^{-5}$\,mbar}
-    \begin{tabular}{c|c|c|c|c}\label{tab:Leck5Turbo}
-      $p$\,/\,$10^{-4}$\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
-      \hline
-      2  & 1.6  & 1.5  & 1.8  & $\num{1.63 +- 0.01}$\\
-      4  & 4.8  & 4.8  & 5.1  & $\num{4.9 +- 0.1}$\\
-      6  & 7.8  & 8.0  & 8.3  & $\num{8.0 +- 0.1}$\\
-      8  & 10.6 & 10.9 & 11.3 & $\num{10.9 +- 0.2}$\\
-      10 & 14.2 & 15.1 & 15.1 & $\num{14.8 +- 0.3}$\\
-      20 & 27.2 & 28.7 & 29.3 & $\num{28.4 +- 0.6}$\\
-      30 & 39.2 & 41.3 & 43.0 & $\num{41.0 +- 1.0}$\\
-      40 & 49.9 & 53.1 & 54.0 & $\num{52.0 +- 1.0}$\\
-      50 & 60.9 & 64.2 & 65.1 & $\num{63.0 +- 1.0}$\\
-    \end{tabular}
-  \end{subtable}\hspace{2cm}
-  \begin{subtable}{0.49\textwidth}
-    \subcaption{Gleichgewichtsdruck von $10\cdot 10^{-5}$\,mbar}
-    \begin{tabular}{c|c|c|c|c}\label{tab:Leck10Turbo}
-      $p$\,/\,$10^{-4}$\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
-      \hline
-      2  & 0.2  & 0.3  & 0.2  & $\num{0.23 +- 0.03}$ \\
-      4  & 1.1  & 1.1  & 0.9  & $\num{1.03 +- 0.07}$ \\
-      6  & 2.4  & 2.4  & 2.2  & $\num{2.33 +- 0.07}$ \\
-      8  & 3.6  & 3.5  & 3.4  & $\num{3.50 +- 0.06}$ \\
-      10 & 5.3  & 5.8  & 5.7  & $\num{5.6 +- 0.2}$ \\
-      20 & 10.2 & 11.5 & 11.2 & $\num{11.0 +- 0.4}$ \\
-      40 & 19.6 & 21.7 & 21.4 & $\num{20.9 +- 0.7}$ \\
-      60 & 28.0 & 30.7 & 31.4 & $\num{30.0 +- 1.0}$ \\
-      80 & 35.2 & 37.9 & 37.9 & $\num{37.0 +- 0.9}$ \\
-    \end{tabular}
-  \end{subtable}
+  \begin{table}
+    \caption{Messwerte der Leckratenmessung bei vier unterschiedlichen Gleichgewichtsdrücken.}
+    \begin{subtable}{0.49\textwidth}
+      \subcaption{Gleichgewichtsdruck von $5\cdot 10^{-5}$\,mbar}
+      \begin{tabular}{c|c|c|c|c}\label{tab:Leck5Turbo}
+        $p$\,/\,$10^{-4}$\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
+        \hline
+        2  & 1.6  & 1.5  & 1.8  & $\num{1.63 +- 0.01}$\\
+        4  & 4.8  & 4.8  & 5.1  & $\num{4.9 +- 0.1}$\\
+        6  & 7.8  & 8.0  & 8.3  & $\num{8.0 +- 0.1}$\\
+        8  & 10.6 & 10.9 & 11.3 & $\num{10.9 +- 0.2}$\\
+        10 & 14.2 & 15.1 & 15.1 & $\num{14.8 +- 0.3}$\\
+        20 & 27.2 & 28.7 & 29.3 & $\num{28.4 +- 0.6}$\\
+        30 & 39.2 & 41.3 & 43.0 & $\num{41.0 +- 1.0}$\\
+        40 & 49.9 & 53.1 & 54.0 & $\num{52.0 +- 1.0}$\\
+        50 & 60.9 & 64.2 & 65.1 & $\num{63.0 +- 1.0}$\\
+      \end{tabular}
+    \end{subtable}\hspace{2cm}
+    \begin{subtable}{0.49\textwidth}
+      \subcaption{Gleichgewichtsdruck von $10\cdot 10^{-5}$\,mbar}
+      \begin{tabular}{c|c|c|c|c}\label{tab:Leck10Turbo}
+        $p$\,/\,$10^{-4}$\,mbar & $t_1$\,/\,s & $t_2$\,/\,s &   $t_3$\,/\,s & $\overline{t}$\,/\,s \\
+        \hline
+        2  & 0.2  & 0.3  & 0.2  & $\num{0.23 +- 0.03}$ \\
+        4  & 1.1  & 1.1  & 0.9  & $\num{1.03 +- 0.07}$ \\
+        6  & 2.4  & 2.4  & 2.2  & $\num{2.33 +- 0.07}$ \\
+        8  & 3.6  & 3.5  & 3.4  & $\num{3.50 +- 0.06}$ \\
+        10 & 5.3  & 5.8  & 5.7  & $\num{5.6 +- 0.2}$ \\
+        20 & 10.2 & 11.5 & 11.2 & $\num{11.0 +- 0.4}$ \\
+        40 & 19.6 & 21.7 & 21.4 & $\num{20.9 +- 0.7}$ \\
+        60 & 28.0 & 30.7 & 31.4 & $\num{30.0 +- 1.0}$ \\
+        80 & 35.2 & 37.9 & 37.9 & $\num{37.0 +- 0.9}$ \\
+      \end{tabular}
+    \end{subtable}
 
-  \vspace{1cm}
+    \vspace{1cm}
 
-  \begin{subtable}{0.49\textwidth}
-    \subcaption{Gleichgewichtsdruck von $15\cdot 10^{-5}$\,mbar}
-    \begin{tabular}{c|c|c|c|c}\label{tab:Leck15Turbo}
-      $p$\,/\,$10^{-4}$\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
-      \hline
-      4  & 0.2  & 0.3  & 0.4  & $\num{0.33 +- 0.06}$ \\
-      6  & 1.0  & 1.0  & 1.1  & $\num{1.03 +- 0.03}$ \\
-      8  & 1.8  & 1.9  & 1.9  & $\num{1.87 +- 0.03}$ \\
-      10 & 3.3  & 3.4  & 3.4  & $\num{3.37 +- 0.03}$ \\
-      20 & 7.1  & 7.3  & 7.3  & $\num{7.23 +- 0.07}$ \\
-      40 & 14.1 & 14.0 & 14.1 & $\num{14.07 +- 0.03}$ \\
-      60 & 20.2 & 20.2 & 20.2 & $\num{20.20 +- 0.0}$ \\
-      80 & 25.6 & 25.4 & 25.2 & $\num{25.40 +- 0.1}$ \\
-    \end{tabular}
-  \end{subtable}\hspace{2cm}
-  \begin{subtable}{0.49\textwidth}
-    \subcaption{Gleichgewichtsdruck von $20\cdot 10^{-5}$\,mbar}
-    \begin{tabular}{c|c|c|c|c}\label{tab:Leck20Turbo}
-      $p$\,/\,$10^{-4}$\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
-      \hline
-      4  & 0.3  & 0.3  & 0.4  & $\num{0.33 +- 0.03}$ \\
-      6  & 0.6  & 0.5  & 0.6  & $\num{0.57 +- 0.03}$ \\
-      8  & 1.1  & 1.2  & 1.2  & $\num{1.17 +- 0.03}$ \\
-      10 & 2.5  & 2.3  & 2.5  & $\num{2.43 +- 0.07}$ \\
-      20 & 5.1  & 5.2  & 5.2  & $\num{5.17 +- 0.03}$ \\
-      40 & 10.4 & 10.5 & 10.5 & $\num{10.47 +- 0.03}$ \\
-      60 & 15.1 & 15.1 & 15.0 & $\num{15.07 +- 0.03}$ \\
-      80 & 18.7 & 19.1 & 19.1 & $\num{19.0 +- 0.1}$ \\
-    \end{tabular}
-  \end{subtable}
-\end{table}
+    \begin{subtable}{0.49\textwidth}
+      \subcaption{Gleichgewichtsdruck von $15\cdot 10^{-5}$\,mbar}
+      \begin{tabular}{c|c|c|c|c}\label{tab:Leck15Turbo}
+        $p$\,/\,$10^{-4}$\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
+        \hline
+        4  & 0.2  & 0.3  & 0.4  & $\num{0.33 +- 0.06}$ \\
+        6  & 1.0  & 1.0  & 1.1  & $\num{1.03 +- 0.03}$ \\
+        8  & 1.8  & 1.9  & 1.9  & $\num{1.87 +- 0.03}$ \\
+        10 & 3.3  & 3.4  & 3.4  & $\num{3.37 +- 0.03}$ \\
+        20 & 7.1  & 7.3  & 7.3  & $\num{7.23 +- 0.07}$ \\
+        40 & 14.1 & 14.0 & 14.1 & $\num{14.07 +- 0.03}$ \\
+        60 & 20.2 & 20.2 & 20.2 & $\num{20.20 +- 0.0}$ \\
+        80 & 25.6 & 25.4 & 25.2 & $\num{25.40 +- 0.1}$ \\
+      \end{tabular}
+    \end{subtable}\hspace{2cm}
+    \begin{subtable}{0.49\textwidth}
+      \subcaption{Gleichgewichtsdruck von $20\cdot 10^{-5}$\,mbar}
+      \begin{tabular}{c|c|c|c|c}\label{tab:Leck20Turbo}
+        $p$\,/\,$10^{-4}$\,mbar & $t_1$\,/\,s & $t_2$\,/\,s & $t_3$\,/\,s & $\overline{t}$\,/\,s \\
+        \hline
+        4  & 0.3  & 0.3  & 0.4  & $\num{0.33 +- 0.03}$ \\
+        6  & 0.6  & 0.5  & 0.6  & $\num{0.57 +- 0.03}$ \\
+        8  & 1.1  & 1.2  & 1.2  & $\num{1.17 +- 0.03}$ \\
+        10 & 2.5  & 2.3  & 2.5  & $\num{2.43 +- 0.07}$ \\
+        20 & 5.1  & 5.2  & 5.2  & $\num{5.17 +- 0.03}$ \\
+        40 & 10.4 & 10.5 & 10.5 & $\num{10.47 +- 0.03}$ \\
+        60 & 15.1 & 15.1 & 15.0 & $\num{15.07 +- 0.03}$ \\
+        80 & 18.7 & 19.1 & 19.1 & $\num{19.0 +- 0.1}$ \\
+      \end{tabular}
+    \end{subtable}
+  \end{table}
 \end{landscape}
 
 In den Abbildungen \eqref{fig:Leck5Turbo} bis \eqref{fig:Leck20Turbo} sind die Werte aus den oben stehenden Tabellen aufgetragen. Außerdem ist eine lineare Regression durch die Messwerte gelegt worden, dazu wird folgende Funktion verwendet.
