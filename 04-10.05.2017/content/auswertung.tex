@@ -1,14 +1,141 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-Im Folgenden wird das Saugvermögen für die Drehschieberpumpe und die Turbomolekularpumpe (kurz Turbopumpe), auf zwei Arten bestimmt. Als erstes wird das Saugvermögen $S$ aus der $p(t)$-Kurve bestimmt. Danach wird $S$ aus der Leckratenmessung bestimmt.
+Im Folgenden wird das Saugvermögen für die Drehschieberpumpe und die Turbomolekularpumpe (kurz Turbopumpe), auf zwei Arten bestimmt. Als erstes wird das Saugvermögen $S$ aus der $p(t)$-Kurve bestimmt. Danach wird $S$ aus der Leckratenmessung bestimmt. \\
+Das Pirani-Messgerät hat nach den Herstellerangaben eine Messgenauigkeit von $20\,\%$ und die Heißkathode eine Messgenauigkeit von $10\,\%$ auf der linearen Skala (\cite{V70}). Das Pirani-Messgerät wurde für die Messung in Verbindung mit der Drehschieberpumpe verwendet, also in einem Druckbereich von $10^{3}$\,mbar bis $10^{-2}$\,mbar. Die Heißkathode wird für die Turbopumpe, in einem Druckbereich von $10^{-2}$\,mbar bis $10^{-5}$\,mbar, verwendet. Im Folgenden wird darauf verzichtet den Fehler des Drucks in die Tabellen einzutragen.
+
 
 
 \subsection{Volumen}
+Wie in Kapitel \eqref{sec:Durchführung} erwähnt, werden für die beiden Versuchsteile unterschiedliche Rezipienten verwendet. Im Folgenden werden die Volumen der einzelnen Bauteile aufgelistet und das Gesamtvolumen berechnet. \\
+\textbf{Drehschieberpumpe:} \\
+Aus Abbildung \eqref{fig:Dreh} kann entnommen werden um welche Bauteile es sich handelt. In Tabelle \eqref{tab:VD} sind die Volumen der Bauteile und das Gesamtvolumen aufgelistet.
+
+\begin{table} % Volumen Drehschieberpumpe
+  \centering
+  \caption{Volumen der verwendeten Bauteile für die Drehschieberpumpe.}
+  \label{tab:VD}
+  \begin{tabular}{c|c|c}
+    \multicolumn{2}{c|}{Bauteil} & $V$ / l \\
+    \hline
+    1 & Rezipient & $\num{7.3 +- 0.7}$ \\
+    2 & Schlauch & $\num{0.5 +- 0.1}$ \\
+    3 & Nadelventil & $\num{0.002 +- 0.002}$ \\
+    4 & Kugelventil & $\num{0.015 +- 0.009}$ \\
+    5 & T-Stück & $\num{0.13 +- 0.01}$ \\
+    6 & T-Stück & $\num{0.17 +- 0.02}$ \\
+    7 & Pirani + T-Stück & $\num{0.014 +- 0.004}$ \\
+    8 & T-Stück & $\num{0.25 +- 0.05}$ \\
+    9 & Kugelventil & $\num{0.015 +- 0.009}$ \\
+    \hline
+    \multicolumn{2}{c}{Gesamtvolumen $V_\text{Dreh} =$} & $\num{8.4 +- 0.7}$ \\
+  \end{tabular}
+\end{table}
+
+\textbf{Turbopumpe:} \\
+Aus Abbildung \eqref{fig:Turbo} kann entnommen werden um welche Bauteile es sich handelt. In Tabelle \eqref{tab:VT} sind die Volumen der Bauteile und das Gesamtvolumen aufgelistet.
+
+\begin{table} % Volumen Turbopumpe
+  \centering
+  \caption{Volumen der verwendeten Bauteile für die Turbopumpe.}
+  \label{tab:VT}
+  \begin{tabular}{c|c|c}
+    \multicolumn{2}{c|}{Bauteil} & $V$ / l \\
+    \hline
+    1 & Rezipient & $\num{7.3 +- 0.7}$ \\
+    2 & Schlauch & $\num{0.5 +- 0.1}$ \\
+    3 & Nadelventil & $\num{0.002 +- 0.002}$ \\
+    4 & Kugelventil & $\num{0.015 +- 0.009}$ \\
+    5 & T-Stück & $\num{0.13 +- 0.01}$ \\
+    6 & T-Stück & $\num{0.25 +- 0.05}$ \\
+    \hline
+    \multicolumn{2}{c}{Gesamtvolumen $V_\text{Turbo} =$} & $\num{8.2 +- 0.7}$ \\
+  \end{tabular}
+\end{table}
+
 
 
 \subsection{Bestimmung des Saugvermögens, aus der p(t)-Kurve}
+
 \subsubsection{Für die Drehschieberpumpe}
+
+\begin{table} % p(t)-Kurve Drehschieberpumpe
+  \centering
+  \caption{}
+  \label{}
+  \begin{tabular}{c|c|c|c|c|c|c}
+    $p$ / mbar & $t_1$ / s & $t_2$ / s & $t_3$ / s & $t_4$ / s & $t_5$ / s & $\overline{t}$ / s \\
+    \hline
+    100  & 16  & 15  & 16  & 16  & 17  & $\num{16.0 +- 0.3}$ \\
+    60   & 25  & 26  & 26  & 26  & 27  & $\num{26.0 +- 0.3}$ \\
+    40   & 31  & 32  & 32  & 33  & 34  & $\num{32.4 +- 0.5}$ \\
+    \hline
+    20   & 39  & 39  & 40  & 41  & 41  & $\num{40.0 +- 0.4}$ \\
+    10   & 46  & 47  & 47  & 48  & 48  & $\num{47.2 +- 0.4}$ \\
+    8    & 49  & 49  & 49  & 50  & 51  & $\num{49.6 +- 0.4}$ \\
+    6    & 53  & 52  & 52  & 53  & 54  & $\num{52.8 +- 0.4}$ \\
+    4    & 57  & 56  & 57  & 57  & 58  & $\num{57.0 +- 0.4}$ \\
+    2    & 63  & 63  & 64  & 64  & 64  & $\num{63.6 +- 0.3}$ \\
+    \hline
+    1    & 70  & 70  & 71  & 71  & 72  & $\num{70.8 +- 0.2}$ \\
+    0.8  & 73  & 73  & 74  & 73  & 75  & $\num{73.6 +- 0.4}$ \\
+    0.6  & 77  & 77  & 77  & 79  & 79  & $\num{77.8 +- 0.4}$ \\
+    0.4  & 84  & 84  & 83  & 86  & 85  & $\num{84.4 +- 0.5}$ \\
+    0.2  & 96  & 96  & 97  & 97  & 98  & $\num{96.8 +- 0.4}$ \\
+    \hline
+    0.1  & 108 & 107 & 108 & 109 & 110 & $\num{108.4 +- 0.5}$ \\
+    0.08 & 114 & 114 & 113 & 114 & 115 & $\num{114.0 +- 0.3}$ \\
+    0.06 & 126 & 124 & 123 & 124 & 125 & $\num{124.4 +- 0.5}$ \\
+    0.04 & 165 & 150 & 152 & 154 & 155 & $\num{155.0 +- 3.0}$ \\
+  \end{tabular}
+\end{table}
+
+\begin{figure}[H] % p(t)-Kurve Drehschieberpumpe
+  \centering
+  \includegraphics[width=\textwidth]{pictures/pt-Kurve-Drehschieberpumpe.pdf}
+  \caption{test}
+  \label{fig:test}
+\end{figure}
+
+
 \subsubsection{Für die Turbopumpe}
+
+\begin{table} % p(t)-Kurve Drehschieberpumpe
+  \centering
+  \caption{}
+  \label{tab:}
+  \begin{tabular}{c|c|c|c|c|c|c|c}
+    $p$ / $10^{-4}$ mbar & $t_1$ / s & $t_2$ / s & $t_3$ / s & $t_4$ / s & $t_5$ / s & $t_6$ / s & $\overline{t}$ / s \\
+    \hline
+    20   & 0.8  & 0.9  & 0.4  & 0.3  & 0.4  & 0.4  & $\num{0.5 +- 0.1}$ \\
+    9    & 1.9  & 1.8  & 1.4  & 1.4  & 1.5  & 1.5  & $\num{1.6 +- 0.1}$ \\
+    8    & 2.1  & 2.0  & 1.5  & 1.5  & 1.7  & 1.6  & $\num{1.7 +- 0.1}$ \\
+    7    & 2.3  & 2.4  & 1.7  & 1.8  & 1.9  & 1.8  & $\num{2.0 +- 0.1}$ \\
+    6    & 2.6  & 2.6  & 2.0  & 2.0  & 2.2  & 2.1  & $\num{2.3 +- 0.1}$ \\
+    5    & 2.9  & 2.9  & 2.2  & 2.3  & 2.4  & 2.4  & $\num{2.5 +- 0.1}$ \\
+    4    & 3.3  & 3.2  & 2.7  & 2.7  & 2.8  & 2.8  & $\num{2.9 +- 0.1}$ \\
+    3    & 3.8  & 3.8  & 3.1  & 3.2  & 3.3  & 3.2  & $\num{3.4 +- 0.1}$ \\
+    2    & 4.6  & 4.6  & 3.7  & 4.0  & 4.1  & 4.0  & $\num{4.2 +- 0.1}$ \\
+    1    & 5.9  & 5.8  & 5.1  & 5.0  & 5.4  & 5.2  & $\num{5.4 +- 0.2}$ \\
+    0.9  & 6.2  & 6.3  & 5.4  & 5.6  & 5.6  & 5.5  & $\num{5.8 +- 0.2}$ \\
+    0.8  & 6.4  & 6.4  & 5.8  & 5.7  & 5.9  & 5.8  & $\num{6.0 +- 0.1}$ \\
+    0.7  & 6.8  & 6.8  & 6.1  & 6.1  & 6.2  & 6.1  & $\num{6.4 +- 0.1}$ \\
+    0.6  & 7.2  & 7.2  & 6.4  & 6.5  & 6.6  & 6.5  & $\num{6.7 +- 0.1}$ \\
+    0.5  & 7.8  & 7.7  & 7.0  & 7.0  & 7.1  & 7.0  & $\num{7.3 +- 0.2}$ \\
+    0.4  & 8.6  & 8.6  & 7.7  & 7.7  & 7.9  & 7.7  & $\num{8.0 +- 0.2}$ \\
+    0.3  & 10.2 & 9.9  & 8.9  & 8.9  & 9.0  & 8.8  & $\num{9.3 +- 0.2}$ \\
+    0.25 & 12.2 & 11.2 & 10.0 & 10.0 & 10.1 & 9.9  & $\num{10.6 +- 0.4}$ \\
+    0.2  & 21.6 & 15.6 & 13.2 & 12.4 & 12.7 & 12.3 & $\num{15.0 +- 1.0}$ \\
+  \end{tabular}
+\end{table}
+
+\begin{figure}[H] % p(t)-Kurve Drehschieberpumpe
+  \centering
+  \includegraphics[width=\textwidth]{pictures/pt-Kurve-Turbopumpe.pdf}
+  \caption{test}
+  \label{fig:test}
+\end{figure}
+
+
 
 
 
@@ -31,8 +158,6 @@ Der Fehler des Saugvermögens wird im folgenden mit
   &= \sqrt{ \left(\frac{a}{p_g} \right)^2 (\Delta V_0)^2 + \left(-\,\frac{V_0\,a}{p_g^2} \right)^2 (\Delta p_g)^2 + \left(\frac{V_0}{p_g} \right)^2 (\Delta a)^2 }
 \end{align*}
 berechnet.
-
-
 
 \subsubsection{Für die Drehschieberpumpe}
 In den Tabellen \eqref{tab:Leck0.1Dreh} bis \eqref{tab:Leck1.0Dreh} sind die Messwerte der Leckratenmessung für fünf unterschiedliche Gleichgewichtsdrücke aufgetragen. Außerdem ist der Mittelwert der Zeiten und der Fehler gebildet worden. Das Volumen $V_0$ aus Gleichung \eqref{eqn:SaugLeck} entspricht für die Drehschieberpumpe $V_\text{Dreh} = (\num{8.4 +- 0.7})$\,l
@@ -153,15 +278,13 @@ In Tabelle \eqref{tab:SaugLeckDreh} ist das Saugvermögen für die fünf Gleichg
      \hline
      Aus Diagramm & $p_\text{g}$ / mbar & $a$ / $\frac{\text{mbar}}{\text{s}}$ & $b$ / $\frac{\text{mbar}}{\text{s}}$ & $S$ / $\frac{\text{l}}{\text{s}}$ \\
      \hline
-     Abb. \eqref{fig:Leck0.1Dreh} & $(\num{0.1 +- 0.01})$ & $(\num{4.7 +- 0.1}) \cdot 10^{-3}$ & $(\num{0.16 +- 0.02})$ & $(\num{0.39 +- 0.05})$ \\
+     Abb. \eqref{fig:Leck0.1Dreh} & $(\num{0.1 +- 0.01})$ & $(\num{4.7 +- 0.1}) \cdot 10^{-3}$ & $(\num{0.16 +- 0.02})$ & $(\num{0.39 +- 0.09})$ \\
      Abb. \eqref{fig:Leck0.4Dreh} & $(\num{0.4 +- 0.04})$ & $(\num{3.7 +- 0.1}) \cdot 10^{-2} $ & $(\num{0.27 +- 0.07}) $ & $(\num{0.8 +- 0.1}) $ \\
      Abb. \eqref{fig:Leck0.6Dreh} & $(\num{0.6 +- 0.06})$ & $(\num{6.7 +- 0.2}) \cdot 10^{-2} $ & $(\num{0.46 +- 0.08}) $ & $(\num{0.9 +- 0.1}) $ \\
      Abb. \eqref{fig:Leck0.8Dreh} & $(\num{0.8 +- 0.08})$ & $(\num{9.5 +- 0.2}) \cdot 10^{-2} $ & $(\num{0.67 +- 0.08}) $ & $(\num{1.0 +- 0.1}) $ \\
      Abb. \eqref{fig:Leck1.0Dreh} & $(\num{1.0 +- 0.1})$ & $(\num{1.29 +- 0.02}) \cdot 10^{-1} $ & $(\num{0.6 +- 0.1}) $ & $(\num{1.1 +- 0.1}) $ \\
  \end{tabular}
 \end{table}
-
-
 
 \subsubsection{Für die Turbopumpe}
 In den Tabellen \eqref{tab:Leck5Turbo} bis \eqref{tab:Leck20Turbo} sind die Messwerte der Leckratenmessung für vier unterschiedliche Gleichgewichtsdrücke aufgetragen. Außerdem ist der Mittelwert der Zeiten und der Fehler gebildet worden. Das Volumen $V_0$ aus Gleichung \eqref{eqn:SaugLeck} entspricht für die Turbopumpe $V_\text{Turbo} = (\num{8.2 +- 0.7})$\,l
