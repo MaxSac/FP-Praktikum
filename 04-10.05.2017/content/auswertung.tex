@@ -1,11 +1,11 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-Im Folgenden wird das Saugvermögen für die Drehschieberpumpe und die Turbomolekularpumpe (kurz Turbopumpe), auf zwei Arten bestimmt. Als erstes wird das Saugvermögen $S$ aus der $p(t)$-Kurve bestimmt. Danach wird $S$ aus der Leckratenmessung bestimmt. \\
-Das Pirani-Messgerät hat nach den Herstellerangaben eine Messgenauigkeit von $20\,\%$ und die Heißkathode eine Messgenauigkeit von $10\,\%$ auf der linearen Skala (\cite{V70}). Das Pirani-Messgerät wurde für die Messung in Verbindung mit der Drehschieberpumpe verwendet, also in einem Druckbereich von $10^{3}$\,mbar bis $10^{-2}$\,mbar. Die Heißkathode wird für die Turbopumpe, in einem Druckbereich von $10^{-2}$\,mbar bis $10^{-5}$\,mbar, verwendet. Im Folgenden wird darauf verzichtet den Fehler des Drucks in die Tabellen einzutragen. \\
+Im Folgenden wird das Saugvermögen für die Drehschieberpumpe und die Turbopumpe, auf zwei Arten bestimmt. Als erstes wird das Saugvermögen $S$ aus der $p(t)$-Kurve bestimmt. Danach wird $S$ aus der Leckratenmessung bestimmt. \\
+Das Pirani-Messgerät hat nach den Herstellerangaben eine Messgenauigkeit von $20\,\%$ und die Heißkathode eine Messgenauigkeit von $10\,\%$ auf der linearen Skala \cite{V70}. Das Pirani-Messgerät wurde für die Messung in Verbindung mit der Drehschieberpumpe verwendet, also in einem Druckbereich von $10^{3}$\,mbar bis $10^{-2}$\,mbar. Die Heißkathode wird für die Turbopumpe, in einem Druckbereich von $10^{-2}$\,mbar bis $10^{-5}$\,mbar, verwendet. Im Folgenden wird darauf verzichtet den Fehler des Drucks in die Tabellen einzutragen. \\
 
 
 
-\subsection{Volumen}
+\subsection{Volumen Berechnung}
 Wie in Kapitel \eqref{sec:Durchführung} erwähnt, werden für die beiden Versuchsteile unterschiedliche Rezipienten verwendet. Im Folgenden werden die Volumen der einzelnen Bauteile aufgelistet und das Gesamtvolumen berechnet. \\
 \textbf{Drehschieberpumpe:} \\
 Aus Abbildung \eqref{fig:Dreh} kann entnommen werden um welche Bauteile es sich handelt. In Tabelle \eqref{tab:VD} sind die Volumen der Bauteile und das Gesamtvolumen aufgelistet.
@@ -54,8 +54,8 @@ Aus Abbildung \eqref{fig:Turbo} kann entnommen werden um welche Bauteile es sich
 
 
 
-\subsection{Bestimmung des Saugvermögens, aus der p(t)-Kurve}
-Im Folgenden wird das Saugvermögen $S$ aus der $p(t)$-Kurve bestimmt. Dazu wird Gleichung \eqref{eqn:pt} nach $S$ umgestellt
+\subsection{Bestimmung des Saugvermögens aus der p(t)-Kurve}
+Im Folgenden wird das Saugvermögen $S$ aus der $p(t)$-Kurve bestimmt. Dazu wird Gleichung \eqref{eqn:Druck} nach $S$ umgestellt
 \begin{align}
   S &= -\ln\left(\frac{p - p_\text{E}}{p_0 - p_\text{E}} \right) \cdot \frac{V_0}{t} \\
   &= -m\cdot V_0
@@ -198,7 +198,7 @@ In Tabelle \eqref{tab:ptSaugTurbo} sind die Parameter der Geraden und das Saugve
 
 
 \subsection{Bestimmung des Saugvermögens über die Leckratenmessung}
-Im Folgenden wird das Saugvermögen $S$ aus der Leckratenmessung bestimmt. Dafür wird die Gleichung \eqref{eqn:} verwendet. Der Fehler des Saugvermögens wird im folgenden mit
+Im Folgenden wird das Saugvermögen $S$ aus der Leckratenmessung bestimmt. Dafür wird die Gleichung \eqref{eqn:SaugLeck} verwendet. Der Fehler des Saugvermögens wird im folgenden mit
 \begin{align}
   \Delta S &= \sqrt{ \left(\frac{\partial S}{\partial V_0} \right)^2 (\Delta V_0)^2 + \left(\frac{\partial S}{\partial p_g} \right)^2 (\Delta p_g)^2 + \left(\frac{\partial S}{\partial a} \right)^2 (\Delta a)^2 } \nonumber \\
   &= \sqrt{ \left(\frac{a}{p_g} \right)^2 (\Delta V_0)^2 + \left(-\,\frac{V_0\,a}{p_g^2} \right)^2 (\Delta p_g)^2 + \left(\frac{V_0}{p_g} \right)^2 (\Delta a)^2 }
