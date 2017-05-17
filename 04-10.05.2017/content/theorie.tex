@@ -2,21 +2,21 @@
 \label{sec:Theorie}
 
 \subsection{Einführung}
-Ist in einem Raum keine Matereie vorhanden und der Gasdruck verschwunden, wird dieser als perfektes Vakuum bezeichnet. Bereits die griechischen Philiosophen Ende des 4 Jahrhundert konnten die Gedankenspiele über die Existenz eines eines leeren Raums nicht zweifelsfrei beantworten. Mit dem Aufstreben der Quantenmechanik, stellt sich erneut die Frage in wie fern überhaupt ein teilchenfreier Raum in den Grenzen der Energie-Zeitunschärfe möglich ist, worauf im folgenden noch eingenangen wird. Rein phänomenologisch ist das Vakuum definiert als:
+Ist in einem Raum keine Materie vorhanden und der Gasdruck verschwunden, wird dieses als perfektes Vakuum bezeichnet. Bereits die griechischen Philiosophen Ende des 4. Jahrhunderts konnten die Gedankenspiele über die Existenz eines leeren Raums nicht zweifelsfrei beantworten. Mit dem Aufstreben der Quantenmechanik, stellt sich erneut die Frage in wie fern überhaupt ein teilchenfreier Raum in den Grenzen der Energie-Zeitunschärfe möglich ist, worauf im Folgenden noch eingenangen wird. Rein phänomenologisch ist das Vakuum definiert als:
 
 ``\textit{Vakuum heißt der Zustand eines Gases, wenn in einem Behälter der Druck des Gases und damit die Teilchenzahldichte niedriger ist als außerhalb oder wenn der Druck des Gases niedriger ist als 300 mbar, d. h. kleiner als der niedrigste auf der Erdoberfläche vorkommende Atmosphärendruck}'' \cite{DIN}
 
-Ziel des Versuches ist es die Grundlagen der Vakuumstechnik nachzuvollziehen und die für den Versuch benötigten Komponenten kennenzulernen. Dies geschieht indem für die beiden verwendeten Pumpenarten die Saugleistung, als auch eine Leckratenmessung durchgeführt wird.
+Ziel des Versuches ist es die Grundlagen der Vakuumtechnik nachzuvollziehen und die für den Versuch benötigten Komponenten kennenzulernen. Dies geschieht indem für die beiden verwendeten Pumpenarten das Saugvermögen, als auch eine Leckratenmessung durchgeführt wird.
 
-\subsection{Mesgrößen zur Bestimmung des Vakuums}
+\subsection{Messgrößen zur Bestimmung des Vakuums}
 Das Maß eines Vakuums ist der Druck $p$. Dieser ist definiert als Kraft $F$ pro Fläche $A$
 \begin{equation}
-  p = \frac{F}{A} = \left[ \frac{N}{m^2} \right]
+  p = \frac{F}{A} = \left[ \frac{\text{N}}{\text{m}^2} \right]
   \label{eqn:druck}
 \end{equation}
-Anhand dessen lassen sich Vakuums in verschiedene Kategorien unterteilen, was im späteren noch passieren wird. Desweiteren lässt sich bei einem gemisch aus Gasen der Gesamtdruck $p_\text{Ges}$ in mehre Partialdrücke aufteilen. Es gilt, dass die Summe über alle Partialdrücke dem Gesamtdruck entspricht. Analog wird mit der Teilchenanzahl vorgegangen. Der Partialdruck entspricht dem Druck welcher das entsprechende Gemisch in dem selben Volume wodrin sich $p_\text{Ges}$ befindet ausüben würde. \newline
+Anhand dessen lässt sich das Vakuum in verschiedene Kategorien unterteilen, was im späteren noch passieren wird. Desweiteren lässt sich bei einem Gemisch aus Gasen der Gesamtdruck $p_\text{Ges}$ in mehrere Partialdrücke aufteilen. Es gilt, dass die Summe über alle Partialdrücke dem Gesamtdruck entspricht. Analog wird mit der Teilchenanzahl vorgegangen. Der Partialdruck entspricht dem Druck welcher das entsprechende Gemisch in dem selben Volumen, wodrin sich $p_\text{Ges}$ befindet ausüben würde. \newline
 Der Druck wird üblicherweise in den Einheiten mbar gemessen. Der Normaldruck ist auf 1013 mbar definiert. 1 bar Entspricht in etwa $10^{5}$ Pa. \newline
-Desweiteren zeichnet sich ein Gas durch die mittlere freie Weglänge $\Lambda$ eines Teilchens aus, bis es mit einem anderen wechselwirkt. Durch einführen eines Stoßquerschnitts und bei einer konstanten Teilchenzahldichte $n$ lässt sich durch lösen einer Differentialgleichung 
+Desweiteren zeichnet sich ein Gas durch die mittlere freie Weglänge $\Lambda$ eines Teilchens aus, bis es mit einem anderen wechselwirkt. Durch einführen eines Stoßquerschnitts und bei einer konstanten Teilchenzahldichte $n$ lässt sich durch lösen einer Differentialgleichung
 \begin{equation}
   \frac{dN}{N} = -n \sigma \Delta x
   \label{eqn:mfWDGL}
@@ -26,10 +26,10 @@ zeigen, dass die mittlere freie Weglänge  inversproportional zu dem Produkt aus
   \Lambda = \frac{1}{n \sigma}= \frac{k T}{\sqrt{2} \pi D^2 p}
   \label{eqn:mfW}
 \end{equation}
-Da die Teilchenanzahl von Luft bei Normaldruck als gegeben vorrausgesetzt wird kann aus der Vorraussetzung, dass das Produkt aus $pV$ konstant ist, die Teilchenzahl bei den anderen Drücken berechnet werden. 
+Da die Teilchenanzahl von Luft bei Normaldruck als gegeben vorrausgesetzt wird, kann aus der Vorraussetzung, dass das Produkt aus $p\cdot V$ konstant ist, die Teilchenzahl bei den anderen Drücken berechnet werden.
 \begin{table}
   \centering
-  \caption{Übersicht von Druckbereiche, Mittlere Freie Weglänge und Teilchenanzahl}
+  \caption{Übersicht über die Druckbereiche, die mittlere freie Weglänge und die Teilchenanzahl}
   \begin{tabular}{c|c c c}
   	\toprule
 	Druckbereiche & Druck / mbar & Moleküle / $cm^3$ & mittlere freie Weglänge \\
@@ -46,11 +46,11 @@ Da die Teilchenanzahl von Luft bei Normaldruck als gegeben vorrausgesetzt wird k
   \label{tab:ueberblick}
 \end{table}
 \subsection{p(t) Kurve}
-Für die Auswertung wird eine Funktion benötigt welche den Druck in abhängigkeit der Zeit angibt. Dafür muss die Annahme getroffen werden, dass die Saugleistug $S$ für den angegebenen Zeitraum konstant ist und nicht vom Druck $p(t)$ abhängt. Dann entspricht die zeitliche Änderung des Volumens 
+Für die Auswertung wird eine Funktion benötigt welche den Druck in abhängigkeit der Zeit angibt. Dafür muss die Annahme getroffen werden, dass die Saugleistug $S$ für den angegebenen Zeitraum konstant ist und nicht vom Druck $p(t)$ abhängt. Dann entspricht die zeitliche Änderung des Volumens
 \begin{equation}
   \frac{\text{d}V}{\text{d}t} = S \ .
 \end{equation}
-Zusätzlich wird eingefordert das die Temperatur des Gases bei dem Vorgang konstant ist. Mithilfe des idealen Gasgesetz
+Zusätzlich wird eingefordert, dass die Temperatur des Gases bei dem Vorgang konstant ist. Mithilfe des idealen Gasgesetzes
 \begin{equation}
   p V = n R T
 \end{equation}
@@ -58,7 +58,7 @@ lässt sich für eine zeitabhängige Druckänderung
 \begin{equation}
   \frac{\text{d}}{\text{dt}} pV = \frac{\text{d}}{\text{dt}} n R T
 \end{equation}
-bei konstanter Stoffmenge $n$ im System die Gleichung 
+bei konstanter Stoffmenge $n$ im System die Gleichung
 \begin{equation}
   \frac{\text{d}p}{\text{d}t} V= \frac{\text{d}V}{\text{d}t} p
   \label{eqn:konti}
@@ -67,9 +67,10 @@ herleiten. Durch lösen der DGL ergibt sich die Gleichung:
 \begin{equation}
   p(t) = p_0 \exp \left( \frac{-t}{\tau} \right)
 \end{equation}
-Durch einsetzen der Anfangsbedingungen und des Enddrucks $p_\text{E}$ ergibt sich für den Zeitabhängigen Druck 
+Durch einsetzen der Anfangsbedingungen und des Enddrucks $p_\text{E}$ ergibt sich für den Zeitabhängigen Druck
 \begin{equation}
   p(t) = (p_0 - p_\text{E}) \exp \left( -t \frac{S}{V} \right) + p_\text{E}
+  \label{eqn:Druck}
 \end{equation}
 \subsection{Bestimmung des Saugvermögens über die Leckratenmessung}
 Das Saugvermögen $S$ ist gleich dem Quotienten aus des Leckrate des Rezipienten $Q$ und dem Gleichgewichtsdruck $p_\text{g}$.
@@ -85,13 +86,13 @@ Aus dem Volumen $V_0$ des Rezipienten und dem Quotienten $\frac{\Delta p}{\Delta
    S = \frac{V_0}{p_\text{g}}\, \frac{\Delta p}{\Delta t}
 \end{align}
 \subsection{Wechselwirkungsprozesse Restgas Umgebung}
-Befindet sich ein Gas oder eine Flüssigkeit eingeschloßen in einem Körper, wechseltwirkt diese mit der Grenzfläche. Dabei können die aufgeführten Prozesse auftreten und die Messreihe beeinflussen. In Kapitel \ref{sec:Durchführung} werden Maßnahmen vorgestellt dem entgegenzuwirken. (Phönen, Rezipient verschließen).
+Befindet sich ein Gas oder eine Flüssigkeit eingeschloßen in einem Körper, wechseltwirkt das Gas oder die Flüssigkeit mit der Grenzfläche. Dabei können die aufgeführten Prozesse auftreten und die Messreihe beeinflussen. In Kapitel \ref{sec:Durchführung} werden Maßnahmen vorgestellt dem entgegenzuwirken. (Föhnen, Rezipient verschließen).
 \begin{itemize}
-  \item \textbf{Absorption:} Trifft ein Teilchen auf die Grenzfläche, kann es passieren das es von dieser aufgenommen wird. Dannach befindet es sich für unbestimmte Zeit im Absorbermaterial, kan jedoch auch wieder reduktieren.
-  \item \textbf{Adsorption:} Trifft ein Teilchen auf die Grenzfläche kann es neben der Absorbtion sich auch am Rand des Absorbermaterials ablagern. Dabei wird es mittels der Van-der-Waals kräfte am Rand lokalisiert.
-  \item \textbf{Desorption:} Es ist der Umkehrprozess der Absorbtion. Dabei wird ein Teilchen aus des Rezipienten an das Vakuum abgegeben und ist somit nicht mer lokalisiert. 
-  \item \textbf{Diffusion:} Ist in einem geschlossenen System eine inhomogenen Gasverteilung, sorgt die Diffusion dafür das die Verteilung in den Gleicgewichtszustand über geht. Es beruht darauf das die ungerichteten Bewegungen die Zeitunkehrinvarianz brechen und das System in den Zustand der maximalen Entropie treibt.
-  \item \textbf{Ausgasen:} Ist ein Festkörper durch zu langen kontakt mit der Umwelt verureinigt, muss bei diesem die Gasteilchen zunächst ersteinmal an die Oberfläche diffundieren bevor sie desobiert werden können. dadurch kann nicht so schnell der Sättigungswert für die Pumpen errreicht werden.
+  \item \textbf{Absorption:} Trifft ein Teilchen auf die Grenzfläche, kann es passieren das es von dieser aufgenommen wird. Dannach befindet es sich für unbestimmte Zeit im Absorbermaterial, kann jedoch auch wieder reduktieren.
+  \item \textbf{Adsorption:} Trifft ein Teilchen auf die Grenzfläche kann es sich neben der Absorbtion auch am Rand des Absorbermaterials ablagern. Dabei wird es mittels der Van-der-Waals Kräfte am Rand lokalisiert.
+  \item \textbf{Desorption:} Es ist der Umkehrprozess der Absorbtion. Dabei wird ein Teilchen aus dem Rezipienten an das Vakuum abgegeben und ist somit nicht mehr lokalisiert.
+  \item \textbf{Diffusion:} Ist in einem geschlossenen System eine inhomogenen Gasverteilung, sorgt die Diffusion dafür, dass die Verteilung in den Gleichgewichtszustand über geht. Es beruht darauf das die ungerichteten Bewegungen die Zeitumkehrinvarianz brechen und das System in den Zustand der maximalen Entropie treibt.
+  \item \textbf{Ausgasen:} Ist ein Festkörper durch zu langen kontakt mit der Umwelt verureinigt, muss bei diesem die Gasteilchen zunächst ersteinmal an die Oberfläche diffundieren bevor sie desobiert werden können. Dadurch kann nicht so schnell der Sättigungswert für die Pumpen erreicht werden.
 \end{itemize}
 \subsection{Strömungsprozesse und Leitwert}
 Bewegungen von Fluiden werden meist durch schichten beschrieben. Dabei sind Oberflächenphänomene und der Verlauf der Schichten von besonderer Intresse.
@@ -106,7 +107,7 @@ Zur Berechnung des Saugvermögens einer Pumpe wird der Strömngswiderstand der G
 \begin{equation}
   C = \frac{l}{W} = \frac{q_\text{pV}}{\Delta p}
 \end{equation}
-Der Strömungswiederstand verhält sich analog zum elektrischen Widerstand. Dementsprechend sind die Kirchhoffschenregeln ebenso gültig. 
+Der Strömungswiederstand verhält sich analog zum elektrischen Widerstand. Dementsprechend sind die Kirchhoffschenregeln ebenso gültig.
 
 \section{Technische Grundlagen}
 Im folgenden werden die für den Versuch benötigten Technischen Grundlagen skizziert.
@@ -121,8 +122,8 @@ Pumpen lassen sich neben den verschiedenen Saugraten $S$, ihrer Funktionsweise u
 Die funktionsweise von kinetische Pumpen beruht darauf, dass durch Beschleunigung des Gases in Pumprichtung der Gasdruck verringert wird.
 Verdrängerpumpen kennzeichen sich dadurch aus, dass aufgrund von Volumenvergrößerungen der Gasdruck gesenkt wird.
 Gasbindenende Pumpen zeichnen sich dadurch aus, dass Sie die Gas-Molekühle an der Oberfläche des Rezipienten binden und somit den Druck senken. Sie werden manchmal auch als Speicher-Pumpen bezeichnet weil Sie die Molekühle nicht abtranspotieren sondern an der Oberfläche des Rezipienten lokalisieren. Mit ihnenen lassen sich nach Einstellung eines Vovakuums sehr geringe Drücke einstellen.
-Allgemein lassen sich alle Pumpen die Gas aus dem Rezipienten an die Umgebung transportieren als Transportpumpen zusammenfassen. 
-Beispielhaft werden drei Pumpen vorgestellt, welche weit verbreitet in der Vakuumstechnik sind. 
+Allgemein lassen sich alle Pumpen die Gas aus dem Rezipienten an die Umgebung transportieren als Transportpumpen zusammenfassen.
+Beispielhaft werden drei Pumpen vorgestellt, welche weit verbreitet in der Vakuumstechnik sind.
 \subsubsection{Drehschieberpumpe:}
 \begin{wrapfigure}{r}{0.32\textwidth}
     \vspace{-1cm}
@@ -131,7 +132,7 @@ Beispielhaft werden drei Pumpen vorgestellt, welche weit verbreitet in der Vakuu
     \caption{Querschnitt \cite{Dreh},\cite{Jena}}
     \label{fig:Dreh}
 \end{wrapfigure}
-Die Drehschiebepumpe ist eine Verdrängerpumpe und eine Skizze vom Aufbau ist in Abbildung \ref{fig:Dreh} abgebildet. Sie kennzeichnet sich durch eine zylindrischen Kammer aus wodrin ein zylindrischer Rotor gelagert ist. An dem Rotor befinden sich zwei Drehschieber welchen den Inhalt der Drehkammer in zwei Volumina aufteilt. Die Zylinderische Kammer ist einerseits mit dem Rezipient und der Außenwelt verbunden. Durch die Volumenvergrößerung des Rezipienten strömt Gas in die Pumpe, welches durch ein Überdruckventil durch kompression nach einem halben Rotorumschlag das Gas an die Umwelt abgibt. Der Enddruck $p_\text{E}$ ist im wesentlichen durch das Restvolumen bestimmt, wenn die Luft grade beim Auslass komprimiert wird. Drehschieberpumpen haben typischerweise eine Saugleistung von einigen Litern. Der Enddruck befindet sich im Bereich von hPa. 
+Die Drehschiebepumpe ist eine Verdrängerpumpe und eine Skizze vom Aufbau ist in Abbildung \ref{fig:Dreh} abgebildet. Sie kennzeichnet sich durch eine zylindrischen Kammer aus wodrin ein zylindrischer Rotor gelagert ist. An dem Rotor befinden sich zwei Drehschieber welchen den Inhalt der Drehkammer in zwei Volumina aufteilt. Die Zylinderische Kammer ist einerseits mit dem Rezipient und der Außenwelt verbunden. Durch die Volumenvergrößerung des Rezipienten strömt Gas in die Pumpe, welches durch ein Überdruckventil durch kompression nach einem halben Rotorumschlag das Gas an die Umwelt abgibt. Der Enddruck $p_\text{E}$ ist im wesentlichen durch das Restvolumen bestimmt, wenn die Luft grade beim Auslass komprimiert wird. Drehschieberpumpen haben typischerweise eine Saugleistung von einigen Litern. Der Enddruck befindet sich im Bereich von hPa.
 \subsubsection{Turbomolekularpumpe:}
 \begin{wrapfigure}{l}{0.35\textwidth}
     \vspace{-1cm}
@@ -171,7 +172,7 @@ Beim Kaltkathoden-Messgerät wird ein großes E-Feld angelegt, welches Primär-E
   \label{fig:Heißkathode}
   \vspace{-1cm}
 \end{wrapfigure}
-Die Wirkungsweise des Heißkathoden-Messgerät ähnelt dem des Kaltkathoden-Messgerät stark. Dadruch das es jedoch bei niedigeren Drücken zum einsatz kommt, werden zu wenig Elektronen durch die natürlichen Raumionisation frei. Aufgrund dessen wird eine Glühkathode gentutz welche Elektronen freisetzt welche auf dem weg zur Anode Gasmolekühle ionsiert. Durch Messung des Ionenstrom kann somit der Druck bestimmt werden. Der Messbereich ist nach oben bis ca $10^{-2}$ mbar beschränkt weil sonst die Glühkathode beschädigt wird und nach unten bis ca $10^{-9}$ mbar.  
+Die Wirkungsweise des Heißkathoden-Messgerät ähnelt dem des Kaltkathoden-Messgerät stark. Dadruch das es jedoch bei niedigeren Drücken zum einsatz kommt, werden zu wenig Elektronen durch die natürlichen Raumionisation frei. Aufgrund dessen wird eine Glühkathode gentutz welche Elektronen freisetzt welche auf dem weg zur Anode Gasmolekühle ionsiert. Durch Messung des Ionenstrom kann somit der Druck bestimmt werden. Der Messbereich ist nach oben bis ca $10^{-2}$ mbar beschränkt weil sonst die Glühkathode beschädigt wird und nach unten bis ca $10^{-9}$ mbar.
 \section{Fehlerrechnung}
 Sämtliche Fehlerrechnungen werden mit Hilfe von Python 3.4.3 durchgeführt.
 \subsubsection{Mittelwert}
@@ -192,4 +193,3 @@ Wenn $x_\text{1}, ..., x_\text{n}$ fehlerbehaftete Messgrößen im weiteren Verl
 	\Delta f = \sqrt{\sum_{\text{k}=1}^\text{N} \left( \frac{ \partial f}{\partial x_\text{k}} \right) ^2 \cdot (\Delta x_\text{k})^2}
 	\label{eqn:var}
 \end{equation}
-
