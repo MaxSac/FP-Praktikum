@@ -6,7 +6,7 @@ Ist in einem Raum keine Materie vorhanden und der Gasdruck verschwunden, wird di
 
 ``\textit{Vakuum heißt der Zustand eines Gases, wenn in einem Behälter der Druck des Gases und damit die Teilchenzahldichte niedriger ist als außerhalb oder wenn der Druck des Gases niedriger ist als 300 mbar, d. h. kleiner als der niedrigste auf der Erdoberfläche vorkommende Atmosphärendruck}'' \cite{DIN}
 
-Ziel des Versuches ist es die Grundlagen der Vakuumtechnik nachzuvollziehen und die für den Versuch benötigten Komponenten kennenzulernen. Dies geschieht indem für die beiden verwendeten Pumpenarten das Saugvermögen, als auch eine Leckratenmessung durchgeführt wird.
+Ziel des Versuches ist es die Grundlagen der Vakuumtechnik nachzuvollziehen und die für den Versuch benötigtten Komponenten kennenzulernen. Dies geschieht indem für die beiden verwendeten Pumpenarten das Saugvermögen, als auch eine Leckratenmessung durchgeführt wird.
 
 \subsection{Messgrößen zur Bestimmung des Vakuums}
 Das Maß eines Vakuums ist der Druck $p$. Dieser ist definiert als Kraft $F$ pro Fläche $A$
@@ -14,19 +14,19 @@ Das Maß eines Vakuums ist der Druck $p$. Dieser ist definiert als Kraft $F$ pro
   p = \frac{F}{A} = \left[ \frac{\text{N}}{\text{m}^2} \right]
   \label{eqn:druck}
 \end{equation}
-Anhand dessen lässt sich das Vakuum in verschiedene Kategorien unterteilen, was im späteren noch passieren wird. Desweiteren lässt sich bei einem Gemisch aus Gasen der Gesamtdruck $p_\text{Ges}$ in mehrere Partialdrücke aufteilen. Es gilt, dass die Summe über alle Partialdrücke dem Gesamtdruck entspricht. Analog wird mit der Teilchenanzahl vorgegangen. Der Partialdruck entspricht dem Druck welcher das entsprechende Gemisch in dem selben Volumen, wodrin sich $p_\text{Ges}$ befindet ausüben würde. \newline
-Der Druck wird üblicherweise in den Einheiten mbar gemessen. Der Normaldruck ist auf 1013 mbar definiert. 1 bar Entspricht in etwa $10^{5}$ Pa. \newline
-Desweiteren zeichnet sich ein Gas durch die mittlere freie Weglänge $\Lambda$ eines Teilchens aus, bis es mit einem anderen wechselwirkt. Durch einführen eines Stoßquerschnitts und bei einer konstanten Teilchenzahldichte $n$ lässt sich durch lösen einer Differentialgleichung
+Anhand dessen lässt sich das Vakuum in verschiedene Kategorien unterteilen, was im späteren noch gezeigt wird. Desweiteren lässt sich bei einem Gemisch aus Gasen der Gesamtdruck $p_\text{Ges}$ in mehrere Partialdrücke aufteilen. Es gilt, dass die Summe über alle Partialdrücke dem Gesamtdruck entspricht. Analog wird mit der Teilchenanzahl vorgegangen. Der Partialdruck entspricht dem Druck welcher das entsprechende Gemisch in dem selben Volumen, wodrin sich $p_\text{Ges}$ befindet, ausüben würde. \newline
+Der Druck wird üblicherweise in den Einheiten mbar gemessen. Der Normaldruck ist auf 1013 mbar definiert. Der Umrechenfaktor von bar in Pa berträgt $10^{5}$. \newline
+Desweiteren zeichnet sich ein Gas durch die mittlere freie Weglänge $\Lambda$ eines Teilchens aus, bis es mit einem anderen wechselwirkt. Durch Einführen eines Stoßquerschnitts $\sigma$, der Teilchenzahl $N$ und der Forderung nach einer konstanten Teilchenzahldichte $n$, lässt sich durch Lösen einer Differentialgleichung
 \begin{equation}
   \frac{dN}{N} = -n \sigma \Delta x
   \label{eqn:mfWDGL}
 \end{equation}
-zeigen, dass die mittlere freie Weglänge  inversproportional zu dem Produkt aus Teilchenzahlichte und Stoßquerschnitt ist.
+zeigen, dass die mittlere freie Weglänge invers proportional zu dem Produkt aus Teilchenzahlichte und Stoßquerschnitt ist.
 \begin{equation}
   \Lambda = \frac{1}{n \sigma}= \frac{k T}{\sqrt{2} \pi D^2 p}
   \label{eqn:mfW}
 \end{equation}
-Da die Teilchenanzahl von Luft bei Normaldruck als gegeben vorrausgesetzt wird, kann aus der Vorraussetzung, dass das Produkt aus $p\cdot V$ konstant ist, die Teilchenzahl bei den anderen Drücken berechnet werden.
+Ebenso lässt sich für den Gleichgewichtszustand unter der Annhame das die Gasmolekühle punktförmig sind, aus der Teilchesnzahldichte $n$ und derm Durchmesser $D$ der punktförmigen Teilchen die mittlere Weglänge $\Lambda$ herleiten. Da die Teilchenanzahl $N$ von Luft bei Normaldruck als gegeben vorrausgesetzt wird, kann aus der Vorraussetzung, dass das Produkt aus $p\cdot V$ konstant ist, die Teilchenzahl bei den Drücken berechnet werden.
 \begin{table}
   \centering
   \caption{Übersicht über die Druckbereiche, die mittlere freie Weglänge und die Teilchenanzahl}
@@ -56,18 +56,18 @@ Zusätzlich wird eingefordert, dass die Temperatur des Gases bei dem Vorgang kon
 \end{equation}
 lässt sich für eine zeitabhängige Druckänderung
 \begin{equation}
-  \frac{\text{d}}{\text{dt}} pV = \frac{\text{d}}{\text{dt}} n R T
+  \frac{\text{d}}{\text{dt}} pV = \frac{\text{d}}{\text{dt}} \underbrace{n R T}_{\substack{konst.}}
 \end{equation}
 bei konstanter Stoffmenge $n$ im System die Gleichung
 \begin{equation}
   \frac{\text{d}p}{\text{d}t} V= \frac{\text{d}V}{\text{d}t} p
   \label{eqn:konti}
 \end{equation}
-herleiten. Durch lösen der DGL ergibt sich die Gleichung:
+herleiten. Durch Lösen der DGL ergibt sich die Gleichung:
 \begin{equation}
   p(t) = p_0 \exp \left( \frac{-t}{\tau} \right)
 \end{equation}
-Durch einsetzen der Anfangsbedingungen und des Enddrucks $p_\text{E}$ ergibt sich für den Zeitabhängigen Druck
+Durch Einsetzen der Anfangsbedingungen $p_0$ und des Enddrucks $p_\text{E}$ ergibt sich für den zeitabhängigen Druck
 \begin{equation}
   p(t) = (p_0 - p_\text{E}) \exp \left( -t \frac{S}{V} \right) + p_\text{E}
   \label{eqn:Druck}
@@ -85,41 +85,42 @@ Aus dem Volumen $V_0$ des Rezipienten und dem Quotienten $\frac{\Delta p}{\Delta
 \begin{align}\label{eqn:SaugLeck}
    S = \frac{V_0}{p_\text{g}}\, \frac{\Delta p}{\Delta t}
 \end{align}
-\subsection{Wechselwirkungsprozesse Restgas Umgebung}
-Befindet sich ein Gas oder eine Flüssigkeit eingeschloßen in einem Körper, wechseltwirkt das Gas oder die Flüssigkeit mit der Grenzfläche. Dabei können die aufgeführten Prozesse auftreten und die Messreihe beeinflussen. In Kapitel \ref{sec:Durchführung} werden Maßnahmen vorgestellt dem entgegenzuwirken. (Föhnen, Rezipient verschließen).
+\subsection{Wechselwirkungsprozesse zwischen Restgasen und der Umgebung}
+Befindet sich ein Gas oder eine Flüssigkeit eingeschlossen in einem Körper, wechselwirkt das Gas oder die Flüssigkeit mit der Grenzfläche. Dabei können die unten aufgeführten Prozesse auftreten. In Kapitel \ref{sec:Durchführung} werden Maßnahmen vorgestellt dem entgegenzuwirken. (Erwärmen, Rezipient verschließen).
 \begin{itemize}
-  \item \textbf{Absorption:} Trifft ein Teilchen auf die Grenzfläche, kann es passieren das es von dieser aufgenommen wird. Dannach befindet es sich für unbestimmte Zeit im Absorbermaterial, kann jedoch auch wieder reduktieren.
-  \item \textbf{Adsorption:} Trifft ein Teilchen auf die Grenzfläche kann es sich neben der Absorbtion auch am Rand des Absorbermaterials ablagern. Dabei wird es mittels der Van-der-Waals Kräfte am Rand lokalisiert.
-  \item \textbf{Desorption:} Es ist der Umkehrprozess der Absorbtion. Dabei wird ein Teilchen aus dem Rezipienten an das Vakuum abgegeben und ist somit nicht mehr lokalisiert.
+  \item \textbf{Absorption:} Trifft ein Teilchen auf die Grenzfläche ist es möglich, dass es von dieser aufgenommen wird. Danach befindet es sich für unbestimmte Zeit im Absorbermaterial, kann jedoch auch wieder aufgrund ihrer eigener thermischen Energie emittiert werden.
+  \item \textbf{Adsorption:} Trifft ein Teilchen auf die Grenzfläche kann es sich neben der Absorbtion auch auf der Oberfläche des Absorbermaterials ablagern. Dabei wird es mittels der Van-der-Waals Kräfte oder Dipolkräfte an der Grenzfläche des Rezipienten gebunden.
+  \item \textbf{Desorption:} Es ist der Umkehrprozess der Adsorbtion. Dabei wird ein Teilchen von der Rezipientenwand an das Vakuum abgegeben und ist somit nicht mehr lokalisiert.
+  \item \textbf{Virtuelles Leck:} Falls in einem evakuierten System ein nicht zu orten sind Leck vorhanden ist, wird dieses als virtuelles Leck bezeichnet. Bei niedrigeren Drücken stört dieses, das System und begrenzt den Enddruck neben der Pumpleistung. 
   \item \textbf{Diffusion:} Ist in einem geschlossenen System eine inhomogenen Gasverteilung, sorgt die Diffusion dafür, dass die Verteilung in den Gleichgewichtszustand über geht. Es beruht darauf das die ungerichteten Bewegungen die Zeitumkehrinvarianz brechen und das System in den Zustand der maximalen Entropie treibt.
-  \item \textbf{Ausgasen:} Ist ein Festkörper durch zu langen kontakt mit der Umwelt verureinigt, muss bei diesem die Gasteilchen zunächst ersteinmal an die Oberfläche diffundieren bevor sie desobiert werden können. Dadurch kann nicht so schnell der Sättigungswert für die Pumpen erreicht werden.
+  \item \textbf{Ausgasen:} Ist ein Festkörper durch zu langen kontakt mit der Umwelt verureinigt, kann es aufgrund von Druckentlastung zum austreten von Gasen aus flüssigen oder festen Materialien kommen.
 \end{itemize}
 \subsection{Strömungsprozesse und Leitwert}
 Bewegungen von Fluiden werden meist durch Schichten beschrieben. Dabei sind Oberflächenphänomene und der Verlauf der Schichten von besonderem Intresse.
 \subsubsection{Laminare Strömung:}
-Als laminare Strömung wird eine turbulenzfreie Strömung verstanden. Dabei mischen sich die Schichten von Flüssigkeiten, wenn sie an Hindernissen vorbeifließen, nicht untereinander.
+Als laminare Strömung wird eine turbulenzfreie Strömung verstanden. Dabei mischen sich die Schichten von Gasen, wenn sie an Hindernissen vorbeifließen, nicht untereinander.
 
 \subsubsection{Molekulare Strömung:}
-Als molekular Strömung wird eine Strömung bezeichnet, wenn ihre mittlere freie Weglänge größer ist, als der Durchmesser der Strömung. Dies passiert immer dann, wenn die Drücke hinreichend klein (typisch wären Hoch-/Ultrahochvakuum) sind. Aufgrund der geringen Teilchendichte wechselwirken diese öfters mit den Grenzflächen als untereinander.
+Als molekular Strömung wird eine Strömung bezeichnet, bei der die mittlere freie Weglänge größer ist als der Durchmesser der Strömung. Dies ist immer dann der Fall, wenn die Drücke hinreichend klein sind (typisch sind Hoch-/Ultrahochvakua). Aufgrund der geringen Teilchendichte wechselwirken diese öfters mit den Grenzflächen als untereinander.
 
 \subsubsection{Leitwert:}
-Zur Berechnung des Saugvermögens einer Pumpe wird der Strömungswiderstand der Geometrie des Aufbaus berücksichtigt. Dafür wird der Quotient aus der Länge der Leitung und des Strömungswiderstandes gebildet.
+Zur Berechnung des Saugvermögens einer Pumpe wird der Strömungswiderstand der Geometrie des Aufbaus berücksichtigt. Dafür wird der Quotient aus der Länge der Leitung $l$ und des Strömungswiderstandes $W$ gebildet.
 \begin{equation}
   C = \frac{l}{W} = \frac{q_\text{pV}}{\Delta p}
 \end{equation}
-Der Strömungswiderstand verhält sich analog zum elektrischen Widerstand. Dementsprechend sind die Kirchhoffschenregeln ebenso gültig.
+Der Strömungswiderstand verhält sich analog zum elektrischen Widerstand. Dementsprechend sind die kirchhoffschen Regeln ebenso gültig.
 
 \section{Technische Grundlagen}
-Im Folgenden werden die für den Versuch benötigten Technischen Grundlagen skizziert.
+Im Folgenden werden die für den Versuch benötigten technischen Grundlagen skizziert.
 \subsection{Pumpentypen und Funktionsweise}
-Pumpen lassen sich anhand der verschiedenen Saugraten $S$, ihrer Funktionsweise und den erreichten Enddrücke $p_\text{E}$ kategorisieren. Eine Übersicht über die verschiedenen Pumpen kategorisiert nach deren funktionsweisen ist in Abblidung \ref{fig:Uebersicht} zu sehen.
+Pumpen lassen sich anhand der verschiedenen Saugraten $S$, ihrer Funktionsweise und den erreichten Enddrücke $p_\text{E}$ kategorisieren. Eine Übersicht über die verschiedenen Pumpen kategorisiert nach deren Funktionsweisen ist in Abblidung \ref{fig:Uebersicht} dargestellt.
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.9\textwidth]{picture/Uebersicht.png}
   \caption{Übersicht der verschiedenen Kategorien von Vakuumpumpen \cite{Uebersicht}}
   \label{fig:Uebersicht}
 \end{figure}
-Die funktionsweise von kinetische Pumpen beruht darauf, dass durch Beschleunigung des Gases in Pumprichtung der Gasdruck verringert wird.
+Die Funktionsweise von kinetische Pumpen beruht darauf, dass durch Beschleunigung des Gases in Pumprichtung der Gasdruck verringert wird.
 Verdrängerpumpen kennzeichen sich dadurch aus, dass aufgrund von Volumenvergrößerungen der Gasdruck gesenkt wird.
 Gasbindenende Pumpen zeichnen sich dadurch aus, dass Sie die Gas-Moleküle an der Oberfläche des Rezipienten binden und somit den Druck senken. Sie werden manchmal auch als Speicher-Pumpen bezeichnet, weil Sie die Moleküle nicht abtranspotieren, sondern an der Oberfläche des Rezipienten lokalisieren. Mit ihnen lassen sich nach Einstellung eines Vorvakuums sehr geringe Drücke herstellen.
 Allgemein lassen sich alle Pumpen die Gas aus dem Rezipienten an die Umgebung transportieren als Transportpumpen zusammenfassen.
