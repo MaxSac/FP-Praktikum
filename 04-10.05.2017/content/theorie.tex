@@ -96,9 +96,9 @@ Befindet sich ein Gas oder eine Flüssigkeit eingeschlossen in einem Körper, we
   \item \textbf{Ausgasen:} Ist ein Festkörper durch zu langen kontakt mit der Umwelt verureinigt, kann es aufgrund von Druckentlastung zum austreten von Gasen aus flüssigen oder festen Materialien kommen.
 \end{itemize}
 \subsection{Strömungsprozesse und Leitwert}
-Bewegungen von Fluiden werden meist durch Schichten beschrieben. Dabei sind Oberflächenphänomene und der Verlauf der Schichten von besonderem Intresse.
+Bewegungen von Fluiden werden meist der Anschaulichkeit halber durch Schichten beschrieben. Dabei sind Oberflächenphänomene, wie zum Beispiel die Häufigkeit von Wechselwirkungen von Gasmolekühlen mit der Grenzfläche des Rezipienten, und der Verlauf der Schichten von besonderem Interesse. Der Verlauf der Schichten, als auch die Oberflächeneigenschaften der Grenzfläche des Vakuums haben Auswirkungen auf die Sauggeschwindigkeit von Vakuumpumpen, da diese aufgrund eines größeren Strömungswiederstand $W$ abnimmt. So hängt der Leitwert $L$ als abgeleitete größe vom Strömungswiderstand $W$ zum Beispiel von der dritten Potenz des Querschnittes der Leitung ab. \cite{Jena}
 \subsubsection{Laminare Strömung:}
-Als laminare Strömung wird eine turbulenzfreie Strömung verstanden. Dabei mischen sich die Schichten von Gasen, wenn sie an Hindernissen vorbeifließen, nicht untereinander.
+Als laminare Strömung wird eine turbulenzfreie Strömung verstanden. Dabei mischen sich die Schichten von Fluiden, wenn sie an Hindernissen vorbeifließen, nicht untereinander.
 
 \subsubsection{Molekulare Strömung:}
 Als molekular Strömung wird eine Strömung bezeichnet, bei der die mittlere freie Weglänge größer ist als der Durchmesser der Strömung. Dies ist immer dann der Fall, wenn die Drücke hinreichend klein sind (typisch sind Hoch-/Ultrahochvakua). Aufgrund der geringen Teilchendichte wechselwirken diese öfters mit den Grenzflächen als untereinander.
@@ -108,7 +108,21 @@ Zur Berechnung des Saugvermögens einer Pumpe wird der Strömungswiderstand der 
 \begin{equation}
   C = \frac{l}{W} = \frac{q_\text{pV}}{\Delta p}
 \end{equation}
-Der Strömungswiderstand verhält sich analog zum elektrischen Widerstand. Dementsprechend sind die kirchhoffschen Regeln ebenso gültig.
+Dies entspricht dem Quotienten des Durchflusses $q_\text{pV}$ und der Druckdifferenz $\Delta p$ der Leitungsenden. Der Durchfluss 
+\begin{equation}
+ q_\text{pV} = S \cdot p
+  \label{eqn:durch}
+\end{equation}
+gibt dabei den durchsatz des Fluidstroms an, wobei $S$ die Saugleistung und $p$ der Eingangsdruck ist. Der Strömungswiderstand $W$ verhält sich analog zum elektrischen Widerstand. Dementsprechend sind die kirchhoffschen Regeln ebenso gültig. So gilt für die Parallelschaltung von Bauteilen für den Leitwert 
+\begin{equation}
+  C_\text{ges} = C_1 + C_2 + \cdots + C_\text{n} 
+  \label{eqn:Leit}
+\end{equation}
+sowie für die Reihenschaltung 
+\begin{equation}
+  \frac{1}{C_\text{ges}} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots + \frac{1}{C_\text{n}} \ . 
+  \label{eqn:Leit}
+\end{equation}
 
 \section{Technische Grundlagen}
 Im Folgenden werden die für den Versuch benötigten technischen Grundlagen skizziert.
@@ -121,20 +135,21 @@ Pumpen lassen sich anhand der verschiedenen Saugraten $S$, ihrer Funktionsweise 
   \label{fig:Uebersicht}
 \end{figure}
 Die Funktionsweise von kinetische Pumpen beruht darauf, dass durch Beschleunigung des Gases in Pumprichtung der Gasdruck verringert wird.
-Verdrängerpumpen kennzeichen sich dadurch aus, dass aufgrund von Volumenvergrößerungen der Gasdruck gesenkt wird.
-Gasbindenende Pumpen zeichnen sich dadurch aus, dass Sie die Gas-Moleküle an der Oberfläche des Rezipienten binden und somit den Druck senken. Sie werden manchmal auch als Speicher-Pumpen bezeichnet, weil Sie die Moleküle nicht abtranspotieren, sondern an der Oberfläche des Rezipienten lokalisieren. Mit ihnen lassen sich nach Einstellung eines Vorvakuums sehr geringe Drücke herstellen.
+Verdrängerpumpen kennzeichen sich dadurch aus, dass aufgrund von Volumenvergrößerungen der Gasdruck gesenkt wird. Dies wird als Boylesches Gesetz bezeichnet welches besagt, dass der Druck umgekehrt proportional zum Volumen bei konstanter Temperatur ist. 
+Gasbindenende Pumpen zeichnen sich dadurch aus, dass sie die Gasmoleküle an der Oberfläche des Rezipienten binden und somit den Druck senken. Sie werden auch als Speicher-Pumpen bezeichnet, weil Sie die Moleküle nicht abtranspotieren, sondern an der Oberfläche des Rezipienten binden. Mit ihnen lassen sich nach Einstellung eines Vorvakuums sehr geringe Drücke herstellen. Ein Vorvakuum wird benötigt da Speicherpumpen eine begrenzte Aufnahmefähigkeit haben und bei zu niedrigen Vorvakua zu viele Teilchen im Rezipienten vorhanden sind, sodass es nicht zu einer wesentlichen Druckabsenkung kommt (vergleiche Tabelle \ref{tab:ueberblick} Teilchenzahl. 
 Allgemein lassen sich alle Pumpen die Gas aus dem Rezipienten an die Umgebung transportieren als Transportpumpen zusammenfassen.
 Beispielhaft werden drei Pumpen vorgestellt, welche weit verbreitet in der Vakuumstechnik sind.
 \subsubsection{Drehschieberpumpe:}
-\begin{wrapfigure}{r}{0.32\textwidth}
+\begin{wrapfigure}{r}{0.35\textwidth}
     \vspace{-1cm}
     \centering
-    \includegraphics[width=0.3\textwidth]{./picture/Drehschieberpumpe.png}
-    \caption{Querschnitt \cite{Dreh},\cite{Jena}}
+    \includegraphics[width=0.34\textwidth]{./picture/Drehschieberpumpe.png}
+    \caption{Schematischer Darstellung einer Drehschiebepumpe \cite{Dreh},\cite{Jena}}
     \label{fig:Dreh}
+    \vspace{-0.5cm}
 \end{wrapfigure}
-Die Drehschierbepumpe ist eine Verdrängerpumpe und eine Skizze vom Aufbau ist in Abbildung \ref{fig:Dreh} abgebildet. Sie kennzeichnet sich durch eine zylindrische Kammer aus wodrin ein zylindrischer Rotor gelagert ist. An dem Rotor befinden sich zwei Drehschieber welchen den Inhalt der Drehkammer in zwei Volumina aufteilt. Die Zylinderische Kammer ist einerseits mit dem Rezipient und andererseits mit der Außenwelt verbunden. Durch die Volumenvergrößerung des Rezipienten strömt Gas in die Pumpe, welches durch ein Überdruckventil durch kompression nach einem halben Rotorumschlag das Gas an die Umwelt abgibt. Der Enddruck $p_\text{E}$ ist im wesentlichen durch das Restvolumen bestimmt, wenn die Luft gerade beim Auslass komprimiert wird. Drehschieberpumpen haben typischerweise eine Saugleistung von einigen Litern. Der Enddruck befindet sich im Bereich von hPa.
-\subsubsection{Turbomolekularpumpe:}
+Die Drehschierbepumpe ist eine Verdrängerpumpe. Eine Skizze vom Aufbau ist in Abbildung \ref{fig:Dreh} abgebildet. Sie kennzeichnet sich durch eine zylindrische Kammer aus in der ein zylindrischer Rotor gelagert ist. An dem Rotor befinden sich zwei Drehschieber, welche den Inhalt der Drehkammer in zwei Volumina aufteilen. Die zylinderische Kammer ist einerseits mit dem Rezipienten und andererseits mit der Außenwelt verbunden. Durch die Volumenvergrößerung des Rezipienten strömt Gas in die Pumpe, welches durch ein Überdruckventil durch Kompression nach einer halben Rotorumdrehung das Gas an die Umwelt abgibt. Der Enddruck $p_\text{E}$ ist im Wesentlichen durch das Restvolumen bestimmt, bei welches beim komprimieren nicht durch das Auslasventil abgeführt >ird. Drehschieberpumpen haben typischerweise eine Saugvermögen von einigen Litern pro Sekunde. Der Enddruck für eine einstufige Drehschiebepumpe befindet sich im Bereich von etwa $10^{-3}$ mbar und mehrstufige Drehschiebepumpen bis zu $10^{-6}$ mbar.
+\subsubsection{Turbomolekularpumpe (kurz Turbopumpe):}
 \begin{wrapfigure}{l}{0.35\textwidth}
     \vspace{-1cm}
     \centering
@@ -143,7 +158,7 @@ Die Drehschierbepumpe ist eine Verdrängerpumpe und eine Skizze vom Aufbau ist i
     \label{fig:Turbo}
     \vspace{-0.5cm}
 \end{wrapfigure}
-Die Turbopumpe benötigt für die inbetriebnahmen ein Vorvakuum und gehört zu den kinetischen Pumpen. Sie zeichnet sich durch ihren abwechselnden Aufbau aus Turbinen und Statorscheiben aus. Die Ventilatorblätter sind gegen die Scheibenebene gekippt und haben nach außen hin ein immer größer werdenden Neigungswinkel. Fällt ein Gas-Molekühl aus dem Rezipienten auf die Turbinenflügel wird dieses kurz von diesen Absorbiert, Adsorbiert bzw Stößt mit diesen und wird anschließend weiter zu den Rotorblätter mit einem höheren Neigungswinkel durchgereicht. Damit die Turbopumpe arbeiten kann, muss die mittlere freie Weglänge der Gasmoleküle in der Größenordung des Abstandes der Rotorblätter oder größer sein. Die Turbomolekularpumpe erzeugt typischerweise Enddrücke von bis zu $10^{-6}$ mbar. Bei Drehzahlen von einigen 10.000 Umdrehungen pro Minute erreichen Turbomolekularpumpen je nach Geometrie Saugleistungen von mehreren Litern bis zu tausenden von Litern.
+Die Turbopumpe benötigt für die Inbetriebnahme ein Vorvakuum und gehört zu den kinetischen Pumpen. Sie zeichnet sich durch ihren abwechselnden Aufbau aus Turbinen-  und Statorscheiben aus. Die Ventilatorblätter sind gegen die Scheibenebene gekippt und haben nach außen hin einen immer größer werdenden Neigungswinkel. Durch den größer werdenden Neigungswinkel sinkt die Wahrscheinlichkeit das ein Teilchen durch die Turbopumpe hindurch zurück in den Rezipienten gelangt. Fällt ein Gas-Molekühl aus dem Rezipienten auf die Turbinenflügel wird dieses kurz von diesen Absorbiert, Adsorbiert bzw Stößt mit diesen und wird anschließend weiter zu den Rotorblätter mit einem höheren Neigungswinkel durchgereicht. Damit die Turbopumpe arbeiten kann, muss die mittlere freie Weglänge der Gasmoleküle in der Größenordung des Abstandes der Rotorblätter oder größer sein. Die Turbomolekularpumpe erzeugt typischerweise Enddrücke von bis zu $10^{-6}$ mbar. Bei Drehzahlen von einigen 10.000 Umdrehungen pro Minute erreichen Turbomolekularpumpen je nach Geometrie Saugleistungen von mehreren Litern bis zu tausenden von Litern.
 
 \subsubsection{Ionengetter-Pumpe}
 Die Ionengetterpumpe gehört zu dem Bereich der Sorptionspumpen. Das Wirkungsprinzip beruht darauf das die Gasteilchen ionisiert werden und anschließend mittels eines angelegten Feldes zum Gettermaterial befördert werden. Somit ist dieses an der Oberfläche des Gettermaterials gebunden und verringert den Druck effektiv im Volumen des Rezipientens welches keinen Kontakt zur Grenzfläche besitzt. Durch thermische Prozesse lässt sich in gewissen Grenzen die beschränkte Aufnahmefähigkeit des Gettermaterials erhöhen. Daher ist es von Intresse beim Einsatz ein gutes Hochvakuum zu besitzen. Mit der Ionengetter-Pumpe ist es möglich Drücke von bis zu $10^{-11}$ mbar zu erzeugen.
