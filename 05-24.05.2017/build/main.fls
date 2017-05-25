@@ -491,6 +491,16 @@ INPUT ./content/durchfuehrung.tex
 INPUT ./content/durchfuehrung.tex
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
+INPUT ./picture/10MHz.pdf
+INPUT picture/10MHz.pdf
+INPUT ./picture/15MHz.pdf
+INPUT picture/15MHz.pdf
+INPUT ./picture/20MHz.pdf
+INPUT picture/20MHz.pdf
+INPUT ./picture/25MHz.pdf
+INPUT picture/25MHz.pdf
+INPUT ./picture/30MHz.pdf
+INPUT picture/30MHz.pdf
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT build/main.aux
