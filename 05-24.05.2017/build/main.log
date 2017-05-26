@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2017.4.10)  26 MAY 2017 17:12
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2017.4.10)  26 MAY 2017 18:32
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -22,7 +22,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.120 seconds
+luaotfload | main : initialization completed in 0.122 seconds
 Babel <3.9r> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex (/home/maximilian/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2017/01/03 v3.22 KOMA-Script document class (article)
@@ -2081,12 +2081,6 @@ luatex-hyphen: loading patterns and exceptions for: german (\language4)
 luatex-hyphen: info: no hyphenation exceptions for this language
 Language ngerman already loaded; id is 8
 
-LaTeX Warning: Label `tab:' multiply defined.
-
-
-LaTeX Warning: Label `tab:' multiply defined.
-
-
 LaTeX Warning: Label `fig:20Reg' multiply defined.
 
 
@@ -2291,42 +2285,45 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(1)/m/n' will be
 (Font)              scaled to size 5.00008pt on input line 31.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 4.99992pt on input line 31.
-(load luc: /home/maximilian/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc)(load luc: /home/maximilian/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc) [3]
-
-LaTeX Warning: Reference `tab:??' on page 4 undefined on input line 76.
-
-<picture/10MHz.pdf, id=60, 433.62pt x 289.08pt>
+(load luc: /home/maximilian/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc)(load luc: /home/maximilian/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc) <picture/10MHz.pdf, id=49, 433.62pt x 289.08pt>
 File: picture/10MHz.pdf Graphic file (type pdf)
  <use picture/10MHz.pdf>
-Package luatex.def Info: picture/10MHz.pdf used on input line 132.
+Package luatex.def Info: picture/10MHz.pdf used on input line 75.
 (luatex.def)             Requested size: 204.94751pt x 136.6307pt.
- <picture/15MHz.pdf, id=61, 433.62pt x 289.08pt>
+ <picture/15MHz.pdf, id=50, 433.62pt x 289.08pt>
 File: picture/15MHz.pdf Graphic file (type pdf)
  <use picture/15MHz.pdf>
-Package luatex.def Info: picture/15MHz.pdf used on input line 137.
+Package luatex.def Info: picture/15MHz.pdf used on input line 80.
 (luatex.def)             Requested size: 204.94751pt x 136.6307pt.
- <picture/20MHz.pdf, id=62, 433.62pt x 289.08pt>
+ <picture/20MHz.pdf, id=51, 433.62pt x 289.08pt>
 File: picture/20MHz.pdf Graphic file (type pdf)
  <use picture/20MHz.pdf>
-Package luatex.def Info: picture/20MHz.pdf used on input line 142.
+Package luatex.def Info: picture/20MHz.pdf used on input line 85.
 (luatex.def)             Requested size: 204.94751pt x 136.6307pt.
- <picture/25MHz.pdf, id=63, 433.62pt x 289.08pt>
+ <picture/25MHz.pdf, id=52, 433.62pt x 289.08pt>
 File: picture/25MHz.pdf Graphic file (type pdf)
  <use picture/25MHz.pdf>
-Package luatex.def Info: picture/25MHz.pdf used on input line 147.
+Package luatex.def Info: picture/25MHz.pdf used on input line 90.
 (luatex.def)             Requested size: 204.94751pt x 136.6307pt.
- <picture/30MHz.pdf, id=64, 433.62pt x 289.08pt>
+ <picture/30MHz.pdf, id=53, 433.62pt x 289.08pt>
 File: picture/30MHz.pdf Graphic file (type pdf)
  <use picture/30MHz.pdf>
-Package luatex.def Info: picture/30MHz.pdf used on input line 152.
+Package luatex.def Info: picture/30MHz.pdf used on input line 95.
 (luatex.def)             Requested size: 204.94751pt x 136.6307pt.
-) (./content/diskussion.tex [4] [5<./picture/10MHz.jpg><./picture/15MHz.jpg><./picture/20MHz.jpg><./picture/25MHz.jpg><./picture/30MHz.jpg>] [6
-Missing character: There is no 𝜇 (U+1D707) in font [lmroman10-regular]:+tlig;!
-] [7<./picture/10MHz.pdf><./picture/15MHz.pdf><./picture/20MHz.pdf><./picture/25MHz.pdf><./picture/30MHz.pdf>])
+ [3]
+
+LaTeX Warning: Reference `eqn:??' on page 4 undefined on input line 124.
+
+
+LaTeX Warning: Reference `eqn:??' on page 4 undefined on input line 142.
+
+[4] [5<./picture/10MHz.jpg><./picture/15MHz.jpg><./picture/20MHz.jpg><./picture/25MHz.jpg><./picture/30MHz.jpg>] [6<./picture/10MHz.pdf><./picture/15MHz.pdf><./picture/20MHz.pdf><./picture/25MHz.pdf><./picture/30MHz.pdf>]) (./content/diskussion.tex)
 
 LaTeX Warning: Empty bibliography on input line 25.
 
-[8]
+[7
+Missing character: There is no 𝜇 (U+1D707) in font [lmroman10-regular]:+tlig;!
+]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
  (./build/main.aux
@@ -2334,9 +2331,9 @@ Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 27.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 53EC33DA1694F1B08F105F1C9BB5B8FC;8641.
+(rerunfilecheck)             Checksum: DF8FF06A570BC8C23B0453BA49293892;8857.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: AAC540036B33D30E84C8567109AD550D;813.
+(rerunfilecheck)             Checksum: BB7DD6B4167E4F9C5A735D8FEDFAAD8A;813.
 
 
 LaTeX Warning: There were undefined references.
@@ -2350,19 +2347,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 51064 strings out of 494577
+ 51065 strings out of 494577
  100000,1977958 words of node,token memory allocated
- 2226 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 193 glue, 1 kern, 105 attribute, 59 glue_spec, 105 attribute_list, 1 write nodes
-   avail lists: 1:5,2:2167,3:234,4:91,5:265,6:1846,7:1503,8:328,9:572,10:8,11:181
- 53440 multiletter control sequences out of 65536+600000
- 103 fonts using 33005231 bytes
- 80i,15n,104p,8833b,883s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 2259 words of node memory still in use:
+   6 hlist, 2 vlist, 2 rule, 196 glue, 1 kern, 108 attribute, 59 glue_spec, 108 attribute_list, 1 write nodes
+   avail lists: 1:5,2:2227,3:259,4:113,5:297,6:2716,7:1720,8:343,9:587,10:17,11:270
+ 53442 multiletter control sequences out of 65536+600000
+ 103 fonts using 33005383 bytes
+ 80i,16n,104p,8833b,883s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/maximilian/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/maximilian/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/maximilian/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/maximilian/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/maximilian/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/maximilian/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/maximilian/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/maximilian/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/maximilian/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (8 pages, 92672908 bytes).
+Output written on main.pdf (7 pages, 92673966 bytes).
 
-PDF statistics: 270 PDF objects out of 1000 (max. 8388607)
- 196 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 131072)
+PDF statistics: 273 PDF objects out of 1000 (max. 8388607)
+ 200 compressed objects within 2 object streams
+ 31 named destinations out of 1000 (max. 131072)
  80 words of extra memory for PDF output out of 10000 (max. 10000000)
 
