@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.12.1)  29 MAY 2017 22:36
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2016.12.1)  29 MAY 2017 23:01
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -466,7 +466,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.075 seconds)
+luaotfload | main : initialization completed in 0.072 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX. (/home/philip/.local/texlive/2016/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
 \l_fontspec_script_int=\count117
@@ -2276,11 +2276,7 @@ LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 8.99986pt on input line 12.
 LaTeX Font Info:    Font shape `EU2/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 4.99992pt on input line 12.
-(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc)
-
-LaTeX Warning: Citation 'V28' on page 3 undefined on input line 36.
-
-(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-bold.luc)(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmsans9-regular.luc) <picture/Energiequantelung.pdf, id=59, 624.73402pt x 366.16798pt>
+ [3](load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc) <picture/Energiequantelung.pdf, id=77, 624.73402pt x 366.16798pt>
 File: picture/Energiequantelung.pdf Graphic file (type pdf)
  <use picture/Energiequantelung.pdf>
 Package luatex.def Info: picture/Energiequantelung.pdf used on input line 46.
@@ -2290,31 +2286,17 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 46--47
 [][] 
  []
 
-
-LaTeX Warning: Citation 'V28' on page 3 undefined on input line 47.
-
-
-LaTeX Warning: Citation 'V28' on page 3 undefined on input line 47.
-
-[3]
 Package floatflt Message: Floating figure 1 set on page 4
-<picture/EnergiequantelungElektron.pdf, id=80, 1301.66306pt x 372.59201pt>
+[4<./picture/Energiequantelung.pdf>] <picture/EnergiequantelungElektron.pdf, id=98, 1301.66306pt x 372.59201pt>
 File: picture/EnergiequantelungElektron.pdf Graphic file (type pdf)
  <use picture/EnergiequantelungElektron.pdf>
 Package luatex.def Info: picture/EnergiequantelungElektron.pdf used on input line 80.
 (luatex.def)             Requested size: 418.25555pt x 119.7208pt.
-
-
-LaTeX Warning: Citation 'V28' on page 4 undefined on input line 81.
-
-
-LaTeX Warning: Citation 'V28' on page 4 undefined on input line 81.
-
-[4<./picture/Energiequantelung.pdf>] [5<./picture/EnergiequantelungElektron.pdf>]) (./content/durchfuehrung.tex [6]
+ [5<./picture/EnergiequantelungElektron.pdf>] [6]) (./content/durchfuehrung.tex [7]
 
 Package floatflt Warning: Floating figures 1 and 2 colliding.
 
-<picture/schematischerAufbau.pdf, id=117, 352.51701pt x 256.96pt>
+<picture/schematischerAufbau.pdf, id=129, 352.51701pt x 256.96pt>
 File: picture/schematischerAufbau.pdf Graphic file (type pdf)
  <use picture/schematischerAufbau.pdf>
 Package luatex.def Info: picture/schematischerAufbau.pdf used on input line 6.
@@ -2324,108 +2306,82 @@ Overfull \hbox (10.95pt too wide) in paragraph at lines 6--7
 [][] 
  []
 
+Package floatflt Message: Floating figure 2 set on page 8
 
-LaTeX Warning: Citation 'V28' on page 7 undefined on input line 7.
-
-
-LaTeX Warning: Citation 'V28' on page 7 undefined on input line 7.
-
-Package floatflt Message: Floating figure 2 set on page 7
-
-LaTeX Warning: Citation 'V28' on page 7 undefined on input line 11.
-
-
-Overfull \hbox (7.89645pt too wide) in paragraph at lines 11--12
-[]|\EU2/lmr/m/n/9 Der sche-ma-ti-sche Auf-bau ei-ner ESR-Apparatur
+Overfull \hbox (23.264pt too wide) in paragraph at lines 11--12
+\EU2/lmr/m/n/10.95 Brü-cken-schal-tung von ei-nem Hochfrequenz-
  []
 
-<picture/Überlagerungsempfänger.pdf, id=121, 656.85402pt x 219.219pt>
+<picture/Überlagerungsempfänger.pdf, id=136, 656.85402pt x 219.219pt>
 File: picture/Überlagerungsempfänger.pdf Graphic file (type pdf)
  <use picture/Überlagerungsempfänger.pdf>
 Package luatex.def Info: picture/Überlagerungsempfänger.pdf used on input line 19.
 (luatex.def)             Requested size: 418.25555pt x 139.59052pt.
-
-
-LaTeX Warning: Citation 'V28' on page 7 undefined on input line 20.
-
-
-LaTeX Warning: Citation 'V28' on page 7 undefined on input line 20.
-
-[7<./picture/schematischerAufbau.pdf><./picture/Überlagerungsempfänger.pdf>] <picture/realerAufbau.pdf, id=139, 552.46402pt x 437.635pt>
+ [8<./picture/schematischerAufbau.pdf>] <picture/realerAufbau.pdf, id=153, 552.46402pt x 437.635pt>
 File: picture/realerAufbau.pdf Graphic file (type pdf)
  <use picture/realerAufbau.pdf>
 Package luatex.def Info: picture/realerAufbau.pdf used on input line 27.
 (luatex.def)             Requested size: 418.25555pt x 331.3306pt.
-
-
-LaTeX Warning: Citation 'V28' on page 8 undefined on input line 28.
-
-
-LaTeX Warning: Citation 'V28' on page 8 undefined on input line 28.
-
-) (./content/auswertung.tex <picture/10MHz.jpg, id=141, 739.0812pt x 549.252pt>
+ [9<./picture/Überlagerungsempfänger.pdf><./picture/realerAufbau.pdf>]) (./content/auswertung.tex <picture/10MHz.jpg, id=170, 739.0812pt x 549.252pt>
 File: picture/10MHz.jpg Graphic file (type jpg)
  <use picture/10MHz.jpg>
 Package luatex.def Info: picture/10MHz.jpg used on input line 9.
 (luatex.def)             Requested size: 204.94751pt x 152.30609pt.
- <picture/15MHz.jpg, id=142, 758.3532pt x 472.164pt>
+ <picture/15MHz.jpg, id=171, 758.3532pt x 472.164pt>
 File: picture/15MHz.jpg Graphic file (type jpg)
  <use picture/15MHz.jpg>
 Package luatex.def Info: picture/15MHz.jpg used on input line 14.
 (luatex.def)             Requested size: 204.94751pt x 127.60126pt.
- <picture/20MHz.jpg, id=143, 757.3896pt x 562.7424pt>
+ <picture/20MHz.jpg, id=172, 757.3896pt x 562.7424pt>
 File: picture/20MHz.jpg Graphic file (type jpg)
  <use picture/20MHz.jpg>
 Package luatex.def Info: picture/20MHz.jpg used on input line 19.
 (luatex.def)             Requested size: 204.94751pt x 152.27736pt.
- <picture/25MHz.jpg, id=144, 741.972pt x 558.888pt>
+ <picture/25MHz.jpg, id=173, 741.972pt x 558.888pt>
 File: picture/25MHz.jpg Graphic file (type jpg)
  <use picture/25MHz.jpg>
 Package luatex.def Info: picture/25MHz.jpg used on input line 24.
 (luatex.def)             Requested size: 204.94751pt x 154.37263pt.
- <picture/30MHz.jpg, id=145, 768.9528pt x 553.1064pt>
+ <picture/30MHz.jpg, id=174, 768.9528pt x 553.1064pt>
 File: picture/30MHz.jpg Graphic file (type jpg)
  <use picture/30MHz.jpg>
 Package luatex.def Info: picture/30MHz.jpg used on input line 29.
 (luatex.def)             Requested size: 204.94751pt x 147.41646pt.
-(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc) <picture/10MHz.pdf, id=148, 433.62pt x 289.08pt>
+(load luc: /home/philip/.local/texlive/2016/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc) <picture/10MHz.pdf, id=177, 433.62pt x 289.08pt>
 File: picture/10MHz.pdf Graphic file (type pdf)
  <use picture/10MHz.pdf>
 Package luatex.def Info: picture/10MHz.pdf used on input line 77.
 (luatex.def)             Requested size: 204.94751pt x 136.6307pt.
- <picture/15MHz.pdf, id=149, 433.62pt x 289.08pt>
+ <picture/15MHz.pdf, id=178, 433.62pt x 289.08pt>
 File: picture/15MHz.pdf Graphic file (type pdf)
  <use picture/15MHz.pdf>
 Package luatex.def Info: picture/15MHz.pdf used on input line 82.
 (luatex.def)             Requested size: 204.94751pt x 136.6307pt.
- <picture/20MHz.pdf, id=150, 433.62pt x 289.08pt>
+ <picture/20MHz.pdf, id=179, 433.62pt x 289.08pt>
 File: picture/20MHz.pdf Graphic file (type pdf)
  <use picture/20MHz.pdf>
 Package luatex.def Info: picture/20MHz.pdf used on input line 87.
 (luatex.def)             Requested size: 204.94751pt x 136.6307pt.
- <picture/25MHz.pdf, id=151, 433.62pt x 289.08pt>
+ <picture/25MHz.pdf, id=180, 433.62pt x 289.08pt>
 File: picture/25MHz.pdf Graphic file (type pdf)
  <use picture/25MHz.pdf>
 Package luatex.def Info: picture/25MHz.pdf used on input line 92.
 (luatex.def)             Requested size: 204.94751pt x 136.6307pt.
- <picture/30MHz.pdf, id=152, 433.62pt x 289.08pt>
+ <picture/30MHz.pdf, id=181, 433.62pt x 289.08pt>
 File: picture/30MHz.pdf Graphic file (type pdf)
  <use picture/30MHz.pdf>
 Package luatex.def Info: picture/30MHz.pdf used on input line 97.
 (luatex.def)             Requested size: 204.94751pt x 136.6307pt.
- [8<./picture/realerAufbau.pdf>]
+ [10
 
-LaTeX Warning: Reference `eqn:??' on page 9 undefined on input line 128.
+] [11<./picture/10MHz.jpg><./picture/15MHz.jpg><./picture/20MHz.jpg><./picture/25MHz.jpg><./picture/30MHz.jpg>]
 
-[9] [10<./picture/10MHz.jpg><./picture/15MHz.jpg><./picture/20MHz.jpg><./picture/25MHz.jpg><./picture/30MHz.jpg>] [11<./picture/10MHz.pdf><./picture/15MHz.pdf><./picture/20MHz.pdf><./picture/25MHz.pdf><./picture/30MHz.pdf>]
+LaTeX Warning: Reference `eqn:??' on page 12 undefined on input line 128.
+
 
 LaTeX Warning: Reference `eqn:??' on page 12 undefined on input line 149.
 
-) (./content/diskussion.tex) [12]
-
-LaTeX Warning: Empty bibliography on input line 30.
-
-[13]
+[12] [13<./picture/10MHz.pdf><./picture/15MHz.pdf><./picture/20MHz.pdf><./picture/25MHz.pdf><./picture/30MHz.pdf>]) (./content/diskussion.tex) [14] [15]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
  (./build/main.aux
@@ -2433,9 +2389,9 @@ Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 32.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: A3B9C487953E0BF1971191AC9F17D65D;16137.
+(rerunfilecheck)             Checksum: 256EB8BBF6C6B57698762F635E4DE7FF;16511.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 37AA66BFA52965DE7F0ED7490695EE3F;1573.
+(rerunfilecheck)             Checksum: FCF56BB562851FF2249DC8489808DF29;1643.
 
 
 LaTeX Warning: There were undefined references.
@@ -2443,30 +2399,25 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-
-Package biblatex Warning: Please (re)run Biber on the file:
-(biblatex)                main
-(biblatex)                and rerun LaTeX afterwards.
-
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 55453 strings out of 495118
+ 55465 strings out of 495118
  100000,1977958 words of node,token memory allocated
- 5283 words of node memory still in use:
-   21 hlist, 4 vlist, 7 rule, 9 disc, 3 local_par, 446 glue, 4 kern, 10 penalty, 2 margin_kern, 78 glyph, 213 attribute, 59 glue_spec, 213 attribute_list, 3 write, 2 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
-   avail lists: 1:4,2:1909,3:234,4:102,5:276,6:2507,7:1417,8:301,9:508,10:12,11:262
- 57185 multiletter control sequences out of 65536+600000
- 119 fonts using 37761403 bytes
- 82i,16n,104p,8833b,2951s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (13 pages, 92801357 bytes).
+ 5309 words of node memory still in use:
+   20 hlist, 4 vlist, 7 rule, 9 disc, 3 local_par, 449 glue, 4 kern, 10 penalty, 2 margin_kern, 76 glyph, 214 attribute, 60 glue_spec, 214 attribute_list, 3 write, 1 pdf_start_link, 1 pdf_end_link, 1 pdf_action, 2 pdf_colorstack, 1 pdf_setmatrix, 1 pdf_save, 1 pdf_restore nodes
+   avail lists: 1:4,2:1651,3:211,4:101,5:233,6:2492,7:1226,8:239,9:450,10:13,11:263
+ 57196 multiletter control sequences out of 65536+600000
+ 116 fonts using 37365675 bytes
+ 82i,16n,104p,8833b,3003s stack positions out of 5000i,500n,10000p,200000b,100000s
+</home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/philip/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (15 pages, 92801905 bytes).
 
-PDF statistics: 432 PDF objects out of 1000 (max. 8388607)
- 326 compressed objects within 4 object streams
- 64 named destinations out of 1000 (max. 131072)
- 144 words of extra memory for PDF output out of 10000 (max. 10000000)
+PDF statistics: 455 PDF objects out of 1000 (max. 8388607)
+ 345 compressed objects within 4 object streams
+ 68 named destinations out of 1000 (max. 131072)
+ 152 words of extra memory for PDF output out of 10000 (max. 10000000)
 
