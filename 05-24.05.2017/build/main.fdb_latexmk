@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber build/main"] 1495808853 "build/main.bcf" "build/main.bbl" "build/main" 1496132249
-  "build/main.bcf" 1496063730 95764 2870192d847bab65d1fc17547a3e1b94 ""
+["biber build/main"] 1496132570 "build/main.bcf" "build/main.bbl" "build/main" 1496132582
+  "build/main.bcf" 1496132581 95764 2870192d847bab65d1fc17547a3e1b94 ""
   (generated)
   "build/main.bbl"
   "build/main.blg"
-["lualatex"] 1496063726 "main.tex" "build/main.pdf" "main" 1496132249
+["lualatex"] 1496132576 "main.tex" "build/main.pdf" "main" 1496132582
   "/home/maximilian/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/maximilian/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "/home/maximilian/.local/texlive/2016/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
@@ -285,16 +285,16 @@
   "/home/maximilian/.local/texlive/2016/texmf-var/luatex-cache/generic/names/luaotfload-names.luc" 1491833551 897748 26fb48e27b07adf8130eec3d6d84f581 ""
   "/home/maximilian/.local/texlive/2016/texmf-var/tex/generic/config/language.dat.lua" 1491810291 17071 1024a9df92ac7d4d6879b6ba22d9308c ""
   "/home/maximilian/.local/texlive/2016/texmf-var/web2c/luatex/lualatex.fmt" 1491810343 1268369 6c46c9092b9c653f33e3921dda52deb2 ""
-  "build/main.aux" 1496063730 10576 9dc79dd15db3cc629a29fae8a89832d3 ""
-  "build/main.bbl" 1495808854 466 87c763802318ca007e475d2fb9c40fb5 "biber build/main"
-  "build/main.run.xml" 1496063730 2330 4233a9836802043afc4fd6b527c0f360 ""
-  "build/main.toc" 1496063730 1090 ac8318af88f6c37df57aee2d0941b294 ""
+  "build/main.aux" 1496132581 10576 9dc79dd15db3cc629a29fae8a89832d3 ""
+  "build/main.bbl" 1496132571 466 87c763802318ca007e475d2fb9c40fb5 "biber build/main"
+  "build/main.run.xml" 1496132581 2330 4233a9836802043afc4fd6b527c0f360 ""
+  "build/main.toc" 1496132581 1090 ac8318af88f6c37df57aee2d0941b294 ""
   "content/auswertung.tex" 1496062399 6571 06f0a632e5fdc52200b3e214a53566d5 ""
   "content/diskussion.tex" 1496063725 691 48991f6eb7d3db0f63ea37a93ada3ed6 ""
-  "content/durchfuehrung.tex" 1490097526 61 ee38e41dd649b76489af20338e8c89ea ""
-  "content/theorie.tex" 1490097526 1539 50e4c1a0eed2a23ac7e12829fed5d5d1 ""
-  "header.tex" 1490097526 3801 0d2ba0f52f26b0c6eac8c99b08d83c87 ""
-  "main.tex" 1490097526 375 6816d4f1fedc92a08bfc1089547739e1 ""
+  "content/durchfuehrung.tex" 1496132537 61 ee38e41dd649b76489af20338e8c89ea ""
+  "content/theorie.tex" 1496132537 1539 50e4c1a0eed2a23ac7e12829fed5d5d1 ""
+  "header.tex" 1496132537 3801 0d2ba0f52f26b0c6eac8c99b08d83c87 ""
+  "main.tex" 1496132537 375 6816d4f1fedc92a08bfc1089547739e1 ""
   "picture/10MHz.jpg" 1495655348 22854141 f6581e47ed102964b73d566398bedea3 ""
   "picture/10MHz.pdf" 1495745777 85690 70569b6bee215b74a395219ec9d83b91 ""
   "picture/15MHz.jpg" 1495655147 15474905 fec8aec3b79391076283693bbae49181 ""
@@ -306,10 +306,10 @@
   "picture/30MHz.jpg" 1495655019 17814698 a862b735432bf07ce1e76ec59dfe13bd ""
   "picture/30MHz.pdf" 1495745782 85752 4e332e146d67641ee87e51ec02115ccf ""
   (generated)
-  "build/main.pdf"
   "build/main.log"
+  "build/main.toc"
   "build/main.aux"
+  "/home/maximilian/.local/texlive/2016/texmf-var/m_t_x_t_e_s_t.tmp"
   "build/main.bcf"
   "build/main.run.xml"
-  "build/main.toc"
-  "/home/maximilian/.local/texlive/2016/texmf-var/m_t_x_t_e_s_t.tmp"
+  "build/main.pdf"
