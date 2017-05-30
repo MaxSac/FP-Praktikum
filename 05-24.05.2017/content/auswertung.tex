@@ -2,44 +2,44 @@
 \label{sec:Auswertung}
 
 \subsection{Kalibrierung der x-Achse}
-Zur Bestimmung des Lande-Faktors der Elektronen und des Erdmagnetfeldes in Dortmund, werden zunächst die x-Koordinaten in Abbildung \ref{fig:Skizze} zu sehenden Graphen normiert.
+Zur Bestimmung des Land\'{e}-Faktors der Elektronen und des Erdmagnetfeldes in Dortmund, werden zunächst die x-Koordinaten in Abbildung \ref{fig:Skizze} zu sehenden Graphen normiert.
 \begin{figure}
   \centering
   \begin{subfigure}[b]{0.49\textwidth}
      \includegraphics[width=\textwidth]{picture/10MHz.jpg}
-     \caption{10 MHz}
+     \caption{10.6 MHz}
      \label{fig:10Skiz}
   \end{subfigure}
   \begin{subfigure}[b]{0.49\textwidth}
      \includegraphics[width=\textwidth]{picture/15MHz.jpg}
-     \caption{15 MHz}
+     \caption{15.9 MHz}
      \label{fig:15Skiz}
   \end{subfigure}
   \begin{subfigure}[b]{0.49\textwidth}
      \includegraphics[width=\textwidth]{picture/20MHz.jpg}
-     \caption{20 MHz}
+     \caption{20.5 MHz}
      \label{fig:20Skiz}
   \end{subfigure}
   \begin{subfigure}[b]{0.49\textwidth}
      \includegraphics[width=\textwidth]{picture/25MHz.jpg}
-     \caption{25 MHz}
+     \caption{25.0 MHz}
      \label{fig:25Skiz}
   \end{subfigure}
   \begin{subfigure}[b]{0.49\textwidth}
      \includegraphics[width=\textwidth]{picture/30MHz.jpg}
-     \caption{30 MHz}
+     \caption{29.4 MHz}
      \label{fig:30Skiz}
   \end{subfigure}
-  \caption{Brückenstrom in abhängigkeit des Spulenstrom für verschiedene $\nu_\text{Osz}$}
+  \caption{Brückenstrom in abhängigkeit des Spulenstrom für verschiedene $\nu_\text{e}$}
   \label{fig:Skizze}
 \end{figure}
-Dazu werden die Graphen eingescannt. Mittels eines Bildbearbeitungsprogramm wird die Pixelanzahl der x-Koordinate für die gekennzeichneten Spulenströme bestimmt. Die Messwerte sind in Tabelle \ref{tab:Mess1} und \ref{tab:Mess2} aufgetragen. 
+Dazu werden die Graphen eingescannt. Mittels eines Bildbearbeitungsprogramm werden die Pixelanzahlen der x-Koordinaten für die gekennzeichneten Spulenströme bestimmt. Die Messwerte sind in Tabelle \ref{tab:Mess1} und \ref{tab:Mess2} aufgetragen. 
 \begin{table}
   \centering
-  \caption{Pixelzahl in abhängigkeit des Spulenstroms bei $\nu_\text{Osz.}$ = 10-20 MHz}
+  \caption{Pixelzahl in abhängigkeit des Spulenstroms bei $\nu_\text{e}$ = 10-20 MHz}
   \begin{tabular}{c c|c c|c c}
     \toprule
-    	$I_{10 MHz}$ / mA & Pixel & $I_{15MHz}$ / mA & Pixel & $I_{20MHz}$ / mA & Pixel \\    
+    	$I_{10.6 MHz}$ / mA & Pixel & $I_{15.9 MHz}$ / mA & Pixel & $I_{20.5 MHz}$ / mA & Pixel \\    
     \midrule
 	0   & 5911 & 201 & 5980 & 200 & 5928 \\
 	100 & 4572 & 300 & 4763 & 303 & 5018 \\
@@ -52,12 +52,12 @@ Dazu werden die Graphen eingescannt. Mittels eines Bildbearbeitungsprogramm wird
   \end{tabular}
   \label{tab:Mess1}
 \end{table}
-\begin{table}
+\begin{table}  
   \centering
-  \caption{Pixelzahl in abhängigkeit des Spulenstroms bei $\nu_\text{Osz.}$ = 25-30 MHz}
+  \caption{Pixelzahl in abhängigkeit des Spulenstroms bei $\nu_\text{e}$ = 25-30 MHz}
   \begin{tabular}{c c|c c}
     \toprule
- 	$I_{25MHz}$ / mA & Pixel & $I_{30MHz}$ / mA & Pixel \\
+ 	$I_{25.0 MHz}$ / mA & Pixel & $I_{29.4 MHz}$ / mA & Pixel \\
     \midrule
 	300 & 5823 & 300 & 6062 \\
 	404 & 4830 & 400 & 5220 \\
@@ -70,38 +70,38 @@ Dazu werden die Graphen eingescannt. Mittels eines Bildbearbeitungsprogramm wird
   \end{tabular}
   \label{tab:Mess2}
 \end{table}
-Die Tupel aus Pixelzahl und Spulenstrom werden genutzt um die Pixelzahl auf den Spulenstrom zu kalibrieren. Dafür wird eine linera Regression durchgeführt. 
+Die Tupel aus Pixelzahlen und Spulenströme werden genutzt um die Pixelzahlen auf die Spulenströme zu kalibrieren. Dafür werden mehrere linera Regressionen durchgeführt. 
 \begin{figure}
   \centering
   \begin{subfigure}[b]{0.49\textwidth}
      \includegraphics[width=\textwidth]{picture/10MHz.pdf}
-     \caption{10 MHz}
+     \caption{10.6 MHz}
      \label{fig:10Reg}
   \end{subfigure}
   \begin{subfigure}[b]{0.49\textwidth}
      \includegraphics[width=\textwidth]{picture/15MHz.pdf}
-     \caption{15 MHz}
+     \caption{15.9 MHz}
      \label{fig:15Reg}
   \end{subfigure}
   \begin{subfigure}[b]{0.49\textwidth}
      \includegraphics[width=\textwidth]{picture/20MHz.pdf}
-     \caption{20 MHz}
+     \caption{20.5 MHz}
      \label{fig:20Reg}
   \end{subfigure}
   \begin{subfigure}[b]{0.49\textwidth}
      \includegraphics[width=\textwidth]{picture/25MHz.pdf}
-     \caption{25 MHz}
+     \caption{25.0 MHz}
      \label{fig:20Reg}
   \end{subfigure}
   \begin{subfigure}[b]{0.49\textwidth}
      \includegraphics[width=\textwidth]{picture/30MHz.pdf}
-     \caption{30 MHz}
+     \caption{29.4 MHz}
      \label{fig:30Reg}
   \end{subfigure}
   \caption{Lineare Regression zwischen der Pixel und des Spuelnstroms für unterschiedliche Frequenzen}
   \label{fig:Reg}
-\end{figure}
-Anhand der Steigunung $m$ und des Bios $b$ der linearen Regression
+\end{figure} 
+Anhand der Steigunungen $m$ und der y-Achsenabschnitte $b$ der linearen Regression
 \begin{equation}
   f(x) = m \cdot x + b
   \label{eqn:Reg}
@@ -109,56 +109,56 @@ Anhand der Steigunung $m$ und des Bios $b$ der linearen Regression
 ergeben sich die in Tabelle \ref{tab:stei} aufgeführten Koeffizienten. 
 \begin{table}
   \centering
-  \caption{}
+  \caption{Koeffizeienten der linearen Regression}
   \begin{tabular}{c|c c}
     \toprule
-    	$\nu_\text{Osz}$ & Steigung m & Bios b \\
+    	$\nu_\text{e}$ & Steigung m & Bios b \\
     \midrule
-       	10 MHz & \num{7.87 +- 0.04}  & \num{463 +- 1.4} \\
-	15 MHz & \num{7.97 +- 0.03}  & \num{678.6 +- 1.1} \\ 
-	20 MHz & \num{10.73 +- 0.07} & \num{837 +- 2} \\
-	25 MHz & \num{10.2 +- 0.1}   & \num{897 +- 5} \\
-	30 MHz & \num{11.27 +- 0.08} & \num{986 +- 3.3}\\
+       	10.6 MHz & \num{7.87 +- 0.04}  & \num{463 +- 1.4} \\
+	15.9 MHz & \num{7.97 +- 0.03}  & \num{678.6 +- 1.1} \\ 
+	20.5 MHz & \num{10.73 +- 0.07} & \num{837 +- 2} \\
+	25.0 MHz & \num{10.2 +- 0.1}   & \num{897 +- 5} \\
+	29.4 MHz & \num{11.27 +- 0.08} & \num{986 +- 3.3}\\
     \bottomrule
   \end{tabular}
   \label{tab:stei}
 \end{table}
 
 \subsection{Bestimmung der Feldstärken}
-Aus der zuvor berechnenten Regression lassen sich die Spulenströme für den Resonanzfall berechnen, indem die Extrema der Graphen \ref{fig:Skizze} bestimmt werden. Anschließend wird die magnetischen Feldstärke anhand von Formel \ref{eqn:??} berechnt. Die magnetische Feldstärke entsprechend gegen und in Richtung des Erdmagentfeldes gerichteten Aufbau sind in Tabelle \ref{tab:magn} in Abhängigkeit von $\nu_\text{Osz}$ aufgetragen.  
+Aus der zuvor berechneten Regression lassen sich die Spulenströme für den Resonanzfall ermitteln, indem die Extrema der Graphen, welche in Abbildung \ref{fig:Skizze} zu sehen sind, bestimmt werden. Anschließend werden die magnetischen Feldstärken anhand von Formel \ref{eqn:BHelm} berechnet. Die magnetischen Feldstärken, entsprechend gegen und in Richtung des Erdmagentfeldes gerichteten Aufbau, sind in Tabelle \ref{tab:magn} in Abhängigkeit von $\nu_\text{e}$ aufgetragen.  
 \begin{table}
   \centering
-  \caption{}
+  \caption{Magnetische Felder in Abhängigkeit der Oszillatorfrequenz}
   \begin{tabular}{c|c c c}
     \toprule
-    \multirow{2}{*}{$\nu_\text{Osz}$} & B-Feld in Richtung & B-Feld entgen der Richtung & gemitteltes \\
+    \multirow{2}{*}{$\nu_\text{e}$} & B-Feld in Richtung & B-Feld entgen der Richtung & gemitteltes \\
     	& des Erdmagnetfeld / $\mu T$ & des Erdmagnetfeld / $\mu T$ & B-Feld / $\mu T$ \\
     \midrule
-       	10 MHz & \num{417 +- 2} & \num{359 +- 3} & \num{388 +- 2} \\
-	15 MHz & \num{590 +- 2} & \num{518 +- 2} & \num{554 +- 2} \\ 
-	20 MHz & \num{733 +- 4} & \num{663 +- 5} & \num{698 +- 4} \\
-	25 MHz & \num{941 +- 8} & \num{840 +- 8} & \num{891 +- 8} \\
-	30 MHz & \num{1105 +- 5} & \num{1026 +- 5} & \num{1066 +- 5} \\
+       	10.6 MHz & \num{417 +- 2} & \num{359 +- 3} & \num{388 +- 2} \\
+	15.9 MHz & \num{590 +- 2} & \num{518 +- 2} & \num{554 +- 2} \\ 
+	20.5 MHz & \num{733 +- 4} & \num{663 +- 5} & \num{698 +- 4} \\
+	25.0 MHz & \num{941 +- 8} & \num{840 +- 8} & \num{891 +- 8} \\
+	29.4 MHz & \num{1105 +- 5} & \num{1026 +- 5} & \num{1066 +- 5} \\
     \bottomrule
   \end{tabular}
   \label{tab:magn}
 \end{table}
-Der Mittelwert aus den beiden Fällen entspricht dementsprechend den feldfreien Fall. 
+Der Mittelwert aus den beiden Fällen entspricht dementsprechend, den Erdmagnetfeld freien Fall und ist ebenfalls in Tabelle \ref{tab:magn} aufgetragen.
 \subsection{Landefaktoren und Erdmagnetfeld}
-Ebenso lässt sich aus der halben Differenz der beiden magnetischen Feldstärken das magn Feld der Erde in Dortmund berechnen. Für die verschiedenen $\nu_\text{Osz}$ sind diese aufgeführt.
-Mittels Formel \ref{eqn:??} werden die Landefaktoren berchent und sind ebenfalls in \ref{tab:lande} aufgetragen.
+Ebenso lässt sich aus der halben Differenz der beiden magnetischen Feldstärken das magn. Feld der Erde in Dortmund berechnen. Für die verschiedenen $\nu_\text{e}$ sind diese aufgeführt.
+Mittels Formel \ref{eqn:lande} werden die Landefaktoren berechnet und sind ebenfalls in \ref{tab:lande} aufgetragen.
 \begin{table}
   \centering
   \caption{Landefaktoren und Stärke des Erdmagnetfeldes}
   \begin{tabular}{c|c c}
     \toprule
-    	$\nu_\text{Osz}$ & Erdmagnetfeld / $\mu$ T & Lande Faktor \\
+    	$\nu_\text{e}$ & Erdmagnetfeld / $\mu$ T & Lande Faktor \\
     \midrule
-       	10 MHz & \num{29.2 +- 0.2} & \num{1.95 +- 0.01} \\
-	15 MHz & \num{36.5 +- 0.1} & \num{2.06 +- 0.01} \\ 
-	20 MHz & \num{35.1 +- 0.2} & \num{2.10 +- 0.01} \\
-	25 MHz & \num{50.6 +- 0.6} & \num{2.01 +- 0.02} \\
-	30 MHz & \num{39.4 +- 0.3} & \num{2.01 +- 0.01} \\
+       	10.6 MHz & \num{29.2 +- 0.2} & \num{1.95 +- 0.01} \\
+	15.9 MHz & \num{36.5 +- 0.1} & \num{2.06 +- 0.01} \\ 
+	20.5 MHz & \num{35.1 +- 0.2} & \num{2.10 +- 0.01} \\
+	25.0 MHz & \num{50.6 +- 0.6} & \num{2.01 +- 0.02} \\
+	29.4 MHz & \num{39.4 +- 0.3} & \num{2.01 +- 0.01} \\
     \midrule
 	Mittel & \num{38.4 +- 1.5} & \num{2.02 +- 0.01} \\
     \bottomrule
