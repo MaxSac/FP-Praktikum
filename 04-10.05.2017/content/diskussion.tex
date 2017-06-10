@@ -1,85 +1,56 @@
 \section{Diskussion}
 \label{sec:Diskussion}
-Im Folgenden werden die Ergebnisse aus der Auswertung diskutiert und die große Abweichung der Saugrate zu den Herstellerangaben erläutert. \\
-Das Saugvermögen der \textbf{Drehschieberpumpe}, aus der Leckratenmessung und der $p(t)$-Kurve sind in Tabelle \eqref{tab:SaugDreh} aufgelistet. Die Herstellerangabe \cite{V70} zu dem Saugvermögen ist
+Im Folgenden werden die Ergebnisse aus der Auswertung diskutiert und die Abweichung des Saugvermögens zu den Herstellerangaben erläutert. Die Herstellerangaben lauten
 \begin{align*}
-  S_\text{Dreh} = 1.1\ \frac{\text{l}}{\text{s}} \ .
+  S_\text{Her,Dreh} = 1.1 \, \frac{\text{l}}{\text{s}} \ , \\
+  S_\text{Her,Turbo} = 77 \, \frac{\text{l}}{\text{s}} \ .
 \end{align*}
+Die Fehler des Saugvermögens kommen vorrangig durch das Volumen zustande. Der Fehler des Volumens entsteht, weil nur der Außenradius des Lufttanks gemessen werden kann, dadurch muss die Materialdicke geschätzt werden. Außerdem wird angenommen, dass es sich um zylindrische Bauteile handelt. Allerdings entstehen dadurch Abweichung, welche mit in den Fehler eingehen. \\
+Die große Abweichung zwischen dem experimentell ermittelten Saugvermögen bei der Turbopumpe und den Herstellerangaben kommt durch den Leitwert zustande. Um die Herstellerangaben zu ermitteln, wird die Pumpe direkt an den Rezipienten angeschlossen, wodurch das Saugvermögen nicht vermindert wird. Das effektive Saugvermögen $S_\text{eff}$ kann mit
+\begin{align}
+  \frac{1}{S_\text{eff}} = \frac{1}{S_\text{Her}} + \frac{1}{C}
+\end{align}
+bestimmt werden. Dabei entspricht $S_\text{Her}$ den Herstellerangaben des Saugvermögens und $C$ ist der Leitwert aus Gleichung \eqref{eqn:Leitwert}. Der Leitwert wird für molekulare Strömungen als
+\begin{align}
+  C = 12.1 \cdot \frac{d^3}{l}
+\end{align}
+angenähert \cite{Grundlagen}. Dabei ist $d$ der Durchmesser des verwendeten Verbindungsrohres und $l$ die Länge. \\
+Für den verwendeten Versuchsaufbau sind zwei T-Stücke und ein Schlauch verwendet worden. Die drei Bauteile sind in Reihegeschaltet, damit wird der gesamte Leitwert nach Gleichung \eqref{eqn:LeitReihe} berechnet. Es wird darauf verzichtet den Fehler des Leitwertes zu bestimmen, da nur die Größenordnung zwischen den Herstellerangaben und dem berechneten Saugvermögen von Intresse ist.
 
-\begin{table}
+\begin{table}[H]
+   \centering
+   \caption{Geometrische Angaben der Bauteile für den Leitwert.}
+   \label{tab:angabenLeitwert}
+   \begin{tabular}{c|c|c|c}
+     Bauteil & $l$ / cm & $d$ / cm & $C$ / $\frac{\text{l}}{\text{s}}$ \\
+     \midrule
+     Schlauch        & 39.0 & 3.9 & 18.4 \\
+     T-Stück $(T_1)$ & 10.0 & 4.0 & 77.4 \\
+     T-Stück $(T_2)$ & 8.0  & 4.0 & 96.8 \\
+   \end{tabular}
+ \end{table}
+
+Mit den Werten aus Tabelle \eqref{tab:angabenLeitwert} ergibt sich ein gesamter Leitwert von
+\begin{align}
+  C_\text{Ges} = \frac{1}{ \frac{1}{18.4} + \frac{1}{77.4} + \frac{1}{96.8} } = 12.9\, \frac{\text{l}}{\text{s}} \ .
+\end{align}
+und daraus folgt für das effektive Saugvermögen
+\begin{align}
+  S_\text{eff} = \frac{1}{\frac{1}{77} + \frac{1}{12.9}} = 11.0\, \frac{\text{l}}{\text{s}} \ .
+\end{align}
+Die Herstellerangaben des Saugvermögens sind 7 mal größer, als das effektive Saugvermögen. Diese Erkenntis spiegelt sich auch in den experimentell ermittelten Saugvermögen wieder. Diese liegen in einem Bereich von $4$ bis $18$ $\frac{\text{l}}{\text{s}}$. \\
+Die Abweichung zwischen den Herstellerangaben und den experimentell ermitteltem Saugvermögen für die Drehschieberpumpe ist deutlich geringer. Allerdings sind die experimentell ermittelten Werte kleiner und größer als die Herstellerangabe. Dies kommt aus der vereinfachten Annahme, dass das Saugvermögen nicht vom Druck abhängt. In den Diagrammen \eqref{fig:vergleichDreh} und \eqref{fig:vergleichTurbo} ist der Druck gegen das Saugvermögen aufgetragen. Daraus ist ersichtlich, dass die Annahme falsch ist und das Saugvermögen vom Druck abhängt.
+
+\begin{figure}
   \centering
-  \caption{Das Saugvermögen der Dreschieberpumpe.}
-  \label{tab:SaugDreh}
-  \begin{tabular}{c|c}
-    & $S$ / $\frac{\text{l}}{\text{s}}$ \\
-    \midrule
-    \multirow{4}{4cm}{\centering\texorpdfstring{$p(t)$-Kurve}} & $\num{0.47 +- 0.05}$ \\
-    & $\num{0.82 +- 0.07}$ \\
-    & $\num{0.54 +- 0.05}$ \\
-    & $\num{0.24 +- 0.04}$ \\
-    \midrule
-    \multirow{5}{4cm}{\centering Leckratenmessung} & $\num{0.4 +- 0.1}$ \\
-    & $\num{0.7 +- 0.2}$ \\
-    & $\num{0.9 +- 0.2}$ \\
-    & $\num{1.0 +- 0.2}$ \\
-    & $\num{1.1 +- 0.2}$ \\
-  \end{tabular}
-\end{table}
+  \includegraphics[width=\linewidth]{pictures/pSDiagrammDreh.pdf}
+  \caption{Vergleichsplot für die Drehschieberpumpe.}
+  \label{fig:vergleichDreh}
+\end{figure}
 
-Der Anfangs- und Enddruck für die Drehschieberpumpe betragen
-\begin{align*}
-  p_{0,\text{Dreh}} = (\num{1 +- 0.2})\cdot 10^3\ \text{mbar} \ , \\
-  p_{\text{E},\text{Dreh}} = (\num{2 +- 0.4})\cdot 10^{-2}\ \text{mbar}
-\end{align*}
-und das Volumen des Rezipienten ist
-\begin{align*}
-  V_\text{Dreh} = (\num{8.4 +- 0.7})\ \text{l}
-\end{align*}
-
-Das Saugvermögen der \textbf{Drehschieberpumpe}, aus der Leckratenmessung und der $p(t)$-Kurve sind in Tabelle \eqref{tab:SaugTurbo} aufgelistet. Die Herstellerangabe \cite{V70} zu dem Saugvermögen ist
-\begin{align*}
-  S_\text{Turbo} = 77\ \frac{\text{l}}{\text{s}} \ .
-\end{align*}
-
-\begin{table}
+\begin{figure}
   \centering
-  \caption{Das Saugvermögen der Turbopumpe.}
-  \label{tab:SaugTurbo}
-  \begin{tabular}{c|c}
-    & $S$ / $\frac{\text{l}}{\text{s}}$ \\
-    \midrule
-    \multirow{3}{4cm}{\centering\texorpdfstring{$p(t)$-Kurve}} & $\num{5.3 +- 0.5}$ \\
-    & $\num{4.3 +- 0.4}$ \\
-    & $\num{3.7 +- 0.3}$ \\
-    \midrule
-    \multirow{4}{4cm}{\centering Leckratenmessung} & $\num{11.0 +- 2.0}$ \\
-    & $\num{15.0 +- 2.0}$ \\
-    & $\num{14.0 +- 2.0}$ \\
-    & $\num{15.0 +- 2.0}$ \\
-  \end{tabular}
-\end{table}
-
-Der Anfangs- und Enddruck für die Turbopumpe betragen
-\begin{align*}
-  p_{0,\text{Turbo}} = (\num{5 +- 0.5})\cdot 10^{-3}\ \text{mbar} \ , \\
-  p_{\text{E},\text{Turbo}} = (\num{2 +- 0.2})\cdot 10^{-5}\ \text{mbar} \ .
-\end{align*}
-und das Volumen des Rezipienten ist
-\begin{align*}
-  V_\text{Turbo} = (\num{8.2 +- 0.7})\ \text{l}
-\end{align*}
-
-Die Fehler des Saugvermögens kommen im Wesentlichen durch zwei Faktoren zu stande. Zum einen haben die Messgeräte einen Fehler von $10\ \%$ bzw. $20\ \%$ und zum anderen kann das Volumen des Rezipienten nur sehr schlecht abgeschätzt werden. \\
-Allerdings ist bei der Bestimmung des Saugvermögens über die $p(t)$-Kurve eine sehr große diskrepanz zwischen den Herstellerangaben und den experimentell ermittelten Werten zu erkennen. Diese diskrepanz kommt durch den Leitwert $C$ (siehe Gl. \eqref{eqn:Leitwert}) zustande. Da die Hersteller die Pumpe direkt an einen Rezipienten anschließen, haben sie kein Verlust des Saugvermögens durch den Leitwert. Für den verwendeten Versuchsaufbau werden allerdings Verbindungen verwendet, welche nur $\frac{1}{3}$ des Durchmessers der Pumpe haben. Dadurch verkleinert sich das theoretische Saugvermögen auf ca. $S_\text{Dreh} = 0.37\ \frac{\text{l}}{\text{s}}$ und $S_\text{Turbo} = 25.67\ \frac{\text{l}}{\text{s}}$. \\
-Außerdem werden in dem Versuchsaufbau keine hochreinen Materialien verwendet. Dadurch gasen die Bauteile aus und die theoretische Saugleistung verringert sich dadurch weiter.
-
-
-
-
-
-
-
-
-
-
-%
+  \includegraphics[width=\linewidth]{pictures/pSDiagrammTurbo.pdf}
+  \caption{Vergleichsplot dür die Turbopumpe.}
+  \label{fig:vergleichTurbo}
+\end{figure}

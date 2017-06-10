@@ -91,7 +91,7 @@ Befindet sich ein Gas oder eine Flüssigkeit eingeschlossen in einem Körper, we
   \item \textbf{Absorption:} Trifft ein Teilchen auf die Grenzfläche ist es möglich, dass es von dieser aufgenommen wird. Danach befindet es sich für unbestimmte Zeit im Absorbermaterial, kann jedoch auch wieder aufgrund ihrer eigener thermischen Energie emittiert werden.
   \item \textbf{Adsorption:} Trifft ein Teilchen auf die Grenzfläche kann es sich neben der Absorbtion auch auf der Oberfläche des Absorbermaterials ablagern. Dabei wird es mittels der Van-der-Waals Kräfte oder Dipolkräfte an der Grenzfläche des Rezipienten gebunden.
   \item \textbf{Desorption:} Es ist der Umkehrprozess der Adsorbtion. Dabei wird ein Teilchen von der Rezipientenwand an das Vakuum abgegeben und ist somit nicht mehr lokalisiert.
-  \item \textbf{Virtuelles Leck:} Falls in einem evakuierten System ein nicht zu orten sind Leck vorhanden ist, wird dieses als virtuelles Leck bezeichnet. Bei niedrigeren Drücken stört dieses, das System und begrenzt den Enddruck neben der Pumpleistung. 
+  \item \textbf{Virtuelles Leck:} Falls in einem evakuierten System ein nicht zu orten sind Leck vorhanden ist, wird dieses als virtuelles Leck bezeichnet. Bei niedrigeren Drücken stört dieses, das System und begrenzt den Enddruck neben der Pumpleistung.
   \item \textbf{Diffusion:} Ist in einem geschlossenen System eine inhomogenen Gasverteilung, sorgt die Diffusion dafür, dass die Verteilung in den Gleichgewichtszustand über geht. Es beruht darauf das die ungerichteten Bewegungen die Zeitumkehrinvarianz brechen und das System in den Zustand der maximalen Entropie treibt.
   \item \textbf{Ausgasen:} Ist ein Festkörper durch zu langen kontakt mit der Umwelt verureinigt, kann es aufgrund von Druckentlastung zum austreten von Gasen aus flüssigen oder festen Materialien kommen.
 \end{itemize}
@@ -105,23 +105,23 @@ Als molekular Strömung wird eine Strömung bezeichnet, bei der die mittlere fre
 
 \subsubsection{Leitwert:}
 Zur Berechnung des Saugvermögens einer Pumpe wird der Strömungswiderstand der Geometrie des Aufbaus berücksichtigt. Dafür wird der Quotient aus der Länge der Leitung $l$ und des Strömungswiderstandes $W$ gebildet.
-\begin{equation}
+\begin{equation}\label{eqn:Leitwert}
   C = \frac{l}{W} = \frac{q_\text{pV}}{\Delta p}
 \end{equation}
-Dies entspricht dem Quotienten des Durchflusses $q_\text{pV}$ und der Druckdifferenz $\Delta p$ der Leitungsenden. Der Durchfluss 
+Dies entspricht dem Quotienten des Durchflusses $q_\text{pV}$ und der Druckdifferenz $\Delta p$ der Leitungsenden. Der Durchfluss
 \begin{equation}
  q_\text{pV} = S \cdot p
   \label{eqn:durch}
 \end{equation}
-gibt dabei den durchsatz des Fluidstroms an, wobei $S$ die Saugleistung und $p$ der Eingangsdruck ist. Der Strömungswiderstand $W$ verhält sich analog zum elektrischen Widerstand. Dementsprechend sind die kirchhoffschen Regeln ebenso gültig. So gilt für die Parallelschaltung von Bauteilen für den Leitwert 
+gibt dabei den durchsatz des Fluidstroms an, wobei $S$ die Saugleistung und $p$ der Eingangsdruck ist. Der Strömungswiderstand $W$ verhält sich analog zum elektrischen Widerstand. Dementsprechend sind die kirchhoffschen Regeln ebenso gültig. So gilt für die Parallelschaltung von Bauteilen für den Leitwert
 \begin{equation}
-  C_\text{ges} = C_1 + C_2 + \cdots + C_\text{n} 
-  \label{eqn:Leit}
+  C_\text{ges} = C_1 + C_2 + \cdots + C_\text{n}
+  \label{eqn:LeitParallel}
 \end{equation}
-sowie für die Reihenschaltung 
+sowie für die Reihenschaltung
 \begin{equation}
-  \frac{1}{C_\text{ges}} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots + \frac{1}{C_\text{n}} \ . 
-  \label{eqn:Leit}
+  \frac{1}{C_\text{ges}} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots + \frac{1}{C_\text{n}} \ .
+  \label{eqn:LeitReihe}
 \end{equation}
 
 \section{Technische Grundlagen}
@@ -135,8 +135,8 @@ Pumpen lassen sich anhand der verschiedenen Saugraten $S$, ihrer Funktionsweise 
   \label{fig:Uebersicht}
 \end{figure}
 Die Funktionsweise von kinetische Pumpen beruht darauf, dass durch Beschleunigung des Gases in Pumprichtung der Gasdruck verringert wird.
-Verdrängerpumpen kennzeichen sich dadurch aus, dass aufgrund von Volumenvergrößerungen der Gasdruck gesenkt wird. Dies wird als Boylesches Gesetz bezeichnet welches besagt, dass der Druck umgekehrt proportional zum Volumen bei konstanter Temperatur ist. 
-Gasbindenende Pumpen zeichnen sich dadurch aus, dass sie die Gasmoleküle an der Oberfläche des Rezipienten binden und somit den Druck senken. Sie werden auch als Speicher-Pumpen bezeichnet, weil Sie die Moleküle nicht abtranspotieren, sondern an der Oberfläche des Rezipienten binden. Mit ihnen lassen sich nach Einstellung eines Vorvakuums sehr geringe Drücke herstellen. Ein Vorvakuum wird benötigt da Speicherpumpen eine begrenzte Aufnahmefähigkeit haben und bei zu niedrigen Vorvakua zu viele Teilchen im Rezipienten vorhanden sind, sodass es nicht zu einer wesentlichen Druckabsenkung kommt (vergleiche Tabelle \ref{tab:ueberblick} Teilchenzahl. 
+Verdrängerpumpen kennzeichen sich dadurch aus, dass aufgrund von Volumenvergrößerungen der Gasdruck gesenkt wird. Dies wird als Boylesches Gesetz bezeichnet welches besagt, dass der Druck umgekehrt proportional zum Volumen bei konstanter Temperatur ist.
+Gasbindenende Pumpen zeichnen sich dadurch aus, dass sie die Gasmoleküle an der Oberfläche des Rezipienten binden und somit den Druck senken. Sie werden auch als Speicher-Pumpen bezeichnet, weil Sie die Moleküle nicht abtranspotieren, sondern an der Oberfläche des Rezipienten binden. Mit ihnen lassen sich nach Einstellung eines Vorvakuums sehr geringe Drücke herstellen. Ein Vorvakuum wird benötigt da Speicherpumpen eine begrenzte Aufnahmefähigkeit haben und bei zu niedrigen Vorvakua zu viele Teilchen im Rezipienten vorhanden sind, sodass es nicht zu einer wesentlichen Druckabsenkung kommt (vergleiche Tabelle \ref{tab:ueberblick} Teilchenzahl.
 Allgemein lassen sich alle Pumpen die Gas aus dem Rezipienten an die Umgebung transportieren als Transportpumpen zusammenfassen.
 Beispielhaft werden drei Pumpen vorgestellt, welche weit verbreitet in der Vakuumstechnik sind.
 \subsubsection{Drehschieberpumpe:}
@@ -161,7 +161,7 @@ Die Drehschierbepumpe ist eine Verdrängerpumpe. Eine Skizze vom Aufbau ist in A
 Die Turbopumpe benötigt für die Inbetriebnahme ein Vorvakuum und gehört zu den kinetischen Pumpen. Sie zeichnet sich durch ihren abwechselnden Aufbau aus Turbinen-  und Statorscheiben aus. Die Ventilatorblätter sind gegen die Scheibenebene gekippt und haben nach außen hin einen immer größer werdenden Neigungswinkel. Durch den größer werdenden Neigungswinkel sinkt die Wahrscheinlichkeit das ein Teilchen durch die Turbopumpe hindurch zurück in den Rezipienten gelangt. Gelingt ein Gasmolekül aus dem Rezipienten auf die Turbinenflügel, wird dieses kurz von diesem Adsorbiert bzw. stößt mit diesem und wird anschließend weiter zu den Rotorblättern mit einem höheren Neigungswinkel befördert. Damit die Turbopumpe arbeiten kann, muss die mittlere freie Weglänge der Gasmoleküle in der Größenordung des Abstandes der Rotorblätter oder größer sein. Die Turbomolekularpumpe erzeugt typischerweise Enddrücke von $10^{-6}$ bis zu $10^{-9}$ mbar. Bei Drehzahlen von einigen 10.000 Umdrehungen pro Minute erreichen Turbomolekularpumpen, je nach Geometrie, Saugvermögen von mehreren Litern pro Sekunde bis zu tausenden von Litern pro Sekunde.
 
 \subsubsection{Ionengetterpumpe}
-Die Ionengetterpumpe gehört zu der Kategorie der Sorptionspumpen. Das Wirkungsprinzip beruht darauf, dass die Gasteilchen ionisiert und anschließend mittels eines angelegten elektrischen Feldes zum Gettermaterial befördert werden. Somit ist dieses an der Oberfläche des Gettermaterials gebunden und verringert den Druck effektiv im Volumen des Rezipienten. Durch das auftrefen der Ionen auf die Oberfläche werden Elektronen freigesetzt, welche weiter Restpartikel ionisieren können. Durch erhitzen des Rezipientens kann die thermische emission von Elektronen gesteigert werden. 
+Die Ionengetterpumpe gehört zu der Kategorie der Sorptionspumpen. Das Wirkungsprinzip beruht darauf, dass die Gasteilchen ionisiert und anschließend mittels eines angelegten elektrischen Feldes zum Gettermaterial befördert werden. Somit ist dieses an der Oberfläche des Gettermaterials gebunden und verringert den Druck effektiv im Volumen des Rezipienten. Durch das auftrefen der Ionen auf die Oberfläche werden Elektronen freigesetzt, welche weiter Restpartikel ionisieren können. Durch erhitzen des Rezipientens kann die thermische emission von Elektronen gesteigert werden.
 \newline
 ??
 \newline
@@ -177,7 +177,7 @@ Für die Messung von verschiedenen Drücken werden unterschiedliche Messinstrume
   \label{fig:pirani}
   \vspace{-0.6cm}
 \end{wrapfigure}
-Das Pirani Messgerät, bei dem die druckabhängige Wärmeleitung des Gases ausgenutzt wird, kommt bei Drücken zwischen Normaldruck und $5 \cdot 10^{-4}$ mbar zum Einsatz. Die Wirkungsweise beruht darauf, dass in dem Gebiet von 1 mbar bis zu $10^{-4}$ mbar, wie in Abbildung \ref{fig:pirani} zu sehen, die Wärmeleifähigkeit proportional zum Druck ist. Das technische Prinzip beruht darauf, dass ein zentrisch aufgespannten Draht durch einen konstanten Strom geheizt wird. Der Wärmetransport des Drahtes ist proportional zur Teilchenzahldichte, welche wiederum proportional zum Druck ist. Wird nun die Temperatur des Drahtes konstant gehalten, kann durch Messung des Stromes auf den Druck nach einer Eichung rückgeschlossen werden. In den Bereichen A und C der Abildung \ref{fig:pirani} ist die Wärmeleitfähigkeit nicht mehr proportional zum Druck. Durch Anpassung der Drahttemperatur ist es aufgrund des physikalischen Prinzip der Konvektions den Messbereich bis in etwa 1000 mbar zu erweiten. 
+Das Pirani Messgerät, bei dem die druckabhängige Wärmeleitung des Gases ausgenutzt wird, kommt bei Drücken zwischen Normaldruck und $5 \cdot 10^{-4}$ mbar zum Einsatz. Die Wirkungsweise beruht darauf, dass in dem Gebiet von 1 mbar bis zu $10^{-4}$ mbar, wie in Abbildung \ref{fig:pirani} zu sehen, die Wärmeleifähigkeit proportional zum Druck ist. Das technische Prinzip beruht darauf, dass ein zentrisch aufgespannten Draht durch einen konstanten Strom geheizt wird. Der Wärmetransport des Drahtes ist proportional zur Teilchenzahldichte, welche wiederum proportional zum Druck ist. Wird nun die Temperatur des Drahtes konstant gehalten, kann durch Messung des Stromes auf den Druck nach einer Eichung rückgeschlossen werden. In den Bereichen A und C der Abildung \ref{fig:pirani} ist die Wärmeleitfähigkeit nicht mehr proportional zum Druck. Durch Anpassung der Drahttemperatur ist es aufgrund des physikalischen Prinzip der Konvektions den Messbereich bis in etwa 1000 mbar zu erweiten.
 
 \subsubsection{Kaltkathodenmessgerät}
 Beim Kaltkathodenmessgerät wird ein starkes E-Feld von einigen kV angelegt. Dabei werden Elektronen aufgrund von elektronischen Feldemmision aus der Kathode gelöst. Das Prinzip der Feldemmision beruht darauf, dass die Elektronen quantenmechanisch gesehen eine geringe wahrscheinlichkeit besitzen die Kathode zu verlassen (tunneln). Aufgrund der Beschleunigung durch das Feld, ionisieren die Primär-Elektronen weitere Gasmoleküle, sodass ein Ionenstrom erzeugt wird. Dieser Effekt wird durch Anlegung eines äußeren B-Feldes verstärkt, da dadurch die Elektronen aufgrund der Lorentz-Kraft auf Kreisbahnen gezwungen werden und die Weglänge zur Anode zunimmt. Aufgrund dessen erhöht sich die Ionisationwahrscheinlichkeit. Durch Messung des Ionisationsstrom kann auf den Druck rückgeschlossen werden. Dabei muss berücksichtigt werden, dass der Ionisationsstrom auch von der Gasart abhängig ist. Die untere Grenze des Messbereich des Kaltkathodenmessgerätes ist ca $10^{-4}$ mbar. Trotz der verlängerten Elektronenbahn können nicht genügend Gasmoleküle ionisiert werden.
