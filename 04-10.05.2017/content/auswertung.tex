@@ -79,7 +79,7 @@ Aus Abbildung \eqref{fig:Dreh} kann entnommen werden um welche Bauteile es sich 
     8 & T-Stück ($T_2$) & 0.25 & 0.05 \\
     9 & Kugelventil & 0.015 & 0.009 \\
     \midrule
-    \multicolumn{2}{c|}{Gesamtvolumen $V_\text{Dreh}$} & 10.2 & 0.8 \\
+    \multicolumn{2}{c|}{Gesamtvolumen $V_\text{Dreh}$} & 10.2 & 0.9 \\
   \end{tabular}
 \end{table}
 
@@ -100,7 +100,7 @@ Aus Abbildung \eqref{fig:Turbo} kann entnommen werden um welche Bauteile es sich
     5 & T-Stück ($T_1$) & 0.13 & 0.01 \\
     6 & T-Stück ($T_2$) & 0.25 & 0.05 \\
     \midrule
-    \multicolumn{2}{c|}{Gesamtvolumen $V_\text{Turbo}$} & 10.0 & 0.8 \\
+    \multicolumn{2}{c|}{Gesamtvolumen $V_\text{Turbo}$} & 10.0 & 0.9 \\
   \end{tabular}
 \end{table}
 
@@ -135,7 +135,7 @@ Der Anfangsdruck $p_0$ und der Enddruck $p_\text{E}$ sind für die Drehschieberp
   p_{\text{E},\text{Dreh}} = (\num{2 +- 0.4})\cdot 10^{-2}\ \text{mbar} \ .
 \end{align*}
 
-\begin{table} % p(t)-Kurve Drehschieberpumpe
+\begin{table}[H] % p(t)-Kurve Drehschieberpumpe
   \centering
   \caption{Messwerte für die Bestimmung des Saugvermögens der Drehschieberpumpe.}
   \label{tab:ptdreh}
@@ -166,7 +166,7 @@ Der Anfangsdruck $p_0$ und der Enddruck $p_\text{E}$ sind für die Drehschieberp
   \end{tabular}
 \end{table}
 
-\begin{figure} % p(t)-Kurve Drehschieberpumpe
+\begin{figure}[H] % p(t)-Kurve Drehschieberpumpe
   \centering
   \includegraphics[width=\textwidth]{pictures/pt-Kurve-Drehschieberpumpe.pdf}
   \caption{Die p(t)-Kurve der Drehschieberpumpe.}
@@ -175,7 +175,7 @@ Der Anfangsdruck $p_0$ und der Enddruck $p_\text{E}$ sind für die Drehschieberp
 
 In Tabelle \eqref{tab:ptSaugDreh} sind die Parameter der Geraden aus der linearen Regression und das Saugvermögen aufgetragen.
 
-\begin{table}
+\begin{table}[H]
   \centering
   \caption{Das Saugvermögen der Drehschieberpumpe für die vier Messbereiche aus der p(t)-Kurve.}
   \label{tab:ptSaugDreh}
@@ -199,7 +199,7 @@ Der Anfangsdruck $p_0$ und der Enddruck $p_\text{E}$ sind für die Turbopumpe ge
   p_{\text{E},\text{Turbo}} = (\num{2 +- 0.2})\cdot 10^{-5}\ \text{mbar} \ .
 \end{align*}
 
-\begin{table} % p(t)-Kurve Turbopumpe
+\begin{table}[H] % p(t)-Kurve Turbopumpe
   \caption{Messwerte für die Bestimmung des Saugvermögens der Turbopumpe.}
   \label{tab:ptturbo}
   \hspace{-2cm}
@@ -230,7 +230,7 @@ Der Anfangsdruck $p_0$ und der Enddruck $p_\text{E}$ sind für die Turbopumpe ge
   \end{tabular}
 \end{table}
 
-\begin{figure} % p(t)-Kurve Turbopumpe
+\begin{figure}[H] % p(t)-Kurve Turbopumpe
   \centering
   \includegraphics[width=\textwidth]{pictures/pt-Kurve-Turbopumpe.pdf}
   \caption{Die p(t)-Kurve der Turbopumpe.}
@@ -239,7 +239,7 @@ Der Anfangsdruck $p_0$ und der Enddruck $p_\text{E}$ sind für die Turbopumpe ge
 
 In Tabelle \eqref{tab:ptSaugTurbo} sind die Parameter der Geraden aus der linearen Regression und das Saugvermögen aufgetragen.
 
-\begin{table}
+\begin{table}[H]
   \centering
   \caption{Das Saugvermögen der Turbopumpe für die drei Messbereiche aus der p(t)-Kurve.}
   \label{tab:ptSaugTurbo}
@@ -396,7 +396,7 @@ In Tabelle \eqref{tab:SaugLeckDreh} ist das Saugvermögen für die fünf Gleichg
 \subsubsection{Für die Turbopumpe}
 In den Tabellen \eqref{tab:Leck5Turbo} bis \eqref{tab:Leck20Turbo} sind die Messwerte der Leckratenmessung für vier unterschiedliche Gleichgewichtsdrücke aufgetragen. Außerdem ist der Mittelwert der Zeiten und der Fehler gebildet worden. Das Volumen $V_0$ aus Gleichung \eqref{eqn:SaugLeck} entspricht für die Turbopumpe $V_\text{Turbo} = (\num{10.0 +- 0.8})$\,l
 
-\begin{table}
+\begin{table}[H]
   \caption{Messwerte der Leckratenmessung bei vier unterschiedlichen Gleichgewichtsdrücken mit der Turbopumpe.}
   \begin{subtable}{0.49\textwidth}
     \subcaption{Gleichgewichtsdruck von $5\cdot 10^{-5}$\,mbar}
@@ -471,7 +471,7 @@ In den Tabellen \eqref{tab:Leck5Turbo} bis \eqref{tab:Leck20Turbo} sind die Mess
 
 In den Abbildungen \eqref{fig:Leck5Turbo} bis \eqref{fig:Leck20Turbo} sind die Werte aus den oben stehenden Tabellen aufgetragen. Zusätzlich wurde eine lineare Regression durch die Werte gelegt.
 
-\begin{figure}
+\begin{figure}[H]
   \begin{subfigure}[c]{0.49\textwidth}
     \includegraphics[width=\textwidth]{pictures/Leck-5mbar-T.pdf}
     \subcaption{Leckratenmessung mit einem Gleichgewichtsdruck $p_g = 5 \cdot 10^{-5}$\,mbar}
@@ -499,7 +499,7 @@ In den Abbildungen \eqref{fig:Leck5Turbo} bis \eqref{fig:Leck20Turbo} sind die W
 
 In Tabelle \eqref{tab:SaugLeckTurbo} ist das Saugvermögen für die vier Gleichgewichtsdrücke berechnet worden.
 
-\begin{table}
+\begin{table}[H]
    \caption{Messwerte zur Bestimmung des Saugvermögens für die Turbopumpe.}
    \label{tab:SaugLeckTurbo}
    \begin{tabular}{c|c|c|c|c}
